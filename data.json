@@ -1540,8 +1540,8 @@
     "officeAddress": "",
     "officePhone": "",
     "officeEmail": "",
-    "lastSync": "٢٣‏/٦‏/٢٠٢٦، ٥:٣٧:٥٠ م",
-    "lastSyncCommit": "65266f43cfe73695162a7be2389674d4c5fda587",
+    "lastSync": "٢٣‏/٦‏/٢٠٢٦، ٥:٣٧:٥٥ م",
+    "lastSyncCommit": "7f2975babcaf05aa10e5c782d29e8eda74c64863",
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true
@@ -1688,7 +1688,13 @@
       "time": "٢٠‏/٦‏/٢٠٢٦، ٣:٠١:١٥ م"
     }
   ],
-  "importantLinks": [],
+  "importantLinks": [
+    {
+      "id": "_gx77oq8ilmqqr1uuh",
+      "title": "Google",
+      "url": "https://www.google.com"
+    }
+  ],
   "courts": [
     {
       "id": "_di2tw3n6nmqqr0oiq",
