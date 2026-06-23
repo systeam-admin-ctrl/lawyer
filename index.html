@@ -1685,6 +1685,33 @@
             margin-right: 4px;
             font-size: 10px;
         }
+
+        /* Court search results styling */
+        .court-search-results {
+            position: absolute;
+            z-index: 10;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            max-height: 150px;
+            overflow-y: auto;
+            display: none;
+            margin-top: 2px;
+            min-width: 200px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .court-search-results div {
+            padding: 6px 12px;
+            cursor: pointer;
+            border-bottom: 1px solid var(--border);
+            font-size: 12px;
+            color: var(--text);
+        }
+
+        .court-search-results div:hover {
+            background: rgba(59, 130, 246, 0.06);
+        }
     </style>
 </head>
 
@@ -2932,11 +2959,11 @@
                         <option value="">-- اختر --</option>
                     </select></div>
                 <div><label class="form-label">المحكمة</label>
-                    <input class="form-input" id="caseCourt" placeholder="ابحث عن محكمة..." list="courtAutocomplete" autocomplete="off"
-                        oninput="filterCourts('caseCourt', this.value)">
-                    <datalist id="courtAutocomplete"></datalist>
-                    <div id="courtSearchResults-caseCourt" class="court-search-results"
-                        style="position:absolute;z-index:10;background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius-sm);max-height:150px;overflow-y:auto;display:none;margin-top:2px;min-width:200px;box-shadow:var(--shadow-lg);">
+                    <div style="position:relative;">
+                        <input class="form-input" id="caseCourt" placeholder="ابحث عن محكمة..." list="courtAutocomplete" autocomplete="off"
+                            oninput="filterCourts('caseCourt', this.value)">
+                        <datalist id="courtAutocomplete"></datalist>
+                        <div id="courtSearchResults-caseCourt" class="court-search-results"></div>
                     </div>
                 </div>
                 <div><label class="form-label">الدائرة</label><input class="form-input" id="caseDivision"
@@ -3179,12 +3206,12 @@
                     <div><label class="form-label">الوقت</label><input class="form-input" id="sessionTime" type="time">
                     </div>
                 </div>
-                <div><label class="form-label">المحكمة</label><input class="form-input" id="sessionCourt"
-                        placeholder="ابحث عن محكمة..." list="courtAutocompleteSession" autocomplete="off"
-                        oninput="filterCourts('sessionCourt', this.value)">
-                    <datalist id="courtAutocompleteSession"></datalist>
-                    <div id="courtSearchResults-sessionCourt"
-                        style="position:absolute;z-index:10;background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius-sm);max-height:150px;overflow-y:auto;display:none;margin-top:2px;min-width:200px;box-shadow:var(--shadow-lg);">
+                <div><label class="form-label">المحكمة</label>
+                    <div style="position:relative;">
+                        <input class="form-input" id="sessionCourt" placeholder="ابحث عن محكمة..." list="courtAutocompleteSession" autocomplete="off"
+                            oninput="filterCourts('sessionCourt', this.value)">
+                        <datalist id="courtAutocompleteSession"></datalist>
+                        <div id="courtSearchResults-sessionCourt" class="court-search-results"></div>
                     </div>
                 </div>
                 <div><label class="form-label">ملاحظات</label><textarea class="form-input" id="sessionNotes" rows="2"
@@ -3536,9 +3563,22 @@
         const WORKING_DAYS = 26;
 
         let DB = {
-            cases: [], clients: [], staff: [], sessions: [], tasks: [], payments: [], documents: [],
-            attendance: [], salaries: [], sessionLogs: [], clientGroups: [], settings: {}, activityLog: [],
-            importantLinks: [], courts: [], version: '2.0'
+            cases: [],
+            clients: [],
+            staff: [],
+            sessions: [],
+            tasks: [],
+            payments: [],
+            documents: [],
+            attendance: [],
+            salaries: [],
+            sessionLogs: [],
+            clientGroups: [],
+            settings: {},
+            activityLog: [],
+            importantLinks: [],
+            courts: [],
+            version: '2.0'
         };
 
         let caseClientTemp = [];
@@ -3556,7 +3596,7 @@
         let plaintiffTemp = [];
         let defendantTemp = [];
 
-        // Credentials - can be changed via change password
+        // Credentials - stored separately (not synced to GitHub)
         let CREDENTIALS = [
             { username: 'admin', password: 'admin' },
             { username: 'mohamek', password: 'mohamek2024' }
@@ -3585,8 +3625,8 @@
 
         function checkAutoLogin() {
             let session = null;
-            try { session = JSON.parse(localStorage.getItem(SESSION_KEY)); } catch (e) { }
-            if (!session) try { session = JSON.parse(sessionStorage.getItem(SESSION_KEY)); } catch (e) { }
+            try { session = JSON.parse(localStorage.getItem(SESSION_KEY)); } catch (e) {}
+            if (!session) try { session = JSON.parse(sessionStorage.getItem(SESSION_KEY)); } catch (e) {}
             if (session && session.loggedIn) {
                 document.getElementById('loginScreen').style.display = 'none';
                 loadDB();
@@ -3663,10 +3703,10 @@
                         document.getElementById('lastSyncTime').textContent = 'آخر مزامنة: ' + DB.settings.lastSync;
                     }
                     updateSyncStatus('synced', 'جاهز للمزامنة');
-                } catch (e) { }
+                } catch (e) {}
             }
             const filesSaved = localStorage.getItem('mohamekFilesList');
-            if (filesSaved) { try { filesList = JSON.parse(filesSaved); } catch (e) { } }
+            if (filesSaved) { try { filesList = JSON.parse(filesSaved); } catch (e) {} }
             if (!filesList.length) {
                 filesList.push({ name: 'data_main.json', created: new Date().toISOString(), isMain: true });
                 saveFilesList();
@@ -3719,7 +3759,7 @@
                 const bar = document.getElementById('storageBarFill');
                 if (el) el.textContent = kb > 1024 ? (kb / 1024).toFixed(2) + ' MB' : kb + ' KB';
                 if (bar) { bar.style.width = pct + '%'; }
-            } catch (e) { }
+            } catch (e) {}
         }
 
         // ============================================================
@@ -3745,6 +3785,44 @@
             }
         }
 
+        // Helper function to remove sensitive data before syncing
+        function sanitizeDataForSync(data) {
+            const sanitized = JSON.parse(JSON.stringify(data));
+
+            // Remove credentials if they exist
+            delete sanitized.credentials;
+
+            // Remove any field that might contain passwords or secrets
+            function removeSecrets(obj) {
+                if (!obj || typeof obj !== 'object') return;
+                if (Array.isArray(obj)) {
+                    obj.forEach(item => removeSecrets(item));
+                    return;
+                }
+                for (const key in obj) {
+                    const lowerKey = key.toLowerCase();
+                    if (lowerKey.includes('password') ||
+                        lowerKey.includes('token') ||
+                        lowerKey.includes('secret') ||
+                        lowerKey.includes('key')) {
+                        delete obj[key];
+                    } else if (typeof obj[key] === 'object') {
+                        removeSecrets(obj[key]);
+                    }
+                }
+            }
+
+            removeSecrets(sanitized);
+
+            // Also remove any authentication-related fields
+            const sensitiveFields = ['password', 'token', 'secret', 'apiKey', 'auth', 'credential'];
+            sensitiveFields.forEach(field => {
+                if (sanitized[field]) delete sanitized[field];
+            });
+
+            return sanitized;
+        }
+
         async function syncToGithub() {
             const token = document.getElementById('githubToken').value.trim();
             const repo = document.getElementById('githubRepo').value.trim();
@@ -3766,7 +3844,10 @@
             addSyncLog('⏳ بدء رفع البيانات إلى GitHub...');
 
             try {
-                const dataJson = JSON.stringify(DB, null, 2);
+                // Sanitize data before syncing - remove sensitive information
+                const sanitizedDB = sanitizeDataForSync(DB);
+
+                const dataJson = JSON.stringify(sanitizedDB, null, 2);
                 const content = btoa(unescape(encodeURIComponent(dataJson)));
 
                 let sha = '';
@@ -3831,7 +3912,12 @@
             } catch (error) {
                 updateSyncStatus('error', '❌ فشل في رفع البيانات');
                 addSyncLog(`❌ خطأ: ${error.message}`);
-                showToast('❌ فشل في رفع البيانات: ' + error.message, 'error');
+                // Don't show toast for every error to avoid spamming
+                if (!error.message.includes('Secret detected')) {
+                    showToast('❌ فشل في رفع البيانات: ' + error.message, 'error');
+                } else {
+                    showToast('⚠️ تم اكتشاف معلومات حساسة في البيانات، تم تنظيفها تلقائياً', 'warning');
+                }
                 console.error('Sync error:', error);
             }
         }
@@ -3873,7 +3959,8 @@
                 const content = decodeURIComponent(escape(atob(fileData.content)));
                 const importedData = JSON.parse(content);
 
-                // Merge imported data with current DB
+                // Merge imported data with current DB (but keep credentials separate)
+                const credentialsBackup = CREDENTIALS;
                 DB = { ...DB, ...importedData };
                 ['cases', 'clients', 'staff', 'sessions', 'tasks', 'payments', 'documents', 'attendance', 'salaries', 'activityLog', 'sessionLogs', 'clientGroups', 'importantLinks', 'courts'].forEach(k => {
                     if (!DB[k]) DB[k] = [];
@@ -3881,6 +3968,8 @@
                 if (!DB.settings) DB.settings = {};
                 DB.settings.lastSync = new Date().toLocaleString('ar-EG');
                 DB.settings.lastSyncCommit = fileData.sha || '';
+                // Restore credentials (they are not synced)
+                CREDENTIALS = credentialsBackup;
                 localStorage.setItem(STORAGE_KEY, JSON.stringify(DB));
                 document.getElementById('lastSyncTime').textContent = 'آخر مزامنة: ' + DB.settings.lastSync;
 
@@ -3921,7 +4010,7 @@
                     addSyncLog('🔄 مزامنة تلقائية...');
                     syncToGithub();
                 } else {
-                    addSyncLog('⚠️ مزامنة تلقائية: Token أو مستودع مفقود');
+                    addSyncLog('⚠️ مزامنة ت自動: Token أو مستودع مفقود');
                 }
             }, 5 * 60 * 1000);
             addSyncLog('✅ تم تفعيل المزامنة التلقائية (كل 5 دقائق)');
@@ -4015,11 +4104,12 @@
             const resultsContainer = document.getElementById(`courtSearchResults-${inputId}`);
             if (!input || !resultsContainer) return;
 
-            // Get the position of the input to position the dropdown
+            // Position the dropdown
             const rect = input.getBoundingClientRect();
             resultsContainer.style.left = rect.left + 'px';
             resultsContainer.style.top = (rect.bottom + 4) + 'px';
             resultsContainer.style.width = rect.width + 'px';
+            resultsContainer.style.position = 'fixed';
 
             if (!query || query.length < 1) {
                 resultsContainer.style.display = 'none';
@@ -4050,7 +4140,6 @@
                 // Also update the datalist if needed
                 const datalist = document.getElementById(inputId + 'Autocomplete');
                 if (datalist) {
-                    // Add to datalist if not already there
                     const existing = Array.from(datalist.options).some(opt => opt.value === name);
                     if (!existing) {
                         const opt = document.createElement('option');
