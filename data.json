@@ -14,21 +14,11 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٣‏/٦‏/٢٠٢٦، ٦:٥٠:٣٠ م",
+    "lastSync": "٢٣‏/٦‏/٢٠٢٦، ٨:٤٩:١٠ ص",
     "lastSyncCommit": "a7cf2208a50d628042d2b41a6a8256bd4030682f"
   },
-  "activityLog": [
-    {
-      "action": "إضافة محكمة: شرق الزقازيق",
-      "time": "٢٣‏/٦‏/٢٠٢٦، ٦:٥٠:٣٨ م"
-    }
-  ],
+  "activityLog": [],
   "importantLinks": [],
-  "courts": [
-    {
-      "id": "_644sncbd5mqqtmocb",
-      "name": "شرق الزقازيق"
-    }
-  ],
+  "courts": [],
   "version": "2.0"
 }
