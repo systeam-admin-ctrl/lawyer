@@ -1,22 +1,60 @@
 {
   "cases": [],
   "clients": [],
-  "staff": [],
+  "staff": [
+    {
+      "id": "_deolyxpzcmqqtuuri",
+      "name": "ناجي محمد عبدالله",
+      "role": "محامي",
+      "spec": "",
+      "license": "",
+      "phone": "",
+      "email": "",
+      "salary": 0,
+      "joinDate": "",
+      "notes": "",
+      "photo": ""
+    }
+  ],
   "sessions": [],
   "tasks": [],
   "payments": [],
   "documents": [],
   "attendance": [],
   "salaries": [],
+  "sessionLogs": [],
+  "clientGroups": [],
   "settings": {
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
-    "autoSync": true
+    "autoSync": true,
+    "lastSync": "٢٣‏/٦‏/٢٠٢٦، ٩:٠١:٠٢ ص",
+    "lastSyncCommit": "090512aced438c98c968e8652f2bd9fb00d9e1aa"
   },
-  "activityLog": [],
-  "sessionLogs": [],
-  "clientGroups": [],
+  "activityLog": [
+    {
+      "action": "إضافة موظف: ناجي محمد عبدالله",
+      "time": "٢٣‏/٦‏/٢٠٢٦، ٨:٥٦:٥٩ ص"
+    },
+    {
+      "action": "إضافة محكمة: بندر الزقازيق",
+      "time": "٢٣‏/٦‏/٢٠٢٦، ٨:٥٤:٢١ ص"
+    },
+    {
+      "action": "إضافة محكمة: شرق الزقازيق",
+      "time": "٢٣‏/٦‏/٢٠٢٦، ٦:٥٠:٣٨ م"
+    }
+  ],
   "importantLinks": [],
-  "courts": [],
+  "courts": [
+    {
+      "id": "_644sncbd5mqqtmocb",
+      "name": "شرق الزقازيق"
+    },
+    {
+      "id": "_k0hfb28n0mqqtrgt2",
+      "name": "بندر الزقازيق"
+    }
+  ],
   "version": "2.0"
 }
