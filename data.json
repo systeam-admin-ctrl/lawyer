@@ -152,6 +152,27 @@
       "tawkeelNum": "1833\\2025",
       "archived": false,
       "createdAt": "2026-06-20T14:19:42.559Z"
+    },
+    {
+      "id": "_tq2dpri18mqqqvqst",
+      "num": "9900",
+      "type": "أسرة",
+      "clientIds": "_xvpkyfxaqmqm5hfue",
+      "clientRoles": "_xvpkyfxaqmqm5hfue:موكل",
+      "plaintiff": "",
+      "defendant": "",
+      "lawyerId": "",
+      "court": "ش",
+      "division": "",
+      "date": "",
+      "status": "نشطة",
+      "notes": "",
+      "fee": 0,
+      "paid": 0,
+      "tawkeelNum": "",
+      "tawkeelType": "عام",
+      "archived": false,
+      "createdAt": "2026-06-23T14:33:42.510Z"
     }
   ],
   "clients": [
@@ -1539,14 +1560,25 @@
       "note": ""
     }
   ],
+  "sessionLogs": [],
+  "clientGroups": [],
   "settings": {
     "officeName": "AMG للمحاماة والاستشارات القانونية",
     "officeManager": "مصطفى محمد أباظة",
     "officeAddress": "",
     "officePhone": "",
-    "officeEmail": ""
+    "officeEmail": "",
+    "lastSync": "٢٣‏/٦‏/٢٠٢٦، ٧:٣٣:٠٤ ص",
+    "lastSyncCommit": "7b438c4f069eb49915c2acb9c08ab3533450397b",
+    "githubRepo": "systeam-admin-ctrl/lawyer",
+    "githubFilePath": "data.json",
+    "autoSync": true
   },
   "activityLog": [
+    {
+      "action": "إضافة قضية: 9900",
+      "time": "٢٣‏/٦‏/٢٠٢٦، ٧:٣٣:٤٢ ص"
+    },
     {
       "action": "حذف قضية نهائياً",
       "time": "٢١‏/٦‏/٢٠٢٦، ١:٤٣:٠١ ص"
@@ -1668,6 +1700,7 @@
       "time": "٢٠‏/٦‏/٢٠٢٦، ٣:٠١:١٥ م"
     }
   ],
-  "sessionLogs": [],
+  "importantLinks": [],
+  "courts": [],
   "version": "6.0"
 }
