@@ -12,13 +12,13 @@
       "court": "المحكمه الابتدائيه - الزقازيق",
       "division": "جنوب",
       "date": "2026-06-30",
-      "status": "مؤرشفة",
+      "status": "نشطة",
       "notes": "",
       "fee": 1000,
       "paid": 1000,
       "tawkeelNum": "909",
       "tawkeelType": "عام",
-      "archived": true,
+      "archived": false,
       "createdAt": "2026-06-23T16:37:35.226Z",
       "appeals": [
         "_mpspnys9rmqqvlbi3"
@@ -95,14 +95,41 @@
   "documents": [],
   "attendance": [],
   "salaries": [],
+  "sessionLogs": [],
+  "clientGroups": [
+    {
+      "id": "_bydgwso4pmqqv69n2",
+      "tawkeelNum": "909",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2026-06-23",
+      "tawkeelImg": "",
+      "notes": "",
+      "clients": [
+        {
+          "id": "_2v541hmccmqqv5z33",
+          "name": "محمد",
+          "phone": "+20124568907",
+          "idNum": "764625565807654",
+          "email": "",
+          "address": "",
+          "photo": ""
+        }
+      ],
+      "mainClientId": "_2v541hmccmqqv5z33"
+    }
+  ],
   "settings": {
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٣‏/٦‏/٢٠٢٦، ٨:٠٠:٤٣ م",
-    "lastSyncCommit": "3248c6b148ced97324b641d19d8cfb5574f6aa1d"
+    "lastSync": "٢٣‏/٦‏/٢٠٢٦، ٨:٠٤:٠٥ م",
+    "lastSyncCommit": "902e98bc9a4dc6fe3de20fa40179a37b66b70b09"
   },
   "activityLog": [
+    {
+      "action": "تعديل قضية: 009\\2019",
+      "time": "٢٣‏/٦‏/٢٠٢٦، ٨:٠٤:١٧ م"
+    },
     {
       "action": "تعديل موظف: ناجي محمد عبدالله",
       "time": "٢٣‏/٦‏/٢٠٢٦، ٩:٥٤:٥٦ ص"
@@ -134,29 +161,6 @@
     {
       "action": "إضافة موظف: ناجي محمد عبدالله",
       "time": "٢٣‏/٦‏/٢٠٢٦، ٩:٢٢:٥٩ ص"
-    }
-  ],
-  "sessionLogs": [],
-  "clientGroups": [
-    {
-      "id": "_bydgwso4pmqqv69n2",
-      "tawkeelNum": "909",
-      "tawkeelType": "عام",
-      "tawkeelDate": "2026-06-23",
-      "tawkeelImg": "",
-      "notes": "",
-      "clients": [
-        {
-          "id": "_2v541hmccmqqv5z33",
-          "name": "محمد",
-          "phone": "+20124568907",
-          "idNum": "764625565807654",
-          "email": "",
-          "address": "",
-          "photo": ""
-        }
-      ],
-      "mainClientId": "_2v541hmccmqqv5z33"
     }
   ],
   "importantLinks": [],
