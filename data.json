@@ -1,24 +1,133 @@
 {
-  "cases": [],
-  "clients": [],
-  "staff": [],
+  "cases": [
+    {
+      "id": "_jbgzel5oumqqvb1x6",
+      "num": "009\\2019",
+      "type": "مدني كلي",
+      "clientIds": "_2v541hmccmqqv5z33",
+      "clientRoles": "_2v541hmccmqqv5z33:موكل",
+      "plaintiff": "",
+      "defendant": "",
+      "lawyerId": "_g3ycytojgmqqusa59",
+      "court": "المحكمه الابتدائيه - الزقازيق",
+      "division": "جنوب",
+      "date": "2026-06-30",
+      "status": "نشطة",
+      "notes": "",
+      "fee": 1000,
+      "paid": 1000,
+      "tawkeelNum": "909",
+      "tawkeelType": "عام",
+      "archived": false,
+      "createdAt": "2026-06-23T16:37:35.226Z"
+    }
+  ],
+  "clients": [
+    {
+      "id": "_2v541hmccmqqv5z33",
+      "name": "محمد",
+      "phone": "+20124568907",
+      "idNum": "764625565807654",
+      "email": "",
+      "address": "",
+      "photo": "",
+      "tawkeelNum": "909",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2026-06-23",
+      "tawkeelImg": "",
+      "notes": "",
+      "createdAt": "2026-06-23T16:33:51.950Z"
+    }
+  ],
+  "staff": [
+    {
+      "id": "_g3ycytojgmqqusa59",
+      "name": "ناجي محمد عبدالله",
+      "role": "محامي",
+      "spec": "محامي قانون",
+      "license": "",
+      "phone": "+20123456789",
+      "email": "",
+      "salary": 2500,
+      "joinDate": "2010-01-01",
+      "notes": "",
+      "photo": ""
+    }
+  ],
   "sessions": [],
   "tasks": [],
   "payments": [],
   "documents": [],
   "attendance": [],
   "salaries": [],
+  "sessionLogs": [],
+  "clientGroups": [
+    {
+      "id": "_bydgwso4pmqqv69n2",
+      "tawkeelNum": "909",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2026-06-23",
+      "tawkeelImg": "",
+      "notes": "",
+      "clients": [
+        {
+          "id": "_2v541hmccmqqv5z33",
+          "name": "محمد",
+          "phone": "+20124568907",
+          "idNum": "764625565807654",
+          "email": "",
+          "address": "",
+          "photo": ""
+        }
+      ],
+      "mainClientId": "_2v541hmccmqqv5z33"
+    }
+  ],
   "settings": {
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
-    "autoSync": true,
-    "lastSync": "٢٣‏/٦‏/٢٠٢٦، ٩:٣٤:٥٣ ص",
-    "lastSyncCommit": "eec6a7a1834c87c951415dc19ef8e5937499533f"
+    "autoSync": true
   },
-  "activityLog": [],
-  "sessionLogs": [],
-  "clientGroups": [],
+  "activityLog": [
+    {
+      "action": "إضافة قضية: 009\\2019",
+      "time": "٢٣‏/٦‏/٢٠٢٦، ٩:٣٧:٣٥ ص"
+    },
+    {
+      "action": "إضافة محكمة: محكمه جنوب",
+      "time": "٢٣‏/٦‏/٢٠٢٦، ٩:٣٦:٤٣ ص"
+    },
+    {
+      "action": "إضافة محكمة: المحكمه الابتدائيه - الزقازيق",
+      "time": "٢٣‏/٦‏/٢٠٢٦، ٩:٣٦:٢١ ص"
+    },
+    {
+      "action": "إضافة محكمة: المحكمه الكليه - الزقازيق",
+      "time": "٢٣‏/٦‏/٢٠٢٦، ٩:٣٦:١٠ ص"
+    },
+    {
+      "action": "إضافة توكيل: 909 مع 1 موكلين",
+      "time": "٢٣‏/٦‏/٢٠٢٦، ٩:٣٣:٥١ ص"
+    },
+    {
+      "action": "إضافة موظف: ناجي محمد عبدالله",
+      "time": "٢٣‏/٦‏/٢٠٢٦، ٩:٢٢:٥٩ ص"
+    }
+  ],
   "importantLinks": [],
-  "courts": [],
+  "courts": [
+    {
+      "id": "_40hxg96rfmqqv98av",
+      "name": "المحكمه الكليه - الزقازيق"
+    },
+    {
+      "id": "_3b5h9ii1smqqv9gy7",
+      "name": "المحكمه الابتدائيه - الزقازيق"
+    },
+    {
+      "id": "_sijvm3o7smqqv9xze",
+      "name": "محكمه جنوب"
+    }
+  ],
   "version": "2.0"
 }
