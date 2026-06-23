@@ -36,13 +36,13 @@
       "court": "المحكمه الابتدائيه - الزقازيق",
       "division": "جنوب",
       "date": "",
-      "status": "مؤرشفة",
+      "status": "نشطة",
       "notes": "استئناف للقضية 009\\2019: حكم - مستنداد",
       "fee": 0,
       "paid": 0,
       "tawkeelNum": "909",
       "tawkeelType": "عام",
-      "archived": true,
+      "archived": false,
       "parentCaseId": "_jbgzel5oumqqvb1x6",
       "isAppeal": true,
       "createdAt": "2026-06-23T16:45:34.203Z"
@@ -122,10 +122,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٣‏/٦‏/٢٠٢٦، ٨:٠٤:٠٥ م",
-    "lastSyncCommit": "902e98bc9a4dc6fe3de20fa40179a37b66b70b09"
+    "lastSync": "٢٣‏/٦‏/٢٠٢٦، ٨:٠٤:٢٠ م",
+    "lastSyncCommit": "c507bf3e1e854806a099ca66d6cb4562890ed448"
   },
   "activityLog": [
+    {
+      "action": "تعديل قضية: 11\\2026",
+      "time": "٢٣‏/٦‏/٢٠٢٦، ٨:٠٤:٢٣ م"
+    },
     {
       "action": "تعديل قضية: 009\\2019",
       "time": "٢٣‏/٦‏/٢٠٢٦، ٨:٠٤:١٧ م"
