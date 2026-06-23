@@ -205,34 +205,6 @@
       "createdAt": "2026-06-20T09:17:09.665Z"
     },
     {
-      "id": "_zxw58owdfmqm5ann9",
-      "name": "أمينه احمد يحي علي السيد",
-      "phone": "",
-      "email": "",
-      "idNum": "26512290102242",
-      "address": "36 شارع صدقي زقازيق تاني زقازيق بحري",
-      "notes": "",
-      "photo": "",
-      "tawkeelNum": "4467\\2025",
-      "tawkeelDate": "2025-12-09",
-      "tawkeelImg": "",
-      "createdAt": "2026-06-20T09:18:22.005Z"
-    },
-    {
-      "id": "_rrydburnhmqm5c60m",
-      "name": "نوره احمد خالد موافي",
-      "phone": "",
-      "email": "",
-      "idNum": "29407021303382",
-      "address": "الحسنيه شارع شهيد الطيار",
-      "notes": "",
-      "photo": "",
-      "tawkeelNum": "424\\2025",
-      "tawkeelDate": "2025-02-16",
-      "tawkeelImg": "",
-      "createdAt": "2026-06-20T09:19:32.470Z"
-    },
-    {
       "id": "_jox9dthmfmqm5eb45",
       "name": "وليد المتولي الصاوي ناصف",
       "phone": "",
@@ -1568,13 +1540,17 @@
     "officeAddress": "",
     "officePhone": "",
     "officeEmail": "",
-    "lastSync": "٢٣‏/٦‏/٢٠٢٦، ٧:٣٣:٠٤ ص",
-    "lastSyncCommit": "7b438c4f069eb49915c2acb9c08ab3533450397b",
+    "lastSync": "٢٣‏/٦‏/٢٠٢٦، ٥:٣٦:١٢ م",
+    "lastSyncCommit": "3546c5e113466eb56b7060c5c6228408a19e478b",
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true
   },
   "activityLog": [
+    {
+      "action": "إضافة محكمة: شرق الزقازيق",
+      "time": "٢٣‏/٦‏/٢٠٢٦، ٥:٣٧:٣٢ م"
+    },
     {
       "action": "إضافة قضية: 9900",
       "time": "٢٣‏/٦‏/٢٠٢٦، ٧:٣٣:٤٢ ص"
@@ -1701,6 +1677,11 @@
     }
   ],
   "importantLinks": [],
-  "courts": [],
+  "courts": [
+    {
+      "id": "_di2tw3n6nmqqr0oiq",
+      "name": "شرق الزقازيق"
+    }
+  ],
   "version": "6.0"
 }
