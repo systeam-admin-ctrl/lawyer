@@ -154,25 +154,51 @@
       "createdAt": "2026-06-20T14:19:42.559Z"
     },
     {
-      "id": "_tq2dpri18mqqqvqst",
-      "num": "9900",
-      "type": "أسرة",
-      "clientIds": "_xvpkyfxaqmqm5hfue",
-      "clientRoles": "_xvpkyfxaqmqm5hfue:موكل",
+      "id": "_l2fn5lbn1mqqppnfu",
+      "num": "878",
+      "type": "جنيات",
+      "clientIds": "_yn37bx4o7mqm5p2tr",
+      "clientRoles": "_yn37bx4o7mqm5p2tr:موكل",
       "plaintiff": "",
       "defendant": "",
-      "lawyerId": "",
-      "court": "ش",
+      "lawyerId": "_hwyzl17xumqm4rgrl",
+      "court": "شرق الزقازيق",
       "division": "",
       "date": "",
       "status": "نشطة",
       "notes": "",
       "fee": 0,
       "paid": 0,
-      "tawkeelNum": "",
+      "tawkeelNum": "3114",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-23T14:33:42.510Z"
+      "createdAt": "2026-06-23T14:00:58.602Z",
+      "appeals": [
+        "_67y0l99pkmqqpq0st"
+      ]
+    },
+    {
+      "id": "_67y0l99pkmqqpq0st",
+      "num": "899\\2026",
+      "type": "جنيات",
+      "clientIds": "_yn37bx4o7mqm5p2tr",
+      "clientRoles": "_yn37bx4o7mqm5p2tr:موكل",
+      "plaintiff": "",
+      "defendant": "",
+      "lawyerId": "_hwyzl17xumqm4rgrl",
+      "court": "شرق الزقازيق",
+      "division": "",
+      "date": "",
+      "status": "نشطة",
+      "notes": "استئناف للقضية 878",
+      "fee": 0,
+      "paid": 0,
+      "tawkeelNum": "3114",
+      "tawkeelType": "عام",
+      "archived": false,
+      "parentCaseId": "_l2fn5lbn1mqqppnfu",
+      "isAppeal": true,
+      "createdAt": "2026-06-23T14:01:15.917Z"
     }
   ],
   "clients": [
@@ -203,6 +229,34 @@
       "tawkeelDate": "2023-11-20",
       "tawkeelImg": "",
       "createdAt": "2026-06-20T09:17:09.665Z"
+    },
+    {
+      "id": "_zxw58owdfmqm5ann9",
+      "name": "أمينه احمد يحي علي السيد",
+      "phone": "",
+      "email": "",
+      "idNum": "26512290102242",
+      "address": "36 شارع صدقي زقازيق تاني زقازيق بحري",
+      "notes": "",
+      "photo": "",
+      "tawkeelNum": "4467\\2025",
+      "tawkeelDate": "2025-12-09",
+      "tawkeelImg": "",
+      "createdAt": "2026-06-20T09:18:22.005Z"
+    },
+    {
+      "id": "_rrydburnhmqm5c60m",
+      "name": "نوره احمد خالد موافي",
+      "phone": "",
+      "email": "",
+      "idNum": "29407021303382",
+      "address": "الحسنيه شارع شهيد الطيار",
+      "notes": "",
+      "photo": "",
+      "tawkeelNum": "424\\2025",
+      "tawkeelDate": "2025-02-16",
+      "tawkeelImg": "",
+      "createdAt": "2026-06-20T09:19:32.470Z"
     },
     {
       "id": "_jox9dthmfmqm5eb45",
@@ -1540,32 +1594,20 @@
     "officeAddress": "",
     "officePhone": "",
     "officeEmail": "",
-    "lastSync": "٢٣‏/٦‏/٢٠٢٦، ٥:٣٧:٥٥ م",
-    "lastSyncCommit": "7f2975babcaf05aa10e5c782d29e8eda74c64863",
+    "lastSync": "٢٣‏/٦‏/٢٠٢٦، ٦:٥٨:١٨ ص",
+    "lastSyncCommit": "7b438c4f069eb49915c2acb9c08ab3533450397b",
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true
   },
   "activityLog": [
     {
-      "action": "إضافة محكمة: بندر الزقازيق",
-      "time": "٢٣‏/٦‏/٢٠٢٦، ٥:٣٧:٥٢ م"
-    },
-    {
-      "action": "إضافة محكمة: غرب الزقازيق",
-      "time": "٢٣‏/٦‏/٢٠٢٦، ٥:٣٧:٤٦ م"
-    },
-    {
-      "action": "إضافة محكمة: جنوب الزقازيق",
-      "time": "٢٣‏/٦‏/٢٠٢٦، ٥:٣٧:٤٢ م"
+      "action": "إضافة قضية: 878",
+      "time": "٢٣‏/٦‏/٢٠٢٦، ٧:٠٠:٥٨ ص"
     },
     {
       "action": "إضافة محكمة: شرق الزقازيق",
-      "time": "٢٣‏/٦‏/٢٠٢٦، ٥:٣٧:٣٢ م"
-    },
-    {
-      "action": "إضافة قضية: 9900",
-      "time": "٢٣‏/٦‏/٢٠٢٦، ٧:٣٣:٤٢ ص"
+      "time": "٢٣‏/٦‏/٢٠٢٦، ٧:٠٠:٢١ ص"
     },
     {
       "action": "حذف قضية نهائياً",
@@ -1688,29 +1730,11 @@
       "time": "٢٠‏/٦‏/٢٠٢٦، ٣:٠١:١٥ م"
     }
   ],
-  "importantLinks": [
-    {
-      "id": "_gx77oq8ilmqqr1uuh",
-      "title": "Google",
-      "url": "https://www.google.com"
-    }
-  ],
+  "importantLinks": [],
   "courts": [
     {
-      "id": "_di2tw3n6nmqqr0oiq",
+      "id": "_hq6u7wqfwmqqpov13",
       "name": "شرق الزقازيق"
-    },
-    {
-      "id": "_2fj62lnxemqqr0vu0",
-      "name": "جنوب الزقازيق"
-    },
-    {
-      "id": "_qb2pugg96mqqr0zf5",
-      "name": "غرب الزقازيق"
-    },
-    {
-      "id": "_7k0pffch3mqqr13k8",
-      "name": "بندر الزقازيق"
     }
   ],
   "version": "6.0"
