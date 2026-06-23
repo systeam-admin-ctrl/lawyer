@@ -1540,13 +1540,17 @@
     "officeAddress": "",
     "officePhone": "",
     "officeEmail": "",
-    "lastSync": "٢٣‏/٦‏/٢٠٢٦، ٥:٣٧:٣٦ م",
-    "lastSyncCommit": "513bc15fb18e5f9dd083866d5c6fff44c371ff63",
+    "lastSync": "٢٣‏/٦‏/٢٠٢٦، ٥:٣٧:٤٥ م",
+    "lastSyncCommit": "8c715191299b41c3970f097cf43a2a3f5225bcec",
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true
   },
   "activityLog": [
+    {
+      "action": "إضافة محكمة: غرب الزقازيق",
+      "time": "٢٣‏/٦‏/٢٠٢٦، ٥:٣٧:٤٦ م"
+    },
     {
       "action": "إضافة محكمة: جنوب الزقازيق",
       "time": "٢٣‏/٦‏/٢٠٢٦، ٥:٣٧:٤٢ م"
@@ -1689,6 +1693,10 @@
     {
       "id": "_2fj62lnxemqqr0vu0",
       "name": "جنوب الزقازيق"
+    },
+    {
+      "id": "_qb2pugg96mqqr0zf5",
+      "name": "غرب الزقازيق"
     }
   ],
   "version": "6.0"
