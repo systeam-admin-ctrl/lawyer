@@ -1,1 +1,32 @@
-
+{
+  "cases": [],
+  "clients": [],
+  "staff": [],
+  "sessions": [],
+  "tasks": [],
+  "payments": [],
+  "documents": [],
+  "attendance": [],
+  "salaries": [],
+  "settings": {
+    "officeName": "محاميك للمحاماة والاستشارات القانونية",
+    "officeManager": "........",
+    "officeAddress": "",
+    "officePhone": "",
+    "officeEmail": "",
+    "githubRepo": "systeam-admin-ctrl/lawyer",
+    "githubFilePath": "data.json",
+    "autoSync": true
+  },
+  "activityLog": [
+    {
+      "action": "حفظ إعدادات",
+      "time": "٢٣‏/٦‏/٢٠٢٦، ٨:٤٢:٥٥ ص"
+    }
+  ],
+  "sessionLogs": [],
+  "clientGroups": [],
+  "importantLinks": [],
+  "courts": [],
+  "version": "2.0"
+}
