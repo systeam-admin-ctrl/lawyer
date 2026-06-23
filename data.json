@@ -1,7 +1,21 @@
 {
   "cases": [],
   "clients": [],
-  "staff": [],
+  "staff": [
+    {
+      "id": "_deolyxpzcmqqtuuri",
+      "name": "ناجي محمد عبدالله",
+      "role": "محامي",
+      "spec": "",
+      "license": "",
+      "phone": "",
+      "email": "",
+      "salary": 0,
+      "joinDate": "",
+      "notes": "",
+      "photo": ""
+    }
+  ],
   "sessions": [],
   "tasks": [],
   "payments": [],
@@ -14,10 +28,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٣‏/٦‏/٢٠٢٦، ٦:٥٥:٠٣ م",
-    "lastSyncCommit": "83107487c1788393cdc6b16b222694df8fa6db3e"
+    "lastSync": "٢٣‏/٦‏/٢٠٢٦، ٨:٥٧:٠٣ ص",
+    "lastSyncCommit": "eaa619153ab740099be8a561ac1d32767a76a504"
   },
   "activityLog": [
+    {
+      "action": "إضافة موظف: ناجي محمد عبدالله",
+      "time": "٢٣‏/٦‏/٢٠٢٦، ٨:٥٦:٥٩ ص"
+    },
     {
       "action": "إضافة محكمة: بندر الزقازيق",
       "time": "٢٣‏/٦‏/٢٠٢٦، ٨:٥٤:٢١ ص"
