@@ -8,15 +8,27 @@
   "documents": [],
   "attendance": [],
   "salaries": [],
+  "sessionLogs": [],
+  "clientGroups": [],
   "settings": {
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
-    "autoSync": true
+    "autoSync": true,
+    "lastSync": "٢٣‏/٦‏/٢٠٢٦، ٦:٥٠:٣٠ م",
+    "lastSyncCommit": "a7cf2208a50d628042d2b41a6a8256bd4030682f"
   },
-  "activityLog": [],
-  "sessionLogs": [],
-  "clientGroups": [],
+  "activityLog": [
+    {
+      "action": "إضافة محكمة: شرق الزقازيق",
+      "time": "٢٣‏/٦‏/٢٠٢٦، ٦:٥٠:٣٨ م"
+    }
+  ],
   "importantLinks": [],
-  "courts": [],
+  "courts": [
+    {
+      "id": "_644sncbd5mqqtmocb",
+      "name": "شرق الزقازيق"
+    }
+  ],
   "version": "2.0"
 }
