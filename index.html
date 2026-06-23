@@ -1135,10 +1135,7 @@
                         <div id="dashTasks"></div>
                     </div>
                 </div>
-                <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;" id="dashboardCharts">
-                    <div class="chart-container"><h4><i class="fas fa-chart-bar" style="color:var(--primary);margin-left:6px;"></i>حالة القضايا</h4><canvas id="casesChart"></canvas></div>
-                    <div class="chart-container"><h4><i class="fas fa-chart-line" style="color:var(--primary);margin-left:6px;"></i>الإيرادات الشهرية</h4><canvas id="revenueChart"></canvas></div>
-                </div>
+               
                 <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-bottom:16px;">
                     <div class="quick-stat"><div class="qs-icon" style="background:rgba(59,130,246,0.12);color:#3b82f6;"><i class="fas fa-clock"></i></div><div class="qs-info"><div class="qs-number" id="qs-pending-tasks">0</div><div class="qs-label">مهام معلقة</div></div></div>
                     <div class="quick-stat"><div class="qs-icon" style="background:rgba(16,185,129,0.12);color:#10b981;"><i class="fas fa-check-circle"></i></div><div class="qs-info"><div class="qs-number" id="qs-done-tasks">0</div><div class="qs-label">مهام مكتملة</div></div></div>
@@ -2108,7 +2105,7 @@
             }
             const filesSaved = localStorage.getItem('mohamekFilesList');
             if (filesSaved) { try { filesList = JSON.parse(filesSaved); } catch (e) {} }
-            if (!filesList.length) { filesList.push({ name: 'data_main.json', created: new Date().toISOString(), isMain: true });
+            if (!filesList.length) { filesList.push({ name: '', created: new Date().toISOString(), isMain: true });
                 saveFilesList(); }
             if (DB.settings?.autoSync) startAutoSync();
         }
@@ -2133,7 +2130,7 @@
             if (!DB.settings) DB.settings = {};
             DB.settings.githubToken = document.getElementById('githubToken').value || '';
             DB.settings.githubRepo = document.getElementById('githubRepo').value || '';
-            DB.settings.githubFilePath = document.getElementById('githubFilePath').value || 'data/data.json';
+            DB.settings.githubFilePath = document.getElementById('githubFilePath').value || 'data.json';
             DB.settings.autoSync = document.getElementById('autoSync').checked || false;
             localStorage.setItem(STORAGE_KEY, JSON.stringify(DB));
         }
@@ -2209,7 +2206,7 @@
         async function syncToGithub() {
             const token = document.getElementById('githubToken').value.trim();
             const repo = document.getElementById('githubRepo').value.trim();
-            const filePath = document.getElementById('githubFilePath').value.trim() || 'data/data.json';
+            const filePath = document.getElementById('githubFilePath').value.trim() || 'data.json';
             if (!token || !repo) { showToast('الرجاء إدخال GitHub Token واسم المستودع', 'error');
                 updateSyncStatus('error', 'فشل: Token أو مستودع مفقود'); return; }
             if (!repo.includes('/')) { showToast('اسم المستودع يجب أن يكون على شكل user/repo', 'error');
