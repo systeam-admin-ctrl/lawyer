@@ -150,7 +150,18 @@
     }
   ],
   "tasks": [],
-  "payments": [],
+  "payments": [
+    {
+      "id": "_cpib8lzbpmqtkgdq8",
+      "client": "خالداحمد",
+      "caseId": "_ahsxxbr72mqtk3mmp",
+      "desc": "",
+      "type": "إيراد",
+      "amount": 5000,
+      "date": "2026-06-25",
+      "status": "مدفوع"
+    }
+  ],
   "documents": [],
   "attendance": [],
   "salaries": [],
@@ -231,8 +242,8 @@
   },
   "activityLog": [
     {
-      "action": "إضافة جلسة",
-      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٥٤:٠٨ ص"
+      "action": "تسجيل دفعة: 5000 ج.م",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٥٧:٠٦ ص"
     },
     {
       "action": "تسجيل جلسة منتهية: 80\\2026",
