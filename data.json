@@ -247,10 +247,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:٠٥:١٩ ص",
-    "lastSyncCommit": "201dbff075ec696113b45dd0f9c12547e2d03a70"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:٠٩:٥٤ ص",
+    "lastSyncCommit": "f17dfbb7de5c126fcd22817d84877037997448d2"
   },
   "activityLog": [
+    {
+      "action": "إضافة محكمة: محكمة الزقازيق الابتدائيه",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:٠٩:٥٦ ص"
+    },
     {
       "action": "تسجيل دفعة: 1500 ج.م",
       "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٥٧:٤١ ص"
@@ -321,6 +325,10 @@
     {
       "id": "_21qpx02jdmqtk1xk1",
       "name": "المحكمه الكليه"
+    },
+    {
+      "id": "_qthf0cu1vmqtkww0v",
+      "name": "محكمة الزقازيق الابتدائيه"
     }
   ],
   "version": "2.0",
