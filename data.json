@@ -247,10 +247,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:١٥:٢٢ ص",
-    "lastSyncCommit": "cc285ed7044351e874685a2a4a05f689e4a811b9"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:١٥:٣٥ ص",
+    "lastSyncCommit": "04562338eb645928f3c472d58a7a5fc06fb59ea3"
   },
   "activityLog": [
+    {
+      "action": "إضافة محكمة: محكمه أبو كبير الابتدائيه",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٧:٣٦ ص"
+    },
     {
       "action": "إضافة محكمة: مجمع محاكم فاقوس",
       "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٥:٣٢ ص"
@@ -409,6 +413,10 @@
     {
       "id": "_vh5ds2694mqtl42zy",
       "name": "مجمع محاكم فاقوس"
+    },
+    {
+      "id": "_a8rqjqe4rmqtl6qj1",
+      "name": "محكمه أبو كبير الابتدائيه"
     }
   ],
   "version": "2.0",
