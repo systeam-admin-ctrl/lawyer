@@ -247,10 +247,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:١٨:١٣ ص",
-    "lastSyncCommit": "38d0c2b5a30540646d1421965d4e4b090c62f524"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:١٨:٣٦ ص",
+    "lastSyncCommit": "11c22dd545f95e16ce86e263158cc52b0b05b3bc"
   },
   "activityLog": [
+    {
+      "action": "إضافة محكمة: محكمه الاسره العاشر من رمضان",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٨:٤٩ ص"
+    },
     {
       "action": "إضافة محكمة: مجمع مكاكم العاشر من رمضان الجديده",
       "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٨:٣٢ ص"
@@ -441,6 +445,10 @@
     {
       "id": "_n0skwzgz9mqtl7xy6",
       "name": "مجمع مكاكم العاشر من رمضان الجديده"
+    },
+    {
+      "id": "_6njettdnemqtl8apt",
+      "name": "محكمه الاسره العاشر من رمضان"
     }
   ],
   "version": "2.0",
