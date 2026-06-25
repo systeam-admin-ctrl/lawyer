@@ -247,8 +247,8 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:٠٩:٥٤ ص",
-    "lastSyncCommit": "f17dfbb7de5c126fcd22817d84877037997448d2"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:١٠:٠٠ ص",
+    "lastSyncCommit": "5400c0067224851a5a080a81b2bb08e75a89f0b8"
   },
   "activityLog": [
     {
@@ -318,14 +318,6 @@
   ],
   "importantLinks": [],
   "courts": [
-    {
-      "id": "_08x082ga5mqtk1st9",
-      "name": "المحكمه الابتدائيه"
-    },
-    {
-      "id": "_21qpx02jdmqtk1xk1",
-      "name": "المحكمه الكليه"
-    },
     {
       "id": "_qthf0cu1vmqtkww0v",
       "name": "محكمة الزقازيق الابتدائيه"
