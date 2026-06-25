@@ -257,8 +257,8 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:٣٥:٥٥ ص",
-    "lastSyncCommit": "a6af6e801246fec64db9f0f2f243ffedee2b438e"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:٣٦:٣٤ ص",
+    "lastSyncCommit": "1074289aeb964d49511e8b3dc764a456bea79b19"
   },
   "activityLog": [
     {
@@ -431,6 +431,11 @@
       "id": "_v0u6phm94mqtlv2e8",
       "title": "بوابه تشريعات مصر",
       "url": "https://elpai.idsc.gov.eg/"
+    },
+    {
+      "id": "_fy654dv2vmqtlzb1r",
+      "title": "البوابه الاكترونيه لمنظومه الشكاوي الحكوميه",
+      "url": "https://www.shakwa.eg/GCP/Default.aspx"
     }
   ],
   "courts": [
