@@ -257,8 +257,8 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:٢٩:٥٥ ص",
-    "lastSyncCommit": "f86b0d4fea5683e237f3b59dfbf03555dc69ab3c"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:٣٣:٢٦ ص",
+    "lastSyncCommit": "131c7c695e02737384e48e0575634de7c95b9889"
   },
   "activityLog": [
     {
@@ -411,6 +411,11 @@
       "id": "_vfx3b9x63mqtlr0ri",
       "title": "بوابة مصر لجميع الخدمات الحكوميه",
       "url": "https://psm.gov.eg/"
+    },
+    {
+      "id": "_gdv2xjvnvmqtlrlx9",
+      "title": "مصر الرقميه",
+      "url": "https://digital.gov.eg/"
     }
   ],
   "courts": [
