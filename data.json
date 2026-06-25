@@ -139,6 +139,14 @@
       "time": "",
       "court": "المحكمه الابتدائيه",
       "notes": ""
+    },
+    {
+      "id": "_c1gc6ndjhmqtkck0g",
+      "caseId": "_xs5wkrzqpmqtk6o3n",
+      "date": "2026-07-31",
+      "time": "",
+      "court": "المحكمه الابتدائيه",
+      "notes": ""
     }
   ],
   "tasks": [],
@@ -218,10 +226,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٦:٥٢:٠٤ ص",
-    "lastSyncCommit": "2e2177f5bfde8beb3773d5c8b21246bc6d0f4351"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٦:٥٢:٢٠ ص",
+    "lastSyncCommit": "bc30d328aacf83815a0c98e62d369c0f28ff4fc4"
   },
   "activityLog": [
+    {
+      "action": "إضافة جلسة",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٥٤:٠٨ ص"
+    },
     {
       "action": "تسجيل جلسة منتهية: 80\\2026",
       "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٥٢:١٧ ص"
