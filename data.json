@@ -27,6 +27,19 @@
       "joinDate": "2026-06-01",
       "notes": "",
       "photo": ""
+    },
+    {
+      "id": "_ow7g5wtofmqtjswr7",
+      "name": "ابرهيم محمد",
+      "role": "محامي متدرب",
+      "spec": "",
+      "license": "LIC-RX2",
+      "phone": "+201004553806",
+      "email": "",
+      "salary": 5000,
+      "joinDate": "2026-06-01",
+      "notes": "",
+      "photo": ""
     }
   ],
   "sessions": [],
@@ -41,10 +54,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٦:٣٧:٥٨ ص",
-    "lastSyncCommit": "ca66518f814a3402ef4761a17104f3b034670d2a"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٦:٣٨:٢٩ ص",
+    "lastSyncCommit": "a263b9cbd4e78e39ede1c8c77df3b8834c381408"
   },
   "activityLog": [
+    {
+      "action": "إضافة موظف: ابرهيم محمد",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٣٨:٥١ ص"
+    },
     {
       "action": "إضافة موظف: محمد احمد",
       "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٣٨:٢٥ ص"
