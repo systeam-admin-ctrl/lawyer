@@ -15,6 +15,21 @@
       "tawkeelImg": "",
       "notes": "صحة توقيع",
       "createdAt": "2026-06-25T13:40:35.891Z"
+    },
+    {
+      "id": "_3qwrdtexemqtjwoal",
+      "name": "محمد ابرهيم",
+      "phone": "+201123961290",
+      "idNum": "2946320562957",
+      "email": "",
+      "address": "طاروط - مركز الزقازيق",
+      "photo": "",
+      "tawkeelNum": "80\\2021",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2024-01-01",
+      "tawkeelImg": "",
+      "notes": "",
+      "createdAt": "2026-06-25T13:41:48.335Z"
     }
   ],
   "staff": [
@@ -85,16 +100,40 @@
         }
       ],
       "mainClientId": "_0hvgmcn2lmqtjv4c7"
+    },
+    {
+      "id": "_wpaqlpx42mqtjwp7z",
+      "tawkeelNum": "80\\2021",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2024-01-01",
+      "tawkeelImg": "",
+      "notes": "",
+      "clients": [
+        {
+          "id": "_3qwrdtexemqtjwoal",
+          "name": "محمد ابرهيم",
+          "phone": "+201123961290",
+          "idNum": "2946320562957",
+          "email": "",
+          "address": "طاروط - مركز الزقازيق",
+          "photo": ""
+        }
+      ],
+      "mainClientId": "_3qwrdtexemqtjwoal"
     }
   ],
   "settings": {
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٦:٣٨:٥٤ ص",
-    "lastSyncCommit": "7d462e5dd4c4c33a13244e494ea0565345e07c3b"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٦:٤٠:٣٩ ص",
+    "lastSyncCommit": "beef084e581bd996b988860a2c396774c8aec75c"
   },
   "activityLog": [
+    {
+      "action": "إضافة توكيل: 80\\2021 مع 1 موكلين",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٤١:٤٨ ص"
+    },
     {
       "action": "إضافة توكيل: 900\\2026 مع 1 موكلين",
       "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٤٠:٣٥ ص"
