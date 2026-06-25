@@ -247,10 +247,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:١٤:٥٠ ص",
-    "lastSyncCommit": "0e582eb5df26b4b7a85a8fd4b50f3f3b16d289ce"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:١٤:٥٤ ص",
+    "lastSyncCommit": "cab5a54b93d33484c563e1343767004c09bc067c"
   },
   "activityLog": [
+    {
+      "action": "إضافة محكمة: محكمه ابو حماد الجزئيه",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٥:٠١ ص"
+    },
     {
       "action": "إضافة محكمة: محكمه ههيا الابتدائيه",
       "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٤:٤٦ ص"
@@ -385,6 +389,10 @@
     {
       "id": "_42uxfp6x4mqtl33wr",
       "name": "محكمه ههيا الابتدائيه"
+    },
+    {
+      "id": "_btuuci268mqtl3fdn",
+      "name": "محكمه ابو حماد الجزئيه"
     }
   ],
   "version": "2.0",
