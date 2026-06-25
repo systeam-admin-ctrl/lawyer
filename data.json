@@ -1,78 +1,7 @@
 {
   "cases": [],
-  "clients": [
-    {
-      "id": "_0hvgmcn2lmqtjv4c7",
-      "name": "خالد احمد",
-      "phone": "+201123961290",
-      "idNum": "27593650275936",
-      "email": "",
-      "address": "قرية ميت ابو علي \\ مركز الزقازيق",
-      "photo": "",
-      "tawkeelNum": "900\\2026",
-      "tawkeelType": "عام",
-      "tawkeelDate": "2026-06-01",
-      "tawkeelImg": "",
-      "notes": "صحة توقيع",
-      "createdAt": "2026-06-25T13:40:35.891Z"
-    },
-    {
-      "id": "_3qwrdtexemqtjwoal",
-      "name": "محمد ابرهيم",
-      "phone": "+201123961290",
-      "idNum": "2946320562957",
-      "email": "",
-      "address": "طاروط - مركز الزقازيق",
-      "photo": "",
-      "tawkeelNum": "80\\2021",
-      "tawkeelType": "عام",
-      "tawkeelDate": "2024-01-01",
-      "tawkeelImg": "",
-      "notes": "",
-      "createdAt": "2026-06-25T13:41:48.335Z"
-    }
-  ],
-  "staff": [
-    {
-      "id": "_g4g3ctb2emqtjrplg",
-      "name": "احمد محمد",
-      "role": "محامي",
-      "spec": "",
-      "license": "",
-      "phone": "+201123961290",
-      "email": "",
-      "salary": 1000,
-      "joinDate": "2026-06-01",
-      "notes": "",
-      "photo": ""
-    },
-    {
-      "id": "_2505413ycmqtjscxh",
-      "name": "محمد احمد",
-      "role": "مستشار قانوني",
-      "spec": "",
-      "license": "LIC-RX2",
-      "phone": "+201123961290",
-      "email": "",
-      "salary": 2500,
-      "joinDate": "2026-06-01",
-      "notes": "",
-      "photo": ""
-    },
-    {
-      "id": "_ow7g5wtofmqtjswr7",
-      "name": "ابرهيم محمد",
-      "role": "محامي متدرب",
-      "spec": "",
-      "license": "LIC-RX2",
-      "phone": "+201004553806",
-      "email": "",
-      "salary": 5000,
-      "joinDate": "2026-06-01",
-      "notes": "",
-      "photo": ""
-    }
-  ],
+  "clients": [],
+  "staff": [],
   "sessions": [],
   "tasks": [],
   "payments": [],
@@ -80,77 +9,15 @@
   "attendance": [],
   "salaries": [],
   "sessionLogs": [],
-  "clientGroups": [
-    {
-      "id": "_79abx7mh0mqtjv5bn",
-      "tawkeelNum": "900\\2026",
-      "tawkeelType": "عام",
-      "tawkeelDate": "2026-06-01",
-      "tawkeelImg": "",
-      "notes": "صحة توقيع",
-      "clients": [
-        {
-          "id": "_0hvgmcn2lmqtjv4c7",
-          "name": "خالد احمد",
-          "phone": "+201123961290",
-          "idNum": "27593650275936",
-          "email": "",
-          "address": "قرية ميت ابو علي \\ مركز الزقازيق",
-          "photo": ""
-        }
-      ],
-      "mainClientId": "_0hvgmcn2lmqtjv4c7"
-    },
-    {
-      "id": "_wpaqlpx42mqtjwp7z",
-      "tawkeelNum": "80\\2021",
-      "tawkeelType": "عام",
-      "tawkeelDate": "2024-01-01",
-      "tawkeelImg": "",
-      "notes": "",
-      "clients": [
-        {
-          "id": "_3qwrdtexemqtjwoal",
-          "name": "محمد ابرهيم",
-          "phone": "+201123961290",
-          "idNum": "2946320562957",
-          "email": "",
-          "address": "طاروط - مركز الزقازيق",
-          "photo": ""
-        }
-      ],
-      "mainClientId": "_3qwrdtexemqtjwoal"
-    }
-  ],
+  "clientGroups": [],
   "settings": {
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٦:٤١:٥١ ص",
-    "lastSyncCommit": "a5ab4376c9f9db9baa8ec4a1b080e2f4211ecaa3"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٤:٣٦:٤٢ م",
+    "lastSyncCommit": "5db9ddbdc6cb6b4f56ba54f85c012e9951beba0d"
   },
-  "activityLog": [
-    {
-      "action": "إضافة توكيل: 80\\2021 مع 1 موكلين",
-      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٤١:٤٨ ص"
-    },
-    {
-      "action": "إضافة توكيل: 900\\2026 مع 1 موكلين",
-      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٤٠:٣٥ ص"
-    },
-    {
-      "action": "إضافة موظف: ابرهيم محمد",
-      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٣٨:٥١ ص"
-    },
-    {
-      "action": "إضافة موظف: محمد احمد",
-      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٣٨:٢٥ ص"
-    },
-    {
-      "action": "إضافة موظف: احمد محمد",
-      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٣٧:٥٥ ص"
-    }
-  ],
+  "activityLog": [],
   "importantLinks": [],
   "courts": [],
   "version": "2.0",
