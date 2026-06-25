@@ -48,6 +48,55 @@
       "isAppeal": true,
       "createdAt": "2026-06-25T13:49:33.443Z",
       "stage": "filed"
+    },
+    {
+      "id": "_45g4noytamqtmektc",
+      "num": "80/2021",
+      "type": "استئناف مدني",
+      "clientIds": "_3qwrdtexemqtjwoal",
+      "clientRoles": "_3qwrdtexemqtjwoal:موكل",
+      "plaintiff": "احمد خالد",
+      "defendant": "",
+      "lawyerId": "_2505413ycmqtjscxh",
+      "court": "",
+      "division": "",
+      "date": "2026-06-25",
+      "status": "نشطة",
+      "notes": "",
+      "fee": 2500,
+      "paid": 2500,
+      "tawkeelNum": "80/2021",
+      "tawkeelType": "عام",
+      "archived": false,
+      "stage": "filed",
+      "createdAt": "2026-06-25T14:51:41.664Z",
+      "appeals": [
+        "_nhvkwtphlmqtmf73o"
+      ]
+    },
+    {
+      "id": "_nhvkwtphlmqtmf73o",
+      "num": "88/21",
+      "type": "استئناف مدني",
+      "clientIds": "_3qwrdtexemqtjwoal",
+      "clientRoles": "_3qwrdtexemqtjwoal:موكل",
+      "plaintiff": "احمد خالد",
+      "defendant": "",
+      "lawyerId": "_2505413ycmqtjscxh",
+      "court": "",
+      "division": "",
+      "date": "",
+      "status": "نشطة",
+      "notes": "استئناف للقضية 80/2021: تقديم اوراق / حكم صادر",
+      "fee": 0,
+      "paid": 0,
+      "tawkeelNum": "80/2021",
+      "tawkeelType": "عام",
+      "archived": false,
+      "parentCaseId": "_45g4noytamqtmektc",
+      "isAppeal": true,
+      "createdAt": "2026-06-25T14:52:10.548Z",
+      "stage": "filed"
     }
   ],
   "clients": [
@@ -146,6 +195,14 @@
       "date": "2026-07-31",
       "time": "",
       "court": "المحكمه الابتدائيه",
+      "notes": ""
+    },
+    {
+      "id": "_njyfuz9kwmqtmfsw4",
+      "caseId": "_45g4noytamqtmektc",
+      "date": "2026-06-25",
+      "time": "",
+      "court": "محكمه جنايات الزقازيق",
       "notes": ""
     }
   ],
@@ -257,10 +314,22 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:٤٤:٥٤ ص",
-    "lastSyncCommit": "3806e33077d7fb502472d4fa333b527f24361181"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٥:٤١:٣١ م",
+    "lastSyncCommit": "2717435abaa8b8acd133119a32230eba6c29625a"
   },
   "activityLog": [
+    {
+      "action": "إضافة جلسة",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٥:٥٢:٣٨ م"
+    },
+    {
+      "action": "إنشاء استئناف: 88/21",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٥:٥٢:١٠ م"
+    },
+    {
+      "action": "إضافة قضية: 80/2021",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٥:٥١:٤١ م"
+    },
     {
       "action": "إضافة مهمة: تسليم مستنداد اوراق صحة التوقيع",
       "time": "٢٥‏/٦‏/٢٠٢٦، ٧:٢٣:٣٨ ص"
