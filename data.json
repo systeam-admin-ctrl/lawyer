@@ -96,7 +96,16 @@
       "photo": ""
     }
   ],
-  "sessions": [],
+  "sessions": [
+    {
+      "id": "_wlah60w9bmqtk4gsv",
+      "caseId": "_ahsxxbr72mqtk3mmp",
+      "date": "2026-06-30",
+      "time": "",
+      "court": "المحكمه الابتدائيه",
+      "notes": ""
+    }
+  ],
   "tasks": [],
   "payments": [],
   "documents": [],
@@ -149,10 +158,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٦:٤٧:٠٤ ص",
-    "lastSyncCommit": "3e72bf936f696c862c46c240687d26bfdb45b91d"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٦:٤٧:١٤ ص",
+    "lastSyncCommit": "ecf8b97172825a01b1424af456b3c936697d322c"
   },
   "activityLog": [
+    {
+      "action": "إضافة جلسة",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٤٧:٥٠ ص"
+    },
     {
       "action": "إضافة قضية: 900\\2026",
       "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٤٧:١١ ص"
