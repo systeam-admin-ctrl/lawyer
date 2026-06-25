@@ -247,10 +247,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:١٠:٢٢ ص",
-    "lastSyncCommit": "1f5b7088d268f49fc3b888d55749be797bd57003"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:١١:٠٥ ص",
+    "lastSyncCommit": "9fe274f7a954be0ad2a2900dee37946788eabd2c"
   },
   "activityLog": [
+    {
+      "action": "إضافة محكمة: محكمه الزقازيق الجزئيه",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١١:٤٩ ص"
+    },
     {
       "action": "إضافة محكمة: محكمه بلببيس الابتدائيه",
       "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١١:٠١ ص"
@@ -337,6 +341,10 @@
     {
       "id": "_1bdcn2qpbmqtkya23",
       "name": "محكمه بلببيس الابتدائيه"
+    },
+    {
+      "id": "_xlrq7re4nmqtkzbdz",
+      "name": "محكمه الزقازيق الجزئيه"
     }
   ],
   "version": "2.0",
