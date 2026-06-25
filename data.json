@@ -15,7 +15,7 @@
       "status": "نشطة",
       "notes": "",
       "fee": 5000,
-      "paid": 0,
+      "paid": 5000,
       "tawkeelNum": "900\\2026",
       "tawkeelType": "خاص",
       "archived": false,
@@ -247,10 +247,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:١٩:٠٦ ص",
-    "lastSyncCommit": "3b1490e0c54fd2d9888227bf7eaaff7debd55510"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:١٩:٥٤ ص",
+    "lastSyncCommit": "452bc4726297c5c192252bea7d1168e4530f796d"
   },
   "activityLog": [
+    {
+      "action": "تعديل قضية: 900\\2026",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:٢١:٥٤ ص"
+    },
     {
       "action": "إضافة محكمة: مجمع محاكم ميت غمر",
       "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٩:٠٣ ص"
