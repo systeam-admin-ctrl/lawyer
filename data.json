@@ -247,10 +247,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:١٥:٣٥ ص",
-    "lastSyncCommit": "04562338eb645928f3c472d58a7a5fc06fb59ea3"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:١٧:٤٠ ص",
+    "lastSyncCommit": "134d1e131c906c52fcd5c2c02f503e8a5c2b8805"
   },
   "activityLog": [
+    {
+      "action": "إضافة محكمة: مجمه محاكم الاسماعليه",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٧:٥٤ ص"
+    },
     {
       "action": "إضافة محكمة: محكمه أبو كبير الابتدائيه",
       "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٧:٣٦ ص"
@@ -417,6 +421,10 @@
     {
       "id": "_a8rqjqe4rmqtl6qj1",
       "name": "محكمه أبو كبير الابتدائيه"
+    },
+    {
+      "id": "_zi06o2hc8mqtl74xk",
+      "name": "مجمه محاكم الاسماعليه"
     }
   ],
   "version": "2.0",
