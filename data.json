@@ -1,6 +1,22 @@
 {
   "cases": [],
-  "clients": [],
+  "clients": [
+    {
+      "id": "_0hvgmcn2lmqtjv4c7",
+      "name": "خالد احمد",
+      "phone": "+201123961290",
+      "idNum": "27593650275936",
+      "email": "",
+      "address": "قرية ميت ابو علي \\ مركز الزقازيق",
+      "photo": "",
+      "tawkeelNum": "900\\2026",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2026-06-01",
+      "tawkeelImg": "",
+      "notes": "صحة توقيع",
+      "createdAt": "2026-06-25T13:40:35.891Z"
+    }
+  ],
   "staff": [
     {
       "id": "_g4g3ctb2emqtjrplg",
@@ -49,15 +65,40 @@
   "attendance": [],
   "salaries": [],
   "sessionLogs": [],
-  "clientGroups": [],
+  "clientGroups": [
+    {
+      "id": "_79abx7mh0mqtjv5bn",
+      "tawkeelNum": "900\\2026",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2026-06-01",
+      "tawkeelImg": "",
+      "notes": "صحة توقيع",
+      "clients": [
+        {
+          "id": "_0hvgmcn2lmqtjv4c7",
+          "name": "خالد احمد",
+          "phone": "+201123961290",
+          "idNum": "27593650275936",
+          "email": "",
+          "address": "قرية ميت ابو علي \\ مركز الزقازيق",
+          "photo": ""
+        }
+      ],
+      "mainClientId": "_0hvgmcn2lmqtjv4c7"
+    }
+  ],
   "settings": {
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٦:٣٨:٢٩ ص",
-    "lastSyncCommit": "a263b9cbd4e78e39ede1c8c77df3b8834c381408"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٦:٣٨:٥٤ ص",
+    "lastSyncCommit": "7d462e5dd4c4c33a13244e494ea0565345e07c3b"
   },
   "activityLog": [
+    {
+      "action": "إضافة توكيل: 900\\2026 مع 1 موكلين",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٤٠:٣٥ ص"
+    },
     {
       "action": "إضافة موظف: ابرهيم محمد",
       "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٣٨:٥١ ص"
