@@ -257,8 +257,8 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:٣٤:٥٤ ص",
-    "lastSyncCommit": "02f50a824b3fc3fd8c4d417eaa1bd7454752e139"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:٣٥:٥٥ ص",
+    "lastSyncCommit": "a6af6e801246fec64db9f0f2f243ffedee2b438e"
   },
   "activityLog": [
     {
@@ -426,6 +426,11 @@
       "id": "_z7ia16nigmqtlu86u",
       "title": "بوابه الوظائف الحكوميه",
       "url": "https://jobs.caoa.gov.eg/"
+    },
+    {
+      "id": "_v0u6phm94mqtlv2e8",
+      "title": "بوابه تشريعات مصر",
+      "url": "https://elpai.idsc.gov.eg/"
     }
   ],
   "courts": [
