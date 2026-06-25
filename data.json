@@ -1,5 +1,28 @@
 {
-  "cases": [],
+  "cases": [
+    {
+      "id": "_ahsxxbr72mqtk3mmp",
+      "num": "900\\2026",
+      "type": "صحة توقيع",
+      "clientIds": "_0hvgmcn2lmqtjv4c7",
+      "clientRoles": "_0hvgmcn2lmqtjv4c7:موكل",
+      "plaintiff": "",
+      "defendant": "",
+      "lawyerId": "_ow7g5wtofmqtjswr7",
+      "court": "المحكمه الابتدائيه",
+      "division": "جنوب",
+      "date": "2026-06-30",
+      "status": "نشطة",
+      "notes": "",
+      "fee": 5000,
+      "paid": 0,
+      "tawkeelNum": "900\\2026",
+      "tawkeelType": "خاص",
+      "archived": false,
+      "stage": "filed",
+      "createdAt": "2026-06-25T13:47:11.569Z"
+    }
+  ],
   "clients": [
     {
       "id": "_0hvgmcn2lmqtjv4c7",
@@ -126,10 +149,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٦:٤٥:٥٦ ص",
-    "lastSyncCommit": "3f55f5987951777450659533b7d30fe38298829a"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٦:٤٧:٠٤ ص",
+    "lastSyncCommit": "3e72bf936f696c862c46c240687d26bfdb45b91d"
   },
   "activityLog": [
+    {
+      "action": "إضافة قضية: 900\\2026",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٤٧:١١ ص"
+    },
     {
       "action": "إضافة محكمة: المحكمه الكليه",
       "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٤٥:٥٢ ص"
