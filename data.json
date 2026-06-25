@@ -247,10 +247,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:١٤:١١ ص",
-    "lastSyncCommit": "e98306d9fe28a7615af871c51978eca7987aa2b3"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:١٤:٢٩ ص",
+    "lastSyncCommit": "d7c7e7f24b5e3bf8173103ce036905aead08a714"
   },
   "activityLog": [
+    {
+      "action": "إضافة محكمة: محكمه ههيا الابتدائيه",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٤:٤٦ ص"
+    },
     {
       "action": "إضافة محكمة: مجمع محاكم مجلس الدوله الزقازيق",
       "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٤:٢٦ ص"
@@ -377,6 +381,10 @@
     {
       "id": "_8nzfvts2xmqtl2oal",
       "name": "مجمع محاكم مجلس الدوله الزقازيق"
+    },
+    {
+      "id": "_42uxfp6x4mqtl33wr",
+      "name": "محكمه ههيا الابتدائيه"
     }
   ],
   "version": "2.0",
