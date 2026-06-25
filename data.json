@@ -1,24 +1,45 @@
 {
   "cases": [],
   "clients": [],
-  "staff": [],
+  "staff": [
+    {
+      "id": "_g4g3ctb2emqtjrplg",
+      "name": "احمد محمد",
+      "role": "محامي",
+      "spec": "",
+      "license": "",
+      "phone": "+201123961290",
+      "email": "",
+      "salary": 1000,
+      "joinDate": "2026-06-01",
+      "notes": "",
+      "photo": ""
+    }
+  ],
   "sessions": [],
   "tasks": [],
   "payments": [],
   "documents": [],
   "attendance": [],
   "salaries": [],
+  "sessionLogs": [],
+  "clientGroups": [],
   "settings": {
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
-    "autoSync": true
+    "autoSync": true,
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٦:٣١:٥٦ ص",
+    "lastSyncCommit": "3f7a859fda227cb0706ea8501bef2228b99358f9"
   },
-  "activityLog": [],
-  "sessionLogs": [],
-  "clientGroups": [],
+  "activityLog": [
+    {
+      "action": "إضافة موظف: احمد محمد",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٣٧:٥٥ ص"
+    }
+  ],
   "importantLinks": [],
   "courts": [],
+  "version": "2.0",
   "expenses": [],
-  "notifications": [],
-  "version": "2.0"
+  "notifications": []
 }
