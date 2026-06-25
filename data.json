@@ -126,10 +126,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٦:٤٢:٠٤ ص",
-    "lastSyncCommit": "67e93d1305506a1c9640e1a6792acd8d0886ec36"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٦:٤٥:٤٩ ص",
+    "lastSyncCommit": "6c56ac6e207857f48b1262218847df7d8a63f9c6"
   },
   "activityLog": [
+    {
+      "action": "إضافة محكمة: المحكمه الكليه",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٤٥:٥٢ ص"
+    },
     {
       "action": "إضافة محكمة: المحكمه الابتدائيه",
       "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٤٥:٤٦ ص"
@@ -160,6 +164,10 @@
     {
       "id": "_08x082ga5mqtk1st9",
       "name": "المحكمه الابتدائيه"
+    },
+    {
+      "id": "_21qpx02jdmqtk1xk1",
+      "name": "المحكمه الكليه"
     }
   ],
   "version": "2.0",
