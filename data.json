@@ -247,10 +247,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:١٧:٤٠ ص",
-    "lastSyncCommit": "134d1e131c906c52fcd5c2c02f503e8a5c2b8805"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:١٧:٥٨ ص",
+    "lastSyncCommit": "65c8a0d55e4c3960e71b82db31d770e430546460"
   },
   "activityLog": [
+    {
+      "action": "إضافة محكمة: مجمع محاكم مصر الجديده",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٨:٠٩ ص"
+    },
     {
       "action": "إضافة محكمة: مجمه محاكم الاسماعليه",
       "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٧:٥٤ ص"
@@ -425,6 +429,10 @@
     {
       "id": "_zi06o2hc8mqtl74xk",
       "name": "مجمه محاكم الاسماعليه"
+    },
+    {
+      "id": "_w9th0vm1nmqtl7g3d",
+      "name": "مجمع محاكم مصر الجديده"
     }
   ],
   "version": "2.0",
