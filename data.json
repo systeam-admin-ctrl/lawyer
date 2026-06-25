@@ -20,7 +20,34 @@
       "tawkeelType": "خاص",
       "archived": false,
       "stage": "filed",
-      "createdAt": "2026-06-25T13:47:11.569Z"
+      "createdAt": "2026-06-25T13:47:11.569Z",
+      "appeals": [
+        "_xs5wkrzqpmqtk6o3n"
+      ]
+    },
+    {
+      "id": "_xs5wkrzqpmqtk6o3n",
+      "num": "80\\2026",
+      "type": "صحة توقيع",
+      "clientIds": "_0hvgmcn2lmqtjv4c7",
+      "clientRoles": "_0hvgmcn2lmqtjv4c7:موكل",
+      "plaintiff": "",
+      "defendant": "",
+      "lawyerId": "_ow7g5wtofmqtjswr7",
+      "court": "المحكمه الابتدائيه",
+      "division": "جنوب",
+      "date": "",
+      "status": "نشطة",
+      "notes": "استئناف للقضية 900\\2026: تقديم اوراق والمستنداد\n\nجلسه يوم (2026\\7\\15)",
+      "fee": 0,
+      "paid": 0,
+      "tawkeelNum": "900\\2026",
+      "tawkeelType": "خاص",
+      "archived": false,
+      "parentCaseId": "_ahsxxbr72mqtk3mmp",
+      "isAppeal": true,
+      "createdAt": "2026-06-25T13:49:33.443Z",
+      "stage": "filed"
     }
   ],
   "clients": [
@@ -171,10 +198,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٦:٤٧:٥٣ ص",
-    "lastSyncCommit": "086e1738be38d1f01c0fe99692a3dca651013f55"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٦:٤٨:٥٧ ص",
+    "lastSyncCommit": "571d265dc35897b7dc09522452e6ee1330d0a378"
   },
   "activityLog": [
+    {
+      "action": "إنشاء استئناف: 80\\2026",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٤٩:٣٣ ص"
+    },
     {
       "action": "تسجيل جلسة منتهية: 900\\2026",
       "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٤٨:٥٤ ص"
