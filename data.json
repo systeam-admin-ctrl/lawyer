@@ -247,10 +247,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:١٠:٠٠ ص",
-    "lastSyncCommit": "5400c0067224851a5a080a81b2bb08e75a89f0b8"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:١٠:٠٧ ص",
+    "lastSyncCommit": "4ad0f34f4bb9fae1c2c4b9a08a885465dde76a7a"
   },
   "activityLog": [
+    {
+      "action": "إضافة محكمة: محكمه الاسره - بندر الزقازيق",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٠:١٩ ص"
+    },
     {
       "action": "إضافة محكمة: محكمة الزقازيق الابتدائيه",
       "time": "٢٥‏/٦‏/٢٠٢٦، ٧:٠٩:٥٦ ص"
@@ -321,6 +325,10 @@
     {
       "id": "_qthf0cu1vmqtkww0v",
       "name": "محكمة الزقازيق الابتدائيه"
+    },
+    {
+      "id": "_rzon84u4emqtkxdoi",
+      "name": "محكمه الاسره - بندر الزقازيق"
     }
   ],
   "version": "2.0",
