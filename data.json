@@ -111,7 +111,20 @@
   "documents": [],
   "attendance": [],
   "salaries": [],
-  "sessionLogs": [],
+  "sessionLogs": [
+    {
+      "id": "_bgrwunscrmqtk5tp5",
+      "caseId": "_ahsxxbr72mqtk3mmp",
+      "date": "2026-06-30",
+      "court": "الابتدائيه",
+      "judge": "",
+      "result": "أخرى",
+      "what": "استأناف + تقديم اوراق",
+      "notes": "تم استاناف القضيه إلي رقم 80\\2026 \nتقديم المستنداد الخاصه بالقضيه",
+      "nextDate": "2026-07-15",
+      "createdAt": "2026-06-25T13:48:54.041Z"
+    }
+  ],
   "clientGroups": [
     {
       "id": "_79abx7mh0mqtjv5bn",
@@ -158,10 +171,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٦:٤٧:١٤ ص",
-    "lastSyncCommit": "ecf8b97172825a01b1424af456b3c936697d322c"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٦:٤٧:٥٣ ص",
+    "lastSyncCommit": "086e1738be38d1f01c0fe99692a3dca651013f55"
   },
   "activityLog": [
+    {
+      "action": "تسجيل جلسة منتهية: 900\\2026",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٤٨:٥٤ ص"
+    },
     {
       "action": "إضافة جلسة",
       "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٤٧:٥٠ ص"
