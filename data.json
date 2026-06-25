@@ -247,10 +247,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:١٤:٥٤ ص",
-    "lastSyncCommit": "cab5a54b93d33484c563e1343767004c09bc067c"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:١٥:٠٥ ص",
+    "lastSyncCommit": "f9372807e3dcf4cd780bd347f0d2c6ab50f32c2c"
   },
   "activityLog": [
+    {
+      "action": "إضافة محكمة: محكمه العاشر من رمضان",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٥:١٨ ص"
+    },
     {
       "action": "إضافة محكمة: محكمه ابو حماد الجزئيه",
       "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٥:٠١ ص"
@@ -393,6 +397,10 @@
     {
       "id": "_btuuci268mqtl3fdn",
       "name": "محكمه ابو حماد الجزئيه"
+    },
+    {
+      "id": "_b6gc5i5hlmqtl3s9x",
+      "name": "محكمه العاشر من رمضان"
     }
   ],
   "version": "2.0",
