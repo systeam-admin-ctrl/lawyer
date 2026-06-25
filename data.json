@@ -247,10 +247,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:١٤:٠٢ ص",
-    "lastSyncCommit": "d42ac0442e7da68c8eaac7db5467465bed8e3cfd"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:١٤:١١ ص",
+    "lastSyncCommit": "e98306d9fe28a7615af871c51978eca7987aa2b3"
   },
   "activityLog": [
+    {
+      "action": "إضافة محكمة: مجمع محاكم مجلس الدوله الزقازيق",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٤:٢٦ ص"
+    },
     {
       "action": "إضافة محكمة: محكمه الحسنيه",
       "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٤:٠٨ ص"
@@ -369,6 +373,10 @@
     {
       "id": "_rsnnb4iv1mqtl2a1o",
       "name": "محكمه الحسنيه"
+    },
+    {
+      "id": "_8nzfvts2xmqtl2oal",
+      "name": "مجمع محاكم مجلس الدوله الزقازيق"
     }
   ],
   "version": "2.0",
