@@ -39,8 +39,8 @@
       "date": "",
       "status": "نشطة",
       "notes": "استئناف للقضية 900\\2026: تقديم اوراق والمستنداد\n\nجلسه يوم (2026\\7\\15)",
-      "fee": 0,
-      "paid": 0,
+      "fee": 1500,
+      "paid": 1500,
       "tawkeelNum": "900\\2026",
       "tawkeelType": "خاص",
       "archived": false,
@@ -247,10 +247,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:١٩:٥٤ ص",
-    "lastSyncCommit": "452bc4726297c5c192252bea7d1168e4530f796d"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:٢١:٥٨ ص",
+    "lastSyncCommit": "10f4194618449229d19e2524f5e5aea89527890c"
   },
   "activityLog": [
+    {
+      "action": "تعديل قضية: 80\\2026",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:٢٢:٢٨ ص"
+    },
     {
       "action": "تعديل قضية: 900\\2026",
       "time": "٢٥‏/٦‏/٢٠٢٦، ٧:٢١:٥٤ ص"
