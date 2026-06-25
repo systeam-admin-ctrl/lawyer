@@ -257,8 +257,8 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:٣٤:٥٠ ص",
-    "lastSyncCommit": "57a24aea21749b39b13067f3f54ed54697dc7e7f"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:٣٤:٥٤ ص",
+    "lastSyncCommit": "02f50a824b3fc3fd8c4d417eaa1bd7454752e139"
   },
   "activityLog": [
     {
@@ -421,6 +421,11 @@
       "id": "_5e7e4y6epmqtlsrzw",
       "title": "بوابة المركز التكنولوجي للتسجيل المساحي العقاري",
       "url": "https://rsc.mped.gov.eg/"
+    },
+    {
+      "id": "_z7ia16nigmqtlu86u",
+      "title": "بوابه الوظائف الحكوميه",
+      "url": "https://jobs.caoa.gov.eg/"
     }
   ],
   "courts": [
