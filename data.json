@@ -247,10 +247,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:١٨:٣٦ ص",
-    "lastSyncCommit": "11c22dd545f95e16ce86e263158cc52b0b05b3bc"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:١٨:٥٢ ص",
+    "lastSyncCommit": "dc02798be271a7ade2bbc9156c79853a9b5a9da6"
   },
   "activityLog": [
+    {
+      "action": "إضافة محكمة: مجمع محاكم ميت غمر",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٩:٠٣ ص"
+    },
     {
       "action": "إضافة محكمة: محكمه الاسره العاشر من رمضان",
       "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٨:٤٩ ص"
@@ -449,6 +453,10 @@
     {
       "id": "_6njettdnemqtl8apt",
       "name": "محكمه الاسره العاشر من رمضان"
+    },
+    {
+      "id": "_wkc8o5ao6mqtl8li1",
+      "name": "مجمع محاكم ميت غمر"
     }
   ],
   "version": "2.0",
