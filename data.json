@@ -158,6 +158,18 @@
       "notes": "تم استاناف القضيه إلي رقم 80\\2026 \nتقديم المستنداد الخاصه بالقضيه",
       "nextDate": "2026-07-15",
       "createdAt": "2026-06-25T13:48:54.041Z"
+    },
+    {
+      "id": "_618e1rl9amqtka6d0",
+      "caseId": "_xs5wkrzqpmqtk6o3n",
+      "date": "2026-07-15",
+      "court": "الابتدائيه",
+      "judge": "",
+      "result": "حكم صادر",
+      "what": "صدور حكم 3 سنوات والخروج عام 2029",
+      "notes": "",
+      "nextDate": "2026-07-31",
+      "createdAt": "2026-06-25T13:52:17.076Z"
     }
   ],
   "clientGroups": [
@@ -206,10 +218,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٦:٥٠:٠١ ص",
-    "lastSyncCommit": "8f86fe97676b0042ec7aa3e92b2408931e535f5a"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٦:٥٢:٠٤ ص",
+    "lastSyncCommit": "2e2177f5bfde8beb3773d5c8b21246bc6d0f4351"
   },
   "activityLog": [
+    {
+      "action": "تسجيل جلسة منتهية: 80\\2026",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٥٢:١٧ ص"
+    },
     {
       "action": "إضافة جلسة",
       "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٤٩:٥٨ ص"
