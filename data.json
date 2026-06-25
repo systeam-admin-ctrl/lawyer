@@ -247,10 +247,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:١٣:٢٢ ص",
-    "lastSyncCommit": "d7b2da32720d36719d9a9fbe528ed08c0711d7a6"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:١٤:٠٢ ص",
+    "lastSyncCommit": "d42ac0442e7da68c8eaac7db5467465bed8e3cfd"
   },
   "activityLog": [
+    {
+      "action": "إضافة محكمة: محكمه الحسنيه",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٤:٠٨ ص"
+    },
     {
       "action": "إضافة محكمة: محكمه جنايات الزقازيق",
       "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٣:٥٧ ص"
@@ -361,6 +365,10 @@
     {
       "id": "_q996jjydxmqtl224g",
       "name": "محكمه جنايات الزقازيق"
+    },
+    {
+      "id": "_rsnnb4iv1mqtl2a1o",
+      "name": "محكمه الحسنيه"
     }
   ],
   "version": "2.0",
