@@ -247,10 +247,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:١١:٠٥ ص",
-    "lastSyncCommit": "9fe274f7a954be0ad2a2900dee37946788eabd2c"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:١١:٥٤ ص",
+    "lastSyncCommit": "548be4d7912a018c92b0621a540458d0c687acb6"
   },
   "activityLog": [
+    {
+      "action": "إضافة محكمة: محكمه ديرب نجم",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٣:١٨ ص"
+    },
     {
       "action": "إضافة محكمة: محكمه الزقازيق الجزئيه",
       "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١١:٤٩ ص"
@@ -345,6 +349,10 @@
     {
       "id": "_xlrq7re4nmqtkzbdz",
       "name": "محكمه الزقازيق الجزئيه"
+    },
+    {
+      "id": "_css6tkt9zmqtl17u4",
+      "name": "محكمه ديرب نجم"
     }
   ],
   "version": "2.0",
