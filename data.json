@@ -40,7 +40,7 @@
       "status": "نشطة",
       "notes": "استئناف للقضية 900\\2026: تقديم اوراق والمستنداد\n\nجلسه يوم (2026\\7\\15)",
       "fee": 0,
-      "paid": 0,
+      "paid": 1500,
       "tawkeelNum": "900\\2026",
       "tawkeelType": "خاص",
       "archived": false,
@@ -150,18 +150,7 @@
     }
   ],
   "tasks": [],
-  "payments": [
-    {
-      "id": "_cpib8lzbpmqtkgdq8",
-      "client": "خالداحمد",
-      "caseId": "_ahsxxbr72mqtk3mmp",
-      "desc": "",
-      "type": "إيراد",
-      "amount": 5000,
-      "date": "2026-06-25",
-      "status": "مدفوع"
-    }
-  ],
+  "payments": [],
   "documents": [],
   "attendance": [],
   "salaries": [],
@@ -237,13 +226,17 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٦:٥٢:٢٠ ص",
-    "lastSyncCommit": "bc30d328aacf83815a0c98e62d369c0f28ff4fc4"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٤:٥٤:٥٦ م",
+    "lastSyncCommit": "b62415bb51023163fd999cdcbebb8cf9543ae608"
   },
   "activityLog": [
     {
-      "action": "تسجيل دفعة: 5000 ج.م",
-      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٥٧:٠٦ ص"
+      "action": "تعديل قضية: 80\\2026",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٤:٥٧:٣٥ م"
+    },
+    {
+      "action": "إضافة جلسة",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٥٤:٠٨ ص"
     },
     {
       "action": "تسجيل جلسة منتهية: 80\\2026",
