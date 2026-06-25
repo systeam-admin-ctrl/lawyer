@@ -149,7 +149,17 @@
       "notes": ""
     }
   ],
-  "tasks": [],
+  "tasks": [
+    {
+      "id": "_h5jaov5unmqtleig2",
+      "title": "تسليم مستنداد اوراق صحة التوقيع",
+      "priority": "عادية",
+      "due": "2026-06-30",
+      "ownerId": "_ow7g5wtofmqtjswr7",
+      "caseId": "_ahsxxbr72mqtk3mmp",
+      "status": "inprogress"
+    }
+  ],
   "payments": [
     {
       "id": "_cpib8lzbpmqtkgdq8",
@@ -247,10 +257,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:٢١:٥٨ ص",
-    "lastSyncCommit": "10f4194618449229d19e2524f5e5aea89527890c"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:٢٢:٣١ ص",
+    "lastSyncCommit": "c3b92fb3ec15cba6c5c1714dbfe5d9ba6fda13e6"
   },
   "activityLog": [
+    {
+      "action": "إضافة مهمة: تسليم مستنداد اوراق صحة التوقيع",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:٢٣:٣٨ ص"
+    },
     {
       "action": "تعديل قضية: 80\\2026",
       "time": "٢٥‏/٦‏/٢٠٢٦، ٧:٢٢:٢٨ ص"
