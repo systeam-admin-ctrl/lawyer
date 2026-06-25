@@ -58,7 +58,7 @@
       "plaintiff": "احمد خالد",
       "defendant": "",
       "lawyerId": "_2505413ycmqtjscxh",
-      "court": "",
+      "court": "محكمه بلببيس الابتدائيه",
       "division": "",
       "date": "2026-06-25",
       "status": "نشطة",
@@ -83,7 +83,7 @@
       "plaintiff": "احمد خالد",
       "defendant": "",
       "lawyerId": "_2505413ycmqtjscxh",
-      "court": "",
+      "court": "محكمة الزقازيق الابتدائيه",
       "division": "",
       "date": "",
       "status": "نشطة",
@@ -215,6 +215,15 @@
       "ownerId": "_ow7g5wtofmqtjswr7",
       "caseId": "_ahsxxbr72mqtk3mmp",
       "status": "done"
+    },
+    {
+      "id": "_jgsol2rchmqtn80yc",
+      "title": "استلام مستنداد الاستأناف",
+      "priority": "عادية",
+      "due": "2026-06-30",
+      "ownerId": "_2505413ycmqtjscxh",
+      "caseId": "_45g4noytamqtmektc",
+      "status": "inprogress"
     }
   ],
   "payments": [
@@ -314,10 +323,22 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٥:٤١:٣١ م",
-    "lastSyncCommit": "2717435abaa8b8acd133119a32230eba6c29625a"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٧:٥٦:٤٣ ص",
+    "lastSyncCommit": "a258da087bd7bef12d49dc1aedaaf67241dff284"
   },
   "activityLog": [
+    {
+      "action": "إضافة مهمة: استلام مستنداد الاستأناف",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٨:١٤:٣٥ ص"
+    },
+    {
+      "action": "تعديل قضية: 88/21",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٨:٠١:٣٤ ص"
+    },
+    {
+      "action": "تعديل قضية: 80/2021",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٨:٠١:٢٢ ص"
+    },
     {
       "action": "إضافة جلسة",
       "time": "٢٥‏/٦‏/٢٠٢٦، ٥:٥٢:٣٨ م"
