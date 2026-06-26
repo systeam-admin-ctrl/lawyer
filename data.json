@@ -335,11 +335,15 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٦‏/٦‏/٢٠٢٦، ٣:٤٤:٣٧ م",
-    "lastSyncCommit": "b286cc88fe77f35960591122b6c42b1bb7e7247a",
+    "lastSync": "٢٦‏/٦‏/٢٠٢٦، ٣:٤٤:٥٨ م",
+    "lastSyncCommit": "488dcb2abf4caea52e607fd83f0e2dc938f9adfb",
     "storageMode": "github"
   },
   "activityLog": [
+    {
+      "action": "رفع مستند: مركز",
+      "time": "٢٦‏/٦‏/٢٠٢٦، ٣:٤٥:٥٧ م"
+    },
     {
       "action": "تسجيل جلسة منتهية: 80\\2026",
       "time": "٢٧‏/٦‏/٢٠٢٦، ١:٠٧:٣٠ ص"
