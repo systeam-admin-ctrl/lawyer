@@ -2519,6 +2519,90 @@
                 opacity: 0.1 !important;
             }
         }
+        /* ========== DOCUMENT CARD ENHANCEMENTS ========== */
+        .doc-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 14px;
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .doc-card:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-light);
+        }
+        .doc-card .doc-icon {
+            font-size: 32px;
+            color: var(--primary);
+            display: block;
+            text-align: center;
+            margin-bottom: 6px;
+        }
+        .doc-card .doc-name {
+            font-size: 13px;
+            font-weight: 700;
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .doc-card .doc-meta {
+            font-size: 10px;
+            color: var(--text-muted);
+            text-align: center;
+            margin-top: 4px;
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .doc-card .doc-meta .doc-case {
+            color: var(--primary);
+            font-weight: 600;
+            background: rgba(59, 130, 246, 0.08);
+            padding: 0 6px;
+            border-radius: 4px;
+        }
+        .doc-card .doc-meta .doc-cat {
+            background: var(--bg);
+            padding: 0 6px;
+            border-radius: 4px;
+        }
+        .doc-card .doc-actions {
+            display: flex;
+            gap: 4px;
+            justify-content: center;
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid var(--border);
+        }
+        .doc-card .doc-badge {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            font-size: 8px;
+            padding: 2px 8px;
+            border-radius: 10px;
+            background: rgba(59, 130, 246, 0.12);
+            color: var(--primary);
+            font-weight: 600;
+        }
+        .doc-card .doc-size {
+            font-size: 9px;
+            color: var(--text-muted);
+            text-align: center;
+            margin-top: 2px;
+        }
+        .doc-card .doc-upload-time {
+            font-size: 8px;
+            color: var(--text-light);
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -3076,7 +3160,7 @@
                     <p style="font-size:13px;font-weight:600;color:var(--primary);">اسحب الملفات أو انقر للرفع</p>
                     <p style="font-size:11px;color:var(--text-muted);">PDF, DOC, JPG, PNG مدعومة</p>
                 </div>
-                <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;" id="docsGrid"></div>
+                <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;" id="docsGrid"></div>
                 <div id="docsEmpty" style="text-align:center;padding:40px;color:var(--text-muted);">لا توجد مستندات</div>
             </div>
 
@@ -3457,12 +3541,18 @@
     </div>
 
     <div class="modal-overlay" id="addDocModal">
-        <div class="modal-box" style="max-width:440px;">
+        <div class="modal-box" style="max-width:520px;">
             <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;"><h2 style="font-size:18px;font-weight:800;color:var(--primary);">إضافة مستند</h2><button onclick="closeModal('addDocModal')" style="background:none;border:none;color:var(--text-muted);font-size:22px;cursor:pointer;">×</button></div>
             <div style="display:grid;gap:10px;">
                 <div><label class="form-label">اسم المستند</label><input class="form-input" id="docName" placeholder="اسم المستند"></div>
                 <div><label class="form-label">التصنيف</label><select class="form-input" id="docCat"><option>توكيل</option><option>عقد</option><option>مذكرة</option><option>حكم</option><option>شهادة</option><option>أخرى</option></select></div>
-                <div><label class="form-label">القضية المرتبطة</label><select class="form-input" id="docCase"></select></div>
+                <div><label class="form-label">القضية المرتبطة</label><select class="form-input" id="docCase"><option value="">-- لا توجد قضية --</option></select></div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+                    <div><label class="form-label">رفع ملف</label><div class="upload-area" style="padding:8px;cursor:pointer;" onclick="document.getElementById('docFileInput').click()"><input type="file" id="docFileInput" style="display:none" onchange="previewDocFile(event)"><i class="fas fa-file-upload" style="font-size:18px;color:var(--primary);display:block;margin-bottom:4px;"></i><p style="font-size:10px;color:var(--text-muted);">انقر لرفع ملف</p><div id="docFilePreview" style="margin-top:4px;display:none;font-size:11px;color:var(--primary);"></div></div><input type="hidden" id="docFileData"></div>
+                    <div><label class="form-label">الملفات المرفوعة للقضية</label>
+                        <div id="docCaseFilesList" style="font-size:11px;max-height:100px;overflow-y:auto;background:var(--bg);border-radius:4px;padding:4px;"></div>
+                    </div>
+                </div>
             </div>
             <div style="display:flex;gap:8px;margin-top:18px;justify-content:flex-end;"><button class="btn-outline" onclick="closeModal('addDocModal')">إلغاء</button><button class="btn-primary" onclick="addDoc()"><i class="fas fa-save"></i> حفظ</button></div>
         </div>
@@ -3592,6 +3682,7 @@
         let defendantTemp = [];
         let notifications = DB.notifications || [];
         let savedFilters = [];
+        let docFileData = '';
 
         let CREDENTIALS = [
             { username: 'admin', password: 'admin' },
@@ -3636,7 +3727,6 @@
                     statusEl.style.color = 'var(--primary)';
                 }
             }
-            // If GitHub mode, check if token and repo are filled
             if (mode === 'github') {
                 const token = document.getElementById('githubToken')?.value?.trim();
                 const repo = document.getElementById('githubRepo')?.value?.trim();
@@ -3757,7 +3847,6 @@
                 saveGithubSettings();
                 localStorage.setItem(STORAGE_KEY, JSON.stringify(DB));
                 updateStorageIndicator();
-                // If GitHub mode, push automatically if token exists
                 if (storageMode === 'github') {
                     const token = document.getElementById('githubToken')?.value?.trim();
                     const repo = document.getElementById('githubRepo')?.value?.trim();
@@ -4034,6 +4123,23 @@
             reader.readAsDataURL(file);
         }
 
+        function previewDocFile(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = e => {
+                docFileData = e.target.result;
+                document.getElementById('docFileData').value = docFileData;
+                const preview = document.getElementById('docFilePreview');
+                preview.style.display = 'block';
+                preview.innerHTML = `<i class="fas fa-file"></i> ${file.name} (${(file.size / 1024).toFixed(1)} KB)`;
+                // Update the case files list
+                const caseId = document.getElementById('docCase').value;
+                if (caseId) updateDocCaseFiles(caseId);
+            };
+            reader.readAsDataURL(file);
+        }
+
         function renderAvatar(photo, name, size = 36) {
             if (photo) return `<div style="width:${size}px;height:${size}px;border-radius:50%;overflow:hidden;flex-shrink:0;border:2px solid var(--primary);"><img src="${photo}" style="width:100%;height:100%;object-fit:cover;"></div>`;
             return `<div style="width:${size}px;height:${size}px;border-radius:50%;background:var(--primary-gradient);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:#fff;flex-shrink:0;">${name ? name[0] : '?'}</div>`;
@@ -4151,7 +4257,8 @@
                 tasks: renderTasks,
                 finance: renderFinance,
                 payroll: renderPayroll,
-                documents: renderDocs,
+                documents: () => { renderDocs();
+                    populateDocCaseSelect(); },
                 attendance: () => { document.getElementById('attendDate').value = new Date().toISOString().split('T')[0];
                     renderAttendance(); },
                 fileManager: () => { renderFileManager(); },
@@ -4209,7 +4316,12 @@
             if (id === 'addSessionLogModal') { populateSel('sessionLogCase', DB.cases, c => c.num + ' - ' + getClientName(
                     c.clientIds));
                 document.getElementById('sessionLogDate').value = new Date().toISOString().split('T')[0]; }
-            if (id === 'addDocModal') populateSel('docCase', DB.cases, c => c.num + ' - ' + getClientName(c.clientIds));
+            if (id === 'addDocModal') { populateDocCaseSelect();
+                document.getElementById('docFileData').value = '';
+                docFileData = '';
+                document.getElementById('docFilePreview').style.display = 'none';
+                document.getElementById('docCaseFilesList').innerHTML =
+                    '<span style="color:var(--text-muted);font-size:10px;">اختر قضية لعرض ملفاتها</span>'; }
             if (id === 'addPaymentModal') populateSel('payCase', DB.cases, c => c.num + ' - ' + getClientName(c.clientIds));
             if (id === 'addAttendModal') { populateSel('attendStaff', DB.staff, 'name');
                 document.getElementById('attendDateIn').value = new Date().toISOString().split('T')[0]; }
@@ -4236,6 +4348,36 @@
                 o.textContent = typeof labelFn === 'function' ? labelFn(item) : item[labelFn];
                 sel.appendChild(o);
             });
+        }
+
+        function populateDocCaseSelect() {
+            const sel = document.getElementById('docCase');
+            if (!sel) return;
+            const first = '<option value="">-- لا توجد قضية --</option>';
+            sel.innerHTML = first;
+            DB.cases.forEach(c => {
+                const o = document.createElement('option');
+                o.value = c.id;
+                o.textContent = c.num + ' - ' + getClientName(c.clientIds);
+                sel.appendChild(o);
+            });
+            sel.onchange = function() { updateDocCaseFiles(this.value); };
+        }
+
+        function updateDocCaseFiles(caseId) {
+            const container = document.getElementById('docCaseFilesList');
+            if (!container) return;
+            const docs = DB.documents.filter(d => d.caseId === caseId);
+            if (!docs.length) {
+                container.innerHTML = '<span style="color:var(--text-muted);font-size:10px;">لا توجد ملفات مرفوعة لهذه القضية</span>';
+                return;
+            }
+            container.innerHTML = docs.map(d =>
+                `<div style="display:flex;justify-content:space-between;align-items:center;padding:2px 4px;border-bottom:1px solid var(--border);font-size:10px;">
+                    <span><i class="fas fa-file" style="color:var(--primary);margin-left:4px;"></i>${d.name}</span>
+                    ${d.data ? `<button class="btn-ghost btn-sm" onclick="downloadDoc('${d.id}')" style="font-size:8px;padding:1px 6px;"><i class="fas fa-download"></i></button>` : ''}
+                </div>`
+                ).join('');
         }
 
         function updateCourtAutocomplete(inputId) {
@@ -4841,6 +4983,7 @@
             const caseSessions = DB.sessions.filter(s => s.caseId === id);
             const casePayments = DB.payments.filter(p => p.caseId === id);
             const caseLogs = DB.sessionLogs.filter(l => l.caseId === id);
+            const caseDocs = DB.documents.filter(d => d.caseId === id);
             const isAppeal = c.isAppeal ? `<span class="badge badge-appeal" style="font-size:12px;">استئناف</span>` :
             '';
             const parentLink = c.parentCaseId ?
@@ -4882,6 +5025,7 @@
                 </div>
                 <div style="margin-bottom:10px;"><div style="font-size:11px;font-weight:700;color:var(--primary);margin-bottom:6px;">📅 الجلسات (${caseSessions.length})</div>${caseSessions.map(s => `<div style="font-size:11px;padding:4px 8px;background:var(--bg);border-radius:5px;margin-bottom:4px;">${formatDate(s.date)} ${s.time || ''} - ${s.court || '-'}</div>`).join('') || '<div style="font-size:11px;color:var(--text-muted);">لا توجد</div>'}</div>
                 <div style="margin-bottom:10px;"><div style="font-size:11px;font-weight:700;color:var(--primary);margin-bottom:6px;">📜 سجل الجلسات (${caseLogs.length})</div>${caseLogs.map(l => `<div style="font-size:11px;padding:6px 8px;background:var(--bg);border-radius:5px;margin-bottom:4px;border-right:2px solid var(--primary);">${formatDate(l.date)} - ${l.result} - ${l.what.substring(0, 60)}...</div>`).join('') || '<div style="font-size:11px;color:var(--text-muted);">لا توجد</div>'}</div>
+                <div style="margin-bottom:10px;"><div style="font-size:11px;font-weight:700;color:var(--primary);margin-bottom:6px;">📎 المستندات (${caseDocs.length})</div>${caseDocs.map(d => `<div style="font-size:11px;padding:4px 8px;background:var(--bg);border-radius:5px;margin-bottom:4px;display:flex;justify-content:space-between;align-items:center;"><span><i class="fas fa-file" style="color:var(--primary);margin-left:4px;"></i>${d.name}</span>${d.data ? `<button class="btn-ghost btn-sm" onclick="downloadDoc('${d.id}')"><i class="fas fa-download"></i></button>` : ''}</div>`).join('') || '<div style="font-size:11px;color:var(--text-muted);">لا توجد مستندات</div>'}</div>
                 <div><div style="font-size:11px;font-weight:700;color:var(--primary);margin-bottom:6px;">💰 المدفوعات (${casePayments.length})</div>${casePayments.map(p => `<div style="font-size:11px;padding:4px 8px;background:var(--bg);border-radius:5px;margin-bottom:4px;">${p.desc} - ${fmt(p.amount)}</div>`).join('') || '<div style="font-size:11px;color:var(--text-muted);">لا توجد</div>'}</div>
                 <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
                     <button onclick="openAppeal('${c.id}')" class="btn-warning"><i class="fas fa-scale-balanced"></i> استئناف</button>
@@ -4908,6 +5052,7 @@
             DB.sessionLogs = DB.sessionLogs.filter(l => l.caseId !== id);
             DB.payments = DB.payments.filter(p => p.caseId !== id);
             DB.tasks = DB.tasks.filter(t => t.caseId !== id);
+            DB.documents = DB.documents.filter(d => d.caseId !== id);
             saveDB();
             renderCases();
             showToast('✅ تم حذف القضية', 'warning');
@@ -5007,6 +5152,7 @@
                 const parentLink = c.parentCaseId ?
                     `<div style="font-size:10px;color:var(--primary);margin-top:2px;"><i class="fas fa-arrow-up"></i> مستأنف من: ${getCaseName(c.parentCaseId)}</div>` :
                     '';
+                const docCount = DB.documents.filter(d => d.caseId === c.id).length;
 
                 let rolesDisplay = '';
                 if (c.clientRoles) {
@@ -5032,6 +5178,7 @@
                         <div style="font-size:11px;color:var(--text-muted);"><i class="fas fa-building" style="color:var(--primary);margin-left:4px;"></i>${c.court}</div>
                         ${c.date ? `<div style="font-size:11px;color:var(--text-muted);"><i class="fas fa-calendar" style="color:var(--primary);margin-left:4px;"></i>${formatDate(c.date)}</div>` : ''}
                         ${parentLink}${appealLink}
+                        ${docCount ? `<div style="font-size:10px;color:var(--primary);margin-top:2px;"><i class="fas fa-file"></i> ${docCount} مستند</div>` : ''}
                         ${c.notes ? `<div style="font-size:10px;color:var(--text-muted);background:var(--bg);padding:4px 8px;border-radius:4px;margin-top:4px;">${c.notes.substring(0, 50)}${c.notes.length > 50 ? '...' : ''}</div>` : ''}
                         <div class="cc-progress"><div class="cc-progress-bar" style="width:${pct}%;"></div></div>
                         <div style="display:flex;justify-content:space-between;font-size:10px;color:var(--text-muted);margin-top:2px;"><span>المدفوع ${pct}%</span><span style="color:${remaining > 0 ? 'var(--primary)' : 'var(--success)'};">${remaining > 0 ? 'متبقي ' + remaining.toLocaleString('ar-EG') + ' ج.م' : '✓ مكتمل'}</span></div>
@@ -5052,6 +5199,7 @@
             document.getElementById('casesBody').innerHTML = cases.map(c => {
                 const remaining = (c.fee || 0) - (c.paid || 0);
                 const isAppeal = c.isAppeal ? ' <span class="badge badge-appeal">استئناف</span>' : '';
+                const docCount = DB.documents.filter(d => d.caseId === c.id).length;
                 return `<tr>
                     <td><span style="color:var(--primary);font-weight:700;">${c.num}</span>${isAppeal}</td>
                     <td>${getClientName(c.clientIds)}</td>
@@ -5865,21 +6013,30 @@
 
         function addDoc() {
             const name = document.getElementById('docName').value.trim();
-            if (!name) { showToast('الرجاء إدخال الاسم', 'error'); return; }
+            const caseId = document.getElementById('docCase').value;
+            const cat = document.getElementById('docCat').value;
+            const fileData = docFileData || document.getElementById('docFileData').value;
+            if (!name) { showToast('الرجاء إدخال اسم المستند', 'error'); return; }
             DB.documents.push({
                 id: genId(),
                 name,
-                cat: document.getElementById('docCat').value,
-                caseId: document.getElementById('docCase').value,
-                size: 0,
-                data: '',
+                cat: cat,
+                caseId: caseId,
+                size: fileData ? Math.round(fileData.length * 0.75) : 0,
+                data: fileData,
                 uploadedAt: new Date().toISOString()
             });
             saveDB();
-            logActivity('رفع مستند: ' + name);
+            logActivity('إضافة مستند: ' + name + (caseId ? ' للقضية ' + getCaseName(caseId) : ''));
             closeModal('addDocModal');
             renderDocs();
             showToast('تم إضافة المستند');
+            docFileData = '';
+            document.getElementById('docFileData').value = '';
+            document.getElementById('docFilePreview').style.display = 'none';
+            document.getElementById('docName').value = '';
+            document.getElementById('docCaseFilesList').innerHTML =
+                '<span style="color:var(--text-muted);font-size:10px;">اختر قضية لعرض ملفاتها</span>';
         }
 
         function downloadDoc(id) {
@@ -5900,1127 +6057,1176 @@
             empty.style.display = 'none';
             const catIcons = { توكيل: 'fa-file-signature', عقد: 'fa-file-contract', مذكرة: 'fa-file-alt', حكم: 'fa-gavel',
                 شهادة: 'fa-certificate', أخرى: 'fa-file' };
-            grid.innerHTML = DB.documents.map(d =>
-                `<div class="glass-card" style="padding:14px;text-align:center;">
-                    <i class="fas ${catIcons[d.cat] || 'fa-file'}" style="font-size:28px;color:var(--primary);display:block;margin-bottom:6px;"></i>
-                    <div style="font-size:12px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${d.name}</div>
-                    <div style="font-size:10px;color:var(--text-muted);">${d.cat}</div>
-                    ${d.caseId ? `<div style="font-size:10px;color:var(--primary);">${getCaseName(d.caseId)}</div>` : ''}
-                    ${d.size ? `<div style="font-size:9px;color:var(--text-muted);">${(d.size / 1024).toFixed(1)} KB</div>` : ''}
-                    <div style="display:flex;gap:4px;justify-content:center;margin-top:6px;">
-                        ${d.data ? `<button onclick="downloadDoc('${d.id}')" class="btn-primary btn-sm"><i class="fas fa-download"></i></button>` : ''}
-                        <button onclick="deleteDoc('${d.id}')" class="btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+            grid.innerHTML = DB.documents.map(d => `
+                <div class="doc-card" onclick="openDocPreview('${d.id}')">
+                    <span class="doc-badge">${d.cat || 'أخرى'}</span>
+                    <div class="doc-icon"><i class="fas ${catIcons[d.cat] || 'fa-file'}"></i></div>
+                    <div class="doc-name" title="${d.name}">${d.name}</div>
+                    ${d.caseId ? `<div class="doc-meta"><span class="doc-case"><i class="fas fa-gavel"></i> ${getCaseName(d.caseId)}</span></div>` : ''}
+                    <div class="doc-size">${d.size ? (d.size / 1024).toFixed(1) + ' KB' : ''}</div>
+                    <div class="doc-upload-time">${d.uploadedAt ? new Date(d.uploadedAt).toLocaleString('ar-EG') : ''}</div>
+                    <div class="doc-actions">
+                        ${d.data ? `<button onclick="event.stopPropagation();downloadDoc('${d.id}')" class="btn-primary btn-sm"><i class="fas fa-download"></i></button>` : ''}
+                        <button onclick="event.stopPropagation();deleteDoc('${d.id}')" class="btn-danger btn-sm"><i class="fas fa-trash"></i></button>
                     </div>
-                </div>`
-                ).join('');
+                </div>
+            `).join('');
         }
 
-        function deleteDoc(id) {
-            if (!confirm('حذف هذا المستند؟')) return;
-            DB.documents = DB.documents.filter(d => d.id !== id);
-            saveDB();
-            renderDocs();
-            showToast('✅ تم الحذف', 'warning');
-        }
-
-        // ============================================================
-        // IMPORTANT LINKS
-        // ============================================================
-        function addImportantLink() {
-            const title = document.getElementById('linkTitle').value.trim();
-            const url = document.getElementById('linkUrl').value.trim();
-            if (!title || !url) { showToast('الرجاء إدخال العنوان والرابط', 'error'); return; }
-            if (!url.startsWith('http://') && !url.startsWith('https://')) { showToast('الرابط يجب أن يبدأ بـ http:// أو https://',
-                    'error'); return; }
-            if (!DB.importantLinks) DB.importantLinks = [];
-            DB.importantLinks.push({ id: genId(), title, url });
-            saveDB();
-            document.getElementById('linkTitle').value = '';
-            document.getElementById('linkUrl').value = '';
-            renderImportantLinks();
-            showToast('✅ تم إضافة الرابط', 'success');
-        }
-
-        function addImportantLinkModal() {
-            const title = document.getElementById('linkTitleModal').value.trim();
-            const url = document.getElementById('linkUrlModal').value.trim();
-            if (!title || !url) { showToast('الرجاء إدخال العنوان والرابط', 'error'); return; }
-            if (!url.startsWith('http://') && !url.startsWith('https://')) { showToast('الرابط يجب أن يبدأ بـ http:// أو https://',
-                    'error'); return; }
-            if (!DB.importantLinks) DB.importantLinks = [];
-            DB.importantLinks.push({ id: genId(), title, url });
-            saveDB();
-            document.getElementById('linkTitleModal').value = '';
-            document.getElementById('linkUrlModal').value = '';
-            closeModal('addLinkModal');
-            renderImportantLinks();
-            showToast('✅ تم إضافة الرابط', 'success');
-        }
-
-        function deleteImportantLink(id) {
-            if (!confirm('حذف هذا الرابط؟')) return;
-            DB.importantLinks = DB.importantLinks.filter(l => l.id !== id);
-            saveDB();
-            renderImportantLinks();
-            showToast('✅ تم الحذف', 'warning');
-        }
-
-        function renderImportantLinks() {
-            const container = document.getElementById('importantLinksList');
-            if (!container) return;
-            const links = DB.importantLinks || [];
-            if (!links.length) {
-                container.innerHTML =
-                    '<div style="text-align:center;padding:40px;color:var(--text-muted);"><i class="fas fa-link" style="font-size:32px;opacity:0.2;display:block;margin-bottom:12px;"></i><p>لا توجد روابط هامة</p></div>';
-                return;
+        function openDocPreview(id) {
+            const doc = DB.documents.find(d => d.id === id);
+            if (!doc || !doc.data) { showToast('لا يمكن عرض الملف', 'error'); return; }
+            const win = window.open('', '_blank', 'width=800,height=600');
+            if (!win) { showToast('تم حظر النافذة المنبثقة، قم بالسماح بها', 'error'); return; }
+            win.document.write(`
+                <!DOCTYPE html><html><head><meta charset="UTF-8"><title>${doc.name}</title>
+                <style>body{margin:0;display:flex;justify-content:center;align-items:center;min-height:100vh;background:#1a1a2e;font-family:sans-serif;flex-direction:column;padding:20px;}
+                .container{max-width:90%;max-height:90vh;background:#fff;border-radius:12px;padding:20px;box-shadow:0 20px 60px rgba(0,0,0,0.5);}
+                .doc-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid #eee;}
+                .doc-header h2{margin:0;font-size:18px;color:#1a56db;}
+                .doc-content{max-height:70vh;overflow:auto;text-align:center;}
+                .doc-content img{max-width:100%;max-height:60vh;border-radius:8px;border:1px solid #ddd;}
+                .doc-content iframe{width:100%;height:60vh;border:none;border-radius:8px;}
+                .doc-content .file-info{color:#666;font-size:14px;padding:40px;text-align:center;}
+                .btn-close{background:#1a56db;color:#fff;border:none;padding:8px 20px;border-radius:6px;cursor:pointer;font-size:14px;}
+                .btn-close:hover{background:#1e3a8a;}
+</style></head><body>
+    <div class="container">
+        <div class="doc-header">
+            <h2><i class="fas fa-file"></i> ${doc.name}</h2>
+            <button class="btn-close" onclick="window.close()">✕ إغلاق</button>
+        </div>
+        <div class="doc-content">
+            ${doc.data.startsWith('data:image') ? `<img src="${doc.data}" alt="${doc.name}">` :
+              doc.data.startsWith('data:application/pdf') ? `<iframe src="${doc.data}"></iframe>` :
+              `<div class="file-info"><i class="fas fa-file" style="font-size:48px;color:#1a56db;display:block;margin-bottom:16px;"></i>
+               <p><strong>${doc.name}</strong></p>
+               <p>النوع: ${doc.cat || 'غير محدد'}</p>
+               <p>الحجم: ${doc.size ? (doc.size/1024).toFixed(1) + ' KB' : 'غير معروف'}</p>
+               <p style="margin-top:12px;"><a href="${doc.data}" download="${doc.name}" style="color:#1a56db;font-weight:600;">⬇️ تحميل الملف</a></p>
+               </div>`
             }
-            container.innerHTML = links.map(link =>
-                `<div class="important-link-item">
-                    <div>
-                        <span class="link-title"><i class="fas fa-link" style="color:var(--primary);margin-left:6px;"></i>${link.title}</span>
-                        <a href="${link.url}" target="_blank" class="link-url" style="margin-right:12px;">${link.url}</a>
-                    </div>
-                    <div class="link-actions">
-                        <a href="${link.url}" target="_blank" class="btn-primary btn-sm"><i class="fas fa-external-link-alt"></i></a>
-                        <button onclick="deleteImportantLink('${link.id}')" class="btn-danger btn-sm"><i class="fas fa-trash"></i></button>
-                    </div>
-                </div>`
-                ).join('');
-        }
-
-        // ============================================================
-        // REPORTS - PDF GENERATION
-        // ============================================================
-        function generateReportPDF(type) {
-            const officeName = DB.settings?.officeName || 'محاميك للمحاماة والاستشارات القانونية';
-            const officeManager = DB.settings?.officeManager || '........';
-            const officePhone = DB.settings?.officePhone || '';
-            const officeEmail = DB.settings?.officeEmail || '';
-
-            let title = '',
-                content = '';
-
-            if (type === 'staff') {
-                title = 'تقرير الموظفين';
-                const totalSalaries = DB.staff.reduce((a, b) => a + (+b.salary || 0), 0);
-                content =
-                    `<h2>${title}</h2><p><strong>إجمالي الموظفين:</strong> ${DB.staff.length}</p><p><strong>المحامون:</strong> ${DB.staff.filter(s => s.role === 'محامي' || s.role === 'مستشار قانوني').length}</p><p><strong>إجمالي الرواتب:</strong> ${fmt(totalSalaries)}</p><hr>${DB.staff.map(s => `<p><strong>${s.name}</strong> - ${s.role} ${s.spec ? '| ' + s.spec : ''} - الراتب: ${fmt(s.salary)}</p>`).join('')}`;
-            } else if (type === 'attendance') {
-                title = 'تقرير الحضور والغياب';
-                const today = new Date().toISOString().split('T')[0];
-                const records = DB.attendance.filter(a => a.date === today);
-                const totalDeduct = records.reduce((a, b) => a + (+b.deductAmount || 0), 0);
-                content =
-                    `<h2>${title} - ${formatDate(today)}</h2><p><strong>حاضرون:</strong> ${records.filter(a => a.status === 'حاضر' || a.status === 'متأخر').length}</p><p><strong>غائبون:</strong> ${records.filter(a => a.status === 'غائب').length}</p><p><strong>إجازة:</strong> ${records.filter(a => a.status === 'إجازة').length}</p><p><strong>الخصومات:</strong> ${fmt(totalDeduct)}</p><hr>${records.map(a => { const s = DB.staff.find(x => x.id === a.staffId); return `<p>${s ? s.name : 'غير معروف'} - ${a.status} ${a.deductAmount > 0 ? '- خصم: ' + fmt(a.deductAmount) : ''}</p>`; }).join('')}`;
-            } else if (type === 'finance') {
-                title = 'التقرير المالي';
-                const income = DB.payments.filter(p => p.type === 'إيراد').reduce((a, b) => a + (+b.amount), 0);
-                const expense = DB.payments.filter(p => p.type === 'مصروف').reduce((a, b) => a + (+b.amount), 0);
-                const totalFee = DB.cases.reduce((a, b) => a + (+b.fee || 0), 0);
-                content =
-                    `<h2>${title}</h2><p><strong>الإيرادات:</strong> ${fmt(income)}</p><p><strong>المصروفات:</strong> ${fmt(expense)}</p><p><strong>صافي الربح:</strong> ${fmt(income - expense)}</p><p><strong>إجمالي أتعاب القضايا:</strong> ${fmt(totalFee)}</p><hr>${DB.payments.slice(0, 20).map(p => `<p>${p.desc} - ${p.client} - ${p.type === 'إيراد' ? '+' : '-'}${fmt(p.amount)}</p>`).join('')}`;
-            } else if (type === 'cases') {
-                title = 'تقرير القضايا';
-                const totalFees = DB.cases.reduce((a, b) => a + (+b.fee || 0), 0);
-                const active = DB.cases.filter(c => c.status === 'نشطة').length;
-                const urgent = DB.cases.filter(c => c.status === 'عاجلة').length;
-                content =
-                    `<h2>${title}</h2><p><strong>إجمالي القضايا:</strong> ${DB.cases.length}</p><p><strong>نشطة:</strong> ${active}</p><p><strong>عاجلة:</strong> ${urgent}</p><p><strong>الأتعاب:</strong> ${fmt(totalFees)}</p><hr>${DB.cases.map(c => `<p><strong>${c.num}</strong> - ${getClientName(c.clientIds)} - ${statusBadge(c.status)} - ${fmt(c.fee)}</p>`).join('')}`;
-            } else if (type === 'payroll') {
-                title = 'تقرير الرواتب';
-                const totalSalaries = DB.salaries.reduce((a, b) => a + (+b.base || 0), 0);
-                const totalBonuses = DB.salaries.reduce((a, b) => a + (+b.bonus || 0), 0);
-                const totalDeductions = DB.salaries.reduce((a, b) => a + (+b.deduct || 0), 0);
-                content =
-                    `<h2>${title}</h2><p><strong>الرواتب:</strong> ${fmt(totalSalaries)}</p><p><strong>المكافآت:</strong> ${fmt(totalBonuses)}</p><p><strong>الخصومات:</strong> ${fmt(totalDeductions)}</p><hr>${DB.salaries.map(sal => { const s = DB.staff.find(x => x.id === sal.staffId); const net = (+sal.base || 0) + (+sal.bonus || 0) - (+sal.deduct || 0); return `<p>${sal.month || ''} - ${s ? s.name : 'غير معروف'} - الصافي: ${fmt(net)}</p>`; }).join('')}`;
-            } else if (type === 'clients') {
-                title = 'تقرير الموكلين';
-                content =
-                    `<h2>${title}</h2><p><strong>إجمالي الموكلين:</strong> ${DB.clients.length}</p><hr>${DB.clientGroups.map(g => { const names = g.clients.map(c => c.name).join('، '); return `<p><strong>${g.tawkeelNum || 'بدون توكيل'}</strong> - ${names} (${g.clients.length} موكل)</p>`; }).join('')}`;
-            } else if (type === 'sessionLogs') {
-                title = 'سجل الجلسات';
-                content =
-                    `<h2>${title}</h2><p><strong>إجمالي الجلسات المسجلة:</strong> ${DB.sessionLogs.length}</p><hr>${DB.sessionLogs.map(l => `<p>${getCaseName(l.caseId)} - ${formatDate(l.date)} - ${l.result}</p>`).join('')}`;
-            } else if (type === 'tasks') {
-                title = 'تقرير المهام';
-                const pending = DB.tasks.filter(t => t.status === 'pending').length;
-                const inprogress = DB.tasks.filter(t => t.status === 'inprogress').length;
-                const done = DB.tasks.filter(t => t.status === 'done').length;
-                content =
-                    `<h2>${title}</h2><p><strong>معلقة:</strong> ${pending}</p><p><strong>جارية:</strong> ${inprogress}</p><p><strong>مكتملة:</strong> ${done}</p><hr>${DB.tasks.map(t => `<p>${t.title} - ${getStaffName(t.ownerId)} - ${t.status}</p>`).join('')}`;
-            }
-
-            const html =
-                `<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"><title>${title} - محاميك</title><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet"><style>body{font-family:'Cairo',sans-serif;background:#fff;color:#1e293b;padding:30px;direction:rtl;}.header{text-align:center;border-bottom:2px solid #1a56db;padding-bottom:16px;margin-bottom:20px;}.header h1{font-size:24px;font-weight:900;color:#1a56db;margin:0;}.header .sub{color:#64748b;font-size:13px;}.header .office-info{font-size:12px;color:#64748b;margin-top:4px;}.report-title{font-size:18px;font-weight:800;color:#1a56db;margin:16px 0 8px;border-bottom:1px solid #e2e8f0;padding-bottom:6px;}.content{font-size:13px;line-height:1.8;}.content p{margin:4px 0;}.content strong{color:#1a56db;}.footer{margin-top:30px;text-align:center;font-size:11px;color:#94a3b8;border-top:1px solid #e2e8f0;padding-top:12px;}hr{border:none;border-top:1px solid #e2e8f0;margin:12px 0;}.badge{padding:2px 8px;border-radius:12px;font-size:10px;font-weight:700;display:inline-block;}.badge-active{background:rgba(16,185,129,0.15);color:#10b981;}.badge-urgent{background:rgba(239,68,68,0.15);color:#ef4444;}.badge-pending{background:rgba(245,158,11,0.15);color:#f59e0b;}.badge-closed{background:rgba(100,116,139,0.15);color:#94a3b8;}.badge-purple{background:rgba(139,92,246,0.15);color:#8b5cf6;}.stat-grid{display:flex;gap:16px;flex-wrap:wrap;margin:10px 0;}.stat-item{background:#f8fafc;padding:10px 16px;border-radius:8px;border:1px solid #e2e8f0;flex:1;min-width:120px;text-align:center;}.stat-item .num{font-size:20px;font-weight:900;color:#1a56db;}.stat-item .label{font-size:11px;color:#64748b;}</style></head><body><div class="header"><h1>⚖️ ${officeName}</h1><div class="sub">${officeManager}</div><div class="office-info">${officePhone} ${officeEmail ? '| ' + officeEmail : ''}</div></div><div class="report-title">${title}</div><div class="content">${content}</div><div class="footer">تم إنشاء التقرير بتاريخ ${new Date().toLocaleDateString('ar-EG')} - © محاميك 2026</div></body></html>`;
-
-            const container = document.getElementById('reportDisplay');
-            container.innerHTML =
-                `<div style="text-align:center;padding:20px;"><i class="fas fa-spinner fa-spin" style="font-size:24px;color:var(--primary);"></i><p>جاري إنشاء التقرير...</p></div>`;
-
-            const blob = new Blob([html], { type: 'text/html' });
-            const url = URL.createObjectURL(blob);
-            const win = window.open(url, '_blank');
-            setTimeout(() => {
-                win.document.title = `${title} - محاميك`;
-                win.print();
-            }, 500);
-
-            container.innerHTML =
-                `<div class="report-print-area" style="max-height:400px;overflow-y:auto;"><h3>${title}</h3><div style="font-size:12px;color:var(--text-muted);margin-bottom:8px;">تم إنشاء التقرير بصيغة PDF</div><div style="background:var(--bg);padding:12px;border-radius:var(--radius-sm);font-size:12px;line-height:1.8;max-height:300px;overflow-y:auto;">${content.replace(/<h2>/g, '<strong>').replace(/<\/h2>/g, '</strong>').replace(/<hr>/g, '<hr style="border-color:var(--border);">')}</div><button class="btn-primary" style="margin-top:12px;" onclick="window.open('${url}', '_blank')"><i class="fas fa-file-pdf"></i> فتح PDF</button><button class="btn-outline" style="margin-top:12px;margin-right:8px;" onclick="window.open('${url}', '_blank').print()"><i class="fas fa-print"></i> طباعة</button></div>`;
-            showToast('✅ تم إنشاء التقرير', 'success');
-        }
-
-        // ============================================================
-        // WHATSAPP
-        // ============================================================
-        let waCurrentName = '',
-            waCurrentPhone = '';
-
-        function openWhatsApp(name, phone, caseNum = '') {
-            waCurrentName = name;
-            waCurrentPhone = phone;
-            document.getElementById('waRecipient').value = name;
-            document.getElementById('waPhone').value = phone;
-            document.getElementById('waMessage').value =
-                `السلام عليكم ورحمة الله وبركاته،\nحضرة الموكل الكريم ${name}،\n\n${caseNum ? 'بخصوص القضية رقم ' + caseNum + '، ' : ''}يسعدنا خدمتكم.\n\nمع تحيات مؤسسة محاميك للمحاماة والاستشارات القانونية ⚖️`;
-            openModal('whatsappModal');
-        }
-
-        function setWATemplate(type) {
-            const name = waCurrentName;
-            const templates = {
-                reminder: `السلام عليكم ${name}،\n\nتذكير بموعد جلسة قضيتكم القادمة.\nيرجى التواصل معنا لمزيد من التفاصيل.\n\nمحاميك ⚖️`,
-                payment: `السلام عليكم ${name}،\n\nنود التذكير بالدفعة المستحقة لقضيتكم.\nيرجى التواصل مع المؤسسة.\n\nمحاميك ⚖️`,
-                greeting: `السلام عليكم ${name}،\n\nيسعدنا دائماً خدمتكم في مؤسسة محاميك.\n\nنحن هنا لخدمتكم. ⚖️`
-            };
-            document.getElementById('waMessage').value = templates[type] || '';
-        }
-
-        function sendWhatsApp() {
-            const phone = document.getElementById('waPhone').value.replace(/[^0-9]/g, '');
-            const msg = encodeURIComponent(document.getElementById('waMessage').value);
-            if (!phone) { showToast('الرجاء إدخال رقم الهاتف', 'error'); return; }
-            window.open(`https://wa.me/${phone}?text=${msg}`, '_blank');
-            closeModal('whatsappModal');
-            showToast('تم فتح واتساب', 'info');
-        }
-
-        // ============================================================
-        // SETTINGS
-        // ============================================================
-        function saveSettings() {
-            DB.settings = {
-                officeName: document.getElementById('officeName').value,
-                officeManager: document.getElementById('officeManager').value,
-                officeAddress: document.getElementById('officeAddress').value,
-                officePhone: document.getElementById('officePhone').value,
-                officeEmail: document.getElementById('officeEmail').value
-            };
-            saveDB();
-            logActivity('حفظ إعدادات');
-            showToast('تم حفظ الإعدادات');
-        }
-
-        function renderSettings() {
-            const s = DB.settings || {};
-            document.getElementById('officeName').value = s.officeName || 'محاميك للمحاماة والاستشارات القانونية';
-            document.getElementById('officeManager').value = s.officeManager || '........';
-            document.getElementById('officeAddress').value = s.officeAddress || '';
-            document.getElementById('officePhone').value = s.officePhone || '';
-            document.getElementById('officeEmail').value = s.officeEmail || '';
-            const log = DB.activityLog || [];
-            document.getElementById('activityLog').innerHTML = log.slice(0, 20).map(e =>
-                `<div style="padding:3px 0;border-bottom:1px solid var(--border);">${e.action} <span style="float:left;font-size:9px;">${e.time}</span></div>`
-                ).join('') || '<p>لا توجد أنشطة</p>';
-            updateStorageIndicator();
-            if (DB.settings.githubToken) document.getElementById('githubToken').value = DB.settings.githubToken || '';
-            if (DB.settings.githubRepo) document.getElementById('githubRepo').value = DB.settings.githubRepo || '';
-            if (DB.settings.githubFilePath) document.getElementById('githubFilePath').value = DB.settings.githubFilePath ||
-                'data/data.json';
-            if (DB.settings.autoSync) document.getElementById('autoSync').checked = true;
-            if (DB.settings.lastSync) document.getElementById('lastSyncTime').textContent = 'آخر مزامنة: ' + DB.settings
-                .lastSync;
-            if (DB.settings.storageMode) {
-                storageMode = DB.settings.storageMode;
-                const radio = document.querySelector(`input[name="storageMode"][value="${storageMode}"]`);
-                if (radio) radio.checked = true;
-                toggleStorageMode(storageMode);
-            }
-        }
-
-        // ============================================================
-        // BACKUP / RESTORE / FILE MANAGER
-        // ============================================================
-        function saveToFile() {
-            const blob = new Blob([JSON.stringify(DB, null, 2)], { type: 'application/json' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `محاميك_data_${new Date().toISOString().split('T')[0]}.json`;
-            a.click();
-            showToast('تم حفظ الملف');
-        }
-
-        function loadFromFile(event) {
-            const file = event.target.files[0];
-            if (!file) return;
-            if (!confirm('سيتم استبدال البيانات الحالية. هل أنت متأكد؟')) return;
-            const reader = new FileReader();
-            reader.onload = e => {
-                try {
-                    const imported = JSON.parse(e.target.result);
-                    DB = { ...DB, ...imported };
-                    ['cases', 'clients', 'staff', 'sessions', 'tasks', 'payments', 'documents', 'attendance',
-                        'salaries', 'activityLog', 'sessionLogs', 'clientGroups', 'importantLinks', 'courts',
-                        'expenses', 'notifications'
-                    ].forEach(k => { if (!DB[k]) DB[k] = []; });
-                    notifications = DB.notifications || [];
-                    saveDB();
-                    showToast('تم استيراد البيانات', 'success');
-                    refreshPage(currentPage);
-                    renderDashboard();
-                } catch (err) { showToast('خطأ في قراءة الملف', 'error'); }
-            };
-            reader.readAsText(file);
-            event.target.value = '';
-        }
-
-        function exportExcel() {
-            const rows = [
-                ['رقم القضية', 'الموكلون', 'النوع', 'المحكمة', 'الحالة', 'الأتعاب', 'المدفوع', 'المتبقي']
-            ];
-            DB.cases.forEach(c => rows.push([c.num, getClientName(c.clientIds), c.type, c.court, c.status, c.fee || 0,
-                c.paid || 0, (c.fee || 0) - (c.paid || 0)
-            ]));
-            rows.push([]);
-            rows.push(['الموظف', 'الوظيفة', 'التخصص', 'الراتب']);
-            DB.staff.forEach(s => rows.push([s.name, s.role, s.spec || '', s.salary || 0]));
-            const csv = rows.map(r => r.join(',')).join('\n');
-            const blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'محاميك_تقرير.csv';
-            a.click();
-            showToast('تم التصدير');
-        }
-
-        function clearAllData() {
-            if (!confirm('⚠️ مسح جميع البيانات نهائياً؟')) return;
-            DB = { cases: [], clients: [], staff: [], sessions: [], tasks: [], payments: [], documents: [],
-                attendance: [], salaries: [], settings: {}, activityLog: [], sessionLogs: [], clientGroups: [],
-                importantLinks: [], courts: [], expenses: [], notifications: [], version: '2.0' };
-            saveDB();
-            showToast('تم مسح البيانات', 'warning');
-            refreshPage(currentPage);
-        }
-
-        function createNewFile() {
-            let fileName = document.getElementById('newFileName').value.trim();
-            if (!fileName) fileName = `data_${new Date().toISOString().slice(0, 10)}.json`;
-            if (!fileName.endsWith('.json')) fileName += '.json';
-            if (filesList.find(f => f.name === fileName)) { showToast('⚠️ ملف بنفس الاسم موجود', 'error'); return; }
-            localStorage.setItem('file_' + fileName, JSON.stringify(DB, null, 2));
-            filesList.push({ name: fileName, created: new Date().toISOString(), isMain: false });
-            saveFilesList();
-            showToast('✅ تم إنشاء الملف: ' + fileName, 'success');
-            document.getElementById('newFileName').value = '';
-            renderFileManager();
-        }
-
-        function loadFile(fileName) {
-            const dataStr = localStorage.getItem('file_' + fileName);
-            if (!dataStr) { showToast('⚠️ الملف غير موجود', 'error'); return; }
-            try {
-                const loadedData = JSON.parse(dataStr);
-                const backupName = `backup_${new Date().toISOString().slice(0, 10)}.json`;
-                if (!filesList.find(f => f.name === backupName)) {
-                    localStorage.setItem('file_' + backupName, JSON.stringify(DB, null, 2));
-                    filesList.push({ name: backupName, created: new Date().toISOString(), isMain: false });
-                    saveFilesList();
-                }
-                DB = { ...DB, ...loadedData };
-                ['cases', 'clients', 'staff', 'sessions', 'tasks', 'payments', 'documents', 'attendance',
-                    'salaries', 'activityLog', 'sessionLogs', 'clientGroups', 'importantLinks', 'courts',
-                    'expenses', 'notifications'
-                ].forEach(k => { if (!DB[k]) DB[k] = []; });
-                notifications = DB.notifications || [];
-                saveDB();
-                showToast('✅ تم تحميل الملف: ' + fileName, 'success');
-                refreshPage(currentPage);
-                renderDashboard();
-                renderFileManager();
-            } catch (e) { showToast('⚠️ خطأ في قراءة الملف', 'error'); }
-        }
-
-        function deleteFile(fileName) {
-            const file = filesList.find(f => f.name === fileName);
-            if (!file) return;
-            if (file.isMain) { showToast('⚠️ لا يمكن حذف الملف الرئيسي', 'error'); return; }
-            if (!confirm(`حذف الملف: ${fileName}؟`)) return;
-            localStorage.removeItem('file_' + fileName);
-            filesList = filesList.filter(f => f.name !== fileName);
-            saveFilesList();
-            renderFileManager();
-            showToast('✅ تم حذف الملف', 'warning');
-        }
-
-        function exportFile(fileName) {
-            const dataStr = localStorage.getItem('file_' + fileName);
-            if (!dataStr) { showToast('الملف غير موجود', 'error'); return; }
-            const blob = new Blob([dataStr], { type: 'application/json' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = fileName;
-            a.click();
-            showToast('✅ تم تصدير: ' + fileName, 'success');
-        }
-
-        function renderFileManager() {
-            const container = document.getElementById('fileListContainer');
-            if (!container) return;
-            const files = [...filesList].sort((a, b) => a.isMain ? -1 : b.isMain ? 1 : new Date(b.created) - new Date(a
-                .created));
-            if (!files.length) { container.innerHTML =
-                    '<p style="color:var(--text-muted);text-align:center;padding:20px;">لا توجد ملفات</p>'; return; }
-            container.innerHTML = files.map(file => {
-                const size = localStorage.getItem('file_' + file.name)?.length || 0;
-                const sizeStr = size > 1024 ? (size / 1024).toFixed(1) + ' KB' : size + ' B';
-                return `<div class="file-manager-item" style="display:flex;justify-content:space-between;align-items:center;padding:8px 12px;background:var(--bg);border-radius:var(--radius-sm);margin-bottom:6px;border-right:2px solid var(--primary);">
-                    <div><span style="font-weight:600;color:var(--primary);">${file.name} ${file.isMain ? '⭐' : ''}</span><span style="font-size:10px;color:var(--text-muted);margin-right:8px;">${new Date(file.created).toLocaleString('ar-EG')}</span><span style="font-size:10px;color:var(--text-muted);">${sizeStr}</span></div>
-                    <div style="display:flex;gap:4px;">
-                        <button onclick="loadFile('${file.name}')" class="btn-ghost btn-sm"><i class="fas fa-upload"></i></button>
-                        ${!file.isMain ? `<button onclick="deleteFile('${file.name}')" class="btn-danger btn-sm"><i class="fas fa-trash"></i></button>` : ''}
-                        <button onclick="exportFile('${file.name}')" class="btn-ghost btn-sm"><i class="fas fa-download"></i></button>
-                    </div>
-                </div>`;
-            }).join('');
-            loadAllFilesData();
-        }
-
-        function loadAllFilesData() {
-            allFilesData = {};
-            let totals = { cases: 0, clients: 0, staff: 0, sessions: 0, tasks: 0, payments: 0 };
-            filesList.forEach(file => {
-                const dataStr = localStorage.getItem('file_' + file.name);
-                if (dataStr) {
-                    try {
-                        const data = JSON.parse(dataStr);
-                        allFilesData[file.name] = data;
-                        totals.cases += (data.cases || []).length;
-                        totals.clients += (data.clients || []).length;
-                        totals.staff += (data.staff || []).length;
-                        totals.sessions += (data.sessions || []).length;
-                        totals.tasks += (data.tasks || []).length;
-                        totals.payments += (data.payments || []).length;
-                    } catch (e) {}
-                }
-            });
-            const tbody = document.getElementById('allFilesStatsBody');
-            if (!tbody) return;
-            if (!filesList.length) { tbody.innerHTML =
-                    '<tr><td colspan="8" style="text-align:center;color:var(--text-muted);">لا توجد ملفات</td></tr>'; return; }
-            let html = '';
-            filesList.forEach((file, index) => {
-                const data = allFilesData[file.name] || {};
-                html += `<tr><td>${index + 1}</td><td style="color:var(--primary);font-weight:600;">${file.name}${file.isMain ? '⭐' : ''}</td>
-                    <td>${(data.cases || []).length}</td><td>${(data.clients || []).length}</td>
-                    <td>${(data.staff || []).length}</td><td>${(data.sessions || []).length}</td>
-                    <td>${(data.tasks || []).length}</td><td>${(data.payments || []).length}</td></tr>`;
-            });
-            html += `<tr style="border-top:2px solid var(--primary);background:rgba(59,130,246,0.04);">
-                <td colspan="2" style="font-weight:700;color:var(--primary);">المجموع</td>
-                <td style="font-weight:700;">${totals.cases}</td><td style="font-weight:700;">${totals.clients}</td>
-                <td style="font-weight:700;">${totals.staff}</td><td style="font-weight:700;">${totals.sessions}</td>
-                <td style="font-weight:700;">${totals.tasks}</td><td style="font-weight:700;">${totals.payments}</td>
-            </tr>`;
-            tbody.innerHTML = html;
-
-            let combinedText = '=== البيانات المجمعة ===\n\n';
-            filesList.forEach(file => {
-                const data = allFilesData[file.name] || {};
-                combinedText += `📁 ${file.name}\n  القضايا: ${(data.cases || []).length}\n  الموكلون: ${(data.clients || []).length}\n  الموظفون: ${(data.staff || []).length}\n  الجلسات: ${(data.sessions || []).length}\n  المهام: ${(data.tasks || []).length}\n  المدفوعات: ${(data.payments || []).length}\n\n`;
-            });
-            combinedText +=
-                `✅ الإجمالي: قضايا ${totals.cases} | موكلون ${totals.clients} | موظفون ${totals.staff} | جلسات ${totals.sessions} | مهام ${totals.tasks} | مدفوعات ${totals.payments}`;
-            document.getElementById('allFilesDataView').textContent = combinedText;
-        }
-
-        // ============================================================
-        // CASE SEARCH
-        // ============================================================
-        function performCaseSearch() {
-            const query = document.getElementById('caseSearchInput').value.trim().toLowerCase();
-            const resultsContainer = document.getElementById('caseSearchResults');
-            const emptyContainer = document.getElementById('caseSearchEmpty');
-            const contentContainer = document.getElementById('caseSearchResultContent');
-
-            if (!query) {
-                resultsContainer.style.display = 'none';
-                emptyContainer.style.display = 'block';
-                return;
-            }
-
-            const matchedCases = DB.cases.filter(c => {
-                const clientName = getClientName(c.clientIds);
-                const text = (c.num + ' ' + clientName + ' ' + c.court + ' ' + c.type + ' ' + c.status + ' ' + (c
-                    .tawkeelNum || '') + ' ' + (c.plaintiff || '') + ' ' + (c.defendant || '')).toLowerCase();
-                return text.includes(query);
-            });
-
-            if (!matchedCases.length) {
-                resultsContainer.style.display = 'block';
-                emptyContainer.style.display = 'none';
-                contentContainer.innerHTML =
-                    `<div style="text-align:center;padding:40px;color:var(--text-muted);"><i class="fas fa-search" style="font-size:32px;opacity:0.3;display:block;margin-bottom:12px;"></i><p>لا توجد نتائج مطابقة للبحث: <strong style="color:var(--primary);">${query}</strong></p></div>`;
-                return;
-            }
-
-            resultsContainer.style.display = 'block';
-            emptyContainer.style.display = 'none';
-
-            let html =
-                `<div style="margin-bottom:14px;"><span style="font-size:13px;color:var(--text-muted);">تم العثور على <strong style="color:var(--primary);">${matchedCases.length}</strong> قضية</span><button class="btn-outline btn-sm" onclick="window.print()" style="margin-right:12px;"><i class="fas fa-print"></i> طباعة</button></div>`;
-
-            matchedCases.forEach(c => {
-                const remaining = (c.fee || 0) - (c.paid || 0);
-                const pct = c.fee ? Math.min(100, Math.round((c.paid || 0) / (c.fee || 1) * 100)) : 0;
-                const isAppeal = c.isAppeal ? '<span class="badge badge-appeal">استئناف</span>' : '';
-                const parentLink = c.parentCaseId ?
-                    `<div class="detail-row"><span class="label">القضية الأصلية</span><span class="value"><a href="#" onclick="performCaseSearchById('${c.parentCaseId}');return false;" style="color:var(--primary);cursor:pointer;">${getCaseName(c.parentCaseId)}</a></span></div>` :
-                    '';
-
-                const caseSessions = DB.sessions.filter(s => s.caseId === c.id);
-                const caseLogs = DB.sessionLogs.filter(l => l.caseId === c.id);
-                const casePayments = DB.payments.filter(p => p.caseId === c.id);
-                const caseTasks = DB.tasks.filter(t => t.caseId === c.id);
-                const appeals = c.appeals && c.appeals.length ? c.appeals.map(aid =>
-                    `<a href="#" onclick="performCaseSearchById('${aid}');return false;" style="color:var(--primary);cursor:pointer;">${getCaseName(aid)}</a>`
-                    ).join('، ') : 'لا يوجد';
-
-                let rolesDisplay = '';
-                if (c.clientRoles) {
-                    const roleMap = c.clientRoles.split(',').map(item => item.split(':'));
-                    rolesDisplay = roleMap.map(([cid, role]) => {
-                        const client = DB.clients.find(x => x.id === cid);
-                        return client ?
-                            `<span style="background:var(--bg);padding:2px 8px;border-radius:4px;font-size:11px;margin:2px;">${client.name} (${role})</span>` :
-                            '';
-                    }).join('');
-                }
-
-                html +=
-                    `<div class="case-detail-printable" style="margin-bottom:20px;border:1px solid var(--border);border-radius:var(--radius);padding:20px;background:var(--card-bg);">
-                        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:12px;border-bottom:2px solid var(--primary);padding-bottom:8px;">
-                            <div><span style="font-size:20px;font-weight:900;color:var(--primary);">${c.num}</span> ${isAppeal} <span style="font-size:14px;color:var(--text-muted);margin-right:10px;">${c.type}</span></div>
-                            <div style="display:flex;gap:6px;align-items:center;">${statusBadge(c.status)} <button class="btn-ghost btn-sm" onclick="window.print()"><i class="fas fa-print"></i></button></div>
-                        </div>
-                        <div class="detail-row"><span class="label">الموكلون</span><span class="value">${rolesDisplay || getClientName(c.clientIds)}</span></div>
-                        ${c.plaintiff ? `<div class="detail-row"><span class="label">المدعين</span><span class="value">${c.plaintiff}</span></div>` : ''}
-                        ${c.defendant ? `<div class="detail-row"><span class="label">المدعى عليهم</span><span class="value">${c.defendant}</span></div>` : ''}
-                        <div class="detail-row"><span class="label">المحامي</span><span class="value">${getStaffName(c.lawyerId)}</span></div>
-                        <div class="detail-row"><span class="label">المحكمة</span><span class="value">${c.court}</span></div>
-                        ${c.division ? `<div class="detail-row"><span class="label">الدائرة</span><span class="value">${c.division}</span></div>` : ''}
-                        <div class="detail-row"><span class="label">الجلسة القادمة</span><span class="value">${c.date ? formatDate(c.date) : 'غير محددة'}</span></div>
-                        <div class="detail-row"><span class="label">التوكيل</span><span class="value"><strong style="color:var(--primary);">${c.tawkeelNum || 'غير مسجل'}</strong> <span class="badge ${c.tawkeelType === 'خاص' ? 'badge-tawkeel-special' : 'badge-tawkeel-general'}">${c.tawkeelType || 'عام'}</span></span></div>
-                        <div class="detail-row"><span class="label">الأتعاب</span><span class="value"><strong style="color:var(--primary);">${fmt(c.fee)}</strong> | مدفوع: <strong style="color:var(--success);">${fmt(c.paid)}</strong> | متبقي: <strong style="color:${remaining > 0 ? 'var(--primary)' : 'var(--success)'};">${fmt(remaining)}</strong></span></div>
-                        <div class="detail-row" style="border-bottom:none;"><span class="label">نسبة السداد</span><span class="value"><div style="display:flex;align-items:center;gap:8px;width:100%;max-width:200px;"><div style="flex:1;height:6px;background:var(--bg);border-radius:3px;overflow:hidden;"><div style="width:${pct}%;height:100%;background:var(--primary-gradient);border-radius:3px;"></div></div><span style="font-size:11px;font-weight:700;">${pct}%</span></div></span></div>
-                        ${parentLink}
-                        ${c.notes ? `<div class="detail-row"><span class="label">ملاحظات</span><span class="value">${c.notes}</span></div>` : ''}
-                        
-                        <div style="margin-top:14px;border-top:1px solid var(--border);padding-top:12px;">
-                            <div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:6px;">📅 الجلسات (${caseSessions.length})</div>
-                            ${caseSessions.length ? caseSessions.map(s => `<div style="font-size:12px;padding:4px 8px;background:var(--bg);border-radius:4px;margin-bottom:4px;display:flex;justify-content:space-between;flex-wrap:wrap;">${formatDate(s.date)} ${s.time || ''} - ${s.court || '-'} ${s.notes ? '📝 ' + s.notes : ''}</div>`).join('') : '<div style="font-size:12px;color:var(--text-muted);">لا توجد جلسات مسجلة</div>'}
-                        </div>
-
-                        <div style="margin-top:12px;border-top:1px solid var(--border);padding-top:12px;">
-                            <div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:6px;">📜 سجل الجلسات (${caseLogs.length})</div>
-                            ${caseLogs.length ? caseLogs.map(l => `<div style="font-size:12px;padding:6px 8px;background:var(--bg);border-radius:4px;margin-bottom:4px;border-right:2px solid var(--primary);"><strong>${formatDate(l.date)}</strong> - ${l.result} - ${l.what ? l.what.substring(0, 80) + (l.what.length > 80 ? '...' : '') : ''} ${l.nextDate ? ' | القادمة: ' + formatDate(l.nextDate) : ''}</div>`).join('') : '<div style="font-size:12px;color:var(--text-muted);">لا توجد سجلات</div>'}
-                        </div>
-
-                        <div style="margin-top:12px;border-top:1px solid var(--border);padding-top:12px;">
-                            <div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:6px;">💰 المدفوعات (${casePayments.length})</div>
-                            ${casePayments.length ? casePayments.map(p => `<div style="font-size:12px;padding:4px 8px;background:var(--bg);border-radius:4px;margin-bottom:4px;display:flex;justify-content:space-between;flex-wrap:wrap;">${formatDate(p.date)} - ${p.desc} - <strong style="color:${p.type === 'إيراد' ? 'var(--success)' : 'var(--danger)'};">${p.type === 'إيراد' ? '+' : '-'}${fmt(p.amount)}</strong> ${p.status === 'مدفوع' ? '✅' : '⏳'}</div>`).join('') : '<div style="font-size:12px;color:var(--text-muted);">لا توجد مدفوعات</div>'}
-                        </div>
-
-                        <div style="margin-top:12px;border-top:1px solid var(--border);padding-top:12px;">
-                            <div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:6px;">📌 المهام المرتبطة (${caseTasks.length})</div>
-                            ${caseTasks.length ? caseTasks.map(t => `<div style="font-size:12px;padding:4px 8px;background:var(--bg);border-radius:4px;margin-bottom:4px;">${t.title} - ${getStaffName(t.ownerId)} - <span class="badge ${t.status === 'done' ? 'badge-active' : 'badge-pending'}">${t.status === 'done' ? 'مكتملة' : t.status === 'inprogress' ? 'جارية' : 'معلقة'}</span></div>`).join('') : '<div style="font-size:12px;color:var(--text-muted);">لا توجد مهام</div>'}
-                        </div>
-
-                        <div style="margin-top:12px;border-top:1px solid var(--border);padding-top:12px;display:flex;flex-wrap:wrap;gap:8px;">
-                            <div style="font-size:13px;font-weight:700;color:var(--warning);"><i class="fas fa-scale-balanced"></i> الاستئنافات: ${appeals}</div>
-                        </div>
-
-                        <div style="margin-top:14px;display:flex;gap:6px;flex-wrap:wrap;border-top:1px solid var(--border);padding-top:12px;">
-                            <button onclick="editCase('${c.id}')" class="btn-outline btn-sm"><i class="fas fa-edit"></i> تعديل</button>
-                            <button onclick="openAppeal('${c.id}')" class="btn-warning btn-sm"><i class="fas fa-scale-balanced"></i> استئناف</button>
-                            <button onclick="viewCase('${c.id}')" class="btn-ghost btn-sm"><i class="fas fa-eye"></i> عرض</button>
-                            <button onclick="window.print()" class="btn-ghost btn-sm"><i class="fas fa-print"></i> طباعة</button>
-                        </div>
-                    </div>`;
-            });
-
-            contentContainer.innerHTML = html;
-        }
-
-        function performCaseSearchById(caseId) {
-            const c = DB.cases.find(x => x.id === caseId);
-            if (!c) { showToast('القضية غير موجودة', 'error'); return; }
-            document.getElementById('caseSearchInput').value = c.num;
-            performCaseSearch();
-            document.getElementById('caseSearchResults').scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-
-        function quickSearch(filter) {
-            document.getElementById('caseSearchInput').value = filter;
-            performCaseSearch();
-        }
-
-        function clearCaseSearch() {
-            document.getElementById('caseSearchInput').value = '';
-            document.getElementById('caseSearchResults').style.display = 'none';
-            document.getElementById('caseSearchEmpty').style.display = 'block';
-            document.getElementById('caseSearchResultContent').innerHTML = '';
-        }
-
-        // ============================================================
-        // NOTIFICATIONS
-        // ============================================================
-        function updateNotificationBadge() {
-            const badge = document.querySelector('.notification-badge .badge-count');
-            if (!badge) {
-                const topbar = document.querySelector('.topbar .flex:last-child');
-                if (topbar) {
-                    const btn = document.createElement('button');
-                    btn.className = 'notification-badge';
-                    btn.style.cssText =
-                        'background:var(--bg);border:1px solid var(--border);border-radius:8px;width:34px;height:34px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--text);font-size:14px;position:relative;';
-                    btn.innerHTML = '<i class="fas fa-bell"></i><span class="badge-count" style="display:none;">0</span>';
-                    btn.onclick = toggleNotificationPanel;
-                    topbar.appendChild(btn);
-                }
-            }
-            const count = DB.notifications ? DB.notifications.filter(n => !n.read).length : 0;
-            const badgeEl = document.querySelector('.notification-badge .badge-count');
-            if (badgeEl) {
-                if (count > 0) {
-                    badgeEl.textContent = count > 99 ? '99+' : count;
-                    badgeEl.style.display = 'flex';
-                } else {
-                    badgeEl.style.display = 'none';
-                }
-            }
-        }
-
-        function toggleNotificationPanel() {
-            const panel = document.getElementById('notificationPanel');
-            if (panel) {
-                panel.classList.toggle('open');
-                if (panel.classList.contains('open')) renderNotifications();
-            }
-        }
-
-        function closeNotificationPanel() {
-            const panel = document.getElementById('notificationPanel');
-            if (panel) panel.classList.remove('open');
-        }
-
-        function markAllNotificationsRead() {
-            if (DB.notifications) {
-                DB.notifications.forEach(n => n.read = true);
-                saveDB();
-                updateNotificationBadge();
-                renderNotifications();
-                showToast('تم تحديد جميع الإشعارات كقراءة', 'info');
-            }
-        }
-
-        function deleteNotification(id) {
-            if (DB.notifications) {
-                DB.notifications = DB.notifications.filter(n => n.id !== id);
-                saveDB();
-                updateNotificationBadge();
-                renderNotifications();
-            }
-        }
-
-        function markNotificationRead(id) {
-            if (DB.notifications) {
-                const n = DB.notifications.find(not => not.id === id);
-                if (n) { n.read = true;
-                    saveDB();
-                    updateNotificationBadge();
-                    renderNotifications(); }
-            }
-        }
-
-        function addNotification(title, message, type = 'info', link = null, caseId = null) {
-            if (!DB.notifications) DB.notifications = [];
-            const notif = {
-                id: genId(),
-                title,
-                message,
-                type,
-                link,
-                caseId,
-                time: new Date().toISOString(),
-                read: false
-            };
-            DB.notifications.unshift(notif);
-            if (DB.notifications.length > 100) DB.notifications.pop();
-            saveDB();
-            updateNotificationBadge();
-            renderNotifications();
-            if (type === 'alert' || type === 'reminder') showToast('🔔 ' + title, type === 'alert' ? 'error' : 'warning');
-        }
-
-        function renderNotifications() {
-            const container = document.getElementById('notificationList');
-            if (!container) return;
-            const all = (DB.notifications || []).slice(0, 30);
-            if (!all.length) {
-                container.innerHTML =
-                    '<div style="text-align:center;padding:30px;color:var(--text-muted);"><i class="fas fa-bell-slash" style="font-size:32px;opacity:0.3;display:block;margin-bottom:10px;"></i><p style="font-size:12px;">لا توجد إشعارات</p></div>';
-                return;
-            }
-            let html = '';
-            all.forEach(n => {
-                const typeText = n.type === 'reminder' ? 'تذكير' : n.type === 'alert' ? 'تنبيه' : n.type ===
-                    'success' ? 'تم' : 'معلومة';
-                const unreadClass = n.read ? '' : 'unread';
-                const timeStr = new Date(n.time).toLocaleString('ar-EG');
-                html +=
-                    `<div class="notification-item ${unreadClass}" onclick="${n.link ? "navigateSearchResult('" + n.link + "','" + (n.caseId || '') + "')" : ''}">
-                    <div style="display:flex;justify-content:space-between;align-items:flex-start;">
-                        <span class="notif-title">${n.title}</span>
-                        <span class="notif-type ${n.type}">${typeText}</span>
-                    </div>
-                    <div class="notif-text">${n.message}</div>
-                    <div style="display:flex;justify-content:space-between;align-items:center;margin-top:4px;">
-                        <span class="notif-time">${timeStr}</span>
-                        <div style="display:flex;gap:4px;">
-                            ${!n.read ? '<button class="btn-ghost btn-sm" onclick="event.stopPropagation();markNotificationRead(\'' + n.id + '\')" style="font-size:9px;">تحديد كقراءة</button>' : ''}
-                            <button class="btn-danger btn-sm" onclick="event.stopPropagation();deleteNotification(\'' + n.id + '\')" style="font-size:9px;"><i class="fas fa-times"></i></button>
-                        </div>
-                    </div>
-                </div>`;
-            });
-            container.innerHTML = html;
-        }
-
-        // ============================================================
-        // CHARTS
-        // ============================================================
-        let casesChartInstance = null;
-        let revenueChartInstance = null;
-
-        function renderCharts() {
-            const statuses = ['نشطة', 'معلقة', 'مغلقة', 'عاجلة', 'مؤرشفة'];
-            const counts = statuses.map(s => DB.cases.filter(c => c.status === s).length);
-            const colors = ['#3b82f6', '#f59e0b', '#10b981', '#ef4444', '#8b5cf6'];
-
-            const ctx1 = document.getElementById('casesChart');
-            if (ctx1) {
-                if (casesChartInstance) casesChartInstance.destroy();
-                casesChartInstance = new Chart(ctx1, {
-                    type: 'doughnut',
-                    data: { labels: statuses, datasets: [{ data: counts, backgroundColor: colors, borderWidth: 2,
-                            borderColor: 'var(--card-bg)' }] },
-                    options: { responsive: true, plugins: { legend: { position: 'bottom', labels: { color: 'var(--text)',
-                                font: { family: 'Cairo' }, padding: 10 } } } }
-                });
-            }
-
-            const months = [];
-            const revenues = [];
-            for (let i = 5; i >= 0; i--) {
-                const d = new Date();
-                d.setMonth(d.getMonth() - i);
-                const monthKey = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0');
-                months.push(d.toLocaleString('ar-EG', { month: 'short' }));
-                let total = 0;
-                DB.payments.forEach(p => {
-                    if (p.type === 'إيراد' && p.date && p.date.startsWith(monthKey)) total += (+p.amount);
-                });
-                revenues.push(total);
-            }
-
-            const ctx2 = document.getElementById('revenueChart');
-            if (ctx2) {
-                if (revenueChartInstance) revenueChartInstance.destroy();
-                revenueChartInstance = new Chart(ctx2, {
-                    type: 'bar',
-                    data: { labels: months, datasets: [{ label: 'الإيرادات', data: revenues,
-                            backgroundColor: 'rgba(59,130,246,0.6)', borderColor: '#3b82f6', borderWidth: 2,
-                            borderRadius: 4 }] },
-                    options: { responsive: true, plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true,
-                                ticks: { color: 'var(--text-muted)', callback: function(value) { return value
-                                        .toLocaleString() + ' ج.م'; } }, grid: { color: 'var(--border)' } },
-                            x: { ticks: { color: 'var(--text-muted)' }, grid: { display: false } } } }
-                });
-            }
-        }
-
-        // ============================================================
-        // STAGE PROGRESS
-        // ============================================================
-        function renderStageProgress() {
-            const container = document.getElementById('stageProgressBars');
-            if (!container) return;
-            const stages = [
-                { id: 'filed', label: 'إيداع', icon: 'fa-file-import' },
-                { id: 'prep', label: 'تحضير', icon: 'fa-file-alt' },
-                { id: 'hearing', label: 'جلسات', icon: 'fa-gavel' },
-                { id: 'arguments', label: 'مرافعة', icon: 'fa-comment' },
-                { id: 'judgment', label: 'حكم', icon: 'fa-scale-balanced' }
-            ];
-            const total = DB.cases.length || 1;
-            const stageCounts = {};
-            stages.forEach(s => stageCounts[s.id] = DB.cases.filter(c => c.stage === s.id).length);
-            if (DB.cases.length > 0 && !DB.cases.some(c => c.stage)) {
-                const statusMap = { 'نشطة': 'hearing', 'معلقة': 'prep', 'عاجلة': 'hearing', 'مغلقة': 'judgment',
-                    'مؤرشفة': 'judgment' };
-                DB.cases.forEach(c => { if (c.status && statusMap[c.status]) c.stage = statusMap[c.status]; });
-                stages.forEach(s => stageCounts[s.id] = DB.cases.filter(c => c.stage === s.id).length);
-            }
-            let html = '';
-            stages.forEach(st => {
-                const count = stageCounts[st.id] || 0;
-                const pct = Math.round((count / total) * 100);
-                html +=
-                    `<div style="background:var(--bg);border-radius:var(--radius-sm);padding:12px 14px;border-right:3px solid ${pct > 0 ? 'var(--primary)' : 'var(--border)'};">
-                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
-                        <span style="font-size:12px;font-weight:600;"><i class="fas ${st.icon}" style="color:var(--primary);margin-left:6px;"></i>${st.label}</span>
-                        <span style="font-size:12px;font-weight:700;color:var(--primary);">${count} قضية</span>
-                    </div>
-                    <div style="display:flex;align-items:center;gap:8px;">
-                        <div style="flex:1;height:4px;background:var(--border);border-radius:2px;overflow:hidden;">
-                            <div style="width:${pct}%;height:100%;background:var(--primary-gradient);border-radius:2px;transition:width 0.6s;"></div>
-                        </div>
-                        <span style="font-size:10px;color:var(--text-muted);">${pct}%</span>
-                    </div>
-                </div>`;
-            });
-            container.innerHTML = html;
-        }
-
-        // ============================================================
-        // QUICK STATS
-        // ============================================================
-        function renderQuickStats() {
-            const pending = DB.tasks.filter(t => t.status === 'pending' || t.status === 'inprogress').length;
-            const done = DB.tasks.filter(t => t.status === 'done').length;
-            const today = new Date().toISOString().split('T')[0];
-            const todaySessions = DB.sessions.filter(s => s.date === today).length;
-            const appeals = DB.cases.filter(c => c.isAppeal).length;
-            document.getElementById('qs-pending-tasks').textContent = pending;
-            document.getElementById('qs-done-tasks').textContent = done;
-            document.getElementById('qs-today-sessions').textContent = todaySessions;
-            document.getElementById('qs-appeals').textContent = appeals;
-        }
-
-        // ============================================================
-        // REMINDERS
-        // ============================================================
-        function checkReminders() {
-            const today = new Date();
-            today.setHours(0, 0, 0, 0);
-            DB.sessions.forEach(s => {
-                const d = new Date(s.date);
-                d.setHours(0, 0, 0, 0);
-                const diff = (d - today) / (1000 * 60 * 60 * 24);
-                if (diff >= 0 && diff <= 1) {
-                    const caseName = getCaseName(s.caseId);
-                    const label = diff === 0 ? 'اليوم' : 'غداً';
-                    const notifKey = 'session_' + s.id;
-                    if (!(DB.notifications || []).some(n => n.caseId === notifKey)) {
-                        addNotification('📅 جلسة ' + label, 'لديك جلسة ' + label + ' في القضية ' + caseName + (s
-                            .court ? ' بمحكمة ' + s.court : ''), 'reminder', 'sessions', notifKey);
-                    }
-                }
-            });
-            DB.tasks.forEach(t => {
-                if (t.status === 'done' || !t.due) return;
-                const due = new Date(t.due);
-                due.setHours(0, 0, 0, 0);
-                if (due < today) {
-                    const notifKey = 'task_' + t.id;
-                    if (!(DB.notifications || []).some(n => n.caseId === notifKey)) {
-                        addNotification('⏰ مهمة متأخرة', 'المهمة "' + t.title + '" مستحقة منذ ' + formatDate(t.due),
-                            'alert', 'tasks', notifKey);
-                    }
-                }
-            });
-        }
-
-        // ============================================================
-        // ADVANCED SEARCH
-        // ============================================================
-        function performAdvancedSearch() {
-            const keyword = document.getElementById('advSearchKeyword')?.value?.toLowerCase() || '';
-            const type = document.getElementById('advSearchType')?.value || '';
-            const status = document.getElementById('advSearchStatus')?.value || '';
-            const court = document.getElementById('advSearchCourt')?.value || '';
-            const fromDate = document.getElementById('advSearchFrom')?.value || '';
-            const toDate = document.getElementById('advSearchTo')?.value || '';
-            const minFee = parseFloat(document.getElementById('advSearchMinFee')?.value) || 0;
-            const maxFee = parseFloat(document.getElementById('advSearchMaxFee')?.value) || Infinity;
-            const party = document.getElementById('advSearchParty')?.value?.toLowerCase() || '';
-
-            const results = DB.cases.filter(c => {
-                const clientName = getClientName(c.clientIds);
-                const text = (c.num + ' ' + clientName + ' ' + c.court + ' ' + c.type + ' ' + (c.plaintiff || '') +
-                    ' ' + (c.defendant || '') + ' ' + (c.tawkeelNum || '')).toLowerCase();
-                let match = true;
-                if (keyword && !text.includes(keyword)) match = false;
-                if (match && type && c.type !== type) match = false;
-                if (match && status && c.status !== status) match = false;
-                if (match && court && c.court !== court) match = false;
-                if (match && fromDate && c.date && c.date < fromDate) match = false;
-                if (match && toDate && c.date && c.date > toDate) match = false;
-                if (match && minFee && (c.fee || 0) < minFee) match = false;
-                if (match && maxFee !== Infinity && (c.fee || 0) > maxFee) match = false;
-                if (match && party && !text.includes(party)) match = false;
-                return match;
-            });
-
-            // Update active filters display
-            const activeTags = document.getElementById('activeFiltersTags');
-            if (activeTags) {
-                let tags = [];
-                if (keyword) tags.push({ label: '🔍 ' + keyword, value: keyword });
-                if (type) tags.push({ label: '📋 ' + type, value: type });
-                if (status) tags.push({ label: '📊 ' + status, value: status });
-                if (court) tags.push({ label: '🏛️ ' + court, value: court });
-                if (fromDate) tags.push({ label: '📅 من ' + formatDate(fromDate), value: fromDate });
-                if (toDate) tags.push({ label: '📅 إلى ' + formatDate(toDate), value: toDate });
-                if (minFee > 0) tags.push({ label: '💰 من ' + minFee + ' ج.م', value: minFee });
-                if (maxFee !== Infinity) tags.push({ label: '💰 إلى ' + maxFee + ' ج.م', value: maxFee });
-                if (party) tags.push({ label: '👤 ' + party, value: party });
-                if (!tags.length) {
-                    activeTags.textContent = 'لا توجد فلاتر نشطة';
-                } else {
-                    activeTags.innerHTML = tags.map(t =>
-                        `<span class="filter-tag">${t.label}<span class="remove-filter" onclick="removeFilter('${t.value}')">×</span></span>`
-                        ).join('');
-                }
-            }
-
-            const container = document.getElementById('advSearchResults');
-            const empty = document.getElementById('advSearchEmpty');
-            if (!container) return;
-            if (!results.length) {
-                container.style.display = 'none';
-                empty.style.display = 'block';
-                return;
-            }
-            container.style.display = 'block';
-            empty.style.display = 'none';
-
-            let html =
-                `<div class="results-header"><div class="results-count"><i class="fas fa-search"></i> النتائج: <span class="count-number">${results.length}</span></div><div class="results-actions"><button class="btn-outline btn-sm" onclick="window.print()"><i class="fas fa-print"></i> طباعة</button><button class="btn-primary btn-sm" onclick="exportSearchResults()"><i class="fas fa-download"></i> تصدير</button></div></div>`;
-            results.forEach(c => {
-                const remaining = (c.fee || 0) - (c.paid || 0);
-                const statusClass = c.status === 'نشطة' ? 'active' : c.status === 'عاجلة' ? 'urgent' : c.status ===
-                    'معلقة' ? 'pending' : c.status === 'مغلقة' ? 'closed' : 'archived';
-                html +=
-                    `<div class="search-result-item" onclick="viewCase('${c.id}')">
-                    <div class="result-main">
-                        <div class="result-icon case-icon">⚖️</div>
-                        <div class="result-info">
-                            <div class="result-title">${c.num} <span style="font-size:11px;font-weight:400;color:var(--text-muted);">${c.type}</span></div>
-                            <div class="result-subtitle">${getClientName(c.clientIds)}</div>
-                            <div class="result-details">
-                                <span><i class="fas fa-building"></i> <span class="detail-label">المحكمة:</span> ${c.court}</span>
-                                <span><i class="fas fa-user-tie"></i> <span class="detail-label">المحامي:</span> ${getStaffName(c.lawyerId)}</span>
-                                <span><i class="fas fa-coins"></i> <span class="detail-label">الأتعاب:</span> ${fmt(c.fee)}</span>
-                                ${c.date ? `<span><i class="fas fa-calendar"></i> <span class="detail-label">الجلسة:</span> ${formatDate(c.date)}</span>` : ''}
-                            </div>
-                        </div>
-                    </div>
-                    <div style="display:flex;align-items:center;gap:8px;">
-                        <span class="result-status ${statusClass}">${c.status}</span>
-                        <span style="font-size:11px;font-weight:700;color:${remaining > 0 ? 'var(--primary)' : 'var(--success)'};">${remaining > 0 ? fmt(remaining) : '✓'}</span>
-                    </div>
-                </div>`;
-            });
-            container.innerHTML = html;
-        }
-
-        function removeFilter(value) {
-            ['advSearchKeyword', 'advSearchType', 'advSearchStatus', 'advSearchCourt', 'advSearchFrom', 'advSearchTo',
-                'advSearchMinFee', 'advSearchMaxFee', 'advSearchParty'
-            ].forEach(id => {
-                const el = document.getElementById(id);
-                if (el && el.value == value) el.value = '';
-            });
-            performAdvancedSearch();
-        }
-
-        function resetAdvancedSearch() {
-            ['advSearchKeyword', 'advSearchType', 'advSearchStatus', 'advSearchCourt', 'advSearchFrom', 'advSearchTo',
-                'advSearchMinFee', 'advSearchMaxFee', 'advSearchParty'
-            ].forEach(id => {
-                const el = document.getElementById(id);
-                if (el) el.value = '';
-            });
-            performAdvancedSearch();
-            const container = document.getElementById('advSearchResults');
-            if (container) container.style.display = 'none';
-            const empty = document.getElementById('advSearchEmpty');
-            if (empty) empty.style.display = 'block';
-        }
-
-        function quickSearchFilter(filter) {
-            document.getElementById('advSearchStatus').value = filter;
-            if (filter === '') document.getElementById('advSearchStatus').value = '';
-            performAdvancedSearch();
-        }
-
-        function saveSearchFilter() {
-            const filters = {};
-            ['advSearchKeyword', 'advSearchType', 'advSearchStatus', 'advSearchCourt', 'advSearchFrom', 'advSearchTo',
-                'advSearchMinFee', 'advSearchMaxFee', 'advSearchParty'
-            ].forEach(id => {
-                const el = document.getElementById(id);
-                if (el && el.value) filters[id] = el.value;
-            });
-            if (Object.keys(filters).length === 0) { showToast('لا توجد فلاتر لحفظها', 'warning'); return; }
-            if (!savedFilters) savedFilters = [];
-            const name = prompt('أدخل اسماً للفلتر:', 'فلتر ' + (savedFilters.length + 1));
-            if (!name) return;
-            savedFilters.push({ name, filters });
-            renderSavedFilters();
-            showToast('✅ تم حفظ الفلتر: ' + name, 'success');
-        }
-
-        function renderSavedFilters() {
-            const container = document.getElementById('savedFiltersList');
-            const section = document.getElementById('savedFiltersSection');
-            if (!container || !section) return;
-            if (!savedFilters || !savedFilters.length) {
-                section.style.display = 'none';
-                return;
-            }
-            section.style.display = 'block';
-            container.innerHTML = savedFilters.map((sf, idx) =>
-                `<span class="saved-filter-item" onclick="applySavedFilter(${idx})"><i class="fas fa-bookmark"></i> ${sf.name}<span class="remove-saved" onclick="event.stopPropagation();removeSavedFilter(${idx})">×</span></span>`
-                ).join('');
-        }
-
-        function applySavedFilter(idx) {
-            if (!savedFilters || !savedFilters[idx]) return;
-            const filters = savedFilters[idx].filters;
-            Object.keys(filters).forEach(id => {
-                const el = document.getElementById(id);
-                if (el) el.value = filters[id];
-            });
-            performAdvancedSearch();
-            showToast('✅ تم تطبيق الفلتر: ' + savedFilters[idx].name, 'success');
-        }
-
-        function removeSavedFilter(idx) {
-            if (!confirm('حذف هذا الفلتر المحفوظ؟')) return;
-            savedFilters.splice(idx, 1);
-            renderSavedFilters();
-            showToast('✅ تم حذف الفلتر', 'warning');
-        }
-
-        function exportSearchResults() {
-            const container = document.getElementById('advSearchResults');
-            if (!container || container.style.display === 'none') { showToast('لا توجد نتائج لتصديرها', 'warning'); return; }
-            const results = container.querySelectorAll('.search-result-item');
-            if (!results.length) { showToast('لا توجد نتائج لتصديرها', 'warning'); return; }
-            let csv = 'رقم القضية,النوع,الموكلون,المحكمة,الحالة,الأتعاب\n';
-            results.forEach(item => {
-                const title = item.querySelector('.result-title')?.textContent?.trim() || '';
-                const subtitle = item.querySelector('.result-subtitle')?.textContent?.trim() || '';
-                const details = item.querySelectorAll('.result-details span');
-                let court = '',
-                    status = '',
-                    fee = '';
-                details.forEach(d => {
-                    const text = d.textContent;
-                    if (text.includes('المحكمة:')) court = text.replace('المحكمة:', '').trim();
-                    if (text.includes('الأتعاب:')) fee = text.replace('الأتعاب:', '').trim();
-                });
-                const statusEl = item.querySelector('.result-status');
-                if (statusEl) status = statusEl.textContent.trim();
-                const num = title.split(' ')[0] || '';
-                const type = title.replace(num, '').trim() || '';
-                csv += `${num},${type},${subtitle},${court},${status},${fee}\n`;
-            });
-            const blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'نتائج_البحث_المتقدم.csv';
-            a.click();
-            showToast('✅ تم تصدير النتائج', 'success');
-        }
-
-        // ============================================================
-        // INIT
-        // ============================================================
-        function initApp() {
-            renderDashboard();
-            checkSessionAlerts();
-            updateStorageIndicator();
-            renderFileManager();
-            renderSettings();
-            renderImportantLinks();
-            renderCourts();
-            updateAllCourtAutocomplete();
-            updateCourtList();
-            clearCaseSearch();
-            renderSavedFilters();
-            updateNotificationBadge();
-            renderNotifications();
-            setInterval(checkReminders, 5 * 60 * 1000);
-            setTimeout(checkReminders, 3000);
-            if (DB.settings?.autoSync) startAutoSync();
-            // Add notification button if not exists
-            if (!document.querySelector('.notification-badge')) {
-                const topbar = document.querySelector('.topbar .flex:last-child');
-                if (topbar) {
-                    const btn = document.createElement('button');
-                    btn.className = 'notification-badge';
-                    btn.style.cssText =
-                        'background:var(--bg);border:1px solid var(--border);border-radius:8px;width:34px;height:34px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--text);font-size:14px;position:relative;';
-                    btn.innerHTML = '<i class="fas fa-bell"></i><span class="badge-count" style="display:none;">0</span>';
-                    btn.onclick = toggleNotificationPanel;
-                    topbar.appendChild(btn);
-                    updateNotificationBadge();
-                }
-            }
-        }
-
-        // Override showPage to include advanced search
-        const originalShowPageFn = window.showPage || function() {};
-        window.showPage = function(page) {
-            originalShowPageFn(page);
-            if (page === 'dashboard') {
-                setTimeout(() => { renderCharts();
-                    renderQuickStats();
-                    renderStageProgress(); }, 100);
-            }
-            if (page === 'advSearch') {
-                setTimeout(() => { updateCourtList();
-                    performAdvancedSearch(); }, 50);
-            }
-        };
-
-        window.addEventListener('DOMContentLoaded', () => {
-            if (!checkAutoLogin()) {
-                document.getElementById('loginScreen').style.display = 'flex';
-                hideGlobalLoading();
-            }
-        });
-
-        console.log('✅ تم تحميل النظام بنجاح مع ميزات البحث المتقدم والإشعارات');
-    </script>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"><\/script>
+</body></html>
+`);
+win.document.close();
+}
+
+function deleteDoc(id) {
+if (!confirm('حذف هذا المستند؟')) return;
+DB.documents = DB.documents.filter(d => d.id !== id);
+saveDB();
+renderDocs();
+showToast('✅ تم الحذف', 'warning');
+}
+
+// ============================================================
+// IMPORTANT LINKS
+// ============================================================
+function addImportantLink() {
+const title = document.getElementById('linkTitle').value.trim();
+const url = document.getElementById('linkUrl').value.trim();
+if (!title || !url) { showToast('الرجاء إدخال العنوان والرابط', 'error'); return; }
+if (!url.startsWith('http://') && !url.startsWith('https://')) { showToast('الرابط يجب أن يبدأ بـ http:// أو https://',
+'error'); return; }
+if (!DB.importantLinks) DB.importantLinks = [];
+DB.importantLinks.push({ id: genId(), title, url });
+saveDB();
+document.getElementById('linkTitle').value = '';
+document.getElementById('linkUrl').value = '';
+renderImportantLinks();
+showToast('✅ تم إضافة الرابط', 'success');
+}
+
+function addImportantLinkModal() {
+const title = document.getElementById('linkTitleModal').value.trim();
+const url = document.getElementById('linkUrlModal').value.trim();
+if (!title || !url) { showToast('الرجاء إدخال العنوان والرابط', 'error'); return; }
+if (!url.startsWith('http://') && !url.startsWith('https://')) { showToast('الرابط يجب أن يبدأ بـ http:// أو https://',
+'error'); return; }
+if (!DB.importantLinks) DB.importantLinks = [];
+DB.importantLinks.push({ id: genId(), title, url });
+saveDB();
+document.getElementById('linkTitleModal').value = '';
+document.getElementById('linkUrlModal').value = '';
+closeModal('addLinkModal');
+renderImportantLinks();
+showToast('✅ تم إضافة الرابط', 'success');
+}
+
+function deleteImportantLink(id) {
+if (!confirm('حذف هذا الرابط؟')) return;
+DB.importantLinks = DB.importantLinks.filter(l => l.id !== id);
+saveDB();
+renderImportantLinks();
+showToast('✅ تم الحذف', 'warning');
+}
+
+function renderImportantLinks() {
+const container = document.getElementById('importantLinksList');
+if (!container) return;
+const links = DB.importantLinks || [];
+if (!links.length) {
+container.innerHTML =
+'<div style="text-align:center;padding:40px;color:var(--text-muted);"><i class="fas fa-link" style="font-size:32px;opacity:0.2;display:block;margin-bottom:12px;"></i><p>لا توجد روابط هامة</p></div>';
+return;
+}
+container.innerHTML = links.map(link =>
+`<div class="important-link-item">
+<div>
+<span class="link-title"><i class="fas fa-link" style="color:var(--primary);margin-left:6px;"></i>${link.title}</span>
+<a href="${link.url}" target="_blank" class="link-url" style="margin-right:12px;">${link.url}</a>
+</div>
+<div class="link-actions">
+<a href="${link.url}" target="_blank" class="btn-primary btn-sm"><i class="fas fa-external-link-alt"></i></a>
+<button onclick="deleteImportantLink('${link.id}')" class="btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+</div>
+</div>`
+).join('');
+}
+
+// ============================================================
+// REPORTS - PDF GENERATION
+// ============================================================
+function generateReportPDF(type) {
+const officeName = DB.settings?.officeName || 'محاميك للمحاماة والاستشارات القانونية';
+const officeManager = DB.settings?.officeManager || '........';
+const officePhone = DB.settings?.officePhone || '';
+const officeEmail = DB.settings?.officeEmail || '';
+
+let title = '',
+content = '';
+
+if (type === 'staff') {
+title = 'تقرير الموظفين';
+const totalSalaries = DB.staff.reduce((a, b) => a + (+b.salary || 0), 0);
+content =
+`<h2>${title}</h2><p><strong>إجمالي الموظفين:</strong> ${DB.staff.length}</p><p><strong>المحامون:</strong> ${DB.staff.filter(s => s.role === 'محامي' || s.role === 'مستشار قانوني').length}</p><p><strong>إجمالي الرواتب:</strong> ${fmt(totalSalaries)}</p><hr>${DB.staff.map(s => `<p><strong>${s.name}</strong> - ${s.role} ${s.spec ? '| ' + s.spec : ''} - الراتب: ${fmt(s.salary)}</p>`).join('')}`;
+} else if (type === 'attendance') {
+title = 'تقرير الحضور والغياب';
+const today = new Date().toISOString().split('T')[0];
+const records = DB.attendance.filter(a => a.date === today);
+const totalDeduct = records.reduce((a, b) => a + (+b.deductAmount || 0), 0);
+content =
+`<h2>${title} - ${formatDate(today)}</h2><p><strong>حاضرون:</strong> ${records.filter(a => a.status === 'حاضر' || a.status === 'متأخر').length}</p><p><strong>غائبون:</strong> ${records.filter(a => a.status === 'غائب').length}</p><p><strong>إجازة:</strong> ${records.filter(a => a.status === 'إجازة').length}</p><p><strong>الخصومات:</strong> ${fmt(totalDeduct)}</p><hr>${records.map(a => { const s = DB.staff.find(x => x.id === a.staffId); return `<p>${s ? s.name : 'غير معروف'} - ${a.status} ${a.deductAmount > 0 ? '- خصم: ' + fmt(a.deductAmount) : ''}</p>`; }).join('')}`;
+} else if (type === 'finance') {
+title = 'التقرير المالي';
+const income = DB.payments.filter(p => p.type === 'إيراد').reduce((a, b) => a + (+b.amount), 0);
+const expense = DB.payments.filter(p => p.type === 'مصروف').reduce((a, b) => a + (+b.amount), 0);
+const totalFee = DB.cases.reduce((a, b) => a + (+b.fee || 0), 0);
+content =
+`<h2>${title}</h2><p><strong>الإيرادات:</strong> ${fmt(income)}</p><p><strong>المصروفات:</strong> ${fmt(expense)}</p><p><strong>صافي الربح:</strong> ${fmt(income - expense)}</p><p><strong>إجمالي أتعاب القضايا:</strong> ${fmt(totalFee)}</p><hr>${DB.payments.slice(0, 20).map(p => `<p>${p.desc} - ${p.client} - ${p.type === 'إيراد' ? '+' : '-'}${fmt(p.amount)}</p>`).join('')}`;
+} else if (type === 'cases') {
+title = 'تقرير القضايا';
+const totalFees = DB.cases.reduce((a, b) => a + (+b.fee || 0), 0);
+const active = DB.cases.filter(c => c.status === 'نشطة').length;
+const urgent = DB.cases.filter(c => c.status === 'عاجلة').length;
+content =
+`<h2>${title}</h2><p><strong>إجمالي القضايا:</strong> ${DB.cases.length}</p><p><strong>نشطة:</strong> ${active}</p><p><strong>عاجلة:</strong> ${urgent}</p><p><strong>الأتعاب:</strong> ${fmt(totalFees)}</p><hr>${DB.cases.map(c => `<p><strong>${c.num}</strong> - ${getClientName(c.clientIds)} - ${statusBadge(c.status)} - ${fmt(c.fee)}</p>`).join('')}`;
+} else if (type === 'payroll') {
+title = 'تقرير الرواتب';
+const totalSalaries = DB.salaries.reduce((a, b) => a + (+b.base || 0), 0);
+const totalBonuses = DB.salaries.reduce((a, b) => a + (+b.bonus || 0), 0);
+const totalDeductions = DB.salaries.reduce((a, b) => a + (+b.deduct || 0), 0);
+content =
+`<h2>${title}</h2><p><strong>الرواتب:</strong> ${fmt(totalSalaries)}</p><p><strong>المكافآت:</strong> ${fmt(totalBonuses)}</p><p><strong>الخصومات:</strong> ${fmt(totalDeductions)}</p><hr>${DB.salaries.map(sal => { const s = DB.staff.find(x => x.id === sal.staffId); const net = (+sal.base || 0) + (+sal.bonus || 0) - (+sal.deduct || 0); return `<p>${sal.month || ''} - ${s ? s.name : 'غير معروف'} - الصافي: ${fmt(net)}</p>`; }).join('')}`;
+} else if (type === 'clients') {
+title = 'تقرير الموكلين';
+content =
+`<h2>${title}</h2><p><strong>إجمالي الموكلين:</strong> ${DB.clients.length}</p><hr>${DB.clientGroups.map(g => { const names = g.clients.map(c => c.name).join('، '); return `<p><strong>${g.tawkeelNum || 'بدون توكيل'}</strong> - ${names} (${g.clients.length} موكل)</p>`; }).join('')}`;
+} else if (type === 'sessionLogs') {
+title = 'سجل الجلسات';
+content =
+`<h2>${title}</h2><p><strong>إجمالي الجلسات المسجلة:</strong> ${DB.sessionLogs.length}</p><hr>${DB.sessionLogs.map(l => `<p>${getCaseName(l.caseId)} - ${formatDate(l.date)} - ${l.result}</p>`).join('')}`;
+} else if (type === 'tasks') {
+title = 'تقرير المهام';
+const pending = DB.tasks.filter(t => t.status === 'pending').length;
+const inprogress = DB.tasks.filter(t => t.status === 'inprogress').length;
+const done = DB.tasks.filter(t => t.status === 'done').length;
+content =
+`<h2>${title}</h2><p><strong>معلقة:</strong> ${pending}</p><p><strong>جارية:</strong> ${inprogress}</p><p><strong>مكتملة:</strong> ${done}</p><hr>${DB.tasks.map(t => `<p>${t.title} - ${getStaffName(t.ownerId)} - ${t.status}</p>`).join('')}`;
+}
+
+const html =
+`<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"><title>${title} - محاميك</title><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet"><style>body{font-family:'Cairo',sans-serif;background:#fff;color:#1e293b;padding:30px;direction:rtl;}.header{text-align:center;border-bottom:2px solid #1a56db;padding-bottom:16px;margin-bottom:20px;}.header h1{font-size:24px;font-weight:900;color:#1a56db;margin:0;}.header .sub{color:#64748b;font-size:13px;}.header .office-info{font-size:12px;color:#64748b;margin-top:4px;}.report-title{font-size:18px;font-weight:800;color:#1a56db;margin:16px 0 8px;border-bottom:1px solid #e2e8f0;padding-bottom:6px;}.content{font-size:13px;line-height:1.8;}.content p{margin:4px 0;}.content strong{color:#1a56db;}.footer{margin-top:30px;text-align:center;font-size:11px;color:#94a3b8;border-top:1px solid #e2e8f0;padding-top:12px;}hr{border:none;border-top:1px solid #e2e8f0;margin:12px 0;}.badge{padding:2px 8px;border-radius:12px;font-size:10px;font-weight:700;display:inline-block;}.badge-active{background:rgba(16,185,129,0.15);color:#10b981;}.badge-urgent{background:rgba(239,68,68,0.15);color:#ef4444;}.badge-pending{background:rgba(245,158,11,0.15);color:#f59e0b;}.badge-closed{background:rgba(100,116,139,0.15);color:#94a3b8;}.badge-purple{background:rgba(139,92,246,0.15);color:#8b5cf6;}.stat-grid{display:flex;gap:16px;flex-wrap:wrap;margin:10px 0;}.stat-item{background:#f8fafc;padding:10px 16px;border-radius:8px;border:1px solid #e2e8f0;flex:1;min-width:120px;text-align:center;}.stat-item .num{font-size:20px;font-weight:900;color:#1a56db;}.stat-item .label{font-size:11px;color:#64748b;}</style></head><body><div class="header"><h1>⚖️ ${officeName}</h1><div class="sub">${officeManager}</div><div class="office-info">${officePhone} ${officeEmail ? '| ' + officeEmail : ''}</div></div><div class="report-title">${title}</div><div class="content">${content}</div><div class="footer">تم إنشاء التقرير بتاريخ ${new Date().toLocaleDateString('ar-EG')} - © محاميك 2026</div></body></html>`;
+
+const container = document.getElementById('reportDisplay');
+container.innerHTML =
+`<div style="text-align:center;padding:20px;"><i class="fas fa-spinner fa-spin" style="font-size:24px;color:var(--primary);"></i><p>جاري إنشاء التقرير...</p></div>`;
+
+const blob = new Blob([html], { type: 'text/html' });
+const url = URL.createObjectURL(blob);
+const win = window.open(url, '_blank');
+setTimeout(() => {
+win.document.title = `${title} - محاميك`;
+win.print();
+}, 500);
+
+container.innerHTML =
+`<div class="report-print-area" style="max-height:400px;overflow-y:auto;"><h3>${title}</h3><div style="font-size:12px;color:var(--text-muted);margin-bottom:8px;">تم إنشاء التقرير بصيغة PDF</div><div style="background:var(--bg);padding:12px;border-radius:var(--radius-sm);font-size:12px;line-height:1.8;max-height:300px;overflow-y:auto;">${content.replace(/<h2>/g, '<strong>').replace(/<\/h2>/g, '</strong>').replace(/<hr>/g, '<hr style="border-color:var(--border);">')}</div><button class="btn-primary" style="margin-top:12px;" onclick="window.open('${url}', '_blank')"><i class="fas fa-file-pdf"></i> فتح PDF</button><button class="btn-outline" style="margin-top:12px;margin-right:8px;" onclick="window.open('${url}', '_blank').print()"><i class="fas fa-print"></i> طباعة</button></div>`;
+showToast('✅ تم إنشاء التقرير', 'success');
+}
+
+// ============================================================
+// WHATSAPP
+// ============================================================
+let waCurrentName = '',
+waCurrentPhone = '';
+
+function openWhatsApp(name, phone, caseNum = '') {
+waCurrentName = name;
+waCurrentPhone = phone;
+document.getElementById('waRecipient').value = name;
+document.getElementById('waPhone').value = phone;
+document.getElementById('waMessage').value =
+`السلام عليكم ورحمة الله وبركاته،\nحضرة الموكل الكريم ${name}،\n\n${caseNum ? 'بخصوص القضية رقم ' + caseNum + '، ' : ''}يسعدنا خدمتكم.\n\nمع تحيات مؤسسة محاميك للمحاماة والاستشارات القانونية ⚖️`;
+openModal('whatsappModal');
+}
+
+function setWATemplate(type) {
+const name = waCurrentName;
+const templates = {
+reminder: `السلام عليكم ${name}،\n\nتذكير بموعد جلسة قضيتكم القادمة.\nيرجى التواصل معنا لمزيد من التفاصيل.\n\nمحاميك ⚖️`,
+payment: `السلام عليكم ${name}،\n\nنود التذكير بالدفعة المستحقة لقضيتكم.\nيرجى التواصل مع المؤسسة.\n\nمحاميك ⚖️`,
+greeting: `السلام عليكم ${name}،\n\nيسعدنا دائماً خدمتكم في مؤسسة محاميك.\n\nنحن هنا لخدمتكم. ⚖️`
+};
+document.getElementById('waMessage').value = templates[type] || '';
+}
+
+function sendWhatsApp() {
+const phone = document.getElementById('waPhone').value.replace(/[^0-9]/g, '');
+const msg = encodeURIComponent(document.getElementById('waMessage').value);
+if (!phone) { showToast('الرجاء إدخال رقم الهاتف', 'error'); return; }
+window.open(`https://wa.me/${phone}?text=${msg}`, '_blank');
+closeModal('whatsappModal');
+showToast('تم فتح واتساب', 'info');
+}
+
+// ============================================================
+// SETTINGS
+// ============================================================
+function saveSettings() {
+DB.settings = {
+officeName: document.getElementById('officeName').value,
+officeManager: document.getElementById('officeManager').value,
+officeAddress: document.getElementById('officeAddress').value,
+officePhone: document.getElementById('officePhone').value,
+officeEmail: document.getElementById('officeEmail').value
+};
+saveDB();
+logActivity('حفظ إعدادات');
+showToast('تم حفظ الإعدادات');
+}
+
+function renderSettings() {
+const s = DB.settings || {};
+document.getElementById('officeName').value = s.officeName || 'محاميك للمحاماة والاستشارات القانونية';
+document.getElementById('officeManager').value = s.officeManager || '........';
+document.getElementById('officeAddress').value = s.officeAddress || '';
+document.getElementById('officePhone').value = s.officePhone || '';
+document.getElementById('officeEmail').value = s.officeEmail || '';
+const log = DB.activityLog || [];
+document.getElementById('activityLog').innerHTML = log.slice(0, 20).map(e =>
+`<div style="padding:3px 0;border-bottom:1px solid var(--border);">${e.action} <span style="float:left;font-size:9px;">${e.time}</span></div>`
+).join('') || '<p>لا توجد أنشطة</p>';
+updateStorageIndicator();
+if (DB.settings.githubToken) document.getElementById('githubToken').value = DB.settings.githubToken || '';
+if (DB.settings.githubRepo) document.getElementById('githubRepo').value = DB.settings.githubRepo || '';
+if (DB.settings.githubFilePath) document.getElementById('githubFilePath').value = DB.settings.githubFilePath ||
+'data/data.json';
+if (DB.settings.autoSync) document.getElementById('autoSync').checked = true;
+if (DB.settings.lastSync) document.getElementById('lastSyncTime').textContent = 'آخر مزامنة: ' + DB.settings
+.lastSync;
+if (DB.settings.storageMode) {
+storageMode = DB.settings.storageMode;
+const radio = document.querySelector(`input[name="storageMode"][value="${storageMode}"]`);
+if (radio) radio.checked = true;
+toggleStorageMode(storageMode);
+}
+}
+
+// ============================================================
+// BACKUP / RESTORE / FILE MANAGER
+// ============================================================
+function saveToFile() {
+const blob = new Blob([JSON.stringify(DB, null, 2)], { type: 'application/json' });
+const url = URL.createObjectURL(blob);
+const a = document.createElement('a');
+a.href = url;
+a.download = `محاميك_data_${new Date().toISOString().split('T')[0]}.json`;
+a.click();
+showToast('تم حفظ الملف');
+}
+
+function loadFromFile(event) {
+const file = event.target.files[0];
+if (!file) return;
+if (!confirm('سيتم استبدال البيانات الحالية. هل أنت متأكد؟')) return;
+const reader = new FileReader();
+reader.onload = e => {
+try {
+const imported = JSON.parse(e.target.result);
+DB = { ...DB, ...imported };
+['cases', 'clients', 'staff', 'sessions', 'tasks', 'payments', 'documents', 'attendance',
+'salaries', 'activityLog', 'sessionLogs', 'clientGroups', 'importantLinks', 'courts',
+'expenses', 'notifications'
+].forEach(k => { if (!DB[k]) DB[k] = []; });
+notifications = DB.notifications || [];
+saveDB();
+showToast('تم استيراد البيانات', 'success');
+refreshPage(currentPage);
+renderDashboard();
+} catch (err) { showToast('خطأ في قراءة الملف', 'error'); }
+};
+reader.readAsText(file);
+event.target.value = '';
+}
+
+function exportExcel() {
+const rows = [
+['رقم القضية', 'الموكلون', 'النوع', 'المحكمة', 'الحالة', 'الأتعاب', 'المدفوع', 'المتبقي']
+];
+DB.cases.forEach(c => rows.push([c.num, getClientName(c.clientIds), c.type, c.court, c.status, c.fee || 0,
+c.paid || 0, (c.fee || 0) - (c.paid || 0)
+]));
+rows.push([]);
+rows.push(['الموظف', 'الوظيفة', 'التخصص', 'الراتب']);
+DB.staff.forEach(s => rows.push([s.name, s.role, s.spec || '', s.salary || 0]));
+const csv = rows.map(r => r.join(',')).join('\n');
+const blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8' });
+const url = URL.createObjectURL(blob);
+const a = document.createElement('a');
+a.href = url;
+a.download = 'محاميك_تقرير.csv';
+a.click();
+showToast('تم التصدير');
+}
+
+function clearAllData() {
+if (!confirm('⚠️ مسح جميع البيانات نهائياً؟')) return;
+DB = { cases: [], clients: [], staff: [], sessions: [], tasks: [], payments: [], documents: [],
+attendance: [], salaries: [], settings: {}, activityLog: [], sessionLogs: [], clientGroups: [],
+importantLinks: [], courts: [], expenses: [], notifications: [], version: '2.0' };
+saveDB();
+showToast('تم مسح البيانات', 'warning');
+refreshPage(currentPage);
+}
+
+function createNewFile() {
+let fileName = document.getElementById('newFileName').value.trim();
+if (!fileName) fileName = `data_${new Date().toISOString().slice(0, 10)}.json`;
+if (!fileName.endsWith('.json')) fileName += '.json';
+if (filesList.find(f => f.name === fileName)) { showToast('⚠️ ملف بنفس الاسم موجود', 'error'); return; }
+localStorage.setItem('file_' + fileName, JSON.stringify(DB, null, 2));
+filesList.push({ name: fileName, created: new Date().toISOString(), isMain: false });
+saveFilesList();
+showToast('✅ تم إنشاء الملف: ' + fileName, 'success');
+document.getElementById('newFileName').value = '';
+renderFileManager();
+}
+
+function loadFile(fileName) {
+const dataStr = localStorage.getItem('file_' + fileName);
+if (!dataStr) { showToast('⚠️ الملف غير موجود', 'error'); return; }
+try {
+const loadedData = JSON.parse(dataStr);
+const backupName = `backup_${new Date().toISOString().slice(0, 10)}.json`;
+if (!filesList.find(f => f.name === backupName)) {
+localStorage.setItem('file_' + backupName, JSON.stringify(DB, null, 2));
+filesList.push({ name: backupName, created: new Date().toISOString(), isMain: false });
+saveFilesList();
+}
+DB = { ...DB, ...loadedData };
+['cases', 'clients', 'staff', 'sessions', 'tasks', 'payments', 'documents', 'attendance',
+'salaries', 'activityLog', 'sessionLogs', 'clientGroups', 'importantLinks', 'courts',
+'expenses', 'notifications'
+].forEach(k => { if (!DB[k]) DB[k] = []; });
+notifications = DB.notifications || [];
+saveDB();
+showToast('✅ تم تحميل الملف: ' + fileName, 'success');
+refreshPage(currentPage);
+renderDashboard();
+renderFileManager();
+} catch (e) { showToast('⚠️ خطأ في قراءة الملف', 'error'); }
+}
+
+function deleteFile(fileName) {
+const file = filesList.find(f => f.name === fileName);
+if (!file) return;
+if (file.isMain) { showToast('⚠️ لا يمكن حذف الملف الرئيسي', 'error'); return; }
+if (!confirm(`حذف الملف: ${fileName}؟`)) return;
+localStorage.removeItem('file_' + fileName);
+filesList = filesList.filter(f => f.name !== fileName);
+saveFilesList();
+renderFileManager();
+showToast('✅ تم حذف الملف', 'warning');
+}
+
+function exportFile(fileName) {
+const dataStr = localStorage.getItem('file_' + fileName);
+if (!dataStr) { showToast('الملف غير موجود', 'error'); return; }
+const blob = new Blob([dataStr], { type: 'application/json' });
+const url = URL.createObjectURL(blob);
+const a = document.createElement('a');
+a.href = url;
+a.download = fileName;
+a.click();
+showToast('✅ تم تصدير: ' + fileName, 'success');
+}
+
+function renderFileManager() {
+const container = document.getElementById('fileListContainer');
+if (!container) return;
+const files = [...filesList].sort((a, b) => a.isMain ? -1 : b.isMain ? 1 : new Date(b.created) - new Date(a
+.created));
+if (!files.length) { container.innerHTML =
+'<p style="color:var(--text-muted);text-align:center;padding:20px;">لا توجد ملفات</p>'; return; }
+container.innerHTML = files.map(file => {
+const size = localStorage.getItem('file_' + file.name)?.length || 0;
+const sizeStr = size > 1024 ? (size / 1024).toFixed(1) + ' KB' : size + ' B';
+return `<div class="file-manager-item" style="display:flex;justify-content:space-between;align-items:center;padding:8px 12px;background:var(--bg);border-radius:var(--radius-sm);margin-bottom:6px;border-right:2px solid var(--primary);">
+<div><span style="font-weight:600;color:var(--primary);">${file.name} ${file.isMain ? '⭐' : ''}</span><span style="font-size:10px;color:var(--text-muted);margin-right:8px;">${new Date(file.created).toLocaleString('ar-EG')}</span><span style="font-size:10px;color:var(--text-muted);">${sizeStr}</span></div>
+<div style="display:flex;gap:4px;">
+<button onclick="loadFile('${file.name}')" class="btn-ghost btn-sm"><i class="fas fa-upload"></i></button>
+${!file.isMain ? `<button onclick="deleteFile('${file.name}')" class="btn-danger btn-sm"><i class="fas fa-trash"></i></button>` : ''}
+<button onclick="exportFile('${file.name}')" class="btn-ghost btn-sm"><i class="fas fa-download"></i></button>
+</div>
+</div>`;
+}).join('');
+loadAllFilesData();
+}
+
+function loadAllFilesData() {
+allFilesData = {};
+let totals = { cases: 0, clients: 0, staff: 0, sessions: 0, tasks: 0, payments: 0, documents: 0 };
+filesList.forEach(file => {
+const dataStr = localStorage.getItem('file_' + file.name);
+if (dataStr) {
+try {
+const data = JSON.parse(dataStr);
+allFilesData[file.name] = data;
+totals.cases += (data.cases || []).length;
+totals.clients += (data.clients || []).length;
+totals.staff += (data.staff || []).length;
+totals.sessions += (data.sessions || []).length;
+totals.tasks += (data.tasks || []).length;
+totals.payments += (data.payments || []).length;
+totals.documents += (data.documents || []).length;
+} catch (e) {}
+}
+});
+const tbody = document.getElementById('allFilesStatsBody');
+if (!tbody) return;
+if (!filesList.length) { tbody.innerHTML =
+'<tr><td colspan="8" style="text-align:center;color:var(--text-muted);">لا توجد ملفات</td></tr>'; return; }
+let html = '';
+filesList.forEach((file, index) => {
+const data = allFilesData[file.name] || {};
+html += `<tr><td>${index + 1}</td><td style="color:var(--primary);font-weight:600;">${file.name}${file.isMain ? '⭐' : ''}</td>
+<td>${(data.cases || []).length}</td><td>${(data.clients || []).length}</td>
+<td>${(data.staff || []).length}</td><td>${(data.sessions || []).length}</td>
+<td>${(data.tasks || []).length}</td><td>${(data.payments || []).length}</td></tr>`;
+});
+html += `<tr style="border-top:2px solid var(--primary);background:rgba(59,130,246,0.04);">
+<td colspan="2" style="font-weight:700;color:var(--primary);">المجموع</td>
+<td style="font-weight:700;">${totals.cases}</td><td style="font-weight:700;">${totals.clients}</td>
+<td style="font-weight:700;">${totals.staff}</td><td style="font-weight:700;">${totals.sessions}</td>
+<td style="font-weight:700;">${totals.tasks}</td><td style="font-weight:700;">${totals.payments}</td>
+</tr>`;
+tbody.innerHTML = html;
+
+let combinedText = '=== البيانات المجمعة ===\n\n';
+filesList.forEach(file => {
+const data = allFilesData[file.name] || {};
+combinedText += `📁 ${file.name}\n  القضايا: ${(data.cases || []).length}\n  الموكلون: ${(data.clients || []).length}\n  الموظفون: ${(data.staff || []).length}\n  الجلسات: ${(data.sessions || []).length}\n  المهام: ${(data.tasks || []).length}\n  المدفوعات: ${(data.payments || []).length}\n  المستندات: ${(data.documents || []).length}\n\n`;
+});
+combinedText +=
+`✅ الإجمالي: قضايا ${totals.cases} | موكلون ${totals.clients} | موظفون ${totals.staff} | جلسات ${totals.sessions} | مهام ${totals.tasks} | مدفوعات ${totals.payments} | مستندات ${totals.documents}`;
+document.getElementById('allFilesDataView').textContent = combinedText;
+}
+
+// ============================================================
+// CASE SEARCH
+// ============================================================
+function performCaseSearch() {
+const query = document.getElementById('caseSearchInput').value.trim().toLowerCase();
+const resultsContainer = document.getElementById('caseSearchResults');
+const emptyContainer = document.getElementById('caseSearchEmpty');
+const contentContainer = document.getElementById('caseSearchResultContent');
+
+if (!query) {
+resultsContainer.style.display = 'none';
+emptyContainer.style.display = 'block';
+return;
+}
+
+const matchedCases = DB.cases.filter(c => {
+const clientName = getClientName(c.clientIds);
+const text = (c.num + ' ' + clientName + ' ' + c.court + ' ' + c.type + ' ' + c.status + ' ' + (c
+.tawkeelNum || '') + ' ' + (c.plaintiff || '') + ' ' + (c.defendant || '')).toLowerCase();
+return text.includes(query);
+});
+
+if (!matchedCases.length) {
+resultsContainer.style.display = 'block';
+emptyContainer.style.display = 'none';
+contentContainer.innerHTML =
+`<div style="text-align:center;padding:40px;color:var(--text-muted);"><i class="fas fa-search" style="font-size:32px;opacity:0.3;display:block;margin-bottom:12px;"></i><p>لا توجد نتائج مطابقة للبحث: <strong style="color:var(--primary);">${query}</strong></p></div>`;
+return;
+}
+
+resultsContainer.style.display = 'block';
+emptyContainer.style.display = 'none';
+
+let html =
+`<div style="margin-bottom:14px;"><span style="font-size:13px;color:var(--text-muted);">تم العثور على <strong style="color:var(--primary);">${matchedCases.length}</strong> قضية</span><button class="btn-outline btn-sm" onclick="window.print()" style="margin-right:12px;"><i class="fas fa-print"></i> طباعة</button></div>`;
+
+matchedCases.forEach(c => {
+const remaining = (c.fee || 0) - (c.paid || 0);
+const pct = c.fee ? Math.min(100, Math.round((c.paid || 0) / (c.fee || 1) * 100)) : 0;
+const isAppeal = c.isAppeal ? '<span class="badge badge-appeal">استئناف</span>' : '';
+const parentLink = c.parentCaseId ?
+`<div class="detail-row"><span class="label">القضية الأصلية</span><span class="value"><a href="#" onclick="performCaseSearchById('${c.parentCaseId}');return false;" style="color:var(--primary);cursor:pointer;">${getCaseName(c.parentCaseId)}</a></span></div>` :
+'';
+
+const caseSessions = DB.sessions.filter(s => s.caseId === c.id);
+const caseLogs = DB.sessionLogs.filter(l => l.caseId === c.id);
+const casePayments = DB.payments.filter(p => p.caseId === c.id);
+const caseTasks = DB.tasks.filter(t => t.caseId === c.id);
+const caseDocs = DB.documents.filter(d => d.caseId === c.id);
+const appeals = c.appeals && c.appeals.length ? c.appeals.map(aid =>
+`<a href="#" onclick="performCaseSearchById('${aid}');return false;" style="color:var(--primary);cursor:pointer;">${getCaseName(aid)}</a>`
+).join('، ') : 'لا يوجد';
+
+let rolesDisplay = '';
+if (c.clientRoles) {
+const roleMap = c.clientRoles.split(',').map(item => item.split(':'));
+rolesDisplay = roleMap.map(([cid, role]) => {
+const client = DB.clients.find(x => x.id === cid);
+return client ?
+`<span style="background:var(--bg);padding:2px 8px;border-radius:4px;font-size:11px;margin:2px;">${client.name} (${role})</span>` :
+'';
+}).join('');
+}
+
+html +=
+`<div class="case-detail-printable" style="margin-bottom:20px;border:1px solid var(--border);border-radius:var(--radius);padding:20px;background:var(--card-bg);">
+<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:12px;border-bottom:2px solid var(--primary);padding-bottom:8px;">
+<div><span style="font-size:20px;font-weight:900;color:var(--primary);">${c.num}</span> ${isAppeal} <span style="font-size:14px;color:var(--text-muted);margin-right:10px;">${c.type}</span></div>
+<div style="display:flex;gap:6px;align-items:center;">${statusBadge(c.status)} <button class="btn-ghost btn-sm" onclick="window.print()"><i class="fas fa-print"></i></button></div>
+</div>
+<div class="detail-row"><span class="label">الموكلون</span><span class="value">${rolesDisplay || getClientName(c.clientIds)}</span></div>
+${c.plaintiff ? `<div class="detail-row"><span class="label">المدعين</span><span class="value">${c.plaintiff}</span></div>` : ''}
+${c.defendant ? `<div class="detail-row"><span class="label">المدعى عليهم</span><span class="value">${c.defendant}</span></div>` : ''}
+<div class="detail-row"><span class="label">المحامي</span><span class="value">${getStaffName(c.lawyerId)}</span></div>
+<div class="detail-row"><span class="label">المحكمة</span><span class="value">${c.court}</span></div>
+${c.division ? `<div class="detail-row"><span class="label">الدائرة</span><span class="value">${c.division}</span></div>` : ''}
+<div class="detail-row"><span class="label">الجلسة القادمة</span><span class="value">${c.date ? formatDate(c.date) : 'غير محددة'}</span></div>
+<div class="detail-row"><span class="label">التوكيل</span><span class="value"><strong style="color:var(--primary);">${c.tawkeelNum || 'غير مسجل'}</strong> <span class="badge ${c.tawkeelType === 'خاص' ? 'badge-tawkeel-special' : 'badge-tawkeel-general'}">${c.tawkeelType || 'عام'}</span></span></div>
+<div class="detail-row"><span class="label">الأتعاب</span><span class="value"><strong style="color:var(--primary);">${fmt(c.fee)}</strong> | مدفوع: <strong style="color:var(--success);">${fmt(c.paid)}</strong> | متبقي: <strong style="color:${remaining > 0 ? 'var(--primary)' : 'var(--success)'};">${fmt(remaining)}</strong></span></div>
+<div class="detail-row" style="border-bottom:none;"><span class="label">نسبة السداد</span><span class="value"><div style="display:flex;align-items:center;gap:8px;width:100%;max-width:200px;"><div style="flex:1;height:6px;background:var(--bg);border-radius:3px;overflow:hidden;"><div style="width:${pct}%;height:100%;background:var(--primary-gradient);border-radius:3px;"></div></div><span style="font-size:11px;font-weight:700;">${pct}%</span></div></span></div>
+${parentLink}
+${c.notes ? `<div class="detail-row"><span class="label">ملاحظات</span><span class="value">${c.notes}</span></div>` : ''}
+
+<div style="margin-top:14px;border-top:1px solid var(--border);padding-top:12px;">
+<div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:6px;">📅 الجلسات (${caseSessions.length})</div>
+${caseSessions.length ? caseSessions.map(s => `<div style="font-size:12px;padding:4px 8px;background:var(--bg);border-radius:4px;margin-bottom:4px;display:flex;justify-content:space-between;flex-wrap:wrap;">${formatDate(s.date)} ${s.time || ''} - ${s.court || '-'} ${s.notes ? '📝 ' + s.notes : ''}</div>`).join('') : '<div style="font-size:12px;color:var(--text-muted);">لا توجد جلسات مسجلة</div>'}
+</div>
+
+<div style="margin-top:12px;border-top:1px solid var(--border);padding-top:12px;">
+<div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:6px;">📜 سجل الجلسات (${caseLogs.length})</div>
+${caseLogs.length ? caseLogs.map(l => `<div style="font-size:12px;padding:6px 8px;background:var(--bg);border-radius:4px;margin-bottom:4px;border-right:2px solid var(--primary);"><strong>${formatDate(l.date)}</strong> - ${l.result} - ${l.what ? l.what.substring(0, 80) + (l.what.length > 80 ? '...' : '') : ''} ${l.nextDate ? ' | القادمة: ' + formatDate(l.nextDate) : ''}</div>`).join('') : '<div style="font-size:12px;color:var(--text-muted);">لا توجد سجلات</div>'}
+</div>
+
+<div style="margin-top:12px;border-top:1px solid var(--border);padding-top:12px;">
+<div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:6px;">📎 المستندات (${caseDocs.length})</div>
+${caseDocs.length ? caseDocs.map(d => `<div style="font-size:12px;padding:4px 8px;background:var(--bg);border-radius:4px;margin-bottom:4px;display:flex;justify-content:space-between;align-items:center;"><span><i class="fas fa-file" style="color:var(--primary);margin-left:4px;"></i>${d.name}</span>${d.data ? `<button class="btn-ghost btn-sm" onclick="downloadDoc('${d.id}')"><i class="fas fa-download"></i></button>` : ''}</div>`).join('') : '<div style="font-size:12px;color:var(--text-muted);">لا توجد مستندات</div>'}
+</div>
+
+<div style="margin-top:12px;border-top:1px solid var(--border);padding-top:12px;">
+<div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:6px;">💰 المدفوعات (${casePayments.length})</div>
+${casePayments.length ? casePayments.map(p => `<div style="font-size:12px;padding:4px 8px;background:var(--bg);border-radius:4px;margin-bottom:4px;display:flex;justify-content:space-between;flex-wrap:wrap;">${formatDate(p.date)} - ${p.desc} - <strong style="color:${p.type === 'إيراد' ? 'var(--success)' : 'var(--danger)'};">${p.type === 'إيراد' ? '+' : '-'}${fmt(p.amount)}</strong> ${p.status === 'مدفوع' ? '✅' : '⏳'}</div>`).join('') : '<div style="font-size:12px;color:var(--text-muted);">لا توجد مدفوعات</div>'}
+</div>
+
+<div style="margin-top:12px;border-top:1px solid var(--border);padding-top:12px;">
+<div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:6px;">📌 المهام المرتبطة (${caseTasks.length})</div>
+${caseTasks.length ? caseTasks.map(t => `<div style="font-size:12px;padding:4px 8px;background:var(--bg);border-radius:4px;margin-bottom:4px;">${t.title} - ${getStaffName(t.ownerId)} - <span class="badge ${t.status === 'done' ? 'badge-active' : 'badge-pending'}">${t.status === 'done' ? 'مكتملة' : t.status === 'inprogress' ? 'جارية' : 'معلقة'}</span></div>`).join('') : '<div style="font-size:12px;color:var(--text-muted);">لا توجد مهام</div>'}
+</div>
+
+<div style="margin-top:12px;border-top:1px solid var(--border);padding-top:12px;display:flex;flex-wrap:wrap;gap:8px;">
+<div style="font-size:13px;font-weight:700;color:var(--warning);"><i class="fas fa-scale-balanced"></i> الاستئنافات: ${appeals}</div>
+</div>
+
+<div style="margin-top:14px;display:flex;gap:6px;flex-wrap:wrap;border-top:1px solid var(--border);padding-top:12px;">
+<button onclick="editCase('${c.id}')" class="btn-outline btn-sm"><i class="fas fa-edit"></i> تعديل</button>
+<button onclick="openAppeal('${c.id}')" class="btn-warning btn-sm"><i class="fas fa-scale-balanced"></i> استئناف</button>
+<button onclick="viewCase('${c.id}')" class="btn-ghost btn-sm"><i class="fas fa-eye"></i> عرض</button>
+<button onclick="window.print()" class="btn-ghost btn-sm"><i class="fas fa-print"></i> طباعة</button>
+</div>
+</div>`;
+});
+
+contentContainer.innerHTML = html;
+}
+
+function performCaseSearchById(caseId) {
+const c = DB.cases.find(x => x.id === caseId);
+if (!c) { showToast('القضية غير موجودة', 'error'); return; }
+document.getElementById('caseSearchInput').value = c.num;
+performCaseSearch();
+document.getElementById('caseSearchResults').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function quickSearch(filter) {
+document.getElementById('caseSearchInput').value = filter;
+performCaseSearch();
+}
+
+function clearCaseSearch() {
+document.getElementById('caseSearchInput').value = '';
+document.getElementById('caseSearchResults').style.display = 'none';
+document.getElementById('caseSearchEmpty').style.display = 'block';
+document.getElementById('caseSearchResultContent').innerHTML = '';
+}
+
+// ============================================================
+// NOTIFICATIONS
+// ============================================================
+function updateNotificationBadge() {
+const badge = document.querySelector('.notification-badge .badge-count');
+if (!badge) {
+const topbar = document.querySelector('.topbar .flex:last-child');
+if (topbar) {
+const btn = document.createElement('button');
+btn.className = 'notification-badge';
+btn.style.cssText =
+'background:var(--bg);border:1px solid var(--border);border-radius:8px;width:34px;height:34px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--text);font-size:14px;position:relative;';
+btn.innerHTML = '<i class="fas fa-bell"></i><span class="badge-count" style="display:none;">0</span>';
+btn.onclick = toggleNotificationPanel;
+topbar.appendChild(btn);
+}
+}
+const count = DB.notifications ? DB.notifications.filter(n => !n.read).length : 0;
+const badgeEl = document.querySelector('.notification-badge .badge-count');
+if (badgeEl) {
+if (count > 0) {
+badgeEl.textContent = count > 99 ? '99+' : count;
+badgeEl.style.display = 'flex';
+} else {
+badgeEl.style.display = 'none';
+}
+}
+}
+
+function toggleNotificationPanel() {
+const panel = document.getElementById('notificationPanel');
+if (panel) {
+panel.classList.toggle('open');
+if (panel.classList.contains('open')) renderNotifications();
+}
+}
+
+function closeNotificationPanel() {
+const panel = document.getElementById('notificationPanel');
+if (panel) panel.classList.remove('open');
+}
+
+function markAllNotificationsRead() {
+if (DB.notifications) {
+DB.notifications.forEach(n => n.read = true);
+saveDB();
+updateNotificationBadge();
+renderNotifications();
+showToast('تم تحديد جميع الإشعارات كقراءة', 'info');
+}
+}
+
+function deleteNotification(id) {
+if (DB.notifications) {
+DB.notifications = DB.notifications.filter(n => n.id !== id);
+saveDB();
+updateNotificationBadge();
+renderNotifications();
+}
+}
+
+function markNotificationRead(id) {
+if (DB.notifications) {
+const n = DB.notifications.find(not => not.id === id);
+if (n) { n.read = true;
+saveDB();
+updateNotificationBadge();
+renderNotifications(); }
+}
+}
+
+function addNotification(title, message, type = 'info', link = null, caseId = null) {
+if (!DB.notifications) DB.notifications = [];
+const notif = {
+id: genId(),
+title,
+message,
+type,
+link,
+caseId,
+time: new Date().toISOString(),
+read: false
+};
+DB.notifications.unshift(notif);
+if (DB.notifications.length > 100) DB.notifications.pop();
+saveDB();
+updateNotificationBadge();
+renderNotifications();
+if (type === 'alert' || type === 'reminder') showToast('🔔 ' + title, type === 'alert' ? 'error' : 'warning');
+}
+
+function renderNotifications() {
+const container = document.getElementById('notificationList');
+if (!container) return;
+const all = (DB.notifications || []).slice(0, 30);
+if (!all.length) {
+container.innerHTML =
+'<div style="text-align:center;padding:30px;color:var(--text-muted);"><i class="fas fa-bell-slash" style="font-size:32px;opacity:0.3;display:block;margin-bottom:10px;"></i><p style="font-size:12px;">لا توجد إشعارات</p></div>';
+return;
+}
+let html = '';
+all.forEach(n => {
+const typeText = n.type === 'reminder' ? 'تذكير' : n.type === 'alert' ? 'تنبيه' : n.type ===
+'success' ? 'تم' : 'معلومة';
+const unreadClass = n.read ? '' : 'unread';
+const timeStr = new Date(n.time).toLocaleString('ar-EG');
+html +=
+`<div class="notification-item ${unreadClass}" onclick="${n.link ? "navigateSearchResult('" + n.link + "','" + (n.caseId || '') + "')" : ''}">
+<div style="display:flex;justify-content:space-between;align-items:flex-start;">
+<span class="notif-title">${n.title}</span>
+<span class="notif-type ${n.type}">${typeText}</span>
+</div>
+<div class="notif-text">${n.message}</div>
+<div style="display:flex;justify-content:space-between;align-items:center;margin-top:4px;">
+<span class="notif-time">${timeStr}</span>
+<div style="display:flex;gap:4px;">
+${!n.read ? '<button class="btn-ghost btn-sm" onclick="event.stopPropagation();markNotificationRead(\'' + n.id + '\')" style="font-size:9px;">تحديد كقراءة</button>' : ''}
+<button class="btn-danger btn-sm" onclick="event.stopPropagation();deleteNotification(\'' + n.id + '\')" style="font-size:9px;"><i class="fas fa-times"></i></button>
+</div>
+</div>
+</div>`;
+});
+container.innerHTML = html;
+}
+
+// ============================================================
+// CHARTS
+// ============================================================
+let casesChartInstance = null;
+let revenueChartInstance = null;
+
+function renderCharts() {
+const statuses = ['نشطة', 'معلقة', 'مغلقة', 'عاجلة', 'مؤرشفة'];
+const counts = statuses.map(s => DB.cases.filter(c => c.status === s).length);
+const colors = ['#3b82f6', '#f59e0b', '#10b981', '#ef4444', '#8b5cf6'];
+
+const ctx1 = document.getElementById('casesChart');
+if (ctx1) {
+if (casesChartInstance) casesChartInstance.destroy();
+casesChartInstance = new Chart(ctx1, {
+type: 'doughnut',
+data: { labels: statuses, datasets: [{ data: counts, backgroundColor: colors, borderWidth: 2,
+borderColor: 'var(--card-bg)' }] },
+options: { responsive: true, plugins: { legend: { position: 'bottom', labels: { color: 'var(--text)',
+font: { family: 'Cairo' }, padding: 10 } } } }
+});
+}
+
+const months = [];
+const revenues = [];
+for (let i = 5; i >= 0; i--) {
+const d = new Date();
+d.setMonth(d.getMonth() - i);
+const monthKey = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0');
+months.push(d.toLocaleString('ar-EG', { month: 'short' }));
+let total = 0;
+DB.payments.forEach(p => {
+if (p.type === 'إيراد' && p.date && p.date.startsWith(monthKey)) total += (+p.amount);
+});
+revenues.push(total);
+}
+
+const ctx2 = document.getElementById('revenueChart');
+if (ctx2) {
+if (revenueChartInstance) revenueChartInstance.destroy();
+revenueChartInstance = new Chart(ctx2, {
+type: 'bar',
+data: { labels: months, datasets: [{ label: 'الإيرادات', data: revenues,
+backgroundColor: 'rgba(59,130,246,0.6)', borderColor: '#3b82f6', borderWidth: 2,
+borderRadius: 4 }] },
+options: { responsive: true, plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true,
+ticks: { color: 'var(--text-muted)', callback: function(value) { return value
+.toLocaleString() + ' ج.م'; } }, grid: { color: 'var(--border)' } },
+x: { ticks: { color: 'var(--text-muted)' }, grid: { display: false } } } }
+});
+}
+}
+
+// ============================================================
+// STAGE PROGRESS
+// ============================================================
+function renderStageProgress() {
+const container = document.getElementById('stageProgressBars');
+if (!container) return;
+const stages = [
+{ id: 'filed', label: 'إيداع', icon: 'fa-file-import' },
+{ id: 'prep', label: 'تحضير', icon: 'fa-file-alt' },
+{ id: 'hearing', label: 'جلسات', icon: 'fa-gavel' },
+{ id: 'arguments', label: 'مرافعة', icon: 'fa-comment' },
+{ id: 'judgment', label: 'حكم', icon: 'fa-scale-balanced' }
+];
+const total = DB.cases.length || 1;
+const stageCounts = {};
+stages.forEach(s => stageCounts[s.id] = DB.cases.filter(c => c.stage === s.id).length);
+if (DB.cases.length > 0 && !DB.cases.some(c => c.stage)) {
+const statusMap = { 'نشطة': 'hearing', 'معلقة': 'prep', 'عاجلة': 'hearing', 'مغلقة': 'judgment',
+'مؤرشفة': 'judgment' };
+DB.cases.forEach(c => { if (c.status && statusMap[c.status]) c.stage = statusMap[c.status]; });
+stages.forEach(s => stageCounts[s.id] = DB.cases.filter(c => c.stage === s.id).length);
+}
+let html = '';
+stages.forEach(st => {
+const count = stageCounts[st.id] || 0;
+const pct = Math.round((count / total) * 100);
+html +=
+`<div style="background:var(--bg);border-radius:var(--radius-sm);padding:12px 14px;border-right:3px solid ${pct > 0 ? 'var(--primary)' : 'var(--border)'};">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+<span style="font-size:12px;font-weight:600;"><i class="fas ${st.icon}" style="color:var(--primary);margin-left:6px;"></i>${st.label}</span>
+<span style="font-size:12px;font-weight:700;color:var(--primary);">${count} قضية</span>
+</div>
+<div style="display:flex;align-items:center;gap:8px;">
+<div style="flex:1;height:4px;background:var(--border);border-radius:2px;overflow:hidden;">
+<div style="width:${pct}%;height:100%;background:var(--primary-gradient);border-radius:2px;transition:width 0.6s;"></div>
+</div>
+<span style="font-size:10px;color:var(--text-muted);">${pct}%</span>
+</div>
+</div>`;
+});
+container.innerHTML = html;
+}
+
+// ============================================================
+// QUICK STATS
+// ============================================================
+function renderQuickStats() {
+const pending = DB.tasks.filter(t => t.status === 'pending' || t.status === 'inprogress').length;
+const done = DB.tasks.filter(t => t.status === 'done').length;
+const today = new Date().toISOString().split('T')[0];
+const todaySessions = DB.sessions.filter(s => s.date === today).length;
+const appeals = DB.cases.filter(c => c.isAppeal).length;
+document.getElementById('qs-pending-tasks').textContent = pending;
+document.getElementById('qs-done-tasks').textContent = done;
+document.getElementById('qs-today-sessions').textContent = todaySessions;
+document.getElementById('qs-appeals').textContent = appeals;
+}
+
+// ============================================================
+// REMINDERS
+// ============================================================
+function checkReminders() {
+const today = new Date();
+today.setHours(0, 0, 0, 0);
+DB.sessions.forEach(s => {
+const d = new Date(s.date);
+d.setHours(0, 0, 0, 0);
+const diff = (d - today) / (1000 * 60 * 60 * 24);
+if (diff >= 0 && diff <= 1) {
+const caseName = getCaseName(s.caseId);
+const label = diff === 0 ? 'اليوم' : 'غداً';
+const notifKey = 'session_' + s.id;
+if (!(DB.notifications || []).some(n => n.caseId === notifKey)) {
+addNotification('📅 جلسة ' + label, 'لديك جلسة ' + label + ' في القضية ' + caseName + (s
+.court ? ' بمحكمة ' + s.court : ''), 'reminder', 'sessions', notifKey);
+}
+}
+});
+DB.tasks.forEach(t => {
+if (t.status === 'done' || !t.due) return;
+const due = new Date(t.due);
+due.setHours(0, 0, 0, 0);
+if (due < today) {
+const notifKey = 'task_' + t.id;
+if (!(DB.notifications || []).some(n => n.caseId === notifKey)) {
+addNotification('⏰ مهمة متأخرة', 'المهمة "' + t.title + '" مستحقة منذ ' + formatDate(t.due),
+'alert', 'tasks', notifKey);
+}
+}
+});
+}
+
+// ============================================================
+// ADVANCED SEARCH
+// ============================================================
+function performAdvancedSearch() {
+const keyword = document.getElementById('advSearchKeyword')?.value?.toLowerCase() || '';
+const type = document.getElementById('advSearchType')?.value || '';
+const status = document.getElementById('advSearchStatus')?.value || '';
+const court = document.getElementById('advSearchCourt')?.value || '';
+const fromDate = document.getElementById('advSearchFrom')?.value || '';
+const toDate = document.getElementById('advSearchTo')?.value || '';
+const minFee = parseFloat(document.getElementById('advSearchMinFee')?.value) || 0;
+const maxFee = parseFloat(document.getElementById('advSearchMaxFee')?.value) || Infinity;
+const party = document.getElementById('advSearchParty')?.value?.toLowerCase() || '';
+
+const results = DB.cases.filter(c => {
+const clientName = getClientName(c.clientIds);
+const text = (c.num + ' ' + clientName + ' ' + c.court + ' ' + c.type + ' ' + (c.plaintiff || '') +
+' ' + (c.defendant || '') + ' ' + (c.tawkeelNum || '')).toLowerCase();
+let match = true;
+if (keyword && !text.includes(keyword)) match = false;
+if (match && type && c.type !== type) match = false;
+if (match && status && c.status !== status) match = false;
+if (match && court && c.court !== court) match = false;
+if (match && fromDate && c.date && c.date < fromDate) match = false;
+if (match && toDate && c.date && c.date > toDate) match = false;
+if (match && minFee && (c.fee || 0) < minFee) match = false;
+if (match && maxFee !== Infinity && (c.fee || 0) > maxFee) match = false;
+if (match && party && !text.includes(party)) match = false;
+return match;
+});
+
+// Update active filters display
+const activeTags = document.getElementById('activeFiltersTags');
+if (activeTags) {
+let tags = [];
+if (keyword) tags.push({ label: '🔍 ' + keyword, value: keyword });
+if (type) tags.push({ label: '📋 ' + type, value: type });
+if (status) tags.push({ label: '📊 ' + status, value: status });
+if (court) tags.push({ label: '🏛️ ' + court, value: court });
+if (fromDate) tags.push({ label: '📅 من ' + formatDate(fromDate), value: fromDate });
+if (toDate) tags.push({ label: '📅 إلى ' + formatDate(toDate), value: toDate });
+if (minFee > 0) tags.push({ label: '💰 من ' + minFee + ' ج.م', value: minFee });
+if (maxFee !== Infinity) tags.push({ label: '💰 إلى ' + maxFee + ' ج.م', value: maxFee });
+if (party) tags.push({ label: '👤 ' + party, value: party });
+if (!tags.length) {
+activeTags.textContent = 'لا توجد فلاتر نشطة';
+} else {
+activeTags.innerHTML = tags.map(t =>
+`<span class="filter-tag">${t.label}<span class="remove-filter" onclick="removeFilter('${t.value}')">×</span></span>`
+).join('');
+}
+}
+
+const container = document.getElementById('advSearchResults');
+const empty = document.getElementById('advSearchEmpty');
+if (!container) return;
+if (!results.length) {
+container.style.display = 'none';
+empty.style.display = 'block';
+return;
+}
+container.style.display = 'block';
+empty.style.display = 'none';
+
+let html =
+`<div class="results-header"><div class="results-count"><i class="fas fa-search"></i> النتائج: <span class="count-number">${results.length}</span></div><div class="results-actions"><button class="btn-outline btn-sm" onclick="window.print()"><i class="fas fa-print"></i> طباعة</button><button class="btn-primary btn-sm" onclick="exportSearchResults()"><i class="fas fa-download"></i> تصدير</button></div></div>`;
+results.forEach(c => {
+const remaining = (c.fee || 0) - (c.paid || 0);
+const statusClass = c.status === 'نشطة' ? 'active' : c.status === 'عاجلة' ? 'urgent' : c.status ===
+'معلقة' ? 'pending' : c.status === 'مغلقة' ? 'closed' : 'archived';
+html +=
+`<div class="search-result-item" onclick="viewCase('${c.id}')">
+<div class="result-main">
+<div class="result-icon case-icon">⚖️</div>
+<div class="result-info">
+<div class="result-title">${c.num} <span style="font-size:11px;font-weight:400;color:var(--text-muted);">${c.type}</span></div>
+<div class="result-subtitle">${getClientName(c.clientIds)}</div>
+<div class="result-details">
+<span><i class="fas fa-building"></i> <span class="detail-label">المحكمة:</span> ${c.court}</span>
+<span><i class="fas fa-user-tie"></i> <span class="detail-label">المحامي:</span> ${getStaffName(c.lawyerId)}</span>
+<span><i class="fas fa-coins"></i> <span class="detail-label">الأتعاب:</span> ${fmt(c.fee)}</span>
+${c.date ? `<span><i class="fas fa-calendar"></i> <span class="detail-label">الجلسة:</span> ${formatDate(c.date)}</span>` : ''}
+</div>
+</div>
+</div>
+<div style="display:flex;align-items:center;gap:8px;">
+<span class="result-status ${statusClass}">${c.status}</span>
+<span style="font-size:11px;font-weight:700;color:${remaining > 0 ? 'var(--primary)' : 'var(--success)'};">${remaining > 0 ? fmt(remaining) : '✓'}</span>
+</div>
+</div>`;
+});
+container.innerHTML = html;
+}
+
+function removeFilter(value) {
+['advSearchKeyword', 'advSearchType', 'advSearchStatus', 'advSearchCourt', 'advSearchFrom', 'advSearchTo',
+'advSearchMinFee', 'advSearchMaxFee', 'advSearchParty'
+].forEach(id => {
+const el = document.getElementById(id);
+if (el && el.value == value) el.value = '';
+});
+performAdvancedSearch();
+}
+
+function resetAdvancedSearch() {
+['advSearchKeyword', 'advSearchType', 'advSearchStatus', 'advSearchCourt', 'advSearchFrom', 'advSearchTo',
+'advSearchMinFee', 'advSearchMaxFee', 'advSearchParty'
+].forEach(id => {
+const el = document.getElementById(id);
+if (el) el.value = '';
+});
+performAdvancedSearch();
+const container = document.getElementById('advSearchResults');
+if (container) container.style.display = 'none';
+const empty = document.getElementById('advSearchEmpty');
+if (empty) empty.style.display = 'block';
+}
+
+function quickSearchFilter(filter) {
+document.getElementById('advSearchStatus').value = filter;
+if (filter === '') document.getElementById('advSearchStatus').value = '';
+performAdvancedSearch();
+}
+
+function saveSearchFilter() {
+const filters = {};
+['advSearchKeyword', 'advSearchType', 'advSearchStatus', 'advSearchCourt', 'advSearchFrom', 'advSearchTo',
+'advSearchMinFee', 'advSearchMaxFee', 'advSearchParty'
+].forEach(id => {
+const el = document.getElementById(id);
+if (el && el.value) filters[id] = el.value;
+});
+if (Object.keys(filters).length === 0) { showToast('لا توجد فلاتر لحفظها', 'warning'); return; }
+if (!savedFilters) savedFilters = [];
+const name = prompt('أدخل اسماً للفلتر:', 'فلتر ' + (savedFilters.length + 1));
+if (!name) return;
+savedFilters.push({ name, filters });
+renderSavedFilters();
+showToast('✅ تم حفظ الفلتر: ' + name, 'success');
+}
+
+function renderSavedFilters() {
+const container = document.getElementById('savedFiltersList');
+const section = document.getElementById('savedFiltersSection');
+if (!container || !section) return;
+if (!savedFilters || !savedFilters.length) {
+section.style.display = 'none';
+return;
+}
+section.style.display = 'block';
+container.innerHTML = savedFilters.map((sf, idx) =>
+`<span class="saved-filter-item" onclick="applySavedFilter(${idx})"><i class="fas fa-bookmark"></i> ${sf.name}<span class="remove-saved" onclick="event.stopPropagation();removeSavedFilter(${idx})">×</span></span>`
+).join('');
+}
+
+function applySavedFilter(idx) {
+if (!savedFilters || !savedFilters[idx]) return;
+const filters = savedFilters[idx].filters;
+Object.keys(filters).forEach(id => {
+const el = document.getElementById(id);
+if (el) el.value = filters[id];
+});
+performAdvancedSearch();
+showToast('✅ تم تطبيق الفلتر: ' + savedFilters[idx].name, 'success');
+}
+
+function removeSavedFilter(idx) {
+if (!confirm('حذف هذا الفلتر المحفوظ؟')) return;
+savedFilters.splice(idx, 1);
+renderSavedFilters();
+showToast('✅ تم حذف الفلتر', 'warning');
+}
+
+function exportSearchResults() {
+const container = document.getElementById('advSearchResults');
+if (!container || container.style.display === 'none') { showToast('لا توجد نتائج لتصديرها', 'warning'); return; }
+const results = container.querySelectorAll('.search-result-item');
+if (!results.length) { showToast('لا توجد نتائج لتصديرها', 'warning'); return; }
+let csv = 'رقم القضية,النوع,الموكلون,المحكمة,الحالة,الأتعاب\n';
+results.forEach(item => {
+const title = item.querySelector('.result-title')?.textContent?.trim() || '';
+const subtitle = item.querySelector('.result-subtitle')?.textContent?.trim() || '';
+const details = item.querySelectorAll('.result-details span');
+let court = '',
+status = '',
+fee = '';
+details.forEach(d => {
+const text = d.textContent;
+if (text.includes('المحكمة:')) court = text.replace('المحكمة:', '').trim();
+if (text.includes('الأتعاب:')) fee = text.replace('الأتعاب:', '').trim();
+});
+const statusEl = item.querySelector('.result-status');
+if (statusEl) status = statusEl.textContent.trim();
+const num = title.split(' ')[0] || '';
+const type = title.replace(num, '').trim() || '';
+csv += `${num},${type},${subtitle},${court},${status},${fee}\n`;
+});
+const blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8' });
+const url = URL.createObjectURL(blob);
+const a = document.createElement('a');
+a.href = url;
+a.download = 'نتائج_البحث_المتقدم.csv';
+a.click();
+showToast('✅ تم تصدير النتائج', 'success');
+}
+
+// ============================================================
+// INIT
+// ============================================================
+function initApp() {
+renderDashboard();
+checkSessionAlerts();
+updateStorageIndicator();
+renderFileManager();
+renderSettings();
+renderImportantLinks();
+renderCourts();
+updateAllCourtAutocomplete();
+updateCourtList();
+clearCaseSearch();
+renderSavedFilters();
+updateNotificationBadge();
+renderNotifications();
+setInterval(checkReminders, 5 * 60 * 1000);
+setTimeout(checkReminders, 3000);
+if (DB.settings?.autoSync) startAutoSync();
+// Add notification button if not exists
+if (!document.querySelector('.notification-badge')) {
+const topbar = document.querySelector('.topbar .flex:last-child');
+if (topbar) {
+const btn = document.createElement('button');
+btn.className = 'notification-badge';
+btn.style.cssText =
+'background:var(--bg);border:1px solid var(--border);border-radius:8px;width:34px;height:34px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--text);font-size:14px;position:relative;';
+btn.innerHTML = '<i class="fas fa-bell"></i><span class="badge-count" style="display:none;">0</span>';
+btn.onclick = toggleNotificationPanel;
+topbar.appendChild(btn);
+updateNotificationBadge();
+}
+}
+}
+
+// Override showPage to include advanced search
+const originalShowPageFn = window.showPage || function() {};
+window.showPage = function(page) {
+originalShowPageFn(page);
+if (page === 'dashboard') {
+setTimeout(() => { renderCharts();
+renderQuickStats();
+renderStageProgress(); }, 100);
+}
+if (page === 'advSearch') {
+setTimeout(() => { updateCourtList();
+performAdvancedSearch(); }, 50);
+}
+};
+
+window.addEventListener('DOMContentLoaded', () => {
+if (!checkAutoLogin()) {
+document.getElementById('loginScreen').style.display = 'flex';
+hideGlobalLoading();
+}
+});
+
+console.log('✅ تم تحميل النظام بنجاح مع ميزات البحث المتقدم والإشعارات وإدارة المستندات');
+</script>
 
 </body>
 </html>
