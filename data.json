@@ -335,9 +335,9 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٦‏/٦‏/٢٠٢٦، ٤:٠٧:٤٩ م",
-    "lastSyncCommit": "3a47e3dea0cb84801370d987a33ba6da967061d9",
-    "storageMode": "local"
+    "lastSync": "٢٦‏/٦‏/٢٠٢٦، ٤:٠٧:٥٥ م",
+    "lastSyncCommit": "06a5255c07c7caccb05202e3852ec399498bb89e",
+    "storageMode": "github"
   },
   "activityLog": [
     {
