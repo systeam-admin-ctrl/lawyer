@@ -4982,10 +4982,12 @@
     "officeAddress": "",
     "officePhone": "",
     "officeEmail": "",
-    "storageMode": "local",
+    "storageMode": "github",
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
-    "autoSync": true
+    "autoSync": true,
+    "lastSync": "٢٦‏/٦‏/٢٠٢٦، ٣:٤٢:٤٥ م",
+    "lastSyncCommit": "9b1203063900b33b1a6b3da2c545277a22410de2"
   },
   "activityLog": [
     {
