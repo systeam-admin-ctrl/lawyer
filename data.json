@@ -250,7 +250,19 @@
   ],
   "documents": [],
   "attendance": [],
-  "salaries": [],
+  "salaries": [
+    {
+      "id": "_nl7evxh72mqwanu5m",
+      "staffId": "_g4g3ctb2emqtjrplg",
+      "month": "2026-06",
+      "base": 1000,
+      "bonus": 500,
+      "deduct": 0,
+      "deductReason": "خصم",
+      "status": "مدفوع",
+      "note": ""
+    }
+  ],
   "sessionLogs": [
     {
       "id": "_bgrwunscrmqtk5tp5",
@@ -335,11 +347,15 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٧‏/٦‏/٢٠٢٦، ٢:٣٨:٢٥ م",
-    "lastSyncCommit": "edb12ce0ec28f6f3e263c29812126f794b990a96",
+    "lastSync": "٢٧‏/٦‏/٢٠٢٦، ٢:٤٣:٠٤ م",
+    "lastSyncCommit": "4531a851f969db9f50fbf003ce4a2d5457e779fd",
     "storageMode": "github"
   },
   "activityLog": [
+    {
+      "action": "صرف راتب",
+      "time": "٢٧‏/٦‏/٢٠٢٦، ٢:٤٦:١٦ م"
+    },
     {
       "action": "إضافة مستند: توكيل للقضية 900\\2026",
       "time": "٢٦‏/٦‏/٢٠٢٦، ٤:٠٨:٤٥ م"
