@@ -223,7 +223,7 @@
       "due": "2026-06-30",
       "ownerId": "_2505413ycmqtjscxh",
       "caseId": "_45g4noytamqtmektc",
-      "status": "inprogress"
+      "status": "done"
     }
   ],
   "payments": [
@@ -335,8 +335,8 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٧‏/٦‏/٢٠٢٦، ٤:٠٦:٢٣ ص",
-    "lastSyncCommit": "2802a87d3462e8b01f52034ee9b814c041d39acf",
+    "lastSync": "٢٧‏/٦‏/٢٠٢٦، ٤:١١:١١ ص",
+    "lastSyncCommit": "760c112ed4f7a2140670e40ebd3e2d240135e034",
     "storageMode": "github"
   },
   "activityLog": [
