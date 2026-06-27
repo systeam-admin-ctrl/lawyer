@@ -248,17 +248,7 @@
       "status": "مدفوع"
     }
   ],
-  "documents": [
-    {
-      "id": "_7ht1y3yr7mqwa9fd1",
-      "name": "backup_2026-06-20.json",
-      "cat": "أخرى",
-      "size": 680,
-      "data": "data:application/json;base64,ewogICJjYXNlcyI6IFtdLAogICJjbGllbnRzIjogW10sCiAgInN0YWZmIjogW10sCiAgInNlc3Npb25zIjogW10sCiAgInRhc2tzIjogW10sCiAgInBheW1lbnRzIjogW10sCiAgImRvY3VtZW50cyI6IFtdLAogICJhdHRlbmRhbmNlIjogW10sCiAgInNhbGFyaWVzIjogW10sCiAgInNldHRpbmdzIjogewogICAgIm9mZmljZU5hbWUiOiAiQU1HINmE2YTZhdit2KfZhdin2Kkg2YjYp9mE2KfYs9iq2LTYp9ix2KfYqiDYp9mE2YLYp9mG2YjZhtmK2KkiLAogICAgIm9mZmljZU1hbmFnZXIiOiAi2YXYtdi32YHZiSDZhdit2YXYryDYo9io2KfYuNipIiwKICAgICJvZmZpY2VBZGRyZXNzIjogIiIsCiAgICAib2ZmaWNlUGhvbmUiOiAiIiwKICAgICJvZmZpY2VFbWFpbCI6ICIiCiAgfSwKICAiYWN0aXZpdHlMb2ciOiBbCiAgICB7CiAgICAgICJhY3Rpb24iOiAi2YXYstin2YXZhtipINmF2LkgR2l0SHViIiwKICAgICAgInRpbWUiOiAi2aLZoOKAjy/ZpuKAjy/Zotmg2aLZptiMINmh2aA62aTZpjrZo9moINi1IgogICAgfSwKICAgIHsKICAgICAgImFjdGlvbiI6ICLYrdmB2Lgg2KXYudiv2KfYr9in2KoiLAogICAgICAidGltZSI6ICLZotmg4oCPL9mm4oCPL9mi2aDZotmm2Iwg2aHZoDrZpNmmOtmj2aQg2LUiCiAgICB9CiAgXSwKICAic2Vzc2lvbkxvZ3MiOiBbXSwKICAidmVyc2lvbiI6ICI2LjAiCn0=",
-      "caseId": "",
-      "uploadedAt": "2026-06-27T11:35:04.645Z"
-    }
-  ],
+  "documents": [],
   "attendance": [],
   "salaries": [],
   "sessionLogs": [
@@ -345,8 +335,8 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٧‏/٦‏/٢٠٢٦، ٢:٣٧:٢٤ م",
-    "lastSyncCommit": "8f1503da86c4b1a77cd9e2e860faead0d341bea4",
+    "lastSync": "٢٧‏/٦‏/٢٠٢٦، ٢:٣٧:٢٦ م",
+    "lastSyncCommit": "7004702dd3dd6f8c0e8f1cd43ff003ee7befe35a",
     "storageMode": "github"
   },
   "activityLog": [
