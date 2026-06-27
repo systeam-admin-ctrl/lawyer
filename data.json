@@ -223,7 +223,7 @@
       "due": "2026-06-30",
       "ownerId": "_2505413ycmqtjscxh",
       "caseId": "_45g4noytamqtmektc",
-      "status": "done"
+      "status": "inprogress"
     }
   ],
   "payments": [
@@ -275,18 +275,6 @@
       "notes": "",
       "nextDate": "2026-07-31",
       "createdAt": "2026-06-25T13:52:17.076Z"
-    },
-    {
-      "id": "_hadjt4zv0mqvhew8k",
-      "caseId": "_xs5wkrzqpmqtk6o3n",
-      "date": "2026-06-27",
-      "court": "شرق",
-      "judge": "",
-      "result": "تأجيل",
-      "what": "تاجيل ليوم 1/1/2027",
-      "notes": "",
-      "nextDate": "",
-      "createdAt": "2026-06-26T22:07:30.740Z"
     }
   ],
   "clientGroups": [
@@ -335,23 +323,11 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٧‏/٦‏/٢٠٢٦، ٤:١٣:٣٦ ص",
-    "lastSyncCommit": "801d81d231dd5f671a537a877fcead3ece093e07",
-    "storageMode": "github"
+    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٦:١٨:٤٧ م",
+    "lastSyncCommit": "69bc70432c5f1e55b9d989603326c5fd2272e2e6",
+    "storageMode": "local"
   },
   "activityLog": [
-    {
-      "action": "إضافة مستند: توكيل للقضية 900\\2026",
-      "time": "٢٦‏/٦‏/٢٠٢٦، ٤:٠٨:٤٥ م"
-    },
-    {
-      "action": "رفع مستند: مركز",
-      "time": "٢٦‏/٦‏/٢٠٢٦، ٣:٤٥:٥٧ م"
-    },
-    {
-      "action": "تسجيل جلسة منتهية: 80\\2026",
-      "time": "٢٧‏/٦‏/٢٠٢٦، ١:٠٧:٣٠ ص"
-    },
     {
       "action": "إضافة مهمة: استلام مستنداد الاستأناف",
       "time": "٢٥‏/٦‏/٢٠٢٦، ٨:١٤:٣٥ ص"
@@ -629,5 +605,16 @@
   ],
   "version": "2.0",
   "expenses": [],
-  "notifications": []
+  "notifications": [
+    {
+      "id": "_yi9sng9hmmqtvh1rj",
+      "title": "📅 جلسة اليوم",
+      "message": "لديك جلسة اليوم في القضية 80/2021 بمحكمة محكمه جنايات الزقازيق",
+      "type": "reminder",
+      "link": "sessions",
+      "caseId": "session__njyfuz9kwmqtmfsw4",
+      "time": "2026-06-25T19:05:33.487Z",
+      "read": false
+    }
+  ]
 }
