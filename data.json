@@ -223,7 +223,7 @@
       "due": "2026-06-30",
       "ownerId": "_2505413ycmqtjscxh",
       "caseId": "_45g4noytamqtmektc",
-      "status": "inprogress"
+      "status": "done"
     }
   ],
   "payments": [
@@ -248,7 +248,17 @@
       "status": "مدفوع"
     }
   ],
-  "documents": [],
+  "documents": [
+    {
+      "id": "_7ht1y3yr7mqwa9fd1",
+      "name": "backup_2026-06-20.json",
+      "cat": "أخرى",
+      "size": 680,
+      "data": "data:application/json;base64,ewogICJjYXNlcyI6IFtdLAogICJjbGllbnRzIjogW10sCiAgInN0YWZmIjogW10sCiAgInNlc3Npb25zIjogW10sCiAgInRhc2tzIjogW10sCiAgInBheW1lbnRzIjogW10sCiAgImRvY3VtZW50cyI6IFtdLAogICJhdHRlbmRhbmNlIjogW10sCiAgInNhbGFyaWVzIjogW10sCiAgInNldHRpbmdzIjogewogICAgIm9mZmljZU5hbWUiOiAiQU1HINmE2YTZhdit2KfZhdin2Kkg2YjYp9mE2KfYs9iq2LTYp9ix2KfYqiDYp9mE2YLYp9mG2YjZhtmK2KkiLAogICAgIm9mZmljZU1hbmFnZXIiOiAi2YXYtdi32YHZiSDZhdit2YXYryDYo9io2KfYuNipIiwKICAgICJvZmZpY2VBZGRyZXNzIjogIiIsCiAgICAib2ZmaWNlUGhvbmUiOiAiIiwKICAgICJvZmZpY2VFbWFpbCI6ICIiCiAgfSwKICAiYWN0aXZpdHlMb2ciOiBbCiAgICB7CiAgICAgICJhY3Rpb24iOiAi2YXYstin2YXZhtipINmF2LkgR2l0SHViIiwKICAgICAgInRpbWUiOiAi2aLZoOKAjy/ZpuKAjy/Zotmg2aLZptiMINmh2aA62aTZpjrZo9moINi1IgogICAgfSwKICAgIHsKICAgICAgImFjdGlvbiI6ICLYrdmB2Lgg2KXYudiv2KfYr9in2KoiLAogICAgICAidGltZSI6ICLZotmg4oCPL9mm4oCPL9mi2aDZotmm2Iwg2aHZoDrZpNmmOtmj2aQg2LUiCiAgICB9CiAgXSwKICAic2Vzc2lvbkxvZ3MiOiBbXSwKICAidmVyc2lvbiI6ICI2LjAiCn0=",
+      "caseId": "",
+      "uploadedAt": "2026-06-27T11:35:04.645Z"
+    }
+  ],
   "attendance": [],
   "salaries": [],
   "sessionLogs": [
@@ -275,6 +285,18 @@
       "notes": "",
       "nextDate": "2026-07-31",
       "createdAt": "2026-06-25T13:52:17.076Z"
+    },
+    {
+      "id": "_hadjt4zv0mqvhew8k",
+      "caseId": "_xs5wkrzqpmqtk6o3n",
+      "date": "2026-06-27",
+      "court": "شرق",
+      "judge": "",
+      "result": "تأجيل",
+      "what": "تاجيل ليوم 1/1/2027",
+      "notes": "",
+      "nextDate": "",
+      "createdAt": "2026-06-26T22:07:30.740Z"
     }
   ],
   "clientGroups": [
@@ -323,11 +345,23 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٥‏/٦‏/٢٠٢٦، ٦:١٨:٤٧ م",
-    "lastSyncCommit": "69bc70432c5f1e55b9d989603326c5fd2272e2e6",
-    "storageMode": "local"
+    "lastSync": "٢٧‏/٦‏/٢٠٢٦، ٢:٣٤:٤١ م",
+    "lastSyncCommit": "cefb583de99a4332c2c0b18419d972b9c3d72258",
+    "storageMode": "github"
   },
   "activityLog": [
+    {
+      "action": "إضافة مستند: توكيل للقضية 900\\2026",
+      "time": "٢٦‏/٦‏/٢٠٢٦، ٤:٠٨:٤٥ م"
+    },
+    {
+      "action": "رفع مستند: مركز",
+      "time": "٢٦‏/٦‏/٢٠٢٦، ٣:٤٥:٥٧ م"
+    },
+    {
+      "action": "تسجيل جلسة منتهية: 80\\2026",
+      "time": "٢٧‏/٦‏/٢٠٢٦، ١:٠٧:٣٠ ص"
+    },
     {
       "action": "إضافة مهمة: استلام مستنداد الاستأناف",
       "time": "٢٥‏/٦‏/٢٠٢٦، ٨:١٤:٣٥ ص"
@@ -605,16 +639,5 @@
   ],
   "version": "2.0",
   "expenses": [],
-  "notifications": [
-    {
-      "id": "_yi9sng9hmmqtvh1rj",
-      "title": "📅 جلسة اليوم",
-      "message": "لديك جلسة اليوم في القضية 80/2021 بمحكمة محكمه جنايات الزقازيق",
-      "type": "reminder",
-      "link": "sessions",
-      "caseId": "session__njyfuz9kwmqtmfsw4",
-      "time": "2026-06-25T19:05:33.487Z",
-      "read": false
-    }
-  ]
+  "notifications": []
 }
