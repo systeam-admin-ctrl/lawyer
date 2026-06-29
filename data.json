@@ -8,20 +8,20 @@
   "documents": [],
   "attendance": [],
   "salaries": [],
+  "sessionLogs": [],
+  "clientGroups": [],
   "settings": {
     "storageMode": "github",
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٩‏/٦‏/٢٠٢٦، ١:٤٤:٤٢ م",
-    "lastSyncCommit": "270274599014a2d155514bb783c431180e6aafa9"
+    "lastSync": "٢٩‏/٦‏/٢٠٢٦، ١:٤٤:٤٤ م",
+    "lastSyncCommit": "d08b4b56c3766c3872efb94276991add9e2ca5d3"
   },
   "activityLog": [],
-  "sessionLogs": [],
-  "clientGroups": [],
   "importantLinks": [],
   "courts": [],
+  "version": "2.0",
   "expenses": [],
-  "notifications": [],
-  "version": "2.0"
+  "notifications": []
 }
