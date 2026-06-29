@@ -248,7 +248,17 @@
       "status": "مدفوع"
     }
   ],
-  "documents": [],
+  "documents": [
+    {
+      "id": "_xex2a4kibmqz2zbwa",
+      "name": "توكيل 900",
+      "cat": "توكيل",
+      "caseId": "_ahsxxbr72mqtk3mmp",
+      "size": 330884,
+      "data": "***HIDDEN***",
+      "uploadedAt": "2026-06-29T10:34:34.618Z"
+    }
+  ],
   "attendance": [],
   "salaries": [
     {
@@ -347,11 +357,15 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٩‏/٦‏/٢٠٢٦، ١:٣٣:٠٩ م",
-    "lastSyncCommit": "9f7a0510d6d0db6aab981a5a14c5431fbb676683",
+    "lastSync": "٢٩‏/٦‏/٢٠٢٦، ١:٣٣:١١ م",
+    "lastSyncCommit": "ce61b1e63afe8db50c748e3129d2129d6fd113ca",
     "storageMode": "github"
   },
   "activityLog": [
+    {
+      "action": "إضافة مستند: توكيل 900 للقضية 900\\2026",
+      "time": "٢٩‏/٦‏/٢٠٢٦، ١:٣٤:٣٤ م"
+    },
     {
       "action": "صرف راتب",
       "time": "٢٧‏/٦‏/٢٠٢٦، ٢:٤٦:١٦ م"
