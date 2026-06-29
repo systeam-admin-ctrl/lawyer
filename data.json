@@ -248,7 +248,17 @@
       "status": "مدفوع"
     }
   ],
-  "documents": [],
+  "documents": [
+    {
+      "id": "_xex2a4kibmqz2zbwa",
+      "name": "توكيل 900",
+      "cat": "توكيل",
+      "caseId": "_ahsxxbr72mqtk3mmp",
+      "size": 330884,
+      "data": "***HIDDEN***",
+      "uploadedAt": "2026-06-29T10:34:34.618Z"
+    }
+  ],
   "attendance": [],
   "salaries": [
     {
@@ -347,8 +357,8 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٩‏/٦‏/٢٠٢٦، ١:٤١:٠٩ م",
-    "lastSyncCommit": "c04fb9fba35bd7a26df0f97508ff2b57da0aa702",
+    "lastSync": "٢٩‏/٦‏/٢٠٢٦، ٢:٤٠:٤٨ ص",
+    "lastSyncCommit": "a5264f1b4e0d8d93cecb0a1333b88a30aab9ad22",
     "storageMode": "github"
   },
   "activityLog": [
