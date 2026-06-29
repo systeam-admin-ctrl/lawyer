@@ -263,12 +263,92 @@
       "note": ""
     }
   ],
+  "sessionLogs": [
+    {
+      "id": "_bgrwunscrmqtk5tp5",
+      "caseId": "_ahsxxbr72mqtk3mmp",
+      "date": "2026-06-30",
+      "court": "الابتدائيه",
+      "judge": "",
+      "result": "أخرى",
+      "what": "استأناف + تقديم اوراق",
+      "notes": "تم استاناف القضيه إلي رقم 80\\2026 \nتقديم المستنداد الخاصه بالقضيه",
+      "nextDate": "2026-07-15",
+      "createdAt": "2026-06-25T13:48:54.041Z"
+    },
+    {
+      "id": "_618e1rl9amqtka6d0",
+      "caseId": "_xs5wkrzqpmqtk6o3n",
+      "date": "2026-07-15",
+      "court": "الابتدائيه",
+      "judge": "",
+      "result": "حكم صادر",
+      "what": "صدور حكم 3 سنوات والخروج عام 2029",
+      "notes": "",
+      "nextDate": "2026-07-31",
+      "createdAt": "2026-06-25T13:52:17.076Z"
+    },
+    {
+      "id": "_hadjt4zv0mqvhew8k",
+      "caseId": "_xs5wkrzqpmqtk6o3n",
+      "date": "2026-06-27",
+      "court": "شرق",
+      "judge": "",
+      "result": "تأجيل",
+      "what": "تاجيل ليوم 1/1/2027",
+      "notes": "",
+      "nextDate": "",
+      "createdAt": "2026-06-26T22:07:30.740Z"
+    }
+  ],
+  "clientGroups": [
+    {
+      "id": "_79abx7mh0mqtjv5bn",
+      "tawkeelNum": "900\\2026",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2026-06-01",
+      "tawkeelImg": "",
+      "notes": "صحة توقيع",
+      "clients": [
+        {
+          "id": "_0hvgmcn2lmqtjv4c7",
+          "name": "خالد احمد",
+          "phone": "+201123961290",
+          "idNum": "27593650275936",
+          "email": "",
+          "address": "قرية ميت ابو علي \\ مركز الزقازيق",
+          "photo": ""
+        }
+      ],
+      "mainClientId": "_0hvgmcn2lmqtjv4c7"
+    },
+    {
+      "id": "_wpaqlpx42mqtjwp7z",
+      "tawkeelNum": "80\\2021",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2024-01-01",
+      "tawkeelImg": "",
+      "notes": "",
+      "clients": [
+        {
+          "id": "_3qwrdtexemqtjwoal",
+          "name": "محمد ابرهيم",
+          "phone": "+201123961290",
+          "idNum": "2946320562957",
+          "email": "",
+          "address": "طاروط - مركز الزقازيق",
+          "photo": ""
+        }
+      ],
+      "mainClientId": "_3qwrdtexemqtjwoal"
+    }
+  ],
   "settings": {
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٩‏/٦‏/٢٠٢٦، ٢:٤٦:٣٠ ص",
-    "lastSyncCommit": "a121eedb71de6d851596871ff44ae9ad2c814dcc",
+    "lastSync": "٢٩‏/٦‏/٢٠٢٦، ١:٤٧:٣٨ م",
+    "lastSyncCommit": "a33fb0bffe69f3fe9c349890add87eb9ebccd331",
     "storageMode": "github"
   },
   "activityLog": [
@@ -461,86 +541,6 @@
       "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٣٧:٥٥ ص"
     }
   ],
-  "sessionLogs": [
-    {
-      "id": "_bgrwunscrmqtk5tp5",
-      "caseId": "_ahsxxbr72mqtk3mmp",
-      "date": "2026-06-30",
-      "court": "الابتدائيه",
-      "judge": "",
-      "result": "أخرى",
-      "what": "استأناف + تقديم اوراق",
-      "notes": "تم استاناف القضيه إلي رقم 80\\2026 \nتقديم المستنداد الخاصه بالقضيه",
-      "nextDate": "2026-07-15",
-      "createdAt": "2026-06-25T13:48:54.041Z"
-    },
-    {
-      "id": "_618e1rl9amqtka6d0",
-      "caseId": "_xs5wkrzqpmqtk6o3n",
-      "date": "2026-07-15",
-      "court": "الابتدائيه",
-      "judge": "",
-      "result": "حكم صادر",
-      "what": "صدور حكم 3 سنوات والخروج عام 2029",
-      "notes": "",
-      "nextDate": "2026-07-31",
-      "createdAt": "2026-06-25T13:52:17.076Z"
-    },
-    {
-      "id": "_hadjt4zv0mqvhew8k",
-      "caseId": "_xs5wkrzqpmqtk6o3n",
-      "date": "2026-06-27",
-      "court": "شرق",
-      "judge": "",
-      "result": "تأجيل",
-      "what": "تاجيل ليوم 1/1/2027",
-      "notes": "",
-      "nextDate": "",
-      "createdAt": "2026-06-26T22:07:30.740Z"
-    }
-  ],
-  "clientGroups": [
-    {
-      "id": "_79abx7mh0mqtjv5bn",
-      "tawkeelNum": "900\\2026",
-      "tawkeelType": "عام",
-      "tawkeelDate": "2026-06-01",
-      "tawkeelImg": "",
-      "notes": "صحة توقيع",
-      "clients": [
-        {
-          "id": "_0hvgmcn2lmqtjv4c7",
-          "name": "خالد احمد",
-          "phone": "+201123961290",
-          "idNum": "27593650275936",
-          "email": "",
-          "address": "قرية ميت ابو علي \\ مركز الزقازيق",
-          "photo": ""
-        }
-      ],
-      "mainClientId": "_0hvgmcn2lmqtjv4c7"
-    },
-    {
-      "id": "_wpaqlpx42mqtjwp7z",
-      "tawkeelNum": "80\\2021",
-      "tawkeelType": "عام",
-      "tawkeelDate": "2024-01-01",
-      "tawkeelImg": "",
-      "notes": "",
-      "clients": [
-        {
-          "id": "_3qwrdtexemqtjwoal",
-          "name": "محمد ابرهيم",
-          "phone": "+201123961290",
-          "idNum": "2946320562957",
-          "email": "",
-          "address": "طاروط - مركز الزقازيق",
-          "photo": ""
-        }
-      ],
-      "mainClientId": "_3qwrdtexemqtjwoal"
-    }
-  ],
   "importantLinks": [
     {
       "id": "_vfx3b9x63mqtlr0ri",
@@ -647,6 +647,7 @@
       "name": "مجمع محاكم ميت غمر"
     }
   ],
+  "version": "2.0",
   "expenses": [],
   "notifications": [
     {
@@ -659,6 +660,5 @@
       "time": "2026-06-29T10:33:02.447Z",
       "read": false
     }
-  ],
-  "version": "2.0"
+  ]
 }
