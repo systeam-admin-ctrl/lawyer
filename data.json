@@ -249,20 +249,7 @@
     }
   ],
   "documents": [],
-  "attendance": [
-    {
-      "id": "_2vzbq7gbdmqz3h6jj",
-      "staffId": "_ow7g5wtofmqtjswr7",
-      "date": "2026-06-29",
-      "timeIn": "13:00",
-      "timeOut": "01:00",
-      "status": "حاضر",
-      "deductType": "none",
-      "deductDays": 0,
-      "deductAmount": 0,
-      "note": ""
-    }
-  ],
+  "attendance": [],
   "salaries": [
     {
       "id": "_nl7evxh72mqwanu5m",
@@ -360,15 +347,11 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٩‏/٦‏/٢٠٢٦، ١:٤٧:٤١ م",
-    "lastSyncCommit": "a9952d82b18c7566e61b9a54344c7108f8408520",
+    "lastSync": "٢٩‏/٦‏/٢٠٢٦، ٢:٤٧:٣٢ ص",
+    "lastSyncCommit": "8f5062fb44a50e8e6ea3d8ea7d5a4c930caa4c8d",
     "storageMode": "github"
   },
   "activityLog": [
-    {
-      "action": "تسجيل حضور: ابرهيم محمد",
-      "time": "٢٩‏/٦‏/٢٠٢٦، ١:٤٨:٢٧ م"
-    },
     {
       "action": "إضافة مستند: توكيل 900 للقضية 900\\2026",
       "time": "٢٩‏/٦‏/٢٠٢٦، ١:٣٤:٣٤ م"
