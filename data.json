@@ -12,13 +12,13 @@
       "court": "المحكمه الابتدائيه",
       "division": "جنوب",
       "date": "2026-06-30",
-      "status": "مؤرشفة",
+      "status": "نشطة",
       "notes": "",
       "fee": 5000,
       "paid": 5000,
       "tawkeelNum": "900\\2026",
       "tawkeelType": "خاص",
-      "archived": true,
+      "archived": false,
       "stage": "filed",
       "createdAt": "2026-06-25T13:47:11.569Z",
       "appeals": [
@@ -250,19 +250,7 @@
   ],
   "documents": [],
   "attendance": [],
-  "salaries": [
-    {
-      "id": "_nl7evxh72mqwanu5m",
-      "staffId": "_g4g3ctb2emqtjrplg",
-      "month": "2026-06",
-      "base": 1000,
-      "bonus": 500,
-      "deduct": 0,
-      "deductReason": "خصم",
-      "status": "مدفوع",
-      "note": ""
-    }
-  ],
+  "salaries": [],
   "sessionLogs": [
     {
       "id": "_bgrwunscrmqtk5tp5",
@@ -347,23 +335,11 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٣٠‏/٦‏/٢٠٢٦، ١:٤٩:٤٣ ص",
-    "lastSyncCommit": "694df78a506398ddf3f21d9e60a04214685bffb4",
-    "storageMode": "local"
+    "lastSync": "٢٧‏/٦‏/٢٠٢٦، ٢:٣٧:٤١ م",
+    "lastSyncCommit": "b9813604014f09eb777d932638b1c2add7329ece",
+    "storageMode": "github"
   },
   "activityLog": [
-    {
-      "action": "إضافة محكمة: going",
-      "time": "٢٩‏/٦‏/٢٠٢٦، ١٠:٥٦:٣٦ م"
-    },
-    {
-      "action": "إضافة مستند: توكيل 900 للقضية 900\\2026",
-      "time": "٢٩‏/٦‏/٢٠٢٦، ١:٣٤:٣٤ م"
-    },
-    {
-      "action": "صرف راتب",
-      "time": "٢٧‏/٦‏/٢٠٢٦، ٢:٤٦:١٦ م"
-    },
     {
       "action": "إضافة مستند: توكيل للقضية 900\\2026",
       "time": "٢٦‏/٦‏/٢٠٢٦، ٤:٠٨:٤٥ م"
@@ -649,24 +625,9 @@
     {
       "id": "_wkc8o5ao6mqtl8li1",
       "name": "مجمع محاكم ميت غمر"
-    },
-    {
-      "id": "_mj6put24zmr0amv5s",
-      "name": "going"
     }
   ],
   "version": "2.0",
   "expenses": [],
-  "notifications": [
-    {
-      "id": "_9xxigg42ymqz2xcrz",
-      "title": "📅 جلسة غداً",
-      "message": "لديك جلسة غداً في القضية 900\\2026 بمحكمة المحكمه الابتدائيه",
-      "type": "reminder",
-      "link": "sessions",
-      "caseId": "session__wlah60w9bmqtk4gsv",
-      "time": "2026-06-29T10:33:02.447Z",
-      "read": false
-    }
-  ]
+  "notifications": []
 }
