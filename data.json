@@ -249,8 +249,33 @@
     }
   ],
   "documents": [],
-  "attendance": [],
-  "salaries": [],
+  "attendance": [
+    {
+      "id": "_2vzbq7gbdmqz3h6jj",
+      "staffId": "_ow7g5wtofmqtjswr7",
+      "date": "2026-06-29",
+      "timeIn": "13:00",
+      "timeOut": "01:00",
+      "status": "حاضر",
+      "deductType": "none",
+      "deductDays": 0,
+      "deductAmount": 0,
+      "note": ""
+    }
+  ],
+  "salaries": [
+    {
+      "id": "_nl7evxh72mqwanu5m",
+      "staffId": "_g4g3ctb2emqtjrplg",
+      "month": "2026-06",
+      "base": 1000,
+      "bonus": 500,
+      "deduct": 0,
+      "deductReason": "خصم",
+      "status": "مدفوع",
+      "note": ""
+    }
+  ],
   "sessionLogs": [
     {
       "id": "_bgrwunscrmqtk5tp5",
@@ -335,11 +360,23 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٣٠‏/٦‏/٢٠٢٦، ٨:١٧:٢٥ م",
-    "lastSyncCommit": "87911f9da65891b4a114f99fd96a376dda754bf0",
+    "lastSync": "٢٩‏/٦‏/٢٠٢٦، ١:٤٨:٣١ م",
+    "lastSyncCommit": "c3d50e9d6fc5ebcba1ac154b7258517f90f602f2",
     "storageMode": "github"
   },
   "activityLog": [
+    {
+      "action": "تسجيل حضور: ابرهيم محمد",
+      "time": "٢٩‏/٦‏/٢٠٢٦، ١:٤٨:٢٧ م"
+    },
+    {
+      "action": "إضافة مستند: توكيل 900 للقضية 900\\2026",
+      "time": "٢٩‏/٦‏/٢٠٢٦، ١:٣٤:٣٤ م"
+    },
+    {
+      "action": "صرف راتب",
+      "time": "٢٧‏/٦‏/٢٠٢٦، ٢:٤٦:١٦ م"
+    },
     {
       "action": "إضافة مستند: توكيل للقضية 900\\2026",
       "time": "٢٦‏/٦‏/٢٠٢٦، ٤:٠٨:٤٥ م"
@@ -631,13 +668,13 @@
   "expenses": [],
   "notifications": [
     {
-      "id": "_ukewpsn0imr0l2xbj",
-      "title": "📅 جلسة اليوم",
-      "message": "لديك جلسة اليوم في القضية 900\\2026 بمحكمة المحكمه الابتدائيه",
+      "id": "_9xxigg42ymqz2xcrz",
+      "title": "📅 جلسة غداً",
+      "message": "لديك جلسة غداً في القضية 900\\2026 بمحكمة المحكمه الابتدائيه",
       "type": "reminder",
       "link": "sessions",
       "caseId": "session__wlah60w9bmqtk4gsv",
-      "time": "2026-06-30T11:49:01.615Z",
+      "time": "2026-06-29T10:33:02.447Z",
       "read": false
     }
   ]
