@@ -629,5 +629,16 @@
   ],
   "version": "2.0",
   "expenses": [],
-  "notifications": []
+  "notifications": [
+    {
+      "id": "_ukewpsn0imr0l2xbj",
+      "title": "📅 جلسة اليوم",
+      "message": "لديك جلسة اليوم في القضية 900\\2026 بمحكمة المحكمه الابتدائيه",
+      "type": "reminder",
+      "link": "sessions",
+      "caseId": "session__wlah60w9bmqtk4gsv",
+      "time": "2026-06-30T11:49:01.615Z",
+      "read": false
+    }
+  ]
 }
