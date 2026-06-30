@@ -12,13 +12,13 @@
       "court": "المحكمه الابتدائيه",
       "division": "جنوب",
       "date": "2026-06-30",
-      "status": "نشطة",
+      "status": "مؤرشفة",
       "notes": "",
       "fee": 5000,
       "paid": 5000,
       "tawkeelNum": "900\\2026",
       "tawkeelType": "خاص",
-      "archived": false,
+      "archived": true,
       "stage": "filed",
       "createdAt": "2026-06-25T13:47:11.569Z",
       "appeals": [
@@ -347,11 +347,15 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢٩‏/٦‏/٢٠٢٦، ١٠:٥١:٠٥ م",
-    "lastSyncCommit": "19ca98dd619a07b5bbfa69ec92ea5b63dd49c7bb",
-    "storageMode": "github"
+    "lastSync": "٢٩‏/٦‏/٢٠٢٦، ١٠:٥١:١٨ م",
+    "lastSyncCommit": "90040652949ad6d7660a83897f712767281fc3e9",
+    "storageMode": "local"
   },
   "activityLog": [
+    {
+      "action": "إضافة محكمة: going",
+      "time": "٢٩‏/٦‏/٢٠٢٦، ١٠:٥٦:٣٦ م"
+    },
     {
       "action": "إضافة مستند: توكيل 900 للقضية 900\\2026",
       "time": "٢٩‏/٦‏/٢٠٢٦، ١:٣٤:٣٤ م"
@@ -645,6 +649,10 @@
     {
       "id": "_wkc8o5ao6mqtl8li1",
       "name": "مجمع محاكم ميت غمر"
+    },
+    {
+      "id": "_mj6put24zmr0amv5s",
+      "name": "going"
     }
   ],
   "version": "2.0",
