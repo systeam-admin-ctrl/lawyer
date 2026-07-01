@@ -170,6 +170,19 @@
       "joinDate": "2026-06-01",
       "notes": "",
       "photo": ""
+    },
+    {
+      "id": "_lxpa015ksmr2qco1m",
+      "name": "السيد احمد",
+      "role": "موظف إداري",
+      "spec": "",
+      "license": "",
+      "phone": "",
+      "email": "",
+      "salary": 0,
+      "joinDate": "",
+      "notes": "",
+      "photo": ""
     }
   ],
   "sessions": [
@@ -360,11 +373,15 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "١‏/٧‏/٢٠٢٦، ٣:٥٠:٢٩ م",
-    "lastSyncCommit": "009861f0cc6d617e975b823de9a7d0a7c667dd8d",
+    "lastSync": "١‏/٧‏/٢٠٢٦، ٣:٥٠:٣١ م",
+    "lastSyncCommit": "f7363753a50ddbdaebc6bf5ed5602811ff478bdc",
     "storageMode": "github"
   },
   "activityLog": [
+    {
+      "action": "إضافة موظف: السيد احمد",
+      "time": "١‏/٧‏/٢٠٢٦، ٣:٥٢:٠٦ م"
+    },
     {
       "action": "تسجيل حضور: ابرهيم محمد",
       "time": "٢٩‏/٦‏/٢٠٢٦، ١:٤٨:٢٧ م"
