@@ -5131,11 +5131,13 @@
     "storageMode": "github",
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
-    "autoSync": true,
-    "lastSync": "٢‏/٧‏/٢٠٢٦، ٣:٣٩:٢٧ ص",
-    "lastSyncCommit": "df5652beef8736b3f1d2d99132330d7f4af7e582"
+    "autoSync": true
   },
   "activityLog": [
+    {
+      "action": "حفظ إعدادات",
+      "time": "٢‏/٧‏/٢٠٢٦، ٣:٣٩:٣٠ ص"
+    },
     {
       "action": "صرف راتب",
       "time": "١‏/٧‏/٢٠٢٦، ١٠:٢٩:٢٣ م"
