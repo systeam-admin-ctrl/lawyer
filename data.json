@@ -12,7 +12,9 @@
     "storageMode": "github",
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
-    "autoSync": true
+    "autoSync": true,
+    "lastSync": "٢‏/٧‏/٢٠٢٦، ٣:٣٤:٤٤ ص",
+    "lastSyncCommit": "de41b7fab9e5ffa8cad59911997e22f851be64f1"
   },
   "activityLog": [],
   "sessionLogs": [],
