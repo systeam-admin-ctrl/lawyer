@@ -1,1 +1,698 @@
-
+{
+  "cases": [
+    {
+      "id": "_ahsxxbr72mqtk3mmp",
+      "num": "900\\2026",
+      "type": "صحة توقيع",
+      "clientIds": "_0hvgmcn2lmqtjv4c7",
+      "clientRoles": "_0hvgmcn2lmqtjv4c7:موكل",
+      "plaintiff": "",
+      "defendant": "",
+      "lawyerId": "_ow7g5wtofmqtjswr7",
+      "court": "المحكمه الابتدائيه",
+      "division": "جنوب",
+      "date": "2026-06-30",
+      "status": "نشطة",
+      "notes": "",
+      "fee": 5000,
+      "paid": 5000,
+      "tawkeelNum": "900\\2026",
+      "tawkeelType": "خاص",
+      "archived": false,
+      "stage": "filed",
+      "createdAt": "2026-06-25T13:47:11.569Z",
+      "appeals": [
+        "_xs5wkrzqpmqtk6o3n"
+      ]
+    },
+    {
+      "id": "_xs5wkrzqpmqtk6o3n",
+      "num": "80\\2026",
+      "type": "صحة توقيع",
+      "clientIds": "_0hvgmcn2lmqtjv4c7",
+      "clientRoles": "_0hvgmcn2lmqtjv4c7:موكل",
+      "plaintiff": "",
+      "defendant": "",
+      "lawyerId": "_ow7g5wtofmqtjswr7",
+      "court": "المحكمه الابتدائيه",
+      "division": "جنوب",
+      "date": "",
+      "status": "نشطة",
+      "notes": "استئناف للقضية 900\\2026: تقديم اوراق والمستنداد\n\nجلسه يوم (2026\\7\\15)",
+      "fee": 1500,
+      "paid": 1500,
+      "tawkeelNum": "900\\2026",
+      "tawkeelType": "خاص",
+      "archived": false,
+      "parentCaseId": "_ahsxxbr72mqtk3mmp",
+      "isAppeal": true,
+      "createdAt": "2026-06-25T13:49:33.443Z",
+      "stage": "filed"
+    },
+    {
+      "id": "_45g4noytamqtmektc",
+      "num": "80/2021",
+      "type": "استئناف مدني",
+      "clientIds": "_3qwrdtexemqtjwoal",
+      "clientRoles": "_3qwrdtexemqtjwoal:موكل",
+      "plaintiff": "احمد خالد",
+      "defendant": "",
+      "lawyerId": "_2505413ycmqtjscxh",
+      "court": "محكمه بلببيس الابتدائيه",
+      "division": "",
+      "date": "2026-06-25",
+      "status": "نشطة",
+      "notes": "",
+      "fee": 2500,
+      "paid": 2500,
+      "tawkeelNum": "80/2021",
+      "tawkeelType": "عام",
+      "archived": false,
+      "stage": "filed",
+      "createdAt": "2026-06-25T14:51:41.664Z",
+      "appeals": [
+        "_nhvkwtphlmqtmf73o"
+      ]
+    },
+    {
+      "id": "_nhvkwtphlmqtmf73o",
+      "num": "88/21",
+      "type": "استئناف مدني",
+      "clientIds": "_3qwrdtexemqtjwoal",
+      "clientRoles": "_3qwrdtexemqtjwoal:موكل",
+      "plaintiff": "احمد خالد",
+      "defendant": "",
+      "lawyerId": "_2505413ycmqtjscxh",
+      "court": "محكمة الزقازيق الابتدائيه",
+      "division": "",
+      "date": "",
+      "status": "نشطة",
+      "notes": "استئناف للقضية 80/2021: تقديم اوراق / حكم صادر",
+      "fee": 0,
+      "paid": 0,
+      "tawkeelNum": "80/2021",
+      "tawkeelType": "عام",
+      "archived": false,
+      "parentCaseId": "_45g4noytamqtmektc",
+      "isAppeal": true,
+      "createdAt": "2026-06-25T14:52:10.548Z",
+      "stage": "filed"
+    }
+  ],
+  "clients": [
+    {
+      "id": "_0hvgmcn2lmqtjv4c7",
+      "name": "خالد احمد",
+      "phone": "+201123961290",
+      "idNum": "27593650275936",
+      "email": "",
+      "address": "قرية ميت ابو علي \\ مركز الزقازيق",
+      "photo": "",
+      "tawkeelNum": "900\\2026",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2026-06-01",
+      "tawkeelImg": "",
+      "notes": "صحة توقيع",
+      "createdAt": "2026-06-25T13:40:35.891Z"
+    },
+    {
+      "id": "_3qwrdtexemqtjwoal",
+      "name": "محمد ابرهيم",
+      "phone": "+201123961290",
+      "idNum": "2946320562957",
+      "email": "",
+      "address": "طاروط - مركز الزقازيق",
+      "photo": "",
+      "tawkeelNum": "80\\2021",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2024-01-01",
+      "tawkeelImg": "",
+      "notes": "",
+      "createdAt": "2026-06-25T13:41:48.335Z"
+    }
+  ],
+  "staff": [
+    {
+      "id": "_g4g3ctb2emqtjrplg",
+      "name": "احمد محمد",
+      "role": "محامي",
+      "spec": "",
+      "license": "",
+      "phone": "+201123961290",
+      "email": "",
+      "salary": 1000,
+      "joinDate": "2026-06-01",
+      "notes": "",
+      "photo": ""
+    },
+    {
+      "id": "_2505413ycmqtjscxh",
+      "name": "محمد احمد",
+      "role": "مستشار قانوني",
+      "spec": "",
+      "license": "LIC-RX2",
+      "phone": "+201123961290",
+      "email": "",
+      "salary": 2500,
+      "joinDate": "2026-06-01",
+      "notes": "",
+      "photo": ""
+    },
+    {
+      "id": "_ow7g5wtofmqtjswr7",
+      "name": "ابرهيم محمد",
+      "role": "محامي متدرب",
+      "spec": "",
+      "license": "LIC-RX2",
+      "phone": "+201004553806",
+      "email": "",
+      "salary": 5000,
+      "joinDate": "2026-06-01",
+      "notes": "",
+      "photo": ""
+    },
+    {
+      "id": "_lxpa015ksmr2qco1m",
+      "name": "السيد احمد",
+      "role": "موظف إداري",
+      "spec": "",
+      "license": "",
+      "phone": "",
+      "email": "",
+      "salary": 0,
+      "joinDate": "",
+      "notes": "",
+      "photo": ""
+    }
+  ],
+  "sessions": [
+    {
+      "id": "_wlah60w9bmqtk4gsv",
+      "caseId": "_ahsxxbr72mqtk3mmp",
+      "date": "2026-06-30",
+      "time": "",
+      "court": "المحكمه الابتدائيه",
+      "notes": ""
+    },
+    {
+      "id": "_x77ucob78mqtk77im",
+      "caseId": "_xs5wkrzqpmqtk6o3n",
+      "date": "2026-07-15",
+      "time": "",
+      "court": "المحكمه الابتدائيه",
+      "notes": ""
+    },
+    {
+      "id": "_c1gc6ndjhmqtkck0g",
+      "caseId": "_xs5wkrzqpmqtk6o3n",
+      "date": "2026-07-31",
+      "time": "",
+      "court": "المحكمه الابتدائيه",
+      "notes": ""
+    },
+    {
+      "id": "_njyfuz9kwmqtmfsw4",
+      "caseId": "_45g4noytamqtmektc",
+      "date": "2026-06-25",
+      "time": "",
+      "court": "محكمه جنايات الزقازيق",
+      "notes": ""
+    }
+  ],
+  "tasks": [
+    {
+      "id": "_h5jaov5unmqtleig2",
+      "title": "تسليم مستنداد اوراق صحة التوقيع",
+      "priority": "عادية",
+      "due": "2026-06-30",
+      "ownerId": "_ow7g5wtofmqtjswr7",
+      "caseId": "_ahsxxbr72mqtk3mmp",
+      "status": "done"
+    },
+    {
+      "id": "_jgsol2rchmqtn80yc",
+      "title": "استلام مستنداد الاستأناف",
+      "priority": "عادية",
+      "due": "2026-06-30",
+      "ownerId": "_2505413ycmqtjscxh",
+      "caseId": "_45g4noytamqtmektc",
+      "status": "done"
+    }
+  ],
+  "payments": [
+    {
+      "id": "_cpib8lzbpmqtkgdq8",
+      "client": "خالداحمد",
+      "caseId": "_ahsxxbr72mqtk3mmp",
+      "desc": "",
+      "type": "إيراد",
+      "amount": 5000,
+      "date": "2026-06-25",
+      "status": "مدفوع"
+    },
+    {
+      "id": "_09dk0q7zsmqtkh4up",
+      "client": "خالداحمد",
+      "caseId": "_xs5wkrzqpmqtk6o3n",
+      "desc": "",
+      "type": "إيراد",
+      "amount": 1500,
+      "date": "2026-06-25",
+      "status": "مدفوع"
+    }
+  ],
+  "documents": [],
+  "attendance": [
+    {
+      "id": "_2vzbq7gbdmqz3h6jj",
+      "staffId": "_ow7g5wtofmqtjswr7",
+      "date": "2026-06-29",
+      "timeIn": "13:00",
+      "timeOut": "01:00",
+      "status": "حاضر",
+      "deductType": "none",
+      "deductDays": 0,
+      "deductAmount": 0,
+      "note": ""
+    }
+  ],
+  "salaries": [
+    {
+      "id": "_nl7evxh72mqwanu5m",
+      "staffId": "_g4g3ctb2emqtjrplg",
+      "month": "2026-06",
+      "base": 1000,
+      "bonus": 500,
+      "deduct": 0,
+      "deductReason": "خصم",
+      "status": "مدفوع",
+      "note": ""
+    }
+  ],
+  "sessionLogs": [
+    {
+      "id": "_bgrwunscrmqtk5tp5",
+      "caseId": "_ahsxxbr72mqtk3mmp",
+      "date": "2026-06-30",
+      "court": "الابتدائيه",
+      "judge": "",
+      "result": "أخرى",
+      "what": "استأناف + تقديم اوراق",
+      "notes": "تم استاناف القضيه إلي رقم 80\\2026 \nتقديم المستنداد الخاصه بالقضيه",
+      "nextDate": "2026-07-15",
+      "createdAt": "2026-06-25T13:48:54.041Z"
+    },
+    {
+      "id": "_618e1rl9amqtka6d0",
+      "caseId": "_xs5wkrzqpmqtk6o3n",
+      "date": "2026-07-15",
+      "court": "الابتدائيه",
+      "judge": "",
+      "result": "حكم صادر",
+      "what": "صدور حكم 3 سنوات والخروج عام 2029",
+      "notes": "",
+      "nextDate": "2026-07-31",
+      "createdAt": "2026-06-25T13:52:17.076Z"
+    },
+    {
+      "id": "_hadjt4zv0mqvhew8k",
+      "caseId": "_xs5wkrzqpmqtk6o3n",
+      "date": "2026-06-27",
+      "court": "شرق",
+      "judge": "",
+      "result": "تأجيل",
+      "what": "تاجيل ليوم 1/1/2027",
+      "notes": "",
+      "nextDate": "",
+      "createdAt": "2026-06-26T22:07:30.740Z"
+    }
+  ],
+  "clientGroups": [
+    {
+      "id": "_79abx7mh0mqtjv5bn",
+      "tawkeelNum": "900\\2026",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2026-06-01",
+      "tawkeelImg": "",
+      "notes": "صحة توقيع",
+      "clients": [
+        {
+          "id": "_0hvgmcn2lmqtjv4c7",
+          "name": "خالد احمد",
+          "phone": "+201123961290",
+          "idNum": "27593650275936",
+          "email": "",
+          "address": "قرية ميت ابو علي \\ مركز الزقازيق",
+          "photo": ""
+        }
+      ],
+      "mainClientId": "_0hvgmcn2lmqtjv4c7"
+    },
+    {
+      "id": "_wpaqlpx42mqtjwp7z",
+      "tawkeelNum": "80\\2021",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2024-01-01",
+      "tawkeelImg": "",
+      "notes": "",
+      "clients": [
+        {
+          "id": "_3qwrdtexemqtjwoal",
+          "name": "محمد ابرهيم",
+          "phone": "+201123961290",
+          "idNum": "2946320562957",
+          "email": "",
+          "address": "طاروط - مركز الزقازيق",
+          "photo": ""
+        }
+      ],
+      "mainClientId": "_3qwrdtexemqtjwoal"
+    }
+  ],
+  "settings": {
+    "githubRepo": "systeam-admin-ctrl/lawyer",
+    "githubFilePath": "data.json",
+    "autoSync": true,
+    "lastSync": "١‏/٧‏/٢٠٢٦، ٤:١٠:١١ م",
+    "lastSyncCommit": "8de2559cee050482a8150c0ec656545bd4ec47a5",
+    "storageMode": "github"
+  },
+  "activityLog": [
+    {
+      "action": "إضافة موظف: السيد احمد",
+      "time": "١‏/٧‏/٢٠٢٦، ٣:٥٢:٠٦ م"
+    },
+    {
+      "action": "تسجيل حضور: ابرهيم محمد",
+      "time": "٢٩‏/٦‏/٢٠٢٦، ١:٤٨:٢٧ م"
+    },
+    {
+      "action": "إضافة مستند: توكيل 900 للقضية 900\\2026",
+      "time": "٢٩‏/٦‏/٢٠٢٦، ١:٣٤:٣٤ م"
+    },
+    {
+      "action": "صرف راتب",
+      "time": "٢٧‏/٦‏/٢٠٢٦، ٢:٤٦:١٦ م"
+    },
+    {
+      "action": "إضافة مستند: توكيل للقضية 900\\2026",
+      "time": "٢٦‏/٦‏/٢٠٢٦، ٤:٠٨:٤٥ م"
+    },
+    {
+      "action": "رفع مستند: مركز",
+      "time": "٢٦‏/٦‏/٢٠٢٦، ٣:٤٥:٥٧ م"
+    },
+    {
+      "action": "تسجيل جلسة منتهية: 80\\2026",
+      "time": "٢٧‏/٦‏/٢٠٢٦، ١:٠٧:٣٠ ص"
+    },
+    {
+      "action": "إضافة مهمة: استلام مستنداد الاستأناف",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٨:١٤:٣٥ ص"
+    },
+    {
+      "action": "تعديل قضية: 88/21",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٨:٠١:٣٤ ص"
+    },
+    {
+      "action": "تعديل قضية: 80/2021",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٨:٠١:٢٢ ص"
+    },
+    {
+      "action": "إضافة جلسة",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٥:٥٢:٣٨ م"
+    },
+    {
+      "action": "إنشاء استئناف: 88/21",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٥:٥٢:١٠ م"
+    },
+    {
+      "action": "إضافة قضية: 80/2021",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٥:٥١:٤١ م"
+    },
+    {
+      "action": "إضافة مهمة: تسليم مستنداد اوراق صحة التوقيع",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:٢٣:٣٨ ص"
+    },
+    {
+      "action": "تعديل قضية: 80\\2026",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:٢٢:٢٨ ص"
+    },
+    {
+      "action": "تعديل قضية: 900\\2026",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:٢١:٥٤ ص"
+    },
+    {
+      "action": "إضافة محكمة: مجمع محاكم ميت غمر",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٩:٠٣ ص"
+    },
+    {
+      "action": "إضافة محكمة: محكمه الاسره العاشر من رمضان",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٨:٤٩ ص"
+    },
+    {
+      "action": "إضافة محكمة: مجمع مكاكم العاشر من رمضان الجديده",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٨:٣٢ ص"
+    },
+    {
+      "action": "إضافة محكمة: مجمع محاكم مصر الجديده",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٨:٠٩ ص"
+    },
+    {
+      "action": "إضافة محكمة: مجمه محاكم الاسماعليه",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٧:٥٤ ص"
+    },
+    {
+      "action": "إضافة محكمة: محكمه أبو كبير الابتدائيه",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٧:٣٦ ص"
+    },
+    {
+      "action": "إضافة محكمة: مجمع محاكم فاقوس",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٥:٣٢ ص"
+    },
+    {
+      "action": "إضافة محكمة: محكمه العاشر من رمضان",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٥:١٨ ص"
+    },
+    {
+      "action": "إضافة محكمة: محكمه ابو حماد الجزئيه",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٥:٠١ ص"
+    },
+    {
+      "action": "إضافة محكمة: محكمه ههيا الابتدائيه",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٤:٤٦ ص"
+    },
+    {
+      "action": "إضافة محكمة: مجمع محاكم مجلس الدوله الزقازيق",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٤:٢٦ ص"
+    },
+    {
+      "action": "إضافة محكمة: محكمه الحسنيه",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٤:٠٨ ص"
+    },
+    {
+      "action": "إضافة محكمة: محكمه جنايات الزقازيق",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٣:٥٧ ص"
+    },
+    {
+      "action": "إضافة محكمة: محكمه ديرب نجم",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٣:١٨ ص"
+    },
+    {
+      "action": "إضافة محكمة: محكمه الزقازيق الجزئيه",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١١:٤٩ ص"
+    },
+    {
+      "action": "إضافة محكمة: محكمه بلببيس الابتدائيه",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١١:٠١ ص"
+    },
+    {
+      "action": "إضافة محكمة: محكمه الاسره - بندر الزقازيق",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:١٠:١٩ ص"
+    },
+    {
+      "action": "إضافة محكمة: محكمة الزقازيق الابتدائيه",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٧:٠٩:٥٦ ص"
+    },
+    {
+      "action": "تسجيل دفعة: 1500 ج.م",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٥٧:٤١ ص"
+    },
+    {
+      "action": "تسجيل دفعة: 5000 ج.م",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٥٧:٠٦ ص"
+    },
+    {
+      "action": "تسجيل جلسة منتهية: 80\\2026",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٥٢:١٧ ص"
+    },
+    {
+      "action": "إضافة جلسة",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٤٩:٥٨ ص"
+    },
+    {
+      "action": "إنشاء استئناف: 80\\2026",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٤٩:٣٣ ص"
+    },
+    {
+      "action": "تسجيل جلسة منتهية: 900\\2026",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٤٨:٥٤ ص"
+    },
+    {
+      "action": "إضافة جلسة",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٤٧:٥٠ ص"
+    },
+    {
+      "action": "إضافة قضية: 900\\2026",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٤٧:١١ ص"
+    },
+    {
+      "action": "إضافة محكمة: المحكمه الكليه",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٤٥:٥٢ ص"
+    },
+    {
+      "action": "إضافة محكمة: المحكمه الابتدائيه",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٤٥:٤٦ ص"
+    },
+    {
+      "action": "إضافة توكيل: 80\\2021 مع 1 موكلين",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٤١:٤٨ ص"
+    },
+    {
+      "action": "إضافة توكيل: 900\\2026 مع 1 موكلين",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٤٠:٣٥ ص"
+    },
+    {
+      "action": "إضافة موظف: ابرهيم محمد",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٣٨:٥١ ص"
+    },
+    {
+      "action": "إضافة موظف: محمد احمد",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٣٨:٢٥ ص"
+    },
+    {
+      "action": "إضافة موظف: احمد محمد",
+      "time": "٢٥‏/٦‏/٢٠٢٦، ٦:٣٧:٥٥ ص"
+    }
+  ],
+  "importantLinks": [
+    {
+      "id": "_vfx3b9x63mqtlr0ri",
+      "title": "بوابة مصر لجميع الخدمات الحكوميه",
+      "url": "https://psm.gov.eg/"
+    },
+    {
+      "id": "_gdv2xjvnvmqtlrlx9",
+      "title": "مصر الرقميه",
+      "url": "https://digital.gov.eg/"
+    },
+    {
+      "id": "_5e7e4y6epmqtlsrzw",
+      "title": "بوابة المركز التكنولوجي للتسجيل المساحي العقاري",
+      "url": "https://rsc.mped.gov.eg/"
+    },
+    {
+      "id": "_z7ia16nigmqtlu86u",
+      "title": "بوابه الوظائف الحكوميه",
+      "url": "https://jobs.caoa.gov.eg/"
+    },
+    {
+      "id": "_v0u6phm94mqtlv2e8",
+      "title": "بوابه تشريعات مصر",
+      "url": "https://elpai.idsc.gov.eg/"
+    },
+    {
+      "id": "_fy654dv2vmqtlzb1r",
+      "title": "البوابه الاكترونيه لمنظومه الشكاوي الحكوميه",
+      "url": "https://www.shakwa.eg/GCP/Default.aspx"
+    }
+  ],
+  "courts": [
+    {
+      "id": "_qthf0cu1vmqtkww0v",
+      "name": "محكمة الزقازيق الابتدائيه"
+    },
+    {
+      "id": "_rzon84u4emqtkxdoi",
+      "name": "محكمه الاسره - بندر الزقازيق"
+    },
+    {
+      "id": "_1bdcn2qpbmqtkya23",
+      "name": "محكمه بلببيس الابتدائيه"
+    },
+    {
+      "id": "_xlrq7re4nmqtkzbdz",
+      "name": "محكمه الزقازيق الجزئيه"
+    },
+    {
+      "id": "_css6tkt9zmqtl17u4",
+      "name": "محكمه ديرب نجم"
+    },
+    {
+      "id": "_q996jjydxmqtl224g",
+      "name": "محكمه جنايات الزقازيق"
+    },
+    {
+      "id": "_rsnnb4iv1mqtl2a1o",
+      "name": "محكمه الحسنيه"
+    },
+    {
+      "id": "_8nzfvts2xmqtl2oal",
+      "name": "مجمع محاكم مجلس الدوله الزقازيق"
+    },
+    {
+      "id": "_42uxfp6x4mqtl33wr",
+      "name": "محكمه ههيا الابتدائيه"
+    },
+    {
+      "id": "_btuuci268mqtl3fdn",
+      "name": "محكمه ابو حماد الجزئيه"
+    },
+    {
+      "id": "_b6gc5i5hlmqtl3s9x",
+      "name": "محكمه العاشر من رمضان"
+    },
+    {
+      "id": "_vh5ds2694mqtl42zy",
+      "name": "مجمع محاكم فاقوس"
+    },
+    {
+      "id": "_a8rqjqe4rmqtl6qj1",
+      "name": "محكمه أبو كبير الابتدائيه"
+    },
+    {
+      "id": "_zi06o2hc8mqtl74xk",
+      "name": "مجمه محاكم الاسماعليه"
+    },
+    {
+      "id": "_w9th0vm1nmqtl7g3d",
+      "name": "مجمع محاكم مصر الجديده"
+    },
+    {
+      "id": "_n0skwzgz9mqtl7xy6",
+      "name": "مجمع مكاكم العاشر من رمضان الجديده"
+    },
+    {
+      "id": "_6njettdnemqtl8apt",
+      "name": "محكمه الاسره العاشر من رمضان"
+    },
+    {
+      "id": "_wkc8o5ao6mqtl8li1",
+      "name": "مجمع محاكم ميت غمر"
+    }
+  ],
+  "version": "2.0",
+  "expenses": [],
+  "notifications": [
+    {
+      "id": "_9xxigg42ymqz2xcrz",
+      "title": "📅 جلسة غداً",
+      "message": "لديك جلسة غداً في القضية 900\\2026 بمحكمة المحكمه الابتدائيه",
+      "type": "reminder",
+      "link": "sessions",
+      "caseId": "session__wlah60w9bmqtk4gsv",
+      "time": "2026-06-29T10:33:02.447Z",
+      "read": false
+    }
+  ]
+}
