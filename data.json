@@ -5119,12 +5119,12 @@
     "officeAddress": "",
     "officePhone": "",
     "officeEmail": "",
-    "storageMode": "local",
+    "storageMode": "github",
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٢‏/٧‏/٢٠٢٦، ٥:٠٣:٥٠ م",
-    "lastSyncCommit": "2af9c1a5540e5147b64cc6d6ef86ece36d5fd9f5"
+    "lastSync": "٢‏/٧‏/٢٠٢٦، ٥:٥٠:٢٦ م",
+    "lastSyncCommit": "f1c8b12ad0f4c54976f9d2af67e9c5329c22a051"
   },
   "activityLog": [
     {
