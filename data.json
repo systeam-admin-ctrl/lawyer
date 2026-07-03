@@ -11,14 +11,22 @@
   "sessionLogs": [],
   "clientGroups": [],
   "settings": {
+    "officeName": "AMG -  للمحاماة والاستشارات القانونية",
+    "officeManager": "........",
+    "officeAddress": "",
+    "officePhone": "",
+    "officeEmail": "",
     "storageMode": "local",
-    "githubRepo": "Fo-programing/amg",
+    "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
-    "autoSync": true,
-    "lastSync": "٢‏/٧‏/٢٠٢٦، ٥:٤٣:٢٠ م",
-    "lastSyncCommit": "523c9e741e11f8f41b0a10fbd8787ab4f6e23421"
+    "autoSync": true
   },
-  "activityLog": [],
+  "activityLog": [
+    {
+      "action": "حفظ إعدادات",
+      "time": "٢‏/٧‏/٢٠٢٦، ٥:٤٦:١٦ م"
+    }
+  ],
   "importantLinks": [],
   "courts": [],
   "version": "2.0",
