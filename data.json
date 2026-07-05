@@ -4098,7 +4098,7 @@
       "due": "",
       "ownerId": "",
       "caseId": "",
-      "status": "pending"
+      "status": "done"
     }
   ],
   "payments": [],
@@ -5123,8 +5123,8 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "٥‏/٧‏/٢٠٢٦، ٣:٥٦:٤٦ م",
-    "lastSyncCommit": "e6be94ac620aa6c72138e5a034c4af1c233ef423"
+    "lastSync": "٥‏/٧‏/٢٠٢٦، ٣:٥٦:٤٨ م",
+    "lastSyncCommit": "6737300c7e32f652fee016037266ae7e69fd3a5d"
   },
   "activityLog": [
     {
