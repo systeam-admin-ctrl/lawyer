@@ -4098,6 +4098,15 @@
       "due": "",
       "ownerId": "",
       "caseId": "",
+      "status": "done"
+    },
+    {
+      "id": "_xi9thedppmr7sqyq8",
+      "title": "AMG 2",
+      "priority": "عادية",
+      "due": "",
+      "ownerId": "",
+      "caseId": "",
       "status": "pending"
     }
   ],
@@ -4229,6 +4238,18 @@
       "notes": "",
       "nextDate": "2026-09-16",
       "createdAt": "2026-06-21T08:02:42.048Z"
+    },
+    {
+      "id": "_aasti5mcpmr7t1jdr",
+      "caseId": "_gz97ffwr9mqntif69",
+      "date": "2026-07-05",
+      "court": "",
+      "judge": "",
+      "result": "تأجيل",
+      "what": "",
+      "notes": "",
+      "nextDate": "",
+      "createdAt": "2026-07-05T13:06:17.055Z"
     }
   ],
   "clientGroups": [
@@ -5122,11 +5143,23 @@
     "storageMode": "github",
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
-    "autoSync": true,
-    "lastSync": "٥‏/٧‏/٢٠٢٦، ٤:١٥:٠٥ م",
-    "lastSyncCommit": "9e927f0bab78b0d1eecbdbb9e067bbe0652d2d57"
+    "autoSync": false,
+    "lastSync": "٥‏/٧‏/٢٠٢٦، ٥:١٢:١١ ص",
+    "lastSyncCommit": "df55588a52fa8cbc1902888f8321a1359d418ccf"
   },
   "activityLog": [
+    {
+      "action": "تسجيل جلسة منتهية: 3780",
+      "time": "٥‏/٧‏/٢٠٢٦، ٥:٠٦:١٧ ص"
+    },
+    {
+      "action": "إضافة مهمة: AMG 2",
+      "time": "٥‏/٧‏/٢٠٢٦، ٣:٥٨:٠٣ م"
+    },
+    {
+      "action": "إضافة قضية: 010",
+      "time": "٥‏/٧‏/٢٠٢٦، ٤:٤٨:١٨ ص"
+    },
     {
       "action": "إضافة مهمة: AMG",
       "time": "٢‏/٧‏/٢٠٢٦، ٦:١٣:٤٤ م"
@@ -5323,13 +5356,13 @@
   "expenses": [],
   "notifications": [
     {
-      "id": "_e5b77q7iimr7tckyq",
-      "title": "📅 جلسة غداً",
-      "message": "لديك جلسة غداً في القضية 3782 بمحكمة الاسره بندر الزقازيق",
+      "id": "_8b28wbikdmr7rzn6i",
+      "title": "📅 جلسة اليوم",
+      "message": "لديك جلسة اليوم في القضية 3782 بمحكمة الاسره بندر الزقازيق",
       "type": "reminder",
       "link": "sessions",
       "caseId": "session__jxmb1k2tpmqntphkp",
-      "time": "2026-07-05T13:14:52.322Z",
+      "time": "2026-07-05T12:36:49.050Z",
       "read": false
     }
   ]
