@@ -1910,28 +1910,6 @@
       "archived": false,
       "createdAt": "2026-06-21T13:27:25.508Z",
       "stage": "hearing"
-    },
-    {
-      "id": "_dar53m8afmr7sef4f",
-      "num": "010",
-      "type": "أسرة",
-      "clientIds": "_9fuml9hpmmqnolxqh",
-      "clientRoles": "_9fuml9hpmmqnolxqh:موكل",
-      "plaintiff": "",
-      "defendant": "",
-      "lawyerId": "",
-      "court": "محكمه العاشر من رمضان",
-      "division": "",
-      "date": "",
-      "status": "نشطة",
-      "notes": "",
-      "fee": 0,
-      "paid": 0,
-      "tawkeelNum": "010",
-      "tawkeelType": "عام",
-      "archived": false,
-      "stage": "filed",
-      "createdAt": "2026-07-05T12:48:18.447Z"
     }
   ],
   "clients": [
@@ -5145,8 +5123,8 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "٥‏/٧‏/٢٠٢٦، ٣:٥٠:٥٨ م",
-    "lastSyncCommit": "39e1c16497582e08a9cd4a08780c89f4bc142cc2"
+    "lastSync": "٥‏/٧‏/٢٠٢٦، ٣:٥١:٠١ م",
+    "lastSyncCommit": "6bf3a7a57bad17c86f54a3c8ee47137a00ca834d"
   },
   "activityLog": [
     {
