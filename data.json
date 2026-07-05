@@ -4099,6 +4099,15 @@
       "ownerId": "",
       "caseId": "",
       "status": "done"
+    },
+    {
+      "id": "_xi9thedppmr7sqyq8",
+      "title": "AMG 2",
+      "priority": "عادية",
+      "due": "",
+      "ownerId": "",
+      "caseId": "",
+      "status": "pending"
     }
   ],
   "payments": [],
@@ -5123,10 +5132,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "٥‏/٧‏/٢٠٢٦، ٤:٥٧:٣٨ ص",
-    "lastSyncCommit": "0b1e8c1264f68b4189b2a56ed67ffc3368f5f509"
+    "lastSync": "٥‏/٧‏/٢٠٢٦، ٣:٥٧:٢٣ م",
+    "lastSyncCommit": "a7adddee763c5cdee5761970f904aebbf0c29eab"
   },
   "activityLog": [
+    {
+      "action": "إضافة مهمة: AMG 2",
+      "time": "٥‏/٧‏/٢٠٢٦، ٣:٥٨:٠٣ م"
+    },
     {
       "action": "إضافة قضية: 010",
       "time": "٥‏/٧‏/٢٠٢٦، ٤:٤٨:١٨ ص"
