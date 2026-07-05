@@ -4238,18 +4238,6 @@
       "notes": "",
       "nextDate": "2026-09-16",
       "createdAt": "2026-06-21T08:02:42.048Z"
-    },
-    {
-      "id": "_aasti5mcpmr7t1jdr",
-      "caseId": "_gz97ffwr9mqntif69",
-      "date": "2026-07-05",
-      "court": "",
-      "judge": "",
-      "result": "تأجيل",
-      "what": "",
-      "notes": "",
-      "nextDate": "",
-      "createdAt": "2026-07-05T13:06:17.055Z"
     }
   ],
   "clientGroups": [
@@ -5144,14 +5132,10 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "٥‏/٧‏/٢٠٢٦، ٥:٠٦:٣٦ ص",
-    "lastSyncCommit": "2124948a4ceab42beef0e775bc443e5bb402616d"
+    "lastSync": "٥‏/٧‏/٢٠٢٦، ٣:٥٨:٣٠ م",
+    "lastSyncCommit": "b0c6dcaeb1aafa7ceced2869083bb23e70cc34e6"
   },
   "activityLog": [
-    {
-      "action": "تسجيل جلسة منتهية: 3780",
-      "time": "٥‏/٧‏/٢٠٢٦، ٥:٠٦:١٧ ص"
-    },
     {
       "action": "إضافة مهمة: AMG 2",
       "time": "٥‏/٧‏/٢٠٢٦، ٣:٥٨:٠٣ م"
