@@ -1910,28 +1910,6 @@
       "archived": false,
       "createdAt": "2026-06-21T13:27:25.508Z",
       "stage": "hearing"
-    },
-    {
-      "id": "_dar53m8afmr7sef4f",
-      "num": "010",
-      "type": "أسرة",
-      "clientIds": "_9fuml9hpmmqnolxqh",
-      "clientRoles": "_9fuml9hpmmqnolxqh:موكل",
-      "plaintiff": "",
-      "defendant": "",
-      "lawyerId": "",
-      "court": "محكمه العاشر من رمضان",
-      "division": "",
-      "date": "",
-      "status": "نشطة",
-      "notes": "",
-      "fee": 0,
-      "paid": 0,
-      "tawkeelNum": "010",
-      "tawkeelType": "عام",
-      "archived": false,
-      "stage": "filed",
-      "createdAt": "2026-07-05T12:48:18.447Z"
     }
   ],
   "clients": [
@@ -5144,15 +5122,11 @@
     "storageMode": "github",
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
-    "autoSync": false,
-    "lastSync": "٥‏/٧‏/٢٠٢٦، ٤:٤٩:٠١ ص",
-    "lastSyncCommit": "6f2dd987705825180d62068e6bb6de759e06520b"
+    "autoSync": true,
+    "lastSync": "٥‏/٧‏/٢٠٢٦، ٣:٥٠:٣١ م",
+    "lastSyncCommit": "cd6ab12b1525340af11081c1c050b34da2269022"
   },
   "activityLog": [
-    {
-      "action": "إضافة قضية: 010",
-      "time": "٥‏/٧‏/٢٠٢٦، ٤:٤٨:١٨ ص"
-    },
     {
       "action": "إضافة مهمة: AMG",
       "time": "٢‏/٧‏/٢٠٢٦، ٦:١٣:٤٤ م"
@@ -5349,13 +5323,13 @@
   "expenses": [],
   "notifications": [
     {
-      "id": "_8b28wbikdmr7rzn6i",
-      "title": "📅 جلسة اليوم",
-      "message": "لديك جلسة اليوم في القضية 3782 بمحكمة الاسره بندر الزقازيق",
+      "id": "_3m314rfiimr7rj0c8",
+      "title": "📅 جلسة غداً",
+      "message": "لديك جلسة غداً في القضية 3782 بمحكمة الاسره بندر الزقازيق",
       "type": "reminder",
       "link": "sessions",
       "caseId": "session__jxmb1k2tpmqntphkp",
-      "time": "2026-07-05T12:36:49.050Z",
+      "time": "2026-07-05T12:23:52.952Z",
       "read": false
     }
   ]
