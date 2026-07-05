@@ -5123,8 +5123,8 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٣‏/٧‏/٢٠٢٦، ٤:٥٦:٥٢ ص",
-    "lastSyncCommit": "8ceff1e4894620efdbed94cd556ec7bf2ca9e00f"
+    "lastSync": "٥‏/٧‏/٢٠٢٦، ٤:١٤:٥١ م",
+    "lastSyncCommit": "d13f21a007a0b2585f9f73c6e461c93ff1d0a6b0"
   },
   "activityLog": [
     {
@@ -5321,5 +5321,16 @@
   ],
   "version": "8.0",
   "expenses": [],
-  "notifications": []
+  "notifications": [
+    {
+      "id": "_e5b77q7iimr7tckyq",
+      "title": "📅 جلسة غداً",
+      "message": "لديك جلسة غداً في القضية 3782 بمحكمة الاسره بندر الزقازيق",
+      "type": "reminder",
+      "link": "sessions",
+      "caseId": "session__jxmb1k2tpmqntphkp",
+      "time": "2026-07-05T13:14:52.322Z",
+      "read": false
+    }
+  ]
 }
