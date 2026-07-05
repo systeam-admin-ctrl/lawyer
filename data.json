@@ -5144,14 +5144,10 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "٥‏/٧‏/٢٠٢٦، ٨:٣٥:١٨ ص",
-    "lastSyncCommit": "a614dcbbeb79c83d1e3c0ea8f086370ea77c244f"
+    "lastSync": "٥‏/٧‏/٢٠٢٦، ٤:١١:١١ م",
+    "lastSyncCommit": "f9bccf751a181ad388a7d6319a8ca66ba4858883"
   },
   "activityLog": [
-    {
-      "action": "إضافة محكمة: محكمه زينهم",
-      "time": "٥‏/٧‏/٢٠٢٦، ٨:٣٥:١٤ ص"
-    },
     {
       "action": "تسجيل جلسة منتهية: 3780",
       "time": "٥‏/٧‏/٢٠٢٦، ٥:٠٦:١٧ ص"
@@ -5354,10 +5350,6 @@
     {
       "id": "_5q71dn2comr2slklp",
       "name": "مجمع محاكم ميت غمر"
-    },
-    {
-      "id": "_bk1uc44dxmr80i92p",
-      "name": "محكمه زينهم"
     }
   ],
   "version": "8.0",
