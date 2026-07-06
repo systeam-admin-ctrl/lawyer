@@ -1923,13 +1923,13 @@
       "court": "محكمه العاشر من رمضان",
       "division": "جنوب مثلا",
       "date": "",
-      "status": "نشطة",
+      "status": "مؤرشفة",
       "notes": "",
       "fee": 0,
       "paid": 0,
       "tawkeelNum": "09090",
       "tawkeelType": "خاص",
-      "archived": false,
+      "archived": true,
       "stage": "filed",
       "createdAt": "2026-07-06T10:05:18.933Z"
     }
@@ -5201,14 +5201,10 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "٦‏/٧‏/٢٠٢٦، ٢:١٧:٢٦ ص",
-    "lastSyncCommit": "858fb820211be17034b65266b9e4ed4641bbb5cf"
+    "lastSync": "٦‏/٧‏/٢٠٢٦، ١:١٧:٥٠ م",
+    "lastSyncCommit": "0e3d2730cadfbc313f1b6d1fb8b01c6aa3cc6a13"
   },
   "activityLog": [
-    {
-      "action": "تعديل قضية: 09090",
-      "time": "٦‏/٧‏/٢٠٢٦، ٢:١٥:٢٦ ص"
-    },
     {
       "action": "إضافة قضية: 09090",
       "time": "٦‏/٧‏/٢٠٢٦، ١:٠٥:١٨ م"
@@ -5358,13 +5354,7 @@
       "time": "٢١‏/٦‏/٢٠٢٦، ٤:٢٤:٠١ م"
     }
   ],
-  "importantLinks": [
-    {
-      "id": "_w6voi91wxmr92hp0e",
-      "title": "مصر الرقميه",
-      "url": "https://digital.gov.eg/"
-    }
-  ],
+  "importantLinks": [],
   "courts": [
     {
       "id": "_oqws79afvmr2sj3zt",
