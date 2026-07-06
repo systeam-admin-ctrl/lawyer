@@ -1923,13 +1923,13 @@
       "court": "محكمه العاشر من رمضان",
       "division": "جنوب مثلا",
       "date": "",
-      "status": "مؤرشفة",
+      "status": "مغلقة",
       "notes": "",
       "fee": 0,
       "paid": 0,
       "tawkeelNum": "09090",
       "tawkeelType": "خاص",
-      "archived": true,
+      "archived": false,
       "stage": "filed",
       "createdAt": "2026-07-06T10:05:18.933Z"
     }
@@ -5201,8 +5201,8 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "٦‏/٧‏/٢٠٢٦، ٢:١٥:٠٠ ص",
-    "lastSyncCommit": "c1155c2e0f312d85bebb8d56bc6bf375e0138e75"
+    "lastSync": "٦‏/٧‏/٢٠٢٦، ٢:١٥:١٩ ص",
+    "lastSyncCommit": "b90f117b63f6dd9ed25015f6bfb119406da14026"
   },
   "activityLog": [
     {
