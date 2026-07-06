@@ -1910,6 +1910,28 @@
       "archived": false,
       "createdAt": "2026-06-21T13:27:25.508Z",
       "stage": "hearing"
+    },
+    {
+      "id": "_1vvq84fpzmr920nv9",
+      "num": "09090",
+      "type": "استئناف مدني",
+      "clientIds": "_p9p6oosq9mr91x4te",
+      "clientRoles": "_p9p6oosq9mr91x4te:مدعي",
+      "plaintiff": "",
+      "defendant": "",
+      "lawyerId": "_ff0o8xvlnmqmhfryl",
+      "court": "محكمه العاشر من رمضان",
+      "division": "جنوب مثلا",
+      "date": "",
+      "status": "نشطة",
+      "notes": "",
+      "fee": 0,
+      "paid": 0,
+      "tawkeelNum": "09090",
+      "tawkeelType": "خاص",
+      "archived": false,
+      "stage": "filed",
+      "createdAt": "2026-07-06T10:05:18.933Z"
     }
   ],
   "clients": [
@@ -5179,10 +5201,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "٦‏/٧‏/٢٠٢٦، ٢:٠٢:٥٥ ص",
-    "lastSyncCommit": "93453abd4401f11ce19ef7cfea203bdb8c3e7b92"
+    "lastSync": "٦‏/٧‏/٢٠٢٦، ١:٠٣:٣٧ م",
+    "lastSyncCommit": "7ff7813537de981868749a5a813ceae15c3cfdfd"
   },
   "activityLog": [
+    {
+      "action": "إضافة قضية: 09090",
+      "time": "٦‏/٧‏/٢٠٢٦، ١:٠٥:١٨ م"
+    },
     {
       "action": "إضافة توكيل: 09090 مع 1 موكلين",
       "time": "٦‏/٧‏/٢٠٢٦، ٢:٠٢:٣٦ ص"
