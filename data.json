@@ -3734,6 +3734,21 @@
       "tawkeelImg": "",
       "notes": "",
       "createdAt": "2026-06-21T12:55:50.843Z"
+    },
+    {
+      "id": "_p9p6oosq9mr91x4te",
+      "name": "تجريبي",
+      "phone": "+201123961290",
+      "idNum": "1320534742949",
+      "email": "",
+      "address": "تجريبي",
+      "photo": "",
+      "tawkeelNum": "09090",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2026-07-06",
+      "tawkeelImg": "",
+      "notes": "",
+      "createdAt": "2026-07-06T10:02:36.003Z"
     }
   ],
   "staff": [
@@ -5132,6 +5147,26 @@
         }
       ],
       "mainClientId": "_5vl9ydglamqnsi5to"
+    },
+    {
+      "id": "_i0xawb7u5mr91x65f",
+      "tawkeelNum": "09090",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2026-07-06",
+      "tawkeelImg": "",
+      "notes": "",
+      "clients": [
+        {
+          "id": "_p9p6oosq9mr91x4te",
+          "name": "تجريبي",
+          "phone": "+201123961290",
+          "idNum": "1320534742949",
+          "email": "",
+          "address": "تجريبي",
+          "photo": ""
+        }
+      ],
+      "mainClientId": "_p9p6oosq9mr91x4te"
     }
   ],
   "settings": {
@@ -5144,10 +5179,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "٦‏/٧‏/٢٠٢٦، ٢:٠١:٢١ ص",
-    "lastSyncCommit": "496beb278605c215469cf25446d2aecb75d0d356"
+    "lastSync": "٦‏/٧‏/٢٠٢٦، ٢:٠١:٢٤ ص",
+    "lastSyncCommit": "c70381f05c30f77c1c2819a59feda8d93c346919"
   },
   "activityLog": [
+    {
+      "action": "إضافة توكيل: 09090 مع 1 موكلين",
+      "time": "٦‏/٧‏/٢٠٢٦، ٢:٠٢:٣٦ ص"
+    },
     {
       "action": "إضافة محكمة: محكمه زينهم",
       "time": "٥‏/٧‏/٢٠٢٦، ٨:٣٥:١٤ ص"
