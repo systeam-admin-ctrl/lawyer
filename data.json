@@ -5201,8 +5201,8 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "٦‏/٧‏/٢٠٢٦، ٢:١٥:٤١ ص",
-    "lastSyncCommit": "2c47e2d3919a042d3a70f2bd762b90f6181e1f59"
+    "lastSync": "٦‏/٧‏/٢٠٢٦، ٢:١٧:٢٦ ص",
+    "lastSyncCommit": "858fb820211be17034b65266b9e4ed4641bbb5cf"
   },
   "activityLog": [
     {
@@ -5358,7 +5358,13 @@
       "time": "٢١‏/٦‏/٢٠٢٦، ٤:٢٤:٠١ م"
     }
   ],
-  "importantLinks": [],
+  "importantLinks": [
+    {
+      "id": "_w6voi91wxmr92hp0e",
+      "title": "مصر الرقميه",
+      "url": "https://digital.gov.eg/"
+    }
+  ],
   "courts": [
     {
       "id": "_oqws79afvmr2sj3zt",
