@@ -1923,7 +1923,7 @@
       "court": "محكمه العاشر من رمضان",
       "division": "جنوب مثلا",
       "date": "",
-      "status": "مغلقة",
+      "status": "نشطة",
       "notes": "",
       "fee": 0,
       "paid": 0,
@@ -5201,10 +5201,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "٦‏/٧‏/٢٠٢٦، ٢:١٥:١٩ ص",
-    "lastSyncCommit": "b90f117b63f6dd9ed25015f6bfb119406da14026"
+    "lastSync": "٦‏/٧‏/٢٠٢٦، ٢:١٥:٢٢ ص",
+    "lastSyncCommit": "db6e54a097159d51670bf1c3a6cf177a827989d5"
   },
   "activityLog": [
+    {
+      "action": "تعديل قضية: 09090",
+      "time": "٦‏/٧‏/٢٠٢٦، ٢:١٥:٢٦ ص"
+    },
     {
       "action": "إضافة قضية: 09090",
       "time": "٦‏/٧‏/٢٠٢٦، ١:٠٥:١٨ م"
