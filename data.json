@@ -18,7 +18,8 @@
       "tawkeelNum": "870",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T07:45:54.868Z"
+      "createdAt": "2026-06-21T07:45:54.868Z",
+      "stage": "hearing"
     },
     {
       "id": "_tpxeue7kimqnhimep",
@@ -38,7 +39,8 @@
       "tawkeelNum": "3322",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T07:48:15.217Z"
+      "createdAt": "2026-06-21T07:48:15.217Z",
+      "stage": "hearing"
     },
     {
       "id": "_6unez5e4bmqnhvm73",
@@ -58,7 +60,8 @@
       "tawkeelNum": "1301",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T07:58:21.471Z"
+      "createdAt": "2026-06-21T07:58:21.471Z",
+      "stage": "hearing"
     },
     {
       "id": "_a12t7al5tmqni5tma",
@@ -78,7 +81,8 @@
       "tawkeelNum": "2300",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T08:06:17.650Z"
+      "createdAt": "2026-06-21T08:06:17.650Z",
+      "stage": "hearing"
     },
     {
       "id": "_43zvss3aimqni9d4k",
@@ -98,7 +102,8 @@
       "tawkeelNum": "2300",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T08:09:02.900Z"
+      "createdAt": "2026-06-21T08:09:02.900Z",
+      "stage": "hearing"
     },
     {
       "id": "_0l2q2ob9qmqnic7u8",
@@ -118,7 +123,8 @@
       "tawkeelNum": "1817",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T08:11:16.016Z"
+      "createdAt": "2026-06-21T08:11:16.016Z",
+      "stage": "hearing"
     },
     {
       "id": "_ql9tzsc7xmqnifl0f",
@@ -138,7 +144,8 @@
       "tawkeelNum": "0000",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T08:13:53.055Z"
+      "createdAt": "2026-06-21T08:13:53.055Z",
+      "stage": "hearing"
     },
     {
       "id": "_kjvsnfmexmqnihxzs",
@@ -158,7 +165,8 @@
       "tawkeelNum": "0000000",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T08:15:43.192Z"
+      "createdAt": "2026-06-21T08:15:43.192Z",
+      "stage": "hearing"
     },
     {
       "id": "_zl2urskd1mqnik63e",
@@ -178,7 +186,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T08:17:27.002Z"
+      "createdAt": "2026-06-21T08:17:27.002Z",
+      "stage": "hearing"
     },
     {
       "id": "_dnfofn9pemqnino3q",
@@ -198,7 +207,8 @@
       "tawkeelNum": "325",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T08:20:10.310Z"
+      "createdAt": "2026-06-21T08:20:10.310Z",
+      "stage": "hearing"
     },
     {
       "id": "_5ym741dv3mqnit7jm",
@@ -218,7 +228,8 @@
       "tawkeelNum": "878                              \\                     4049",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T08:24:28.786Z"
+      "createdAt": "2026-06-21T08:24:28.786Z",
+      "stage": "hearing"
     },
     {
       "id": "_lzpxe99tqmqnizquj",
@@ -238,7 +249,8 @@
       "tawkeelNum": "3114",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T08:29:33.739Z"
+      "createdAt": "2026-06-21T08:29:33.739Z",
+      "stage": "hearing"
     },
     {
       "id": "_2f2zhjhf2mqnj2ls5",
@@ -258,7 +270,8 @@
       "tawkeelNum": "15086",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T08:31:47.141Z"
+      "createdAt": "2026-06-21T08:31:47.141Z",
+      "stage": "hearing"
     },
     {
       "id": "_3qi07fha3mqnj93pw",
@@ -278,7 +291,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T08:36:50.324Z"
+      "createdAt": "2026-06-21T08:36:50.324Z",
+      "stage": "hearing"
     },
     {
       "id": "_97qpi6kcgmqnjarx6",
@@ -298,7 +312,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T08:38:08.346Z"
+      "createdAt": "2026-06-21T08:38:08.346Z",
+      "stage": "hearing"
     },
     {
       "id": "_a0lx1w2zomqnjenqj",
@@ -318,7 +333,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T08:41:09.547Z"
+      "createdAt": "2026-06-21T08:41:09.547Z",
+      "stage": "hearing"
     },
     {
       "id": "_oe1mxq2n1mqnjm8p8",
@@ -338,7 +354,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T08:47:03.308Z"
+      "createdAt": "2026-06-21T08:47:03.308Z",
+      "stage": "hearing"
     },
     {
       "id": "_mb29rfl0gmqnjqu4w",
@@ -358,7 +375,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T08:50:37.712Z"
+      "createdAt": "2026-06-21T08:50:37.712Z",
+      "stage": "hearing"
     },
     {
       "id": "_ytgexszmfmqnjtw75",
@@ -378,7 +396,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T08:53:00.353Z"
+      "createdAt": "2026-06-21T08:53:00.353Z",
+      "stage": "hearing"
     },
     {
       "id": "_hzciq92hsmqnjyqt2",
@@ -398,7 +417,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T08:56:46.646Z"
+      "createdAt": "2026-06-21T08:56:46.646Z",
+      "stage": "hearing"
     },
     {
       "id": "_qcpr09rxumqnk1fin",
@@ -418,7 +438,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T08:58:51.983Z"
+      "createdAt": "2026-06-21T08:58:51.983Z",
+      "stage": "hearing"
     },
     {
       "id": "_5vgivpzekmqnk3crh",
@@ -438,7 +459,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T09:00:21.726Z"
+      "createdAt": "2026-06-21T09:00:21.726Z",
+      "stage": "hearing"
     },
     {
       "id": "_2to1cw65hmqnka27v",
@@ -458,7 +480,8 @@
       "tawkeelNum": "1301",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T09:05:34.652Z"
+      "createdAt": "2026-06-21T09:05:34.652Z",
+      "stage": "hearing"
     },
     {
       "id": "_2pguphhpfmqnkc8rb",
@@ -478,7 +501,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T09:07:16.439Z"
+      "createdAt": "2026-06-21T09:07:16.439Z",
+      "stage": "hearing"
     },
     {
       "id": "_yfiygty10mqnkdoe8",
@@ -498,7 +522,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T09:08:23.360Z"
+      "createdAt": "2026-06-21T09:08:23.360Z",
+      "stage": "hearing"
     },
     {
       "id": "_kbi3loipgmqnkg744",
@@ -518,7 +543,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T09:10:20.932Z"
+      "createdAt": "2026-06-21T09:10:20.932Z",
+      "stage": "hearing"
     },
     {
       "id": "_w4yc8w49qmqnkj4hb",
@@ -538,7 +564,8 @@
       "tawkeelNum": "906",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T09:12:37.487Z"
+      "createdAt": "2026-06-21T09:12:37.487Z",
+      "stage": "hearing"
     },
     {
       "id": "_11qebr6c0mqnklflr",
@@ -558,7 +585,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T09:14:25.215Z"
+      "createdAt": "2026-06-21T09:14:25.215Z",
+      "stage": "hearing"
     },
     {
       "id": "_gz3sq3rgamqnkrll2",
@@ -578,7 +606,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T09:19:12.902Z"
+      "createdAt": "2026-06-21T09:19:12.902Z",
+      "stage": "hearing"
     },
     {
       "id": "_ytzzms0vzmqnkvfpm",
@@ -598,7 +627,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T09:22:11.914Z"
+      "createdAt": "2026-06-21T09:22:11.914Z",
+      "stage": "hearing"
     },
     {
       "id": "_muxk2pzvcmqnl0m4j",
@@ -618,7 +648,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T09:26:13.508Z"
+      "createdAt": "2026-06-21T09:26:13.508Z",
+      "stage": "hearing"
     },
     {
       "id": "_twe7dxxq6mqnl3snt",
@@ -638,7 +669,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T09:28:41.945Z"
+      "createdAt": "2026-06-21T09:28:41.945Z",
+      "stage": "hearing"
     },
     {
       "id": "_qftucl4d2mqnl6ho1",
@@ -658,7 +690,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T09:30:47.665Z"
+      "createdAt": "2026-06-21T09:30:47.665Z",
+      "stage": "hearing"
     },
     {
       "id": "_7p8wp57ndmqnl97uy",
@@ -678,7 +711,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T09:32:54.922Z"
+      "createdAt": "2026-06-21T09:32:54.922Z",
+      "stage": "hearing"
     },
     {
       "id": "_w83bi0omwmqnm1zfb",
@@ -698,7 +732,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T09:55:17.015Z"
+      "createdAt": "2026-06-21T09:55:17.015Z",
+      "stage": "hearing"
     },
     {
       "id": "_v9c1itm5jmqnm3wfj",
@@ -718,7 +753,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T09:56:46.447Z"
+      "createdAt": "2026-06-21T09:56:46.447Z",
+      "stage": "hearing"
     },
     {
       "id": "_kr8k2uq84mqnm5kt5",
@@ -738,7 +774,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T09:58:04.697Z"
+      "createdAt": "2026-06-21T09:58:04.697Z",
+      "stage": "hearing"
     },
     {
       "id": "_orybv7fu1mqnm9fai",
@@ -758,7 +795,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T10:01:04.170Z"
+      "createdAt": "2026-06-21T10:01:04.170Z",
+      "stage": "hearing"
     },
     {
       "id": "_qrzs5lhsomqnmc1a9",
@@ -778,7 +816,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T10:03:05.985Z"
+      "createdAt": "2026-06-21T10:03:05.985Z",
+      "stage": "hearing"
     },
     {
       "id": "_lqqn9rs6nmqnmdijm",
@@ -798,7 +837,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T10:04:15.010Z"
+      "createdAt": "2026-06-21T10:04:15.010Z",
+      "stage": "hearing"
     },
     {
       "id": "_2o30lapfomqnmffiu",
@@ -818,7 +858,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T10:05:44.406Z"
+      "createdAt": "2026-06-21T10:05:44.406Z",
+      "stage": "hearing"
     },
     {
       "id": "_3xa71nx5omqnmh2z8",
@@ -838,7 +879,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T10:07:01.460Z"
+      "createdAt": "2026-06-21T10:07:01.460Z",
+      "stage": "hearing"
     },
     {
       "id": "_r9efeqlcwmqnmkvpm",
@@ -858,7 +900,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T10:09:58.666Z"
+      "createdAt": "2026-06-21T10:09:58.666Z",
+      "stage": "hearing"
     },
     {
       "id": "_h8ko8p407mqnmmik8",
@@ -878,7 +921,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T10:11:14.936Z"
+      "createdAt": "2026-06-21T10:11:14.936Z",
+      "stage": "hearing"
     },
     {
       "id": "_lwtzon7t7mqnmr1eb",
@@ -898,7 +942,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T10:14:45.971Z"
+      "createdAt": "2026-06-21T10:14:45.971Z",
+      "stage": "hearing"
     },
     {
       "id": "_cpe3wbu1kmqnmuuvt",
@@ -918,7 +963,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T10:17:44.153Z"
+      "createdAt": "2026-06-21T10:17:44.153Z",
+      "stage": "hearing"
     },
     {
       "id": "_hesajy5qgmqnmylzh",
@@ -938,7 +984,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T10:20:39.245Z"
+      "createdAt": "2026-06-21T10:20:39.245Z",
+      "stage": "hearing"
     },
     {
       "id": "_1pgjuewybmqnn2g69",
@@ -958,7 +1005,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T10:23:38.337Z"
+      "createdAt": "2026-06-21T10:23:38.337Z",
+      "stage": "hearing"
     },
     {
       "id": "_3we37u2uqmqnn7yl7",
@@ -978,7 +1026,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T10:27:55.483Z"
+      "createdAt": "2026-06-21T10:27:55.483Z",
+      "stage": "hearing"
     },
     {
       "id": "_s1h9e61jcmqnnbzs0",
@@ -998,7 +1047,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T10:31:03.648Z"
+      "createdAt": "2026-06-21T10:31:03.648Z",
+      "stage": "hearing"
     },
     {
       "id": "_uoduypytomqnng112",
@@ -1018,7 +1068,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T10:34:11.894Z"
+      "createdAt": "2026-06-21T10:34:11.894Z",
+      "stage": "hearing"
     },
     {
       "id": "_4rm6g3iljmqnnjdl9",
@@ -1038,7 +1089,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T10:36:48.141Z"
+      "createdAt": "2026-06-21T10:36:48.141Z",
+      "stage": "hearing"
     },
     {
       "id": "_6ocwey0camqnnm9dt",
@@ -1058,7 +1110,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T10:39:02.657Z"
+      "createdAt": "2026-06-21T10:39:02.657Z",
+      "stage": "hearing"
     },
     {
       "id": "_9nxin0cjbmqnno86z",
@@ -1078,7 +1131,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T10:40:34.427Z"
+      "createdAt": "2026-06-21T10:40:34.427Z",
+      "stage": "hearing"
     },
     {
       "id": "_y733i2y1dmqnnxuad",
@@ -1098,7 +1152,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T10:48:02.965Z"
+      "createdAt": "2026-06-21T10:48:02.965Z",
+      "stage": "hearing"
     },
     {
       "id": "_5g8vmzrasmqno16fh",
@@ -1118,7 +1173,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T10:50:38.669Z"
+      "createdAt": "2026-06-21T10:50:38.669Z",
+      "stage": "hearing"
     },
     {
       "id": "_f3y3x4hv0mqno3ya2",
@@ -1138,7 +1194,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T10:52:48.074Z"
+      "createdAt": "2026-06-21T10:52:48.074Z",
+      "stage": "hearing"
     },
     {
       "id": "_gwx61k1ezmqno8yzs",
@@ -1158,7 +1215,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T10:56:42.280Z"
+      "createdAt": "2026-06-21T10:56:42.280Z",
+      "stage": "hearing"
     },
     {
       "id": "_q68cw7o7bmqnobplw",
@@ -1178,7 +1236,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T10:58:50.084Z"
+      "createdAt": "2026-06-21T10:58:50.084Z",
+      "stage": "hearing"
     },
     {
       "id": "_zbzsyhhjjmqnoh4tf",
@@ -1198,7 +1257,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T11:03:03.075Z"
+      "createdAt": "2026-06-21T11:03:03.075Z",
+      "stage": "hearing"
     },
     {
       "id": "_7itbc1mxkmqnojsag",
@@ -1218,7 +1278,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T11:05:06.808Z"
+      "createdAt": "2026-06-21T11:05:06.808Z",
+      "stage": "hearing"
     },
     {
       "id": "_5un43wkb5mqnonx42",
@@ -1238,7 +1299,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T11:08:19.682Z"
+      "createdAt": "2026-06-21T11:08:19.682Z",
+      "stage": "hearing"
     },
     {
       "id": "_a5o7yn06gmqnoq8nx",
@@ -1258,7 +1320,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T11:10:07.965Z"
+      "createdAt": "2026-06-21T11:10:07.965Z",
+      "stage": "hearing"
     },
     {
       "id": "_ptk69a2kfmqnoruxa",
@@ -1278,7 +1341,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T11:11:23.470Z"
+      "createdAt": "2026-06-21T11:11:23.470Z",
+      "stage": "hearing"
     },
     {
       "id": "_uo2px6nfbmqnox70o",
@@ -1298,7 +1362,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T11:15:32.424Z"
+      "createdAt": "2026-06-21T11:15:32.424Z",
+      "stage": "hearing"
     },
     {
       "id": "_jfx1r2s8ymqnq1fki",
@@ -1318,7 +1383,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T11:46:49.746Z"
+      "createdAt": "2026-06-21T11:46:49.746Z",
+      "stage": "hearing"
     },
     {
       "id": "_6rkp8t852mqnq8ioz",
@@ -1338,7 +1404,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T11:52:20.387Z"
+      "createdAt": "2026-06-21T11:52:20.387Z",
+      "stage": "hearing"
     },
     {
       "id": "_ye2hng8ubmqnqk7y5",
@@ -1358,7 +1425,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T12:01:26.333Z"
+      "createdAt": "2026-06-21T12:01:26.333Z",
+      "stage": "hearing"
     },
     {
       "id": "_m9ciji6nsmqnqn004",
@@ -1378,7 +1446,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T12:03:36.004Z"
+      "createdAt": "2026-06-21T12:03:36.004Z",
+      "stage": "hearing"
     },
     {
       "id": "_ba8prttpsmqnqriix",
@@ -1398,7 +1467,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T12:07:06.633Z"
+      "createdAt": "2026-06-21T12:07:06.633Z",
+      "stage": "hearing"
     },
     {
       "id": "_a12q3puymmqnr58a8",
@@ -1418,7 +1488,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T12:17:46.544Z"
+      "createdAt": "2026-06-21T12:17:46.544Z",
+      "stage": "hearing"
     },
     {
       "id": "_43x3osbvrmqnrc94h",
@@ -1438,7 +1509,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T12:23:14.225Z"
+      "createdAt": "2026-06-21T12:23:14.225Z",
+      "stage": "hearing"
     },
     {
       "id": "_te9pnxq4imqnrenoe",
@@ -1458,7 +1530,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T12:25:06.398Z"
+      "createdAt": "2026-06-21T12:25:06.398Z",
+      "stage": "hearing"
     },
     {
       "id": "_nadaee775mqnrfycy",
@@ -1478,7 +1551,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T12:26:06.898Z"
+      "createdAt": "2026-06-21T12:26:06.898Z",
+      "stage": "hearing"
     },
     {
       "id": "_n75hqgy1umqnri6ln",
@@ -1498,7 +1572,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T12:27:50.891Z"
+      "createdAt": "2026-06-21T12:27:50.891Z",
+      "stage": "hearing"
     },
     {
       "id": "_w6gj4q1p2mqnrjhn1",
@@ -1518,7 +1593,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T12:28:51.853Z"
+      "createdAt": "2026-06-21T12:28:51.853Z",
+      "stage": "hearing"
     },
     {
       "id": "_8ra45hxynmqnro8zd",
@@ -1538,7 +1614,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T12:32:33.913Z"
+      "createdAt": "2026-06-21T12:32:33.913Z",
+      "stage": "hearing"
     },
     {
       "id": "_0y3d8quz8mqnryh13",
@@ -1558,7 +1635,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T12:40:30.903Z"
+      "createdAt": "2026-06-21T12:40:30.903Z",
+      "stage": "hearing"
     },
     {
       "id": "_ai1zt2yb9mqns0ioq",
@@ -1578,7 +1656,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T12:42:06.362Z"
+      "createdAt": "2026-06-21T12:42:06.362Z",
+      "stage": "hearing"
     },
     {
       "id": "_t51n7c23jmqns270e",
@@ -1598,7 +1677,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T12:43:24.542Z"
+      "createdAt": "2026-06-21T12:43:24.542Z",
+      "stage": "hearing"
     },
     {
       "id": "_s6mlr9kcxmqns4kge",
@@ -1618,7 +1698,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T12:45:15.278Z"
+      "createdAt": "2026-06-21T12:45:15.278Z",
+      "stage": "hearing"
     },
     {
       "id": "_mlq3pafynmqns768x",
@@ -1638,7 +1719,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T12:47:16.833Z"
+      "createdAt": "2026-06-21T12:47:16.833Z",
+      "stage": "hearing"
     },
     {
       "id": "_mizwnvuabmqns9qnm",
@@ -1658,7 +1740,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T12:49:16.594Z"
+      "createdAt": "2026-06-21T12:49:16.594Z",
+      "stage": "hearing"
     },
     {
       "id": "_otm30wfj0mqnscfus",
@@ -1678,7 +1761,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T12:51:22.564Z"
+      "createdAt": "2026-06-21T12:51:22.564Z",
+      "stage": "hearing"
     },
     {
       "id": "_bgk5shorrmqnserqj",
@@ -1698,7 +1782,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T12:53:11.275Z"
+      "createdAt": "2026-06-21T12:53:11.275Z",
+      "stage": "hearing"
     },
     {
       "id": "_xs06ofo94mqnsgcnk",
@@ -1718,7 +1803,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T12:54:25.040Z"
+      "createdAt": "2026-06-21T12:54:25.040Z",
+      "stage": "hearing"
     },
     {
       "id": "_5zqhmi71fmqnsjppt",
@@ -1738,7 +1824,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T12:57:01.937Z"
+      "createdAt": "2026-06-21T12:57:01.937Z",
+      "stage": "hearing"
     },
     {
       "id": "_z2hq82x9omqnslt5l",
@@ -1758,7 +1845,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T12:58:39.705Z"
+      "createdAt": "2026-06-21T12:58:39.705Z",
+      "stage": "hearing"
     },
     {
       "id": "_h8n4v3sj2mqnso5p0",
@@ -1778,7 +1866,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T13:00:29.268Z"
+      "createdAt": "2026-06-21T13:00:29.268Z",
+      "stage": "hearing"
     },
     {
       "id": "_gz97ffwr9mqntif69",
@@ -1798,7 +1887,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T13:24:01.233Z"
+      "createdAt": "2026-06-21T13:24:01.233Z",
+      "stage": "hearing"
     },
     {
       "id": "_dsr0k4chimqntmssk",
@@ -1818,7 +1908,8 @@
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
-      "createdAt": "2026-06-21T13:27:25.508Z"
+      "createdAt": "2026-06-21T13:27:25.508Z",
+      "stage": "hearing"
     }
   ],
   "clients": [
@@ -4985,9 +5076,9 @@
     "storageMode": "github",
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
-    "autoSync": true,
-    "lastSync": "٧‏/٧‏/٢٠٢٦، ٤:٤٢:٢٥ ص",
-    "lastSyncCommit": "10b243df92f731cf504898c9ae5256535904ef0c"
+    "autoSync": false,
+    "lastSync": "٧‏/٧‏/٢٠٢٦، ٤:٤٢:٢٩ ص",
+    "lastSyncCommit": "dda5320e0034ffc48647635ea8897c92c2cbcf57"
   },
   "activityLog": [
     {
