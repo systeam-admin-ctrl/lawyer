@@ -766,19 +766,20 @@
       "clientIds": "_t0k5ww2mvmqmaareb",
       "plaintiff": "",
       "defendant": "مصطفي احمد مصطفي الضوي",
-      "lawyerId": "",
-      "court": "",
-      "division": "",
-      "date": "",
+      "lawyerId": "_ff0o8xvlnmqmhfryl",
+      "court": "محكمة الزقازيق الابتدائيه",
+      "division": "21 مدني",
+      "date": "2026-08-23",
       "status": "نشطة",
-      "notes": "انذار الضوي محل",
+      "notes": "انذار الضوي محل استئناف ايجارات",
       "fee": 0,
       "paid": 0,
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
       "createdAt": "2026-06-21T09:58:04.697Z",
-      "stage": "hearing"
+      "stage": "filed",
+      "clientRoles": "_t0k5ww2mvmqmaareb:موكل"
     },
     {
       "id": "_orybv7fu1mqnm9fai",
@@ -5963,10 +5964,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٨:١١:٤٣ م",
-    "lastSyncCommit": "c66b3c85c8894b93c0ad5862c1af932f20efce5c"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٨:١١:٥٤ م",
+    "lastSyncCommit": "2b1802f395f9b9a386f53d299fae82d4953417bd"
   },
   "activityLog": [
+    {
+      "action": "تعديل قضية: 77777777",
+      "time": "١١‏/٨‏/٢٠٢٦، ٨:١٣:٥٣ م"
+    },
     {
       "action": "تعديل قضية: 767",
       "time": "١١‏/٨‏/٢٠٢٦، ٧:٥٢:٢٦ م"
