@@ -2175,6 +2175,28 @@
       "archived": false,
       "stage": "filed",
       "createdAt": "2026-08-11T16:11:10.122Z"
+    },
+    {
+      "id": "_vl4tuz1hxmsouz6ao",
+      "num": "5902/2026",
+      "type": "أسرة",
+      "clientIds": "_idkdxly9rmsoutqs7",
+      "clientRoles": "_idkdxly9rmsoutqs7:موكل",
+      "plaintiff": "",
+      "defendant": "",
+      "lawyerId": "_ff0o8xvlnmqmhfryl",
+      "court": "محكمه الاسره - بندر الزقازيق",
+      "division": "",
+      "date": "2026-09-15",
+      "status": "نشطة",
+      "notes": "نفقة بنوعيها",
+      "fee": 2500,
+      "paid": 0,
+      "tawkeelNum": "",
+      "tawkeelType": "عام",
+      "archived": false,
+      "stage": "filed",
+      "createdAt": "2026-08-11T16:12:13.344Z"
     }
   ],
   "clients": [
@@ -5794,10 +5816,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:٠٩:٤٦ م",
-    "lastSyncCommit": "bed0114477e879db69f79f555bc71ecf5b0cb2c7"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:١١:١٦ م",
+    "lastSyncCommit": "6addd930aae14cee362f91bcec3277e9ae5598c5"
   },
   "activityLog": [
+    {
+      "action": "إضافة قضية: 5902/2026",
+      "time": "١١‏/٨‏/٢٠٢٦، ٧:١٢:١٣ م"
+    },
     {
       "action": "إضافة قضية: 5901/2026",
       "time": "١١‏/٨‏/٢٠٢٦، ٧:١١:١٠ م"
