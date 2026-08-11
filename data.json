@@ -1898,19 +1898,20 @@
       "clientIds": "_t2zbkk7x6mqmb1q8g",
       "plaintiff": "",
       "defendant": "رفعت سعيد رفعت",
-      "lawyerId": "",
+      "lawyerId": "_ff0o8xvlnmqmhfryl",
       "court": "اسره بندر الزقازيق",
-      "division": "",
-      "date": "2026-07-11",
+      "division": "نفقة زوجية",
+      "date": "2026-08-22",
       "status": "نشطة",
       "notes": "نفقه زوجيه",
-      "fee": 0,
-      "paid": 0,
+      "fee": 5000,
+      "paid": 1500,
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
       "createdAt": "2026-06-21T13:27:25.508Z",
-      "stage": "hearing"
+      "stage": "filed",
+      "clientRoles": "_t2zbkk7x6mqmb1q8g:موكل"
     },
     {
       "id": "_1vvq84fpzmr920nv9",
@@ -5860,10 +5861,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:١٣:٣٨ م",
-    "lastSyncCommit": "96fe5c09f5e34520c886d40338baa24ec8c230f1"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:١٦:٤١ م",
+    "lastSyncCommit": "14e2f493270a3c264da4e578a83e904602f371de"
   },
   "activityLog": [
+    {
+      "action": "تعديل قضية: 3782",
+      "time": "١١‏/٨‏/٢٠٢٦، ٧:١٨:٢٤ م"
+    },
     {
       "action": "إضافة قضية: 181/2026",
       "time": "١١‏/٨‏/٢٠٢٦، ٧:١٦:٣٥ م"
