@@ -11,12 +11,12 @@
   "sessionLogs": [],
   "clientGroups": [],
   "settings": {
-    "lastSync": "١٢‏/٨‏/٢٠٢٦، ١٢:١٥:١٩ ص",
-    "lastSyncCommit": "c0100763f952a8a6e19d8f55f47ca7c316c63a6a",
+    "lastSync": "١٢‏/٨‏/٢٠٢٦، ١٢:١٦:١٣ ص",
+    "lastSyncCommit": "8cd5a2c7202b4b1e640532d2cedced11e7297c40",
     "storageMode": "github",
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.2json",
-    "autoSync": false
+    "autoSync": true
   },
   "activityLog": [],
   "importantLinks": [],
