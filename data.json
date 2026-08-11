@@ -3971,6 +3971,21 @@
       "tawkeelImg": "",
       "notes": "",
       "createdAt": "2026-08-11T15:53:34.862Z"
+    },
+    {
+      "id": "_8akdxyf32msouc3bu",
+      "name": "سوزان سامي محمد حافظ",
+      "phone": "",
+      "idNum": "",
+      "email": "",
+      "address": "",
+      "photo": "",
+      "tawkeelNum": "1234/2026",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2026-07-06",
+      "tawkeelImg": "",
+      "notes": "قضايا",
+      "createdAt": "2026-08-11T15:54:18.239Z"
     }
   ],
   "staff": [
@@ -5509,6 +5524,26 @@
         }
       ],
       "mainClientId": "_mg2x8wuu0msoub4bd"
+    },
+    {
+      "id": "_qh1tugt5mmsouc4qn",
+      "tawkeelNum": "1234/2026",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2026-07-06",
+      "tawkeelImg": "",
+      "notes": "قضايا",
+      "clients": [
+        {
+          "id": "_8akdxyf32msouc3bu",
+          "name": "سوزان سامي محمد حافظ",
+          "phone": "",
+          "idNum": "",
+          "email": "",
+          "address": "",
+          "photo": ""
+        }
+      ],
+      "mainClientId": "_8akdxyf32msouc3bu"
     }
   ],
   "settings": {
@@ -5521,10 +5556,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٦:٥٢:٥٦ م",
-    "lastSyncCommit": "6c39ab024cbaaecd147af7fc4b3a99ca7404b11d"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٦:٥٣:٤٠ م",
+    "lastSyncCommit": "241d0c3730cc4ea57435976cd07389f19d2eaf38"
   },
   "activityLog": [
+    {
+      "action": "إضافة توكيل: 1234/2026 مع 1 موكلين",
+      "time": "١١‏/٨‏/٢٠٢٦، ٦:٥٤:١٨ م"
+    },
     {
       "action": "إضافة توكيل: 45546/2026 مع 1 موكلين",
       "time": "١١‏/٨‏/٢٠٢٦، ٦:٥٣:٣٤ م"
