@@ -4683,6 +4683,15 @@
       "ownerId": "_ff0o8xvlnmqmhfryl",
       "caseId": "",
       "status": "pending"
+    },
+    {
+      "id": "_4pehiia0gmsovpqe9",
+      "title": "تقديم تظلم في حفظ محضر رقم 18/2026 شهيرة علي محمد علي",
+      "priority": "عادية",
+      "due": "2026-08-14",
+      "ownerId": "_ff0o8xvlnmqmhfryl",
+      "caseId": "",
+      "status": "pending"
     }
   ],
   "payments": [],
@@ -5939,10 +5948,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:٣١:٥٠ م",
-    "lastSyncCommit": "97ff097386b2badcc237398f243558550b470192"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:٣٢:١٤ م",
+    "lastSyncCommit": "45e2d41eb57495755ecefcde5c7e10019e19a16a"
   },
   "activityLog": [
+    {
+      "action": "إضافة مهمة: تقديم تظلم في حفظ محضر رقم 18/2026 شهيرة علي محمد علي",
+      "time": "١١‏/٨‏/٢٠٢٦، ٧:٣٢:٥٢ م"
+    },
     {
       "action": "إضافة مهمة: رفع تسوية طلاق للضرر ثريا شعبان",
       "time": "١١‏/٨‏/٢٠٢٦، ٧:٣٢:٠٩ م"
