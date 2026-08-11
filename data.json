@@ -3986,6 +3986,21 @@
       "tawkeelImg": "",
       "notes": "قضايا",
       "createdAt": "2026-08-11T15:54:18.239Z"
+    },
+    {
+      "id": "_vax7q7g81msoucw8v",
+      "name": "ياسمين سامي محمد حافظ العيسوي",
+      "phone": "",
+      "idNum": "",
+      "email": "",
+      "address": "",
+      "photo": "",
+      "tawkeelNum": "1234/2026",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2026-07-05",
+      "tawkeelImg": "",
+      "notes": "",
+      "createdAt": "2026-08-11T15:54:55.187Z"
     }
   ],
   "staff": [
@@ -5544,6 +5559,26 @@
         }
       ],
       "mainClientId": "_8akdxyf32msouc3bu"
+    },
+    {
+      "id": "_cwzu6mkipmsoucx8z",
+      "tawkeelNum": "1234/2026",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2026-07-05",
+      "tawkeelImg": "",
+      "notes": "",
+      "clients": [
+        {
+          "id": "_vax7q7g81msoucw8v",
+          "name": "ياسمين سامي محمد حافظ العيسوي",
+          "phone": "",
+          "idNum": "",
+          "email": "",
+          "address": "",
+          "photo": ""
+        }
+      ],
+      "mainClientId": "_vax7q7g81msoucw8v"
     }
   ],
   "settings": {
@@ -5556,10 +5591,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٦:٥٣:٤٠ م",
-    "lastSyncCommit": "241d0c3730cc4ea57435976cd07389f19d2eaf38"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٦:٥٤:٢٤ م",
+    "lastSyncCommit": "e2f8711ef6d40ba4cfeba09645c40ee91a750978"
   },
   "activityLog": [
+    {
+      "action": "إضافة توكيل: 1234/2026 مع 1 موكلين",
+      "time": "١١‏/٨‏/٢٠٢٦، ٦:٥٤:٥٥ م"
+    },
     {
       "action": "إضافة توكيل: 1234/2026 مع 1 موكلين",
       "time": "١١‏/٨‏/٢٠٢٦، ٦:٥٤:١٨ م"
