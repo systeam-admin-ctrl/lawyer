@@ -3941,6 +3941,21 @@
       "tawkeelImg": "",
       "notes": "عام قضايا",
       "createdAt": "2026-08-11T15:47:35.478Z"
+    },
+    {
+      "id": "_cqk0o2qfkmsoua6z1",
+      "name": "شاهيناز سامي محمد حافظ العيسوي",
+      "phone": "",
+      "idNum": "",
+      "email": "",
+      "address": "الدقهلية - ميت يعيش -",
+      "photo": "",
+      "tawkeelNum": "4343/2026",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2026-07-05",
+      "tawkeelImg": "",
+      "notes": "توكيل عام قضايا",
+      "createdAt": "2026-08-11T15:52:50.581Z"
     }
   ],
   "staff": [
@@ -5439,6 +5454,26 @@
         }
       ],
       "mainClientId": "_m1ju3jpxnmsou3gh6"
+    },
+    {
+      "id": "_33uxc78c0msoua93p",
+      "tawkeelNum": "4343/2026",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2026-07-05",
+      "tawkeelImg": "",
+      "notes": "توكيل عام قضايا",
+      "clients": [
+        {
+          "id": "_cqk0o2qfkmsoua6z1",
+          "name": "شاهيناز سامي محمد حافظ العيسوي",
+          "phone": "",
+          "idNum": "",
+          "email": "",
+          "address": "الدقهلية - ميت يعيش -",
+          "photo": ""
+        }
+      ],
+      "mainClientId": "_cqk0o2qfkmsoua6z1"
     }
   ],
   "settings": {
@@ -5451,10 +5486,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٦:٤٤:٤١ م",
-    "lastSyncCommit": "267d906dd6205a5f4ce7f1b57e9fea2181dd40ca"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٦:٤٧:٤٢ م",
+    "lastSyncCommit": "88613d92b5e2e85fd73a5f63f70a6f2b0931cc16"
   },
   "activityLog": [
+    {
+      "action": "إضافة توكيل: 4343/2026 مع 1 موكلين",
+      "time": "١١‏/٨‏/٢٠٢٦، ٦:٥٢:٥٠ م"
+    },
     {
       "action": "إضافة توكيل: 878/20222 مع 1 موكلين",
       "time": "١١‏/٨‏/٢٠٢٦، ٦:٤٧:٣٥ م"
