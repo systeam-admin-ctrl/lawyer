@@ -1932,6 +1932,28 @@
       "archived": false,
       "stage": "filed",
       "createdAt": "2026-07-06T10:05:18.933Z"
+    },
+    {
+      "id": "_pzeb7juvjmsotphjv",
+      "num": "8932/2026",
+      "type": "صحة توقيع",
+      "clientIds": "_93r7147s6msotk1vm",
+      "clientRoles": "_93r7147s6msotk1vm:موكل",
+      "plaintiff": "ايمان السيد شحاته السيد",
+      "defendant": "",
+      "lawyerId": "",
+      "court": "",
+      "division": "",
+      "date": "2026-09-26",
+      "status": "نشطة",
+      "notes": "",
+      "fee": 5000,
+      "paid": 1500,
+      "tawkeelNum": "2685ج",
+      "tawkeelType": "عام",
+      "archived": false,
+      "stage": "filed",
+      "createdAt": "2026-08-11T15:36:41.755Z"
     }
   ],
   "clients": [
@@ -5306,10 +5328,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٦:٣٤:٠٦ م",
-    "lastSyncCommit": "5760670c685448b8c96b787026550b806495e2c0"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٦:٣٥:٤٨ م",
+    "lastSyncCommit": "fda9a25a2514fa3f00521c5a14b63fa34e22cca6"
   },
   "activityLog": [
+    {
+      "action": "إضافة قضية: 8932/2026",
+      "time": "١١‏/٨‏/٢٠٢٦، ٦:٣٦:٤١ م"
+    },
     {
       "action": "إضافة توكيل: 1401/2026 مع 1 موكلين",
       "time": "١١‏/٨‏/٢٠٢٦، ٦:٣٥:٤٢ م"
