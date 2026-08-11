@@ -2020,6 +2020,28 @@
       "archived": false,
       "stage": "filed",
       "createdAt": "2026-08-11T15:42:57.434Z"
+    },
+    {
+      "id": "_j2jnte1zqmsotzmqh",
+      "num": "4934/2026",
+      "type": "أسرة",
+      "clientIds": "_sjknsd8aymsoto4xo",
+      "clientRoles": "_sjknsd8aymsoto4xo:موكل",
+      "plaintiff": "",
+      "defendant": "عمرو مجدي محب سلامة",
+      "lawyerId": "_ff0o8xvlnmqmhfryl",
+      "court": "محكمه الاسره - بندر الزقازيق",
+      "division": "2",
+      "date": "2026-08-29",
+      "status": "نشطة",
+      "notes": "منقولات زوجية",
+      "fee": 3500,
+      "paid": 1000,
+      "tawkeelNum": "1401/2026",
+      "tawkeelType": "عام",
+      "archived": false,
+      "stage": "filed",
+      "createdAt": "2026-08-11T15:44:35.033Z"
     }
   ],
   "clients": [
@@ -5394,10 +5416,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٦:٤١:٢٢ م",
-    "lastSyncCommit": "077a44885cf06717aa1b3fbf0eb734af0be1df12"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٦:٤٣:٠٣ م",
+    "lastSyncCommit": "cdb83f466031914e43acb7398101a680cb351731"
   },
   "activityLog": [
+    {
+      "action": "إضافة قضية: 4934/2026",
+      "time": "١١‏/٨‏/٢٠٢٦، ٦:٤٤:٣٥ م"
+    },
     {
       "action": "إضافة قضية: 4933/2026",
       "time": "١١‏/٨‏/٢٠٢٦، ٦:٤٢:٥٧ م"
