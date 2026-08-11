@@ -4105,6 +4105,21 @@
       "tawkeelImg": "",
       "notes": "",
       "createdAt": "2026-08-11T16:03:30.146Z"
+    },
+    {
+      "id": "_idkdxly9rmsoutqs7",
+      "name": "اكمل محمد علي سليم فهيم احمد",
+      "phone": "",
+      "idNum": "",
+      "email": "",
+      "address": "",
+      "photo": "",
+      "tawkeelNum": "1068/2026",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2026-06-09",
+      "tawkeelImg": "",
+      "notes": "",
+      "createdAt": "2026-08-11T16:08:01.517Z"
     }
   ],
   "staff": [
@@ -5703,6 +5718,26 @@
         }
       ],
       "mainClientId": "_oduhdquk6msounx27"
+    },
+    {
+      "id": "_2hgx5edv8msoutrzh",
+      "tawkeelNum": "1068/2026",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2026-06-09",
+      "tawkeelImg": "",
+      "notes": "",
+      "clients": [
+        {
+          "id": "_idkdxly9rmsoutqs7",
+          "name": "اكمل محمد علي سليم فهيم احمد",
+          "phone": "",
+          "idNum": "",
+          "email": "",
+          "address": "",
+          "photo": ""
+        }
+      ],
+      "mainClientId": "_idkdxly9rmsoutqs7"
     }
   ],
   "settings": {
@@ -5715,10 +5750,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:٠٢:٠٤ م",
-    "lastSyncCommit": "4e62e54f4ad7233703d512126170f7e3f7290545"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:٠٣:٣٦ م",
+    "lastSyncCommit": "2945877ab892b20ff3edf7f52ba346ee5c262003"
   },
   "activityLog": [
+    {
+      "action": "إضافة توكيل: 1068/2026 مع 1 موكلين",
+      "time": "١١‏/٨‏/٢٠٢٦، ٧:٠٨:٠١ م"
+    },
     {
       "action": "إضافة توكيل: 493/2026 مع 1 موكلين",
       "time": "١١‏/٨‏/٢٠٢٦، ٧:٠٣:٣٠ م"
