@@ -17,11 +17,17 @@
     "officePhone": "",
     "officeEmail": "",
     "storageMode": "local",
-    "githubRepo": "systeam-admin-ctrl/lawyer",
-    "githubFilePath": "data.json",
-    "autoSync": false
+    "githubRepo": "systeam-admin-ctrl/lawyer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",
+    "githubFilePath": "data.json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",
+    "autoSync": true,
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٣:٤٥:١٧ م",
+    "lastSyncCommit": "4b49951e0402747e8d0ea40f66852916898f8c04"
   },
   "activityLog": [
+    {
+      "action": "حفظ إعدادات",
+      "time": "١١‏/٨‏/٢٠٢٦، ٣:٤١:٣٣ م"
+    },
     {
       "action": "حفظ إعدادات",
       "time": "١١‏/٨‏/٢٠٢٦، ٣:٣١:٣٦ م"
