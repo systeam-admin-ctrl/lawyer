@@ -2064,6 +2064,28 @@
       "archived": false,
       "stage": "filed",
       "createdAt": "2026-08-11T15:56:23.857Z"
+    },
+    {
+      "id": "_ndg4si7ormsouh0z4",
+      "num": "4895/2026",
+      "type": "صحة توقيع",
+      "clientIds": "_f7oso6l66mqnoi8el",
+      "clientRoles": "_f7oso6l66mqnoi8el:موكل",
+      "plaintiff": "ياسمين سامي واخريين",
+      "defendant": "محمد سامي حافظ العيسوي",
+      "lawyerId": "_ff0o8xvlnmqmhfryl",
+      "court": "مجمع محاكم ميت غمر",
+      "division": "",
+      "date": "2026-09-01",
+      "status": "نشطة",
+      "notes": "",
+      "fee": 5000,
+      "paid": 0,
+      "tawkeelNum": "",
+      "tawkeelType": "عام",
+      "archived": false,
+      "stage": "filed",
+      "createdAt": "2026-08-11T15:58:06.640Z"
     }
   ],
   "clients": [
@@ -5613,10 +5635,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٦:٥٥:٠١ م",
-    "lastSyncCommit": "8bfaa730a9d2106d422d882b6b829f97024f9850"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٦:٥٦:٢٩ م",
+    "lastSyncCommit": "e005ac8ffed2c8ad84481c7659bcc8791e41047e"
   },
   "activityLog": [
+    {
+      "action": "إضافة قضية: 4895/2026",
+      "time": "١١‏/٨‏/٢٠٢٦، ٦:٥٨:٠٦ م"
+    },
     {
       "action": "إضافة قضية: 4896/2026",
       "time": "١١‏/٨‏/٢٠٢٦، ٦:٥٦:٢٣ م"
