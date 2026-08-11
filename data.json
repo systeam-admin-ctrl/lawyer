@@ -4090,6 +4090,21 @@
       "tawkeelImg": "",
       "notes": "",
       "createdAt": "2026-08-11T15:54:55.187Z"
+    },
+    {
+      "id": "_oduhdquk6msounx27",
+      "name": "سارة رضا السيد وحيد الدين محمد",
+      "phone": "",
+      "idNum": "29004111300083",
+      "email": "",
+      "address": "الحسينية - الزقازيق اول",
+      "photo": "",
+      "tawkeelNum": "493/2026",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2026-02-15",
+      "tawkeelImg": "",
+      "notes": "",
+      "createdAt": "2026-08-11T16:03:30.146Z"
     }
   ],
   "staff": [
@@ -5668,6 +5683,26 @@
         }
       ],
       "mainClientId": "_vax7q7g81msoucw8v"
+    },
+    {
+      "id": "_89fiecyc0msounyle",
+      "tawkeelNum": "493/2026",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2026-02-15",
+      "tawkeelImg": "",
+      "notes": "",
+      "clients": [
+        {
+          "id": "_oduhdquk6msounx27",
+          "name": "سارة رضا السيد وحيد الدين محمد",
+          "phone": "",
+          "idNum": "29004111300083",
+          "email": "",
+          "address": "الحسينية - الزقازيق اول",
+          "photo": ""
+        }
+      ],
+      "mainClientId": "_oduhdquk6msounx27"
     }
   ],
   "settings": {
@@ -5680,10 +5715,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:٠٠:٣٠ م",
-    "lastSyncCommit": "48bf56ede8d516c1296407299230efe000fba4ea"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:٠٢:٠٤ م",
+    "lastSyncCommit": "4e62e54f4ad7233703d512126170f7e3f7290545"
   },
   "activityLog": [
+    {
+      "action": "إضافة توكيل: 493/2026 مع 1 موكلين",
+      "time": "١١‏/٨‏/٢٠٢٦، ٧:٠٣:٣٠ م"
+    },
     {
       "action": "تعديل قضية: 18\\2026",
       "time": "١١‏/٨‏/٢٠٢٦، ٧:٠١:٥٧ م"
