@@ -4665,6 +4665,15 @@
       "ownerId": "_ff0o8xvlnmqmhfryl",
       "caseId": "",
       "status": "pending"
+    },
+    {
+      "id": "_u69svwm3bmsovoaeb",
+      "title": "رفع تسويات ثريا شعبان بركات",
+      "priority": "عادية",
+      "due": "2026-08-12",
+      "ownerId": "_ff0o8xvlnmqmhfryl",
+      "caseId": "",
+      "status": "pending"
     }
   ],
   "payments": [],
@@ -5921,10 +5930,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:٣٠:٢٩ م",
-    "lastSyncCommit": "7a3f91b7ccfd7ba1354b5b143029bf783e30f1ad"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:٣١:١٩ م",
+    "lastSyncCommit": "2c5a10ce39144064f8261aacb47b15598df355e9"
   },
   "activityLog": [
+    {
+      "action": "إضافة مهمة: رفع تسويات ثريا شعبان بركات",
+      "time": "١١‏/٨‏/٢٠٢٦، ٧:٣١:٤٥ م"
+    },
     {
       "action": "إضافة مهمة: رفع قضية استرداد شبكة شهاب عصام مهني",
       "time": "١١‏/٨‏/٢٠٢٦، ٧:٣١:١٣ م"
