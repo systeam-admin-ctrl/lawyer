@@ -1100,19 +1100,20 @@
       "clientIds": "_v752z7zkpmqm9d9wt",
       "plaintiff": "",
       "defendant": "محمود حسن حسين عوض",
-      "lawyerId": "",
-      "court": "",
-      "division": "",
-      "date": "",
+      "lawyerId": "_ff0o8xvlnmqmhfryl",
+      "court": "محكمه الاسره - بندر الزقازيق",
+      "division": "مركز الزقازيق",
+      "date": "2026-09-26",
       "status": "نشطة",
-      "notes": "نفقه صغار بدل غطاء وفرض",
+      "notes": "نفقه صغار بدل غطاء وفرض- استجواب وتوضيح الطلبات الختامية",
       "fee": 0,
       "paid": 0,
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
       "createdAt": "2026-06-21T10:39:02.657Z",
-      "stage": "hearing"
+      "stage": "filed",
+      "clientRoles": "_v752z7zkpmqm9d9wt:موكل"
     },
     {
       "id": "_9nxin0cjbmqnno86z",
@@ -5884,10 +5885,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:٢٦:٢٩ م",
-    "lastSyncCommit": "82fb65e497f82cdcab33adbb59b553017bea4a8d"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:٢٦:٣٨ م",
+    "lastSyncCommit": "2175c6b4ff64b94c9b0b2df3052b31231b60140e"
   },
   "activityLog": [
+    {
+      "action": "تعديل قضية: 2225",
+      "time": "١١‏/٨‏/٢٠٢٦، ٧:٢٧:٤٠ م"
+    },
     {
       "action": "إضافة قضية: 1471/2026",
       "time": "١١‏/٨‏/٢٠٢٦، ٧:٢٦:٢٢ م"
