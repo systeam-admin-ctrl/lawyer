@@ -5964,10 +5964,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٨:١١:٥٤ م",
-    "lastSyncCommit": "2b1802f395f9b9a386f53d299fae82d4953417bd"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٨:١٣:٥٩ م",
+    "lastSyncCommit": "b5921270c68faee4e7dfdb402f8c7daf501235c8"
   },
   "activityLog": [
+    {
+      "action": "تعديل قضية: 767",
+      "time": "١١‏/٨‏/٢٠٢٦، ٨:١٦:٢٦ م"
+    },
     {
       "action": "تعديل قضية: 77777777",
       "time": "١١‏/٨‏/٢٠٢٦، ٨:١٣:٥٣ م"
