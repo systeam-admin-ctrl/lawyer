@@ -5964,10 +5964,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٨:١٦:٣٢ م",
-    "lastSyncCommit": "9cf8b351cdecc053b2045756880097f5b2d68602"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٨:٣٠:٢٢ م",
+    "lastSyncCommit": "8297dc6c3044bd98f5f026793cd7ba2aadb47e21"
   },
   "activityLog": [
+    {
+      "action": "إضافة محكمة: جنوب القاهرة",
+      "time": "١١‏/٨‏/٢٠٢٦، ٨:٣٠:٢٣ م"
+    },
     {
       "action": "إضافة محكمة: شمال القاهرة",
       "time": "١١‏/٨‏/٢٠٢٦، ٨:٣٠:١٥ م"
@@ -6380,6 +6384,10 @@
     {
       "id": "_bza391jrqmsoxrj3l",
       "name": "شمال القاهرة"
+    },
+    {
+      "id": "_rajzn1vxhmsoxrp9l",
+      "name": "جنوب القاهرة"
     }
   ],
   "version": "8.0",
