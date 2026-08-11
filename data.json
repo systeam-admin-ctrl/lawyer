@@ -2086,6 +2086,28 @@
       "archived": false,
       "stage": "filed",
       "createdAt": "2026-08-11T15:58:06.640Z"
+    },
+    {
+      "id": "_edbw90mqpmsouifsd",
+      "num": "4892/2026",
+      "type": "صحة توقيع",
+      "clientIds": "_mg2x8wuu0msoub4bd",
+      "clientRoles": "_mg2x8wuu0msoub4bd:موكل",
+      "plaintiff": "",
+      "defendant": "سمية مهني واخريين",
+      "lawyerId": "_ff0o8xvlnmqmhfryl",
+      "court": "مجمع محاكم ميت غمر",
+      "division": "",
+      "date": "2026-09-02",
+      "status": "نشطة",
+      "notes": "",
+      "fee": 3000,
+      "paid": 1500,
+      "tawkeelNum": "",
+      "tawkeelType": "عام",
+      "archived": false,
+      "stage": "filed",
+      "createdAt": "2026-08-11T15:59:12.493Z"
     }
   ],
   "clients": [
@@ -5635,10 +5657,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٦:٥٦:٢٩ م",
-    "lastSyncCommit": "e005ac8ffed2c8ad84481c7659bcc8791e41047e"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٦:٥٨:١٢ م",
+    "lastSyncCommit": "f83ba4ee5092b7be452021a911ec367868c780f2"
   },
   "activityLog": [
+    {
+      "action": "إضافة قضية: 4892/2026",
+      "time": "١١‏/٨‏/٢٠٢٦، ٦:٥٩:١٢ م"
+    },
     {
       "action": "إضافة قضية: 4895/2026",
       "time": "١١‏/٨‏/٢٠٢٦، ٦:٥٨:٠٦ م"
