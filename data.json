@@ -4647,6 +4647,15 @@
       "ownerId": "_ff0o8xvlnmqmhfryl",
       "caseId": "",
       "status": "pending"
+    },
+    {
+      "id": "_w8dyn7pvvmsovmjx5",
+      "title": "رفع امر اداء منة الله عصام",
+      "priority": "عادية",
+      "due": "2026-08-12",
+      "ownerId": "_ff0o8xvlnmqmhfryl",
+      "caseId": "",
+      "status": "pending"
     }
   ],
   "payments": [],
@@ -5903,10 +5912,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:٢٩:٥٢ م",
-    "lastSyncCommit": "eb42935f2a9ab0879ed45f56e7b3cceb1d3e870b"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:٣٠:١٢ م",
+    "lastSyncCommit": "7bc13fbc31b89446f8b9867f6af275e2a7d31ab1"
   },
   "activityLog": [
+    {
+      "action": "إضافة مهمة: رفع امر اداء منة الله عصام",
+      "time": "١١‏/٨‏/٢٠٢٦، ٧:٣٠:٢٤ م"
+    },
     {
       "action": "إضافة مهمة: رفع امر اداء منة عصام 10000",
       "time": "١١‏/٨‏/٢٠٢٦، ٧:٣٠:٠٦ م"
