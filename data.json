@@ -4629,6 +4629,15 @@
       "ownerId": "",
       "caseId": "",
       "status": "done"
+    },
+    {
+      "id": "_pgcn3dcjxmsovlqx2",
+      "title": "رفع دعوي امر اداء منة الله عصام",
+      "priority": "عادية",
+      "due": "2026-08-12",
+      "ownerId": "_ff0o8xvlnmqmhfryl",
+      "caseId": "",
+      "status": "pending"
     }
   ],
   "payments": [],
@@ -5885,10 +5894,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:٢٦:٣٨ م",
-    "lastSyncCommit": "2175c6b4ff64b94c9b0b2df3052b31231b60140e"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:٢٧:٤٧ م",
+    "lastSyncCommit": "989c51a658b735811c90c9f6555d622baef35caf"
   },
   "activityLog": [
+    {
+      "action": "إضافة مهمة: رفع دعوي امر اداء منة الله عصام",
+      "time": "١١‏/٨‏/٢٠٢٦، ٧:٢٩:٤٦ م"
+    },
     {
       "action": "تعديل قضية: 2225",
       "time": "١١‏/٨‏/٢٠٢٦، ٧:٢٧:٤٠ م"
