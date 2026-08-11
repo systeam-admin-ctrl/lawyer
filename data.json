@@ -1584,19 +1584,20 @@
       "clientIds": "_t0k5ww2mvmqmaareb",
       "plaintiff": "",
       "defendant": "محمد عبدالنبي",
-      "lawyerId": "",
+      "lawyerId": "_ff0o8xvlnmqmhfryl",
       "court": "",
       "division": "",
-      "date": "",
+      "date": "2026-09-23",
       "status": "نشطة",
-      "notes": "طرد",
+      "notes": "طرد للمستندات",
       "fee": 0,
       "paid": 0,
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
       "createdAt": "2026-06-21T12:28:51.853Z",
-      "stage": "hearing"
+      "stage": "filed",
+      "clientRoles": "_t0k5ww2mvmqmaareb:موكل"
     },
     {
       "id": "_8ra45hxynmqnro8zd",
@@ -5959,10 +5960,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:٣٣:٥٩ م",
-    "lastSyncCommit": "5faa60082354d13304df6224426470bc43e90603"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:٣٦:٠٧ م",
+    "lastSyncCommit": "2d92bacaf6a042607b1d5bcefba1875bef28573a"
   },
   "activityLog": [
+    {
+      "action": "تعديل قضية: 227",
+      "time": "١١‏/٨‏/٢٠٢٦، ٧:٣٨:٥٤ م"
+    },
     {
       "action": "صرف راتب",
       "time": "١١‏/٨‏/٢٠٢٦، ٧:٣٦:٠٠ م"
