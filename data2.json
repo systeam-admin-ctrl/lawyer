@@ -16,12 +16,12 @@
     "officeAddress": "",
     "officePhone": "",
     "officeEmail": "",
-    "storageMode": "github",
+    "storageMode": "local",
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data2.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٦:٢٧:٤٠ م",
-    "lastSyncCommit": "56853d8a97fa8c82fbd6862bf5e2acdfbbbe9030"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٦:٢٧:٤٢ م",
+    "lastSyncCommit": "c663461fa231bf8144592739a84486d493f967d0"
   },
   "activityLog": [
     {
