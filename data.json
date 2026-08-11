@@ -1910,28 +1910,6 @@
       "archived": false,
       "createdAt": "2026-06-21T13:27:25.508Z",
       "stage": "hearing"
-    },
-    {
-      "id": "_1vvq84fpzmr920nv9",
-      "num": "09090",
-      "type": "استئناف مدني",
-      "clientIds": "_p9p6oosq9mr91x4te",
-      "clientRoles": "_p9p6oosq9mr91x4te:مدعي",
-      "plaintiff": "",
-      "defendant": "",
-      "lawyerId": "_ff0o8xvlnmqmhfryl",
-      "court": "محكمه العاشر من رمضان",
-      "division": "جنوب مثلا",
-      "date": "",
-      "status": "نشطة",
-      "notes": "",
-      "fee": 0,
-      "paid": 0,
-      "tawkeelNum": "09090",
-      "tawkeelType": "خاص",
-      "archived": false,
-      "stage": "filed",
-      "createdAt": "2026-07-06T10:05:18.933Z"
     }
   ],
   "clients": [
@@ -3756,21 +3734,6 @@
       "tawkeelImg": "",
       "notes": "",
       "createdAt": "2026-06-21T12:55:50.843Z"
-    },
-    {
-      "id": "_p9p6oosq9mr91x4te",
-      "name": "تجريبي",
-      "phone": "+201123961290",
-      "idNum": "1320534742949",
-      "email": "",
-      "address": "تجريبي",
-      "photo": "",
-      "tawkeelNum": "09090",
-      "tawkeelType": "عام",
-      "tawkeelDate": "2026-07-06",
-      "tawkeelImg": "",
-      "notes": "",
-      "createdAt": "2026-07-06T10:02:36.003Z"
     }
   ],
   "staff": [
@@ -4129,26 +4092,26 @@
   ],
   "tasks": [
     {
-      "id": "_2vilv8ajimr3n9wjp",
-      "title": "AMG",
-      "priority": "عاجلة",
-      "due": "",
-      "ownerId": "",
-      "caseId": "",
-      "status": "done"
-    },
-    {
-      "id": "_xi9thedppmr7sqyq8",
-      "title": "AMG 2",
+      "id": "_3rogb87q1mqnpcx3f",
+      "title": "تسليم اعلان جسه 22 تنسابلنشسي",
       "priority": "عادية",
-      "due": "",
-      "ownerId": "",
-      "caseId": "",
+      "due": "2026-06-21",
+      "ownerId": "_nwv6fpcxzmqm4z7xg",
+      "caseId": "_t0l3pkjy1mqnhfm44",
       "status": "done"
     }
   ],
   "payments": [],
-  "documents": [],
+  "documents": [
+    {
+      "id": "_t82x4dpv1mqnpgdff",
+      "name": "تنزيل (4).jpg",
+      "cat": "أخرى",
+      "size": 29781,
+      "caseId": "",
+      "uploadedAt": "2026-06-21T11:30:27.196Z"
+    }
+  ],
   "attendance": [],
   "salaries": [
     {
@@ -4275,18 +4238,6 @@
       "notes": "",
       "nextDate": "2026-09-16",
       "createdAt": "2026-06-21T08:02:42.048Z"
-    },
-    {
-      "id": "_aasti5mcpmr7t1jdr",
-      "caseId": "_gz97ffwr9mqntif69",
-      "date": "2026-07-05",
-      "court": "",
-      "judge": "",
-      "result": "تأجيل",
-      "what": "",
-      "notes": "",
-      "nextDate": "",
-      "createdAt": "2026-07-05T13:06:17.055Z"
     }
   ],
   "clientGroups": [
@@ -5169,138 +5120,22 @@
         }
       ],
       "mainClientId": "_5vl9ydglamqnsi5to"
-    },
-    {
-      "id": "_i0xawb7u5mr91x65f",
-      "tawkeelNum": "09090",
-      "tawkeelType": "عام",
-      "tawkeelDate": "2026-07-06",
-      "tawkeelImg": "",
-      "notes": "",
-      "clients": [
-        {
-          "id": "_p9p6oosq9mr91x4te",
-          "name": "تجريبي",
-          "phone": "+201123961290",
-          "idNum": "1320534742949",
-          "email": "",
-          "address": "تجريبي",
-          "photo": ""
-        }
-      ],
-      "mainClientId": "_p9p6oosq9mr91x4te"
     }
   ],
   "settings": {
     "officeName": "مجموعه المصطفي للمحاماة والاستشارات القانونية",
-    "officeManager": "مصطفي محمد - AMG",
+    "officeManager": "مصطفي محمد",
     "officeAddress": "",
     "officePhone": "",
     "officeEmail": "",
     "storageMode": "github",
-    "githubRepo": "systeam-admin-ctrl/lawyer",
+    "githubRepo": "Fo-programing/amg",
     "githubFilePath": "data.json",
-    "autoSync": true,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٥:٠٦:٣١ ص",
-    "lastSyncCommit": "62a84056e67708b88c72de34910bfe117b4b6908"
+    "autoSync": false,
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٤:٠٧:١٧ م",
+    "lastSyncCommit": "a23d2a8d724d724159536c2bd580bae95fd88bd7"
   },
   "activityLog": [
-    {
-      "action": "تعديل قضية: 09090",
-      "time": "٦‏/٧‏/٢٠٢٦، ٢:١٥:٢٦ ص"
-    },
-    {
-      "action": "إضافة قضية: 09090",
-      "time": "٦‏/٧‏/٢٠٢٦، ١:٠٥:١٨ م"
-    },
-    {
-      "action": "إضافة توكيل: 09090 مع 1 موكلين",
-      "time": "٦‏/٧‏/٢٠٢٦، ٢:٠٢:٣٦ ص"
-    },
-    {
-      "action": "إضافة محكمة: محكمه زينهم",
-      "time": "٥‏/٧‏/٢٠٢٦، ٨:٣٥:١٤ ص"
-    },
-    {
-      "action": "تسجيل جلسة منتهية: 3780",
-      "time": "٥‏/٧‏/٢٠٢٦، ٥:٠٦:١٧ ص"
-    },
-    {
-      "action": "إضافة مهمة: AMG 2",
-      "time": "٥‏/٧‏/٢٠٢٦، ٣:٥٨:٠٣ م"
-    },
-    {
-      "action": "إضافة قضية: 010",
-      "time": "٥‏/٧‏/٢٠٢٦، ٤:٤٨:١٨ ص"
-    },
-    {
-      "action": "إضافة مهمة: AMG",
-      "time": "٢‏/٧‏/٢٠٢٦، ٦:١٣:٤٤ م"
-    },
-    {
-      "action": "إضافة محكمة: مجمع محاكم ميت غمر",
-      "time": "١‏/٧‏/٢٠٢٦، ٤:٥٥:٠١ م"
-    },
-    {
-      "action": "إضافة محكمة: محكمه الاسره العاشر من رمضان",
-      "time": "١‏/٧‏/٢٠٢٦، ٤:٥٤:٥٣ م"
-    },
-    {
-      "action": "إضافة محكمة: مجمع مكاكم العاشر من رمضان الجديده",
-      "time": "١‏/٧‏/٢٠٢٦، ٤:٥٤:٤٥ م"
-    },
-    {
-      "action": "إضافة محكمة: محكمه أبو كبير الابتدائيه",
-      "time": "١‏/٧‏/٢٠٢٦، ٤:٥٤:٣٤ م"
-    },
-    {
-      "action": "إضافة محكمة: مجمع محاكم فاقوس",
-      "time": "١‏/٧‏/٢٠٢٦، ٤:٥٤:٢٥ م"
-    },
-    {
-      "action": "إضافة محكمة: محكمه العاشر من رمضان",
-      "time": "١‏/٧‏/٢٠٢٦، ٤:٥٤:١٩ م"
-    },
-    {
-      "action": "إضافة محكمة: محكمه ابو حماد الجزئيه",
-      "time": "١‏/٧‏/٢٠٢٦، ٤:٥٤:١٣ م"
-    },
-    {
-      "action": "إضافة محكمة: محكمه ههيا الابتدائيه",
-      "time": "١‏/٧‏/٢٠٢٦، ٤:٥٤:٠٦ م"
-    },
-    {
-      "action": "إضافة محكمة: مجمع محاكم مجلس الدوله الزقازيق",
-      "time": "١‏/٧‏/٢٠٢٦، ٤:٥٤:٠٠ م"
-    },
-    {
-      "action": "إضافة محكمة: محكمه الحسنيه",
-      "time": "١‏/٧‏/٢٠٢٦، ٤:٥٣:٥٤ م"
-    },
-    {
-      "action": "إضافة محكمة: محكمه جنايات الزقازيق",
-      "time": "١‏/٧‏/٢٠٢٦، ٤:٥٣:٤٦ م"
-    },
-    {
-      "action": "إضافة محكمة: محكمه ديرب نجم",
-      "time": "١‏/٧‏/٢٠٢٦، ٤:٥٣:٤٠ م"
-    },
-    {
-      "action": "إضافة محكمة: محكمه الزقازيق الجزئيه",
-      "time": "١‏/٧‏/٢٠٢٦، ٤:٥٣:٢٤ م"
-    },
-    {
-      "action": "إضافة محكمة: محكمه بلببيس الابتدائيه",
-      "time": "١‏/٧‏/٢٠٢٦، ٤:٥٣:١٩ م"
-    },
-    {
-      "action": "إضافة محكمة: محكمه الاسره - بندر الزقازيق",
-      "time": "١‏/٧‏/٢٠٢٦، ٤:٥٣:١٣ م"
-    },
-    {
-      "action": "إضافة محكمة: محكمة الزقازيق الابتدائيه",
-      "time": "١‏/٧‏/٢٠٢٦، ٤:٥٣:٠٦ م"
-    },
     {
       "action": "صرف راتب",
       "time": "١‏/٧‏/٢٠٢٦، ١٠:٢٩:٢٣ م"
@@ -5358,95 +5193,9 @@
       "time": "٢١‏/٦‏/٢٠٢٦، ٤:٢٤:٠١ م"
     }
   ],
-  "importantLinks": [
-    {
-      "id": "_w6voi91wxmr92hp0e",
-      "title": "مصر الرقميه",
-      "url": "https://digital.gov.eg/"
-    }
-  ],
-  "courts": [
-    {
-      "id": "_oqws79afvmr2sj3zt",
-      "name": "محكمة الزقازيق الابتدائيه"
-    },
-    {
-      "id": "_0r948xantmr2sj9k7",
-      "name": "محكمه الاسره - بندر الزقازيق"
-    },
-    {
-      "id": "_zu9tlozhomr2sjdq3",
-      "name": "محكمه بلببيس الابتدائيه"
-    },
-    {
-      "id": "_mviaezomgmr2sji7v",
-      "name": "محكمه الزقازيق الجزئيه"
-    },
-    {
-      "id": "_feg905910mr2sjtwi",
-      "name": "محكمه ديرب نجم"
-    },
-    {
-      "id": "_2ypy5kmvrmr2sjyoa",
-      "name": "محكمه جنايات الزقازيق"
-    },
-    {
-      "id": "_onwh8hbl7mr2sk4ru",
-      "name": "محكمه الحسنيه"
-    },
-    {
-      "id": "_h1fvy0d80mr2ska2b",
-      "name": "مجمع محاكم مجلس الدوله الزقازيق"
-    },
-    {
-      "id": "_b30djzcf7mr2skejo",
-      "name": "محكمه ههيا الابتدائيه"
-    },
-    {
-      "id": "_gnsap741emr2skjlr",
-      "name": "محكمه ابو حماد الجزئيه"
-    },
-    {
-      "id": "_9edctsdl0mr2skoa9",
-      "name": "محكمه العاشر من رمضان"
-    },
-    {
-      "id": "_0rdih0en3mr2sktcy",
-      "name": "مجمع محاكم فاقوس"
-    },
-    {
-      "id": "_hz54e3955mr2sl013",
-      "name": "محكمه أبو كبير الابتدائيه"
-    },
-    {
-      "id": "_zioektp8amr2sl893",
-      "name": "مجمع مكاكم العاشر من رمضان الجديده"
-    },
-    {
-      "id": "_1425gbc4kmr2sleh7",
-      "name": "محكمه الاسره العاشر من رمضان"
-    },
-    {
-      "id": "_5q71dn2comr2slklp",
-      "name": "مجمع محاكم ميت غمر"
-    },
-    {
-      "id": "_bk1uc44dxmr80i92p",
-      "name": "محكمه زينهم"
-    }
-  ],
+  "importantLinks": [],
+  "courts": [],
   "version": "8.0",
   "expenses": [],
-  "notifications": [
-    {
-      "id": "_8b28wbikdmr7rzn6i",
-      "title": "📅 جلسة اليوم",
-      "message": "لديك جلسة اليوم في القضية 3782 بمحكمة الاسره بندر الزقازيق",
-      "type": "reminder",
-      "link": "sessions",
-      "caseId": "session__jxmb1k2tpmqntphkp",
-      "time": "2026-07-05T12:36:49.050Z",
-      "read": false
-    }
-  ]
+  "notifications": []
 }
