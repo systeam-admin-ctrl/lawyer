@@ -112,10 +112,10 @@
       "clientIds": "_d0l5rjyw2mqmaripx",
       "plaintiff": "منة الله ابرهيم فرج \\ انجي ابرهيم",
       "defendant": "معوض السيد \\ وليد \\ ياسمين",
-      "lawyerId": "",
-      "court": "",
-      "division": "",
-      "date": "",
+      "lawyerId": "_ff0o8xvlnmqmhfryl",
+      "court": "محكمة الزقازيق الابتدائيه",
+      "division": "مدني جزئي /3",
+      "date": "2026-09-21",
       "status": "نشطة",
       "notes": "دعوه امتناع عن تسليم حصه ميراث مع الربع",
       "fee": 0,
@@ -124,7 +124,8 @@
       "tawkeelType": "عام",
       "archived": false,
       "createdAt": "2026-06-21T08:11:16.016Z",
-      "stage": "hearing"
+      "stage": "filed",
+      "clientRoles": "_d0l5rjyw2mqmaripx:موكل"
     },
     {
       "id": "_ql9tzsc7xmqnifl0f",
@@ -5679,10 +5680,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٦:٥٩:١٨ م",
-    "lastSyncCommit": "5086dd5b9be39d5e3b569000ed878808cc2879ab"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:٠٠:٣٠ م",
+    "lastSyncCommit": "48bf56ede8d516c1296407299230efe000fba4ea"
   },
   "activityLog": [
+    {
+      "action": "تعديل قضية: 18\\2026",
+      "time": "١١‏/٨‏/٢٠٢٦، ٧:٠١:٥٧ م"
+    },
     {
       "action": "إضافة قضية: 4893/2026",
       "time": "١١‏/٨‏/٢٠٢٦، ٧:٠٠:٢٥ م"
