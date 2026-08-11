@@ -5964,10 +5964,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٨:١٣:٥٩ م",
-    "lastSyncCommit": "b5921270c68faee4e7dfdb402f8c7daf501235c8"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٨:١٦:٣٢ م",
+    "lastSyncCommit": "9cf8b351cdecc053b2045756880097f5b2d68602"
   },
   "activityLog": [
+    {
+      "action": "إضافة محكمة: شمال القاهرة",
+      "time": "١١‏/٨‏/٢٠٢٦، ٨:٣٠:١٥ م"
+    },
     {
       "action": "تعديل قضية: 767",
       "time": "١١‏/٨‏/٢٠٢٦، ٨:١٦:٢٦ م"
@@ -6372,6 +6376,10 @@
     {
       "id": "_bk1uc44dxmr80i92p",
       "name": "محكمه زينهم"
+    },
+    {
+      "id": "_bza391jrqmsoxrj3l",
+      "name": "شمال القاهرة"
     }
   ],
   "version": "8.0",
