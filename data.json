@@ -1941,9 +1941,9 @@
       "clientRoles": "_93r7147s6msotk1vm:موكل",
       "plaintiff": "ايمان السيد شحاته السيد",
       "defendant": "",
-      "lawyerId": "",
-      "court": "",
-      "division": "",
+      "lawyerId": "_ff0o8xvlnmqmhfryl",
+      "court": "محكمة الزقازيق الابتدائيه",
+      "division": "صحة توقيع اول",
       "date": "2026-09-26",
       "status": "نشطة",
       "notes": "",
@@ -5350,10 +5350,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٦:٣٦:٤٧ م",
-    "lastSyncCommit": "0a08e09d373109395dfaca7ad4339e7b1001b891"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٦:٣٨:٥١ م",
+    "lastSyncCommit": "32b7d740ec4f6b35be48a13119d8401b1325642f"
   },
   "activityLog": [
+    {
+      "action": "تعديل قضية: 8932/2026",
+      "time": "١١‏/٨‏/٢٠٢٦، ٦:٣٩:٤١ م"
+    },
     {
       "action": "إضافة قضية: 4228/2026",
       "time": "١١‏/٨‏/٢٠٢٦، ٦:٣٨:٤٦ م"
