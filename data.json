@@ -3926,6 +3926,21 @@
       "tawkeelImg": "",
       "notes": "توكيل عام قضايا",
       "createdAt": "2026-08-11T15:35:42.907Z"
+    },
+    {
+      "id": "_m1ju3jpxnmsou3gh6",
+      "name": "عمرو علاء الدين محمد عطية",
+      "phone": "",
+      "idNum": "",
+      "email": "",
+      "address": "الحسينية - شارع عفيفي خطاب",
+      "photo": "",
+      "tawkeelNum": "878/20222",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2022-10-12",
+      "tawkeelImg": "",
+      "notes": "عام قضايا",
+      "createdAt": "2026-08-11T15:47:35.478Z"
     }
   ],
   "staff": [
@@ -5404,6 +5419,26 @@
         }
       ],
       "mainClientId": "_sjknsd8aymsoto4xo"
+    },
+    {
+      "id": "_8pz7hvxecmsou3hyu",
+      "tawkeelNum": "878/20222",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2022-10-12",
+      "tawkeelImg": "",
+      "notes": "عام قضايا",
+      "clients": [
+        {
+          "id": "_m1ju3jpxnmsou3gh6",
+          "name": "عمرو علاء الدين محمد عطية",
+          "phone": "",
+          "idNum": "",
+          "email": "",
+          "address": "الحسينية - شارع عفيفي خطاب",
+          "photo": ""
+        }
+      ],
+      "mainClientId": "_m1ju3jpxnmsou3gh6"
     }
   ],
   "settings": {
@@ -5416,10 +5451,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٦:٤٣:٠٣ م",
-    "lastSyncCommit": "cdb83f466031914e43acb7398101a680cb351731"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٦:٤٤:٤١ م",
+    "lastSyncCommit": "267d906dd6205a5f4ce7f1b57e9fea2181dd40ca"
   },
   "activityLog": [
+    {
+      "action": "إضافة توكيل: 878/20222 مع 1 موكلين",
+      "time": "١١‏/٨‏/٢٠٢٦، ٦:٤٧:٣٥ م"
+    },
     {
       "action": "إضافة قضية: 4934/2026",
       "time": "١١‏/٨‏/٢٠٢٦، ٦:٤٤:٣٥ م"
