@@ -2243,6 +2243,28 @@
       "archived": false,
       "stage": "filed",
       "createdAt": "2026-08-11T16:16:35.562Z"
+    },
+    {
+      "id": "_odhs80sfrmsovhdq6",
+      "num": "1471/2026",
+      "type": "أسرة",
+      "clientIds": "_5vl9ydglamqnsi5to",
+      "clientRoles": "_5vl9ydglamqnsi5to:موكل",
+      "plaintiff": "",
+      "defendant": "شيماء بركات",
+      "lawyerId": "_ff0o8xvlnmqmhfryl",
+      "court": "محكمه الاسره العاشر من رمضان",
+      "division": "البساتين",
+      "date": "2026-09-02",
+      "status": "نشطة",
+      "notes": "عمل استئناف اسرة",
+      "fee": 5000,
+      "paid": 1000,
+      "tawkeelNum": "",
+      "tawkeelType": "عام",
+      "archived": false,
+      "stage": "filed",
+      "createdAt": "2026-08-11T16:26:22.782Z"
     }
   ],
   "clients": [
@@ -5862,10 +5884,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:١٩:٤٤ م",
-    "lastSyncCommit": "0f575ebbd4855ee72e932b51239cf5c5998811ce"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:٢٠:٤١ م",
+    "lastSyncCommit": "cc9cfc292c0ca8dbc94c631466acbba91e24ded2"
   },
   "activityLog": [
+    {
+      "action": "إضافة قضية: 1471/2026",
+      "time": "١١‏/٨‏/٢٠٢٦، ٧:٢٦:٢٢ م"
+    },
     {
       "action": "تعديل قضية: 3780",
       "time": "١١‏/٨‏/٢٠٢٦، ٧:١٩:٣٧ م"
