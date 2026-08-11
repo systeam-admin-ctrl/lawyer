@@ -5964,10 +5964,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٨:٣٠:٣٦ م",
-    "lastSyncCommit": "d69e9823176bff1524a6dd64048ae23575b89876"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٨:٣٠:٤٢ م",
+    "lastSyncCommit": "ce1c60f49b6b092b4fb4e5a1df666655593ea3a0"
   },
   "activityLog": [
+    {
+      "action": "إضافة محكمة: جنح الاسماعيلية",
+      "time": "١١‏/٨‏/٢٠٢٦، ٨:٣٠:٤٣ م"
+    },
     {
       "action": "إضافة محكمة: جنح الزقازيق",
       "time": "١١‏/٨‏/٢٠٢٦، ٨:٣٠:٣٦ م"
@@ -6404,6 +6408,10 @@
     {
       "id": "_w4lnakp8vmsoxryys",
       "name": "جنح الزقازيق"
+    },
+    {
+      "id": "_plpozvtxmmsoxs4yi",
+      "name": "جنح الاسماعيلية"
     }
   ],
   "version": "8.0",
