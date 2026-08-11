@@ -3801,6 +3801,21 @@
       "tawkeelImg": "",
       "notes": "توكيل عام قضايا",
       "createdAt": "2026-08-11T15:34:00.476Z"
+    },
+    {
+      "id": "_sjknsd8aymsoto4xo",
+      "name": "ريناد محمد عبدالوهاب محمد غندور",
+      "phone": "",
+      "idNum": "30103198800447",
+      "email": "",
+      "address": "ش ابو بكر الصديق - عزبة عبداللطيف - الزقازيق ثان",
+      "photo": "",
+      "tawkeelNum": "1401/2026",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2026-07-26",
+      "tawkeelImg": "",
+      "notes": "توكيل عام قضايا",
+      "createdAt": "2026-08-11T15:35:42.907Z"
     }
   ],
   "staff": [
@@ -5259,6 +5274,26 @@
         }
       ],
       "mainClientId": "_ayc0pms32msotlzj0"
+    },
+    {
+      "id": "_wyh9a4h7amsoto857",
+      "tawkeelNum": "1401/2026",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2026-07-26",
+      "tawkeelImg": "",
+      "notes": "توكيل عام قضايا",
+      "clients": [
+        {
+          "id": "_sjknsd8aymsoto4xo",
+          "name": "ريناد محمد عبدالوهاب محمد غندور",
+          "phone": "",
+          "idNum": "30103198800447",
+          "email": "",
+          "address": "ش ابو بكر الصديق - عزبة عبداللطيف - الزقازيق ثان",
+          "photo": ""
+        }
+      ],
+      "mainClientId": "_sjknsd8aymsoto4xo"
     }
   ],
   "settings": {
@@ -5271,10 +5306,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٦:٣٢:٣٦ م",
-    "lastSyncCommit": "c2faba9902b8e058cbfc8362b4e6fd14ae53c550"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٦:٣٤:٠٦ م",
+    "lastSyncCommit": "5760670c685448b8c96b787026550b806495e2c0"
   },
   "activityLog": [
+    {
+      "action": "إضافة توكيل: 1401/2026 مع 1 موكلين",
+      "time": "١١‏/٨‏/٢٠٢٦، ٦:٣٥:٤٢ م"
+    },
     {
       "action": "إضافة توكيل: 943/2023 مع 1 موكلين",
       "time": "١١‏/٨‏/٢٠٢٦، ٦:٣٤:٠٠ م"
