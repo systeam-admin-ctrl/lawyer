@@ -2197,6 +2197,28 @@
       "archived": false,
       "stage": "filed",
       "createdAt": "2026-08-11T16:12:13.344Z"
+    },
+    {
+      "id": "_4vq6vvxkkmsov0uxe",
+      "num": "5905/2026",
+      "type": "أسرة",
+      "clientIds": "_idkdxly9rmsoutqs7",
+      "clientRoles": "_idkdxly9rmsoutqs7:موكل",
+      "plaintiff": "",
+      "defendant": "اسراء احمد محمد",
+      "lawyerId": "_ff0o8xvlnmqmhfryl",
+      "court": "محكمه الاسره - بندر الزقازيق",
+      "division": "",
+      "date": "2026-09-26",
+      "status": "نشطة",
+      "notes": "رد منقولات زوجية",
+      "fee": 10000,
+      "paid": 1000,
+      "tawkeelNum": "",
+      "tawkeelType": "عام",
+      "archived": false,
+      "stage": "filed",
+      "createdAt": "2026-08-11T16:13:31.922Z"
     }
   ],
   "clients": [
@@ -5816,10 +5838,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:١١:١٦ م",
-    "lastSyncCommit": "6addd930aae14cee362f91bcec3277e9ae5598c5"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:١٢:١٩ م",
+    "lastSyncCommit": "45d6d456acbe8ec1653a866682158d43da7d5aa6"
   },
   "activityLog": [
+    {
+      "action": "إضافة قضية: 5905/2026",
+      "time": "١١‏/٨‏/٢٠٢٦، ٧:١٣:٣١ م"
+    },
     {
       "action": "إضافة قضية: 5902/2026",
       "time": "١١‏/٨‏/٢٠٢٦، ٧:١٢:١٣ م"
