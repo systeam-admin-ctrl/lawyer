@@ -1976,6 +1976,28 @@
       "archived": false,
       "stage": "filed",
       "createdAt": "2026-08-11T15:38:46.031Z"
+    },
+    {
+      "id": "_8mgq2sufpmsotve4k",
+      "num": "4932/2026",
+      "type": "أسرة",
+      "clientIds": "_sjknsd8aymsoto4xo",
+      "clientRoles": "_sjknsd8aymsoto4xo:موكل",
+      "plaintiff": "",
+      "defendant": "عمرو مجدي محب سلامة",
+      "lawyerId": "_ff0o8xvlnmqmhfryl",
+      "court": "",
+      "division": "",
+      "date": "2026-08-29",
+      "status": "نشطة",
+      "notes": "اول جلسة نفقة بنوعيها",
+      "fee": 5000,
+      "paid": 2000,
+      "tawkeelNum": "1401/2026",
+      "tawkeelType": "عام",
+      "archived": false,
+      "stage": "filed",
+      "createdAt": "2026-08-11T15:41:17.252Z"
     }
   ],
   "clients": [
@@ -5350,10 +5372,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٦:٣٨:٥١ م",
-    "lastSyncCommit": "32b7d740ec4f6b35be48a13119d8401b1325642f"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٦:٣٩:٤٦ م",
+    "lastSyncCommit": "a0e490c01552442a33920919112a29e9b24570e5"
   },
   "activityLog": [
+    {
+      "action": "إضافة قضية: 4932/2026",
+      "time": "١١‏/٨‏/٢٠٢٦، ٦:٤١:١٧ م"
+    },
     {
       "action": "تعديل قضية: 8932/2026",
       "time": "١١‏/٨‏/٢٠٢٦، ٦:٣٩:٤١ م"
