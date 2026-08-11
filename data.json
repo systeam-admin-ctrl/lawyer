@@ -4772,6 +4772,17 @@
       "deductReason": "غياب ٥ ايام",
       "status": "مدفوع",
       "note": ""
+    },
+    {
+      "id": "_s5j8nhpu0msovtrmq",
+      "staffId": "_ff0o8xvlnmqmhfryl",
+      "month": "2026-07",
+      "base": 5000,
+      "bonus": 5000,
+      "deduct": 0,
+      "deductReason": "خصم",
+      "status": "مدفوع",
+      "note": ""
     }
   ],
   "sessionLogs": [
@@ -5948,10 +5959,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:٣٢:٥٨ م",
-    "lastSyncCommit": "2a37ef1f0997faf4a5ce834f80bdf39eeeeb44fe"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:٣٣:٥٩ م",
+    "lastSyncCommit": "5faa60082354d13304df6224426470bc43e90603"
   },
   "activityLog": [
+    {
+      "action": "صرف راتب",
+      "time": "١١‏/٨‏/٢٠٢٦، ٧:٣٦:٠٠ م"
+    },
     {
       "action": "إضافة مهمة: تقديم تظلم في حفظ محضر رقم 18/2026 شهيرة علي محمد علي",
       "time": "١١‏/٨‏/٢٠٢٦، ٧:٣٢:٥٢ م"
