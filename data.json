@@ -2108,6 +2108,28 @@
       "archived": false,
       "stage": "filed",
       "createdAt": "2026-08-11T15:59:12.493Z"
+    },
+    {
+      "id": "_vb98dsxwfmsoujzt3",
+      "num": "4893/2026",
+      "type": "صحة توقيع",
+      "clientIds": "_cqk0o2qfkmsoua6z1",
+      "clientRoles": "_cqk0o2qfkmsoua6z1:موكل",
+      "plaintiff": "",
+      "defendant": "",
+      "lawyerId": "_ff0o8xvlnmqmhfryl",
+      "court": "مجمع محاكم ميت غمر",
+      "division": "",
+      "date": "2026-09-02",
+      "status": "نشطة",
+      "notes": "",
+      "fee": 3000,
+      "paid": 1000,
+      "tawkeelNum": "",
+      "tawkeelType": "عام",
+      "archived": false,
+      "stage": "filed",
+      "createdAt": "2026-08-11T16:00:25.095Z"
     }
   ],
   "clients": [
@@ -5657,10 +5679,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٦:٥٨:١٢ م",
-    "lastSyncCommit": "f83ba4ee5092b7be452021a911ec367868c780f2"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٦:٥٩:١٨ م",
+    "lastSyncCommit": "5086dd5b9be39d5e3b569000ed878808cc2879ab"
   },
   "activityLog": [
+    {
+      "action": "إضافة قضية: 4893/2026",
+      "time": "١١‏/٨‏/٢٠٢٦، ٧:٠٠:٢٥ م"
+    },
     {
       "action": "إضافة قضية: 4892/2026",
       "time": "١١‏/٨‏/٢٠٢٦، ٦:٥٩:١٢ م"
