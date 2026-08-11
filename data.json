@@ -4656,6 +4656,15 @@
       "ownerId": "_ff0o8xvlnmqmhfryl",
       "caseId": "",
       "status": "pending"
+    },
+    {
+      "id": "_dqt00sgnnmsovnlsu",
+      "title": "رفع قضية استرداد شبكة شهاب عصام مهني",
+      "priority": "عادية",
+      "due": "2026-08-13",
+      "ownerId": "_ff0o8xvlnmqmhfryl",
+      "caseId": "",
+      "status": "pending"
     }
   ],
   "payments": [],
@@ -5912,10 +5921,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:٣٠:١٢ م",
-    "lastSyncCommit": "7bc13fbc31b89446f8b9867f6af275e2a7d31ab1"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:٣٠:٢٩ م",
+    "lastSyncCommit": "7a3f91b7ccfd7ba1354b5b143029bf783e30f1ad"
   },
   "activityLog": [
+    {
+      "action": "إضافة مهمة: رفع قضية استرداد شبكة شهاب عصام مهني",
+      "time": "١١‏/٨‏/٢٠٢٦، ٧:٣١:١٣ م"
+    },
     {
       "action": "إضافة مهمة: رفع امر اداء منة الله عصام",
       "time": "١١‏/٨‏/٢٠٢٦، ٧:٣٠:٢٤ م"
