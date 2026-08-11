@@ -10,7 +10,10 @@
   "salaries": [],
   "sessionLogs": [],
   "clientGroups": [],
-  "settings": {},
+  "settings": {
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٣:٣١:٢٦ م",
+    "lastSyncCommit": "52150302e625e34013bd9f641bbc5065052788a5"
+  },
   "activityLog": [],
   "importantLinks": [],
   "courts": [],
