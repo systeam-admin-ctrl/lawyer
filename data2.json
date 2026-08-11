@@ -1,0 +1,41 @@
+{
+  "cases": [],
+  "clients": [],
+  "staff": [],
+  "sessions": [],
+  "tasks": [],
+  "payments": [],
+  "documents": [],
+  "attendance": [],
+  "salaries": [],
+  "sessionLogs": [],
+  "clientGroups": [],
+  "settings": {
+    "officeName": "AMG -  للمحاماة والاستشارات القانونية",
+    "officeManager": "........",
+    "officeAddress": "",
+    "officePhone": "",
+    "officeEmail": "",
+    "storageMode": "local",
+    "githubRepo": "systeam-admin-ctrl/lawyer",
+    "githubFilePath": "data2.json",
+    "autoSync": true,
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٤:١٤:٢١ م",
+    "lastSyncCommit": "0f40a5526cdbee21b9270dd097dfe8b741565974"
+  },
+  "activityLog": [
+    {
+      "action": "حفظ إعدادات",
+      "time": "١١‏/٨‏/٢٠٢٦، ٣:٤١:٣٣ م"
+    },
+    {
+      "action": "حفظ إعدادات",
+      "time": "١١‏/٨‏/٢٠٢٦، ٣:٣١:٣٦ م"
+    }
+  ],
+  "importantLinks": [],
+  "courts": [],
+  "version": "2.0",
+  "expenses": [],
+  "notifications": []
+}
