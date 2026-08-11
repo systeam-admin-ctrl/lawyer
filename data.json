@@ -4641,7 +4641,7 @@
       "due": "2026-08-12",
       "ownerId": "_ff0o8xvlnmqmhfryl",
       "caseId": "",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "_wvd7eyvu2msovm6mb",
@@ -4650,7 +4650,7 @@
       "due": "2026-08-12",
       "ownerId": "_ff0o8xvlnmqmhfryl",
       "caseId": "",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "_w8dyn7pvvmsovmjx5",
@@ -4659,7 +4659,7 @@
       "due": "2026-08-12",
       "ownerId": "_ff0o8xvlnmqmhfryl",
       "caseId": "",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "_dqt00sgnnmsovnlsu",
@@ -4668,7 +4668,7 @@
       "due": "2026-08-13",
       "ownerId": "_ff0o8xvlnmqmhfryl",
       "caseId": "",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "_u69svwm3bmsovoaeb",
@@ -4677,7 +4677,7 @@
       "due": "2026-08-12",
       "ownerId": "_ff0o8xvlnmqmhfryl",
       "caseId": "",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "_pjg1emgexmsovot83",
@@ -4686,7 +4686,7 @@
       "due": "2026-08-12",
       "ownerId": "_ff0o8xvlnmqmhfryl",
       "caseId": "",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "_4pehiia0gmsovpqe9",
@@ -4695,7 +4695,7 @@
       "due": "2026-08-14",
       "ownerId": "_ff0o8xvlnmqmhfryl",
       "caseId": "",
-      "status": "pending"
+      "status": "done"
     }
   ],
   "payments": [],
@@ -5963,8 +5963,8 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:٥٢:٣٢ م",
-    "lastSyncCommit": "d99704794527076fa05b187159a7018b01497ffa"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٨:١١:٤٣ م",
+    "lastSyncCommit": "c66b3c85c8894b93c0ad5862c1af932f20efce5c"
   },
   "activityLog": [
     {
