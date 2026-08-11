@@ -2042,6 +2042,28 @@
       "archived": false,
       "stage": "filed",
       "createdAt": "2026-08-11T15:44:35.033Z"
+    },
+    {
+      "id": "_ze5bif2avmsoueto1",
+      "num": "4896/2026",
+      "type": "صحة توقيع",
+      "clientIds": "_vax7q7g81msoucw8v",
+      "clientRoles": "_vax7q7g81msoucw8v:موكل",
+      "plaintiff": "",
+      "defendant": "سوزان حافظ",
+      "lawyerId": "_ff0o8xvlnmqmhfryl",
+      "court": "مجمع محاكم ميت غمر",
+      "division": "",
+      "date": "2026-09-01",
+      "status": "نشطة",
+      "notes": "",
+      "fee": 0,
+      "paid": 0,
+      "tawkeelNum": "",
+      "tawkeelType": "عام",
+      "archived": false,
+      "stage": "filed",
+      "createdAt": "2026-08-11T15:56:23.857Z"
     }
   ],
   "clients": [
@@ -5591,10 +5613,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٦:٥٤:٢٤ م",
-    "lastSyncCommit": "e2f8711ef6d40ba4cfeba09645c40ee91a750978"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٦:٥٥:٠١ م",
+    "lastSyncCommit": "8bfaa730a9d2106d422d882b6b829f97024f9850"
   },
   "activityLog": [
+    {
+      "action": "إضافة قضية: 4896/2026",
+      "time": "١١‏/٨‏/٢٠٢٦، ٦:٥٦:٢٣ م"
+    },
     {
       "action": "إضافة توكيل: 1234/2026 مع 1 موكلين",
       "time": "١١‏/٨‏/٢٠٢٦، ٦:٥٤:٥٥ م"
