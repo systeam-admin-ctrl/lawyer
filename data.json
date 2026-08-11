@@ -617,19 +617,20 @@
       "clientIds": "_uuyqvq3uxmqmagrap",
       "plaintiff": "",
       "defendant": "شركه المطاحن شرق الدلتا",
-      "lawyerId": "",
-      "court": "",
-      "division": "",
-      "date": "",
+      "lawyerId": "_ff0o8xvlnmqmhfryl",
+      "court": "محكمة الزقازيق الابتدائيه",
+      "division": "ايجارات جنوب الزقازيق",
+      "date": "2026-09-08",
       "status": "نشطة",
-      "notes": "",
+      "notes": "للتقرير للخبراء",
       "fee": 0,
       "paid": 0,
       "tawkeelNum": "",
       "tawkeelType": "عام",
       "archived": false,
       "createdAt": "2026-06-21T09:22:11.914Z",
-      "stage": "hearing"
+      "stage": "filed",
+      "clientRoles": "_uuyqvq3uxmqmagrap:موكل"
     },
     {
       "id": "_muxk2pzvcmqnl0m4j",
@@ -5961,10 +5962,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:٣٩:٤٢ م",
-    "lastSyncCommit": "7ad28da829ada945ee961821118c60a27e72961a"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:٤٠:٤٧ م",
+    "lastSyncCommit": "85fb1d27559777532332ac752fc80c24d93fed31"
   },
   "activityLog": [
+    {
+      "action": "تعديل قضية: 666666666",
+      "time": "١١‏/٨‏/٢٠٢٦، ٧:٤١:٤١ م"
+    },
     {
       "action": "تعديل قضية: 325",
       "time": "١١‏/٨‏/٢٠٢٦، ٧:٤٠:٤٠ م"
