@@ -740,14 +740,14 @@
     {
       "id": "_v9c1itm5jmqnm3wfj",
       "num": "767",
-      "type": "إيجارات",
+      "type": "استئناف مدني",
       "clientIds": "_t0k5ww2mvmqmaareb",
       "plaintiff": "",
       "defendant": "محمود محمد حسن",
       "lawyerId": "",
       "court": "الزقازيق",
-      "division": "",
-      "date": "",
+      "division": "د20 ايجارات مستأنف",
+      "date": "2026-08-11",
       "status": "نشطة",
       "notes": "طرد وتسليم دين مؤخر",
       "fee": 0,
@@ -756,7 +756,8 @@
       "tawkeelType": "عام",
       "archived": false,
       "createdAt": "2026-06-21T09:56:46.447Z",
-      "stage": "hearing"
+      "stage": "filed",
+      "clientRoles": "_t0k5ww2mvmqmaareb:موكل"
     },
     {
       "id": "_kr8k2uq84mqnm5kt5",
@@ -5962,10 +5963,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:٤١:٤٧ م",
-    "lastSyncCommit": "5cdf4ec492c25074ba7a67c5caed1b2f31911c68"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:٤٢:١٠ م",
+    "lastSyncCommit": "d78e84a779c8ffa101fc6b96210959fbce899d02"
   },
   "activityLog": [
+    {
+      "action": "تعديل قضية: 767",
+      "time": "١١‏/٨‏/٢٠٢٦، ٧:٥٢:٢٦ م"
+    },
     {
       "action": "تعديل قضية: 666666666",
       "time": "١١‏/٨‏/٢٠٢٦، ٧:٤١:٤١ م"
