@@ -19,11 +19,13 @@
     "storageMode": "local",
     "githubRepo": "systeam-admin-ctrl/lawyer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",
     "githubFilePath": "data.json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",
-    "autoSync": true,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٣:٣٢:٢٣ م",
-    "lastSyncCommit": "72b2b4808e42debebf44f784aeb77969e9920cb5"
+    "autoSync": true
   },
   "activityLog": [
+    {
+      "action": "حفظ إعدادات",
+      "time": "١١‏/٨‏/٢٠٢٦، ٣:٣٤:٢٥ م"
+    },
     {
       "action": "حفظ إعدادات",
       "time": "١١‏/٨‏/٢٠٢٦، ٣:٣١:٣٦ م"
