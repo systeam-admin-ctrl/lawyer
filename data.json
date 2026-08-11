@@ -3771,6 +3771,21 @@
       "tawkeelImg": "",
       "notes": "",
       "createdAt": "2026-07-06T10:02:36.003Z"
+    },
+    {
+      "id": "_93r7147s6msotk1vm",
+      "name": "ايمان السيد شحاته السيد",
+      "phone": "",
+      "idNum": "",
+      "email": "",
+      "address": "ش البغدادي - هرية رزنه - مركز الزقازيق",
+      "photo": "",
+      "tawkeelNum": "2685/2026",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2026-07-30",
+      "tawkeelImg": "",
+      "notes": "توكيل عام",
+      "createdAt": "2026-08-11T15:32:30.544Z"
     }
   ],
   "staff": [
@@ -5189,6 +5204,26 @@
         }
       ],
       "mainClientId": "_p9p6oosq9mr91x4te"
+    },
+    {
+      "id": "_u44hxspmkmsotk3ps",
+      "tawkeelNum": "2685/2026",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2026-07-30",
+      "tawkeelImg": "",
+      "notes": "توكيل عام",
+      "clients": [
+        {
+          "id": "_93r7147s6msotk1vm",
+          "name": "ايمان السيد شحاته السيد",
+          "phone": "",
+          "idNum": "",
+          "email": "",
+          "address": "ش البغدادي - هرية رزنه - مركز الزقازيق",
+          "photo": ""
+        }
+      ],
+      "mainClientId": "_93r7147s6msotk1vm"
     }
   ],
   "settings": {
@@ -5201,10 +5236,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٦:٢٧:٥٧ م",
-    "lastSyncCommit": "3597898969c9e5991d99d1a72e115c5567acf19e"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٦:٢٧:٥٩ م",
+    "lastSyncCommit": "1923c5bdd8b45d46fe2b7cac31f5d02084c8d99b"
   },
   "activityLog": [
+    {
+      "action": "إضافة توكيل: 2685/2026 مع 1 موكلين",
+      "time": "١١‏/٨‏/٢٠٢٦، ٦:٣٢:٣٠ م"
+    },
     {
       "action": "تعديل قضية: 09090",
       "time": "٦‏/٧‏/٢٠٢٦، ٢:١٥:٢٦ ص"
