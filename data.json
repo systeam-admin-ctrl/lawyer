@@ -1954,6 +1954,28 @@
       "archived": false,
       "stage": "filed",
       "createdAt": "2026-08-11T15:36:41.755Z"
+    },
+    {
+      "id": "_eh2n52xrimsots5fz",
+      "num": "4228/2026",
+      "type": "صحة توقيع",
+      "clientIds": "_ayc0pms32msotlzj0",
+      "clientRoles": "_ayc0pms32msotlzj0:موكل",
+      "plaintiff": "",
+      "defendant": "",
+      "lawyerId": "_ff0o8xvlnmqmhfryl",
+      "court": "محكمة الزقازيق الابتدائيه",
+      "division": "صحة توقيع",
+      "date": "2026-09-27",
+      "status": "نشطة",
+      "notes": "",
+      "fee": 0,
+      "paid": 12000,
+      "tawkeelNum": "943/2023",
+      "tawkeelType": "عام",
+      "archived": false,
+      "stage": "filed",
+      "createdAt": "2026-08-11T15:38:46.031Z"
     }
   ],
   "clients": [
@@ -5328,10 +5350,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٦:٣٥:٤٨ م",
-    "lastSyncCommit": "fda9a25a2514fa3f00521c5a14b63fa34e22cca6"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٦:٣٦:٤٧ م",
+    "lastSyncCommit": "0a08e09d373109395dfaca7ad4339e7b1001b891"
   },
   "activityLog": [
+    {
+      "action": "إضافة قضية: 4228/2026",
+      "time": "١١‏/٨‏/٢٠٢٦، ٦:٣٨:٤٦ م"
+    },
     {
       "action": "إضافة قضية: 8932/2026",
       "time": "١١‏/٨‏/٢٠٢٦، ٦:٣٦:٤١ م"
