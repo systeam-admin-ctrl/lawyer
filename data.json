@@ -4674,6 +4674,15 @@
       "ownerId": "_ff0o8xvlnmqmhfryl",
       "caseId": "",
       "status": "pending"
+    },
+    {
+      "id": "_pjg1emgexmsovot83",
+      "title": "رفع تسوية طلاق للضرر ثريا شعبان",
+      "priority": "عادية",
+      "due": "2026-08-12",
+      "ownerId": "_ff0o8xvlnmqmhfryl",
+      "caseId": "",
+      "status": "pending"
     }
   ],
   "payments": [],
@@ -5930,10 +5939,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:٣١:١٩ م",
-    "lastSyncCommit": "2c5a10ce39144064f8261aacb47b15598df355e9"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٧:٣١:٥٠ م",
+    "lastSyncCommit": "97ff097386b2badcc237398f243558550b470192"
   },
   "activityLog": [
+    {
+      "action": "إضافة مهمة: رفع تسوية طلاق للضرر ثريا شعبان",
+      "time": "١١‏/٨‏/٢٠٢٦، ٧:٣٢:٠٩ م"
+    },
     {
       "action": "إضافة مهمة: رفع تسويات ثريا شعبان بركات",
       "time": "١١‏/٨‏/٢٠٢٦، ٧:٣١:٤٥ م"
