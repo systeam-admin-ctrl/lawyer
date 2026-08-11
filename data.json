@@ -5964,10 +5964,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "١١‏/٨‏/٢٠٢٦، ٨:٣٠:٢٢ م",
-    "lastSyncCommit": "8297dc6c3044bd98f5f026793cd7ba2aadb47e21"
+    "lastSync": "١١‏/٨‏/٢٠٢٦، ٨:٣٠:٢٩ م",
+    "lastSyncCommit": "257b728164c11e135c5e662e8cd47169e30a85d1"
   },
   "activityLog": [
+    {
+      "action": "إضافة محكمة: الاسماعيلية",
+      "time": "١١‏/٨‏/٢٠٢٦، ٨:٣٠:٣٠ م"
+    },
     {
       "action": "إضافة محكمة: جنوب القاهرة",
       "time": "١١‏/٨‏/٢٠٢٦، ٨:٣٠:٢٣ م"
@@ -6388,6 +6392,10 @@
     {
       "id": "_rajzn1vxhmsoxrp9l",
       "name": "جنوب القاهرة"
+    },
+    {
+      "id": "_q46bzv9pimsoxruua",
+      "name": "الاسماعيلية"
     }
   ],
   "version": "8.0",
