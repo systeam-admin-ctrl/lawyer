@@ -9,7 +9,7 @@
   "attendance": [],
   "salaries": [],
   "settings": {
-    "storageMode": "local",
+    "storageMode": "github",
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data2.json",
     "autoSync": false
