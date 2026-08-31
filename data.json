@@ -1954,6 +1954,28 @@
       "archived": false,
       "stage": "filed",
       "createdAt": "2026-08-31T09:31:26.491Z"
+    },
+    {
+      "id": "_8xh7gfnlxmth1lf5m",
+      "num": "4934/2026",
+      "type": "أسرة",
+      "clientIds": "_ns8j6hnibmth1hyhu",
+      "clientRoles": "_ns8j6hnibmth1hyhu:موكل",
+      "plaintiff": "ريناد محمد",
+      "defendant": "عمرو مجدي محب سلامة",
+      "lawyerId": "_ff0o8xvlnmqmhfryl",
+      "court": "محكمه الاسره - بندر الزقازيق",
+      "division": "بندر الزقازيق",
+      "date": "2026-12-10",
+      "status": "نشطة",
+      "notes": "",
+      "fee": 15000,
+      "paid": 3000,
+      "tawkeelNum": "",
+      "tawkeelType": "عام",
+      "archived": false,
+      "stage": "filed",
+      "createdAt": "2026-08-31T09:35:01.882Z"
     }
   ],
   "clients": [
@@ -4304,10 +4326,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "٣١‏/٨‏/٢٠٢٦، ١٢:٣١:٣٣ م",
-    "lastSyncCommit": "2adbd54e3aaf6a7412920b2ef82f904ed5de05d5"
+    "lastSync": "٣١‏/٨‏/٢٠٢٦، ١٢:٣٢:٣٢ م",
+    "lastSyncCommit": "e4777b247c0935e0d21d861096da18646a207a74"
   },
   "activityLog": [
+    {
+      "action": "إضافة قضية: 4934/2026",
+      "time": "٣١‏/٨‏/٢٠٢٦، ١٢:٣٥:٠١ م"
+    },
     {
       "action": "إضافة توكيل: 1401/2026 مع 1 موكلين",
       "time": "٣١‏/٨‏/٢٠٢٦، ١٢:٣٢:٢٥ م"
