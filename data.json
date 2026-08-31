@@ -1932,6 +1932,50 @@
       "archived": false,
       "stage": "filed",
       "createdAt": "2026-07-06T10:05:18.933Z"
+    },
+    {
+      "id": "_puftpougvmth1gsyj",
+      "num": "5901/2026",
+      "type": "أسرة",
+      "clientIds": "_8ceqxfgrtmth1d81o",
+      "clientRoles": "_8ceqxfgrtmth1d81o:موكل",
+      "plaintiff": "اسراء احمد محمد احمد",
+      "defendant": "",
+      "lawyerId": "_ff0o8xvlnmqmhfryl",
+      "court": "محكمه الاسره - بندر الزقازيق",
+      "division": "مركز الزقازيق",
+      "date": "2026-09-12",
+      "status": "نشطة",
+      "notes": "",
+      "fee": 5000,
+      "paid": 1000,
+      "tawkeelNum": "1068/2026",
+      "tawkeelType": "عام",
+      "archived": false,
+      "stage": "filed",
+      "createdAt": "2026-08-31T09:31:26.491Z"
+    },
+    {
+      "id": "_8xh7gfnlxmth1lf5m",
+      "num": "4934/2026",
+      "type": "أسرة",
+      "clientIds": "_ns8j6hnibmth1hyhu",
+      "clientRoles": "_ns8j6hnibmth1hyhu:موكل",
+      "plaintiff": "ريناد محمد",
+      "defendant": "عمرو مجدي محب سلامة",
+      "lawyerId": "_ff0o8xvlnmqmhfryl",
+      "court": "محكمه الاسره - بندر الزقازيق",
+      "division": "بندر الزقازيق",
+      "date": "2026-12-10",
+      "status": "نشطة",
+      "notes": "",
+      "fee": 15000,
+      "paid": 3000,
+      "tawkeelNum": "",
+      "tawkeelType": "عام",
+      "archived": false,
+      "stage": "filed",
+      "createdAt": "2026-08-31T09:35:01.882Z"
     }
   ],
   "clients": [
@@ -3771,6 +3815,51 @@
       "tawkeelImg": "",
       "notes": "",
       "createdAt": "2026-07-06T10:02:36.003Z"
+    },
+    {
+      "id": "_48sqmj34nmth1bokf",
+      "name": "ايمان السيد شحاته السيد",
+      "phone": "",
+      "idNum": "29210011301201",
+      "email": "",
+      "address": "هرية رزنة - مركز الزقازيق",
+      "photo": "",
+      "tawkeelNum": "2685/2026",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2026-03-07",
+      "tawkeelImg": "",
+      "notes": "",
+      "createdAt": "2026-08-31T09:27:32.431Z"
+    },
+    {
+      "id": "_8ceqxfgrtmth1d81o",
+      "name": "اكمل محمد علي سليم فهيم احمد",
+      "phone": "",
+      "idNum": "",
+      "email": "",
+      "address": "",
+      "photo": "",
+      "tawkeelNum": "1068/2026",
+      "tawkeelType": "عام",
+      "tawkeelDate": "",
+      "tawkeelImg": "",
+      "notes": "",
+      "createdAt": "2026-08-31T09:28:41.812Z"
+    },
+    {
+      "id": "_ns8j6hnibmth1hyhu",
+      "name": "ريناد محمد عبدالوهاب محمد غندور",
+      "phone": "",
+      "idNum": "",
+      "email": "",
+      "address": "",
+      "photo": "",
+      "tawkeelNum": "1401/2026",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2026-02-07",
+      "tawkeelImg": "",
+      "notes": "",
+      "createdAt": "2026-08-31T09:32:25.902Z"
     }
   ],
   "staff": [
@@ -5189,6 +5278,66 @@
         }
       ],
       "mainClientId": "_p9p6oosq9mr91x4te"
+    },
+    {
+      "id": "_xh4tn8fy6mth1bscv",
+      "tawkeelNum": "2685/2026",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2026-03-07",
+      "tawkeelImg": "",
+      "notes": "",
+      "clients": [
+        {
+          "id": "_48sqmj34nmth1bokf",
+          "name": "ايمان السيد شحاته السيد",
+          "phone": "",
+          "idNum": "29210011301201",
+          "email": "",
+          "address": "هرية رزنة - مركز الزقازيق",
+          "photo": ""
+        }
+      ],
+      "mainClientId": "_48sqmj34nmth1bokf"
+    },
+    {
+      "id": "_i3rsfe15mmth1d9w4",
+      "tawkeelNum": "1068/2026",
+      "tawkeelType": "عام",
+      "tawkeelDate": "",
+      "tawkeelImg": "",
+      "notes": "",
+      "clients": [
+        {
+          "id": "_8ceqxfgrtmth1d81o",
+          "name": "اكمل محمد علي سليم فهيم احمد",
+          "phone": "",
+          "idNum": "",
+          "email": "",
+          "address": "",
+          "photo": ""
+        }
+      ],
+      "mainClientId": "_8ceqxfgrtmth1d81o"
+    },
+    {
+      "id": "_v772kgoxtmth1i2su",
+      "tawkeelNum": "1401/2026",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2026-02-07",
+      "tawkeelImg": "",
+      "notes": "",
+      "clients": [
+        {
+          "id": "_ns8j6hnibmth1hyhu",
+          "name": "ريناد محمد عبدالوهاب محمد غندور",
+          "phone": "",
+          "idNum": "",
+          "email": "",
+          "address": "",
+          "photo": ""
+        }
+      ],
+      "mainClientId": "_ns8j6hnibmth1hyhu"
     }
   ],
   "settings": {
@@ -5201,10 +5350,30 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "٣١‏/٨‏/٢٠٢٦، ١١:٣٨:٤٨ ص",
-    "lastSyncCommit": "ac57cf8ae9309861a48d5c031bde214afbb9561e"
+    "lastSync": "٣١‏/٨‏/٢٠٢٦، ١١:٣٩:٥١ ص",
+    "lastSyncCommit": "c0dd81c70bbff4d285adbba496f85db93be7502b"
   },
   "activityLog": [
+    {
+      "action": "إضافة قضية: 4934/2026",
+      "time": "٣١‏/٨‏/٢٠٢٦، ١٢:٣٥:٠١ م"
+    },
+    {
+      "action": "إضافة توكيل: 1401/2026 مع 1 موكلين",
+      "time": "٣١‏/٨‏/٢٠٢٦، ١٢:٣٢:٢٥ م"
+    },
+    {
+      "action": "إضافة قضية: 5901/2026",
+      "time": "٣١‏/٨‏/٢٠٢٦، ١٢:٣١:٢٦ م"
+    },
+    {
+      "action": "إضافة توكيل: 1068/2026 مع 1 موكلين",
+      "time": "٣١‏/٨‏/٢٠٢٦، ١٢:٢٨:٤١ م"
+    },
+    {
+      "action": "إضافة توكيل: 2685/2026 مع 1 موكلين",
+      "time": "٣١‏/٨‏/٢٠٢٦، ١٢:٢٧:٣٢ م"
+    },
     {
       "action": "تعديل قضية: 09090",
       "time": "٦‏/٧‏/٢٠٢٦، ٢:١٥:٢٦ ص"
