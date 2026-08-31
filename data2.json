@@ -8,20 +8,34 @@
   "documents": [],
   "attendance": [],
   "salaries": [],
+  "sessionLogs": [],
+  "clientGroups": [],
   "settings": {
+    "officeName": "AMG -  للمحاماة والاستشارات القانونية",
+    "officeManager": "........",
+    "officeAddress": "",
+    "officePhone": "",
+    "officeEmail": "",
     "storageMode": "github",
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data2.json",
     "autoSync": true,
-    "lastSync": "٣١‏/٨‏/٢٠٢٦، ١١:٣٤:١٣ ص",
-    "lastSyncCommit": "d0e12a7567021fe62de5b1e91ddc3beadf795499"
+    "lastSync": "٣١‏/٨‏/٢٠٢٦، ١٠:٢٢:٢٥ ص",
+    "lastSyncCommit": "16b13dd4092ac3205e9b7b94c766042ca1a0fb2c"
   },
-  "activityLog": [],
-  "sessionLogs": [],
-  "clientGroups": [],
+  "activityLog": [
+    {
+      "action": "حفظ إعدادات",
+      "time": "١١‏/٨‏/٢٠٢٦، ٣:٤١:٣٣ م"
+    },
+    {
+      "action": "حفظ إعدادات",
+      "time": "١١‏/٨‏/٢٠٢٦، ٣:٣١:٣٦ م"
+    }
+  ],
   "importantLinks": [],
   "courts": [],
+  "version": "2.0",
   "expenses": [],
-  "notifications": [],
-  "version": "2.0"
+  "notifications": []
 }
