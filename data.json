@@ -3823,6 +3823,21 @@
       "tawkeelImg": "",
       "notes": "",
       "createdAt": "2026-08-31T09:28:41.812Z"
+    },
+    {
+      "id": "_ns8j6hnibmth1hyhu",
+      "name": "ريناد محمد عبدالوهاب محمد غندور",
+      "phone": "",
+      "idNum": "",
+      "email": "",
+      "address": "",
+      "photo": "",
+      "tawkeelNum": "1401/2026",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2026-02-07",
+      "tawkeelImg": "",
+      "notes": "",
+      "createdAt": "2026-08-31T09:32:25.902Z"
     }
   ],
   "staff": [
@@ -4289,10 +4304,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": false,
-    "lastSync": "٣١‏/٨‏/٢٠٢٦، ١٢:٢٨:٤٨ م",
-    "lastSyncCommit": "1c90952a7038070d02266a21c78a07b123991b89"
+    "lastSync": "٣١‏/٨‏/٢٠٢٦، ١٢:٣١:٣٣ م",
+    "lastSyncCommit": "2adbd54e3aaf6a7412920b2ef82f904ed5de05d5"
   },
   "activityLog": [
+    {
+      "action": "إضافة توكيل: 1401/2026 مع 1 موكلين",
+      "time": "٣١‏/٨‏/٢٠٢٦، ١٢:٣٢:٢٥ م"
+    },
     {
       "action": "إضافة قضية: 5901/2026",
       "time": "٣١‏/٨‏/٢٠٢٦، ١٢:٣١:٢٦ م"
@@ -5460,6 +5479,26 @@
         }
       ],
       "mainClientId": "_8ceqxfgrtmth1d81o"
+    },
+    {
+      "id": "_v772kgoxtmth1i2su",
+      "tawkeelNum": "1401/2026",
+      "tawkeelType": "عام",
+      "tawkeelDate": "2026-02-07",
+      "tawkeelImg": "",
+      "notes": "",
+      "clients": [
+        {
+          "id": "_ns8j6hnibmth1hyhu",
+          "name": "ريناد محمد عبدالوهاب محمد غندور",
+          "phone": "",
+          "idNum": "",
+          "email": "",
+          "address": "",
+          "photo": ""
+        }
+      ],
+      "mainClientId": "_ns8j6hnibmth1hyhu"
     }
   ],
   "importantLinks": [
