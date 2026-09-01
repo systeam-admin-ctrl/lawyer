@@ -1976,6 +1976,28 @@
       "archived": false,
       "stage": "filed",
       "createdAt": "2026-08-31T09:35:01.882Z"
+    },
+    {
+      "id": "_awuqbcpvsmtil1t4r",
+      "num": "4932/2026",
+      "type": "أسرة",
+      "clientIds": "_ns8j6hnibmth1hyhu",
+      "clientRoles": "_ns8j6hnibmth1hyhu:موكل",
+      "plaintiff": "ريناد",
+      "defendant": "عمرو مجدي محب سلامة",
+      "lawyerId": "_ff0o8xvlnmqmhfryl",
+      "court": "محكمه الاسره - بندر الزقازيق",
+      "division": "1",
+      "date": "2026-10-31",
+      "status": "نشطة",
+      "notes": "",
+      "fee": 0,
+      "paid": 0,
+      "tawkeelNum": "",
+      "tawkeelType": "عام",
+      "archived": false,
+      "stage": "filed",
+      "createdAt": "2026-09-01T11:27:25.371Z"
     }
   ],
   "clients": [
@@ -5350,10 +5372,14 @@
     "githubRepo": "systeam-admin-ctrl/lawyer",
     "githubFilePath": "data.json",
     "autoSync": true,
-    "lastSync": "١‏/٩‏/٢٠٢٦، ٢:١٨:٣٩ م",
-    "lastSyncCommit": "b3be82ec0c3e5cdabd9b5fd2c12c0e41c30638d3"
+    "lastSync": "١‏/٩‏/٢٠٢٦، ٢:٢٣:٣٥ م",
+    "lastSyncCommit": "ed0c3eb44022b51caba1af95c5719cc80741d9c4"
   },
   "activityLog": [
+    {
+      "action": "إضافة قضية: 4932/2026",
+      "time": "١‏/٩‏/٢٠٢٦، ٢:٢٧:٢٥ م"
+    },
     {
       "action": "إضافة قضية: 4934/2026",
       "time": "٣١‏/٨‏/٢٠٢٦، ١٢:٣٥:٠١ م"
